@@ -9,11 +9,27 @@ by JTL-Software-GmbH. Use JPI at your own risk!
 
 # Installation
 
+## Requirements
+
+- OS: Linux (Should work on Windows, too. But I develop on Linux)
+- PHP 7.2 or greater
+- PHP-Libs: mbstring, xml, json ... TODO
+
+## Windows
+
+TODO
 
 ## Linux
 
+### Manual Install
+
+
 - Install https://docs.microsoft.com/en-us/sql/connect/php/system-requirements-for-the-php-sql-driver?view=sql-server-2017
 - Install https://github.com/Microsoft/msphpsql/releases (only sqlsrv, not pdo_sqlsrv !!!)
+
+### Docker
+
+TODO
 
 # Which version is compatible with my JTL-Wawi?
 
