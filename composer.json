@@ -11,6 +11,7 @@
     "doctrine/dbal": "^2.8",
     "eloquent/pathogen": "^0.6.1",
     "lstrojny/functional-php": "^1.8",
+    "nette/php-generator": "^3.2",
     "sensio/framework-extra-bundle": "^5.2",
     "symfony/apache-pack": "^1.0",
     "symfony/console": "*",
