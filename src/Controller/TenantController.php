@@ -4,6 +4,9 @@ namespace App\Controller;
 
 
 use App\DbConnectionProviderInterface;
+use App\Dto\TenantDto;
+use App\Mapping\MapperInterface;
+use App\Schema\tMandant;
 use function Functional\map;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
@@ -11,12 +14,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class TenantController
 {
     protected $connProvider;
+    protected $mapper;
 
-    public function __construct(DbConnectionProviderInterface $connProvider)
+    public function __construct(DbConnectionProviderInterface $connProvider, MapperInterface $mapper)
     {
         $this->connProvider = $connProvider;
+        $this->mapper = $mapper;
     }
-
 
     /**
      * @Route("/tenant")
@@ -24,15 +28,18 @@ class TenantController
     public function getAll()
     {
         $dbal = $this->connProvider->getDbal('eazybusiness');
-        $allTenants = $dbal->query('SELECT kMandant, cName, cDB FROM tMandant')->fetchAll(\PDO::FETCH_ASSOC);
-        return new JsonResponse(
-            map($allTenants, function($tenant) {
-                return [
-                    'id' => $tenant['kMandant'],
-                    'name' => $tenant['cName'],
-                    'db' => $tenant['cDB'],
-                ];
-            })
-        );
+        $qb = $dbal->createQueryBuilder();
+
+        $qb
+            ->from(tMandant::TABLE_NAME)
+            ->select([
+                tMandant::kMandant,
+                tMandant::cName,
+                tMandant::cDB,
+            ]);
+
+        $allTenants = $qb->execute()->fetchAll(\PDO::FETCH_CLASS, tMandant::class);
+        $allTenants = $this->mapper->mapMultiple($allTenants, TenantDto::class);
+        return new JsonResponse($allTenants);
     }
 }

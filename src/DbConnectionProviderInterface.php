@@ -3,7 +3,8 @@
 namespace App;
 
 
-use Doctrine\DBAL\Driver\Connection;
+
+use Doctrine\DBAL\Connection;
 
 interface DbConnectionProviderInterface
 {

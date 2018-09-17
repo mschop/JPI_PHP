@@ -4,7 +4,7 @@ namespace App;
 
 
 
-use Doctrine\DBAL\Driver\Connection;
+use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\DriverManager;
 
 class DbConnectionProvider implements DbConnectionProviderInterface
