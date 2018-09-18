@@ -10,6 +10,7 @@ use App\Schema\tMandant;
 use function Functional\map;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use OpenApi\Annotations as OA;
 
 class TenantController
 {
@@ -23,7 +24,16 @@ class TenantController
     }
 
     /**
-     * @Route("/tenant")
+     * @Route("/tenant", methods={"GET"})
+     * @OA\Get(
+     *     path="/tenant",
+     *     description="Fetch all created tenants in JTL-Wawi installation.",
+     *     @OA\Response(
+     *          response="200",
+     *          description="Successfull operation",
+     *          @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/TenantDto"))
+     *     )
+     * )
      */
     public function getAll()
     {

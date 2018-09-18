@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "JPI",
+        "contact": {
+            "email": "mschopdev@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "operationId": "App\\Controller\\IndexController::index",
+                "responses": {
+                    "200": {
+                        "description": "Get status information"
+                    }
+                }
+            }
+        },
+        "/tenant": {
+            "get": {
+                "description": "Fetch all created tenants in JTL-Wawi installation.",
+                "operationId": "App\\Controller\\TenantController::getAll",
+                "responses": {
+                    "200": {
+                        "description": "Successfull operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/TenantDto"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "TenantDto": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "dbName": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    }
+}
