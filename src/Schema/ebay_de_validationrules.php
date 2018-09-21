@@ -16,6 +16,32 @@ class ebay_de_validationrules
 	const Precistion = 'Precistion';
 	const Regex = 'Regex';
 	const nLength = 'nLength';
+	const COLUMN_NAMES = [
+		'AttributeId',
+		'AttributeSetId',
+		'Name',
+		'PeerAttributeId',
+		'cSeparator',
+		'fMin',
+		'fMax',
+		'Mask',
+		'Precistion',
+		'Regex',
+		'nLength',
+	];
+	const COLUMN_TYPES = [
+		'AttributeId' => 'int',
+		'AttributeSetId' => 'int',
+		'Name' => 'varchar',
+		'PeerAttributeId' => 'int',
+		'cSeparator' => 'varchar',
+		'fMin' => 'decimal',
+		'fMax' => 'decimal',
+		'Mask' => 'varchar',
+		'Precistion' => 'tinyint',
+		'Regex' => 'varchar',
+		'nLength' => 'smallint',
+	];
 
 	/** @var int AttributeId */
 	public $AttributeId;

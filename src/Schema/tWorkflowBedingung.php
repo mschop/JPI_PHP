@@ -11,6 +11,22 @@ class tWorkflowBedingung
 	const nOperator = 'nOperator';
 	const cVergleichswert = 'cVergleichswert';
 	const kWorkflowEigenschaft = 'kWorkflowEigenschaft';
+	const COLUMN_NAMES = [
+		'kWorkflowBedingung',
+		'kWorkflow',
+		'cEigenschaft',
+		'nOperator',
+		'cVergleichswert',
+		'kWorkflowEigenschaft',
+	];
+	const COLUMN_TYPES = [
+		'kWorkflowBedingung' => 'int',
+		'kWorkflow' => 'int',
+		'cEigenschaft' => 'xml',
+		'nOperator' => 'int',
+		'cVergleichswert' => 'varchar',
+		'kWorkflowEigenschaft' => 'int',
+	];
 
 	/** @var int kWorkflowBedingung */
 	public $kWorkflowBedingung;

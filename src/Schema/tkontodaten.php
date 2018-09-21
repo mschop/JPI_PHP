@@ -18,6 +18,36 @@ class tkontodaten
 	const cInhaber = 'cInhaber';
 	const cIBAN = 'cIBAN';
 	const cBIC = 'cBIC';
+	const COLUMN_NAMES = [
+		'kKontoDaten',
+		'kKunde',
+		'kLieferant',
+		'cBankName',
+		'cBLZ',
+		'cKontoNr',
+		'cKartenNr',
+		'cGueltigkeit',
+		'cCVV',
+		'cKartenTyp',
+		'cInhaber',
+		'cIBAN',
+		'cBIC',
+	];
+	const COLUMN_TYPES = [
+		'kKontoDaten' => 'int',
+		'kKunde' => 'int',
+		'kLieferant' => 'int',
+		'cBankName' => 'varchar',
+		'cBLZ' => 'varchar',
+		'cKontoNr' => 'varchar',
+		'cKartenNr' => 'varchar',
+		'cGueltigkeit' => 'varchar',
+		'cCVV' => 'char',
+		'cKartenTyp' => 'varchar',
+		'cInhaber' => 'varchar',
+		'cIBAN' => 'varchar',
+		'cBIC' => 'varchar',
+	];
 
 	/** @var int kKontoDaten */
 	public $kKontoDaten;

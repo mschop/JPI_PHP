@@ -10,6 +10,14 @@ class tWidgetTemplate
 	const cBeschreibung = 'cBeschreibung';
 	const cKlasse = 'cKlasse';
 	const cKategorie = 'cKategorie';
+	const COLUMN_NAMES = ['kWidgetTemplate', 'cTitel', 'cBeschreibung', 'cKlasse', 'cKategorie'];
+	const COLUMN_TYPES = [
+		'kWidgetTemplate' => 'int',
+		'cTitel' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'cKlasse' => 'varchar',
+		'cKategorie' => 'varchar',
+	];
 
 	/** @var int kWidgetTemplate */
 	public $kWidgetTemplate;

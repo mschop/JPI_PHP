@@ -11,6 +11,15 @@ class ebay_versand_out
 	const cInfo = 'cInfo';
 	const cLogistiker = 'cLogistiker';
 	const cURL = 'cURL';
+	const COLUMN_NAMES = ['kEbayCheckout', 'dDatum', 'cTrackingID', 'cInfo', 'cLogistiker', 'cURL'];
+	const COLUMN_TYPES = [
+		'kEbayCheckout' => 'int',
+		'dDatum' => 'varchar',
+		'cTrackingID' => 'varchar',
+		'cInfo' => 'varchar',
+		'cLogistiker' => 'varchar',
+		'cURL' => 'varchar',
+	];
 
 	/** @var int kEbayCheckout */
 	public $kEbayCheckout;

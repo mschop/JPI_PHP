@@ -26,6 +26,52 @@ class tEMailEinstellung
 	const nSMIMEAktiv = 'nSMIMEAktiv';
 	const cSMIMEPasswort = 'cSMIMEPasswort';
 	const bSMIMEZertifikatData = 'bSMIMEZertifikatData';
+	const COLUMN_NAMES = [
+		'kEMailEinstellungen',
+		'kFirma',
+		'cServerSMTP',
+		'nPortSMTP',
+		'cNutzernameSMTP',
+		'cPasswortSMTP',
+		'cAbsender',
+		'cBCC',
+		'nSecurity',
+		'nSigPortalAktiv',
+		'cSigPortalKdNummer',
+		'cSigPortalNutzername',
+		'cSigPortalPasswort',
+		'nSigPortalVerifizierung',
+		'cSigPortalPfad',
+		'nSigBefehlAktiv',
+		'cSigBefehlDateiname',
+		'cSigBefehlParameter',
+		'nSMIMEAktiv',
+		'cSMIMEPasswort',
+		'bSMIMEZertifikatData',
+	];
+	const COLUMN_TYPES = [
+		'kEMailEinstellungen' => 'int',
+		'kFirma' => 'int',
+		'cServerSMTP' => 'varchar',
+		'nPortSMTP' => 'int',
+		'cNutzernameSMTP' => 'varchar',
+		'cPasswortSMTP' => 'varchar',
+		'cAbsender' => 'varchar',
+		'cBCC' => 'varchar',
+		'nSecurity' => 'int',
+		'nSigPortalAktiv' => 'tinyint',
+		'cSigPortalKdNummer' => 'varchar',
+		'cSigPortalNutzername' => 'varchar',
+		'cSigPortalPasswort' => 'varchar',
+		'nSigPortalVerifizierung' => 'tinyint',
+		'cSigPortalPfad' => 'varchar',
+		'nSigBefehlAktiv' => 'tinyint',
+		'cSigBefehlDateiname' => 'varchar',
+		'cSigBefehlParameter' => 'varchar',
+		'nSMIMEAktiv' => 'tinyint',
+		'cSMIMEPasswort' => 'varchar',
+		'bSMIMEZertifikatData' => 'varbinary',
+	];
 
 	/** @var int kEMailEinstellungen */
 	public $kEMailEinstellungen;

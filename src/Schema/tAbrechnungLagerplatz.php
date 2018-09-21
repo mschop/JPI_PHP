@@ -15,6 +15,30 @@ class tAbrechnungLagerplatz
 	const nLagerkostenBerechnung = 'nLagerkostenBerechnung';
 	const kArtikel = 'kArtikel';
 	const kBenutzer = 'kBenutzer';
+	const COLUMN_NAMES = [
+		'kAbrechnungLagerplatz',
+		'kLieferant',
+		'kWarenLagerPlatz',
+		'kWarenLagerPlatzTyp',
+		'kWMSLagerBereich',
+		'kWarenlager',
+		'nModus',
+		'nLagerkostenBerechnung',
+		'kArtikel',
+		'kBenutzer',
+	];
+	const COLUMN_TYPES = [
+		'kAbrechnungLagerplatz' => 'int',
+		'kLieferant' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kWarenLagerPlatzTyp' => 'int',
+		'kWMSLagerBereich' => 'int',
+		'kWarenlager' => 'int',
+		'nModus' => 'int',
+		'nLagerkostenBerechnung' => 'int',
+		'kArtikel' => 'int',
+		'kBenutzer' => 'int',
+	];
 
 	/** @var int kAbrechnungLagerplatz */
 	public $kAbrechnungLagerplatz;

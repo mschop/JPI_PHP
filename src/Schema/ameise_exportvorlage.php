@@ -22,6 +22,44 @@ class ameise_exportvorlage
 	const nDezimalTrennzeichen = 'nDezimalTrennzeichen';
 	const nTausenderTrennzeichen = 'nTausenderTrennzeichen';
 	const nNachkommastellen = 'nNachkommastellen';
+	const COLUMN_NAMES = [
+		'kExportVorlage',
+		'kExportTyp',
+		'kExportVorlageFilter',
+		'kStandardVorlage',
+		'cName',
+		'nDateiformat',
+		'nSpaltenbegrenzer',
+		'nKopfzeile',
+		'nQuote',
+		'nEscape',
+		'cUebersicht',
+		'dErstellt',
+		'nDeleted',
+		'cExt',
+		'nDezimalTrennzeichen',
+		'nTausenderTrennzeichen',
+		'nNachkommastellen',
+	];
+	const COLUMN_TYPES = [
+		'kExportVorlage' => 'int',
+		'kExportTyp' => 'int',
+		'kExportVorlageFilter' => 'int',
+		'kStandardVorlage' => 'int',
+		'cName' => 'varchar',
+		'nDateiformat' => 'tinyint',
+		'nSpaltenbegrenzer' => 'tinyint',
+		'nKopfzeile' => 'tinyint',
+		'nQuote' => 'tinyint',
+		'nEscape' => 'tinyint',
+		'cUebersicht' => 'varchar',
+		'dErstellt' => 'datetime',
+		'nDeleted' => 'tinyint',
+		'cExt' => 'varchar',
+		'nDezimalTrennzeichen' => 'tinyint',
+		'nTausenderTrennzeichen' => 'tinyint',
+		'nNachkommastellen' => 'tinyint',
+	];
 
 	/** @var int kExportVorlage */
 	public $kExportVorlage;

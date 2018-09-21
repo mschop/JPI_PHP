@@ -9,6 +9,8 @@ class tkonfigshop
 	const kShop = 'kShop';
 	const cInet = 'cInet';
 	const cDelInet = 'cDelInet';
+	const COLUMN_NAMES = ['kkonfiggruppe', 'kShop', 'cInet', 'cDelInet'];
+	const COLUMN_TYPES = ['kkonfiggruppe' => 'int', 'kShop' => 'int', 'cInet' => 'char', 'cDelInet' => 'char'];
 
 	/** @var int kkonfiggruppe */
 	public $kkonfiggruppe;

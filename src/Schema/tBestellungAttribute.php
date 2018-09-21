@@ -9,6 +9,8 @@ class tBestellungAttribute
 	const kBestellung = 'kBestellung';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kBestellungAttribute', 'kBestellung', 'cName', 'cValue'];
+	const COLUMN_TYPES = ['kBestellungAttribute' => 'int', 'kBestellung' => 'int', 'cName' => 'varchar', 'cValue' => 'varchar'];
 
 	/** @var int kBestellungAttribute */
 	public $kBestellungAttribute;

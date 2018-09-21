@@ -27,6 +27,54 @@ class tArtikelHistory
 	const cLieferscheinNr = 'cLieferscheinNr';
 	const cChargenNr = 'cChargenNr';
 	const dMHD = 'dMHD';
+	const COLUMN_NAMES = [
+		'kArtikelHistory',
+		'kWarenLagerPlatz',
+		'kArtikel',
+		'fAnzahl',
+		'dGebucht',
+		'kBenutzer',
+		'kWarenEingang',
+		'kBestellPos',
+		'kGutschriftPos',
+		'fEKNetto',
+		'cKommentar',
+		'kPlattform',
+		'fLagerBestandGesamt',
+		'fVerfuegbar',
+		'fReserviert',
+		'kBuchungsart',
+		'fLagerBestand',
+		'kLieferscheinPos',
+		'kLieferantenBestellungPos',
+		'cLieferscheinNr',
+		'cChargenNr',
+		'dMHD',
+	];
+	const COLUMN_TYPES = [
+		'kArtikelHistory' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kArtikel' => 'int',
+		'fAnzahl' => 'decimal',
+		'dGebucht' => 'datetime',
+		'kBenutzer' => 'int',
+		'kWarenEingang' => 'int',
+		'kBestellPos' => 'int',
+		'kGutschriftPos' => 'int',
+		'fEKNetto' => 'decimal',
+		'cKommentar' => 'varchar',
+		'kPlattform' => 'int',
+		'fLagerBestandGesamt' => 'decimal',
+		'fVerfuegbar' => 'decimal',
+		'fReserviert' => 'decimal',
+		'kBuchungsart' => 'int',
+		'fLagerBestand' => 'decimal',
+		'kLieferscheinPos' => 'int',
+		'kLieferantenBestellungPos' => 'int',
+		'cLieferscheinNr' => 'varchar',
+		'cChargenNr' => 'varchar',
+		'dMHD' => 'datetime',
+	];
 
 	/** @var int kArtikelHistory */
 	public $kArtikelHistory;

@@ -19,6 +19,38 @@ class tShop
 	const kKategorie = 'kKategorie';
 	const nTyp = 'nTyp';
 	const kAlterShop = 'kAlterShop';
+	const COLUMN_NAMES = [
+		'kShop',
+		'cAPIKey',
+		'cName',
+		'cServerWeb',
+		'cBenutzerWeb',
+		'cPasswortWeb',
+		'nHttpPut',
+		'nShopAuftragsNr',
+		'nGesperrt',
+		'kFirma',
+		'nAngebot',
+		'kKategorie',
+		'nTyp',
+		'kAlterShop',
+	];
+	const COLUMN_TYPES = [
+		'kShop' => 'int',
+		'cAPIKey' => 'varchar',
+		'cName' => 'varchar',
+		'cServerWeb' => 'varchar',
+		'cBenutzerWeb' => 'varchar',
+		'cPasswortWeb' => 'varchar',
+		'nHttpPut' => 'tinyint',
+		'nShopAuftragsNr' => 'tinyint',
+		'nGesperrt' => 'tinyint',
+		'kFirma' => 'int',
+		'nAngebot' => 'tinyint',
+		'kKategorie' => 'int',
+		'nTyp' => 'tinyint',
+		'kAlterShop' => 'int',
+	];
 
 	/** @var int kShop */
 	public $kShop;

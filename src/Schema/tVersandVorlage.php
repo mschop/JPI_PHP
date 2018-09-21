@@ -20,6 +20,40 @@ class tVersandVorlage
 	const nReserved = 'nReserved';
 	const cDateFormat = 'cDateFormat';
 	const kLogistik = 'kLogistik';
+	const COLUMN_NAMES = [
+		'kVersandVorlage',
+		'cName',
+		'cBeschreibung',
+		'nStandard',
+		'dErstellt',
+		'cTrennzeichen',
+		'nAbZeile',
+		'nIntKey',
+		'nLieferscheinNr',
+		'nVersandt',
+		'nIdentcode',
+		'nVersandInfo',
+		'nReserved',
+		'cDateFormat',
+		'kLogistik',
+	];
+	const COLUMN_TYPES = [
+		'kVersandVorlage' => 'int',
+		'cName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'nStandard' => 'tinyint',
+		'dErstellt' => 'varchar',
+		'cTrennzeichen' => 'varchar',
+		'nAbZeile' => 'int',
+		'nIntKey' => 'int',
+		'nLieferscheinNr' => 'int',
+		'nVersandt' => 'int',
+		'nIdentcode' => 'int',
+		'nVersandInfo' => 'int',
+		'nReserved' => 'int',
+		'cDateFormat' => 'varchar',
+		'kLogistik' => 'int',
+	];
 
 	/** @var int kVersandVorlage */
 	public $kVersandVorlage;

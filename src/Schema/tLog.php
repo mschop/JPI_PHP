@@ -10,6 +10,14 @@ class tLog
 	const cLog = 'cLog';
 	const nTyp = 'nTyp';
 	const nVorgang = 'nVorgang';
+	const COLUMN_NAMES = ['dDatum', 'kBenutzer', 'cLog', 'nTyp', 'nVorgang'];
+	const COLUMN_TYPES = [
+		'dDatum' => 'datetime',
+		'kBenutzer' => 'int',
+		'cLog' => 'varchar',
+		'nTyp' => 'int',
+		'nVorgang' => 'int',
+	];
 
 	/** @var string dDatum */
 	public $dDatum;

@@ -13,6 +13,26 @@ class ebay_de_versandarten
 	const ShippingServiceID = 'ShippingServiceID';
 	const ShippingTimeMin = 'ShippingTimeMin';
 	const ShippingTimeMax = 'ShippingTimeMax';
+	const COLUMN_NAMES = [
+		'kEbay_DE_Versandarten',
+		'Description',
+		'ExpeditedService',
+		'InternationalService',
+		'ShippingService',
+		'ShippingServiceID',
+		'ShippingTimeMin',
+		'ShippingTimeMax',
+	];
+	const COLUMN_TYPES = [
+		'kEbay_DE_Versandarten' => 'int',
+		'Description' => 'varchar',
+		'ExpeditedService' => 'tinyint',
+		'InternationalService' => 'tinyint',
+		'ShippingService' => 'varchar',
+		'ShippingServiceID' => 'int',
+		'ShippingTimeMin' => 'tinyint',
+		'ShippingTimeMax' => 'tinyint',
+	];
 
 	/** @var int kEbay_DE_Versandarten */
 	public $kEbay_DE_Versandarten;

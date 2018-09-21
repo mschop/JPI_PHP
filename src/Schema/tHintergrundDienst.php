@@ -23,6 +23,46 @@ class tHintergrundDienst
 	const nUpdateBilderBeschreibung = 'nUpdateBilderBeschreibung';
 	const nKeinFulfillment = 'nKeinFulfillment';
 	const nKeinZahlungsabgleich = 'nKeinZahlungsabgleich';
+	const COLUMN_NAMES = [
+		'nSek',
+		'nKeinShop',
+		'nKundenupdate',
+		'nAktiv',
+		'nReDrucken',
+		'nWebshopAuftrag',
+		'nKeinEbay',
+		'nEbaySmall',
+		'nEbayAuftrag',
+		'nKeinAmazon',
+		'nAmazonAuftrag',
+		'nEbayBestand',
+		'nWaehrung',
+		'nRepricer',
+		'nRetourenErstellen',
+		'nUpdateBilderBeschreibung',
+		'nKeinFulfillment',
+		'nKeinZahlungsabgleich',
+	];
+	const COLUMN_TYPES = [
+		'nSek' => 'int',
+		'nKeinShop' => 'tinyint',
+		'nKundenupdate' => 'tinyint',
+		'nAktiv' => 'tinyint',
+		'nReDrucken' => 'tinyint',
+		'nWebshopAuftrag' => 'tinyint',
+		'nKeinEbay' => 'tinyint',
+		'nEbaySmall' => 'tinyint',
+		'nEbayAuftrag' => 'tinyint',
+		'nKeinAmazon' => 'tinyint',
+		'nAmazonAuftrag' => 'tinyint',
+		'nEbayBestand' => 'tinyint',
+		'nWaehrung' => 'tinyint',
+		'nRepricer' => 'tinyint',
+		'nRetourenErstellen' => 'tinyint',
+		'nUpdateBilderBeschreibung' => 'tinyint',
+		'nKeinFulfillment' => 'tinyint',
+		'nKeinZahlungsabgleich' => 'tinyint',
+	];
 
 	/** @var int nSek */
 	public $nSek;

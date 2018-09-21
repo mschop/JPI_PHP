@@ -14,6 +14,28 @@ class tLLVorlage
 	const nDatasize = 'nDatasize';
 	const bPreview = 'bPreview';
 	const nPreviewsize = 'nPreviewsize';
+	const COLUMN_NAMES = [
+		'kLLVorlage',
+		'nTyp',
+		'dDatum',
+		'cKommentar',
+		'cName',
+		'bData',
+		'nDatasize',
+		'bPreview',
+		'nPreviewsize',
+	];
+	const COLUMN_TYPES = [
+		'kLLVorlage' => 'int',
+		'nTyp' => 'int',
+		'dDatum' => 'varchar',
+		'cKommentar' => 'varchar',
+		'cName' => 'varchar',
+		'bData' => 'image',
+		'nDatasize' => 'int',
+		'bPreview' => 'image',
+		'nPreviewsize' => 'int',
+	];
 
 	/** @var int kLLVorlage */
 	public $kLLVorlage;

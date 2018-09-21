@@ -16,6 +16,32 @@ class ebay_itemcomp_bike
 	const cStrassenname = 'cStrassenname';
 	const cCcm = 'cCcm';
 	const cCompatibilityNote = 'cCompatibilityNote';
+	const COLUMN_NAMES = [
+		'kEbay_itemcomp_bike',
+		'kItem',
+		'nEpid',
+		'cMarke',
+		'cModell',
+		'cUntermodell',
+		'cTyp',
+		'cBaujahr',
+		'cStrassenname',
+		'cCcm',
+		'cCompatibilityNote',
+	];
+	const COLUMN_TYPES = [
+		'kEbay_itemcomp_bike' => 'int',
+		'kItem' => 'int',
+		'nEpid' => 'int',
+		'cMarke' => 'varchar',
+		'cModell' => 'varchar',
+		'cUntermodell' => 'varchar',
+		'cTyp' => 'varchar',
+		'cBaujahr' => 'varchar',
+		'cStrassenname' => 'varchar',
+		'cCcm' => 'varchar',
+		'cCompatibilityNote' => 'varchar',
+	];
 
 	/** @var int kEbay_itemcomp_bike */
 	public $kEbay_itemcomp_bike;

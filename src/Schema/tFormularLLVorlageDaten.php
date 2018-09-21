@@ -8,6 +8,8 @@ class tFormularLLVorlageDaten
 	const kFormularLLVorlageDaten = 'kFormularLLVorlageDaten';
 	const dAktualisiert = 'dAktualisiert';
 	const bDaten = 'bDaten';
+	const COLUMN_NAMES = ['kFormularLLVorlageDaten', 'dAktualisiert', 'bDaten'];
+	const COLUMN_TYPES = ['kFormularLLVorlageDaten' => 'int', 'dAktualisiert' => 'datetime', 'bDaten' => 'varbinary'];
 
 	/** @var int kFormularLLVorlageDaten */
 	public $kFormularLLVorlageDaten;

@@ -10,6 +10,14 @@ class tFirmaUStIdNr
 	const cLandISO = 'cLandISO';
 	const cUStId = 'cUStId';
 	const nAuchAlsVersandlandBetrachten = 'nAuchAlsVersandlandBetrachten';
+	const COLUMN_NAMES = ['kFirmaUStIdNr', 'kFirma', 'cLandISO', 'cUStId', 'nAuchAlsVersandlandBetrachten'];
+	const COLUMN_TYPES = [
+		'kFirmaUStIdNr' => 'int',
+		'kFirma' => 'int',
+		'cLandISO' => 'varchar',
+		'cUStId' => 'varchar',
+		'nAuchAlsVersandlandBetrachten' => 'tinyint',
+	];
 
 	/** @var int kFirmaUStIdNr */
 	public $kFirmaUStIdNr;

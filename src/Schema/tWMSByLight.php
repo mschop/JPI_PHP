@@ -15,6 +15,30 @@ class tWMSByLight
 	const cArbeitsPlatz = 'cArbeitsPlatz';
 	const kPickliste = 'kPickliste';
 	const fPickAnzahl = 'fPickAnzahl';
+	const COLUMN_NAMES = [
+		'kWMSByLight',
+		'cId',
+		'kBenutzer',
+		'kWarenlager',
+		'dZeitstempel',
+		'nTyp',
+		'nAktiv',
+		'cArbeitsPlatz',
+		'kPickliste',
+		'fPickAnzahl',
+	];
+	const COLUMN_TYPES = [
+		'kWMSByLight' => 'int',
+		'cId' => 'varchar',
+		'kBenutzer' => 'int',
+		'kWarenlager' => 'int',
+		'dZeitstempel' => 'datetime',
+		'nTyp' => 'tinyint',
+		'nAktiv' => 'tinyint',
+		'cArbeitsPlatz' => 'varchar',
+		'kPickliste' => 'int',
+		'fPickAnzahl' => 'decimal',
+	];
 
 	/** @var int kWMSByLight */
 	public $kWMSByLight;

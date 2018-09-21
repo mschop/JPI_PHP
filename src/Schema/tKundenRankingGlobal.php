@@ -15,6 +15,30 @@ class tKundenRankingGlobal
 	const nPauschal = 'nPauschal';
 	const dStand = 'dStand';
 	const dVon = 'dVon';
+	const COLUMN_NAMES = [
+		'kKunde',
+		'nType',
+		'kShop',
+		'nPlattform',
+		'nRang',
+		'nRangMax',
+		'nAnteilProzent',
+		'nPauschal',
+		'dStand',
+		'dVon',
+	];
+	const COLUMN_TYPES = [
+		'kKunde' => 'int',
+		'nType' => 'tinyint',
+		'kShop' => 'int',
+		'nPlattform' => 'int',
+		'nRang' => 'int',
+		'nRangMax' => 'int',
+		'nAnteilProzent' => 'decimal',
+		'nPauschal' => 'decimal',
+		'dStand' => 'datetime',
+		'dVon' => 'datetime',
+	];
 
 	/** @var int kKunde */
 	public $kKunde;

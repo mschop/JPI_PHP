@@ -15,6 +15,30 @@ class ameise_exportvorgang
 	const cDatei = 'cDatei';
 	const dErstellt = 'dErstellt';
 	const cMandant = 'cMandant';
+	const COLUMN_NAMES = [
+		'kExportVorgang',
+		'kExportVorlage',
+		'kExportTyp',
+		'nAnzahlExportiert',
+		'nAnzahlExportiertVon',
+		'nDauer',
+		'nStatus',
+		'cDatei',
+		'dErstellt',
+		'cMandant',
+	];
+	const COLUMN_TYPES = [
+		'kExportVorgang' => 'int',
+		'kExportVorlage' => 'int',
+		'kExportTyp' => 'int',
+		'nAnzahlExportiert' => 'int',
+		'nAnzahlExportiertVon' => 'int',
+		'nDauer' => 'int',
+		'nStatus' => 'tinyint',
+		'cDatei' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cMandant' => 'varchar',
+	];
 
 	/** @var int kExportVorgang */
 	public $kExportVorgang;

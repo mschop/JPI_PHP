@@ -22,6 +22,44 @@ class tLieferantenBestellungRA
 	const cFax = 'cFax';
 	const cMobil = 'cMobil';
 	const cMail = 'cMail';
+	const COLUMN_NAMES = [
+		'kLieferantenBestellungRA',
+		'cFirma',
+		'cFirmenZusatz',
+		'cAnrede',
+		'cTitel',
+		'cVorname',
+		'cNachname',
+		'cStrasse',
+		'cAdresszusatz',
+		'cPLZ',
+		'cOrt',
+		'cBundesland',
+		'cLandISO',
+		'cTel',
+		'cFax',
+		'cMobil',
+		'cMail',
+	];
+	const COLUMN_TYPES = [
+		'kLieferantenBestellungRA' => 'int',
+		'cFirma' => 'varchar',
+		'cFirmenZusatz' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cTitel' => 'varchar',
+		'cVorname' => 'varchar',
+		'cNachname' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cAdresszusatz' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cOrt' => 'varchar',
+		'cBundesland' => 'varchar',
+		'cLandISO' => 'varchar',
+		'cTel' => 'varchar',
+		'cFax' => 'varchar',
+		'cMobil' => 'varchar',
+		'cMail' => 'varchar',
+	];
 
 	/** @var int kLieferantenBestellungRA */
 	public $kLieferantenBestellungRA;

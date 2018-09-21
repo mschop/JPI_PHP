@@ -12,6 +12,24 @@ class pf_amazon_retourmeldung
 	const cAdjustmentReason = 'cAdjustmentReason';
 	const dErstellt = 'dErstellt';
 	const dBearbeitet = 'dBearbeitet';
+	const COLUMN_NAMES = [
+		'kAmazonRetourMeldung',
+		'cOrderID',
+		'cOrderItemId',
+		'cCancelReason',
+		'cAdjustmentReason',
+		'dErstellt',
+		'dBearbeitet',
+	];
+	const COLUMN_TYPES = [
+		'kAmazonRetourMeldung' => 'int',
+		'cOrderID' => 'varchar',
+		'cOrderItemId' => 'varchar',
+		'cCancelReason' => 'varchar',
+		'cAdjustmentReason' => 'varchar',
+		'dErstellt' => 'datetime',
+		'dBearbeitet' => 'datetime',
+	];
 
 	/** @var int kAmazonRetourMeldung */
 	public $kAmazonRetourMeldung;

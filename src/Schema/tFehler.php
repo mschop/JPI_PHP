@@ -16,6 +16,32 @@ class tFehler
 	const cValue3 = 'cValue3';
 	const kkey1 = 'kkey1';
 	const kkey2 = 'kkey2';
+	const COLUMN_NAMES = [
+		'kFehler',
+		'kSessionId',
+		'cText',
+		'nValue1',
+		'nValue2',
+		'nValue3',
+		'cValue1',
+		'cValue2',
+		'cValue3',
+		'kkey1',
+		'kkey2',
+	];
+	const COLUMN_TYPES = [
+		'kFehler' => 'int',
+		'kSessionId' => 'int',
+		'cText' => 'varchar',
+		'nValue1' => 'int',
+		'nValue2' => 'int',
+		'nValue3' => 'int',
+		'cValue1' => 'varchar',
+		'cValue2' => 'varchar',
+		'cValue3' => 'varchar',
+		'kkey1' => 'int',
+		'kkey2' => 'int',
+	];
 
 	/** @var int kFehler */
 	public $kFehler;

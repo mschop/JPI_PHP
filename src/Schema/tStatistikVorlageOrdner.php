@@ -9,6 +9,13 @@ class tStatistikVorlageOrdner
 	const kStatistikVorlageOrdnerParent = 'kStatistikVorlageOrdnerParent';
 	const cName = 'cName';
 	const nIntern = 'nIntern';
+	const COLUMN_NAMES = ['kStatistikVorlageOrdner', 'kStatistikVorlageOrdnerParent', 'cName', 'nIntern'];
+	const COLUMN_TYPES = [
+		'kStatistikVorlageOrdner' => 'int',
+		'kStatistikVorlageOrdnerParent' => 'int',
+		'cName' => 'varchar',
+		'nIntern' => 'tinyint',
+	];
 
 	/** @var int kStatistikVorlageOrdner */
 	public $kStatistikVorlageOrdner;

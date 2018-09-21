@@ -12,6 +12,16 @@ class tInventur
 	const dMHD = 'dMHD';
 	const cCharge = 'cCharge';
 	const cSeriennummer = 'cSeriennummer';
+	const COLUMN_NAMES = ['kInventur', 'kArtikel', 'kWarenLagerPlatz', 'fAnzahl', 'dMHD', 'cCharge', 'cSeriennummer'];
+	const COLUMN_TYPES = [
+		'kInventur' => 'int',
+		'kArtikel' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'fAnzahl' => 'decimal',
+		'dMHD' => 'datetime',
+		'cCharge' => 'varchar',
+		'cSeriennummer' => 'varchar',
+	];
 
 	/** @var int kInventur */
 	public $kInventur;

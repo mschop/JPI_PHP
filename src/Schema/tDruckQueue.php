@@ -11,6 +11,15 @@ class tDruckQueue
 	const nStatus = 'nStatus';
 	const kLHM = 'kLHM';
 	const kWarenlagerPlatz = 'kWarenlagerPlatz';
+	const COLUMN_NAMES = ['kDruckQueue', 'dZeitstempel', 'kBenutzer', 'nStatus', 'kLHM', 'kWarenlagerPlatz'];
+	const COLUMN_TYPES = [
+		'kDruckQueue' => 'int',
+		'dZeitstempel' => 'datetime',
+		'kBenutzer' => 'int',
+		'nStatus' => 'tinyint',
+		'kLHM' => 'int',
+		'kWarenlagerPlatz' => 'int',
+	];
 
 	/** @var int kDruckQueue */
 	public $kDruckQueue;

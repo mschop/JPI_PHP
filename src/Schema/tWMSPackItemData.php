@@ -11,6 +11,15 @@ class tWMSPackItemData
 	const dMHD = 'dMHD';
 	const cSerNo = 'cSerNo';
 	const fMenge = 'fMenge';
+	const COLUMN_NAMES = ['kWMSPackItemData', 'kWMSPackItem', 'cChargenNr', 'dMHD', 'cSerNo', 'fMenge'];
+	const COLUMN_TYPES = [
+		'kWMSPackItemData' => 'int',
+		'kWMSPackItem' => 'int',
+		'cChargenNr' => 'varchar',
+		'dMHD' => 'datetime',
+		'cSerNo' => 'varchar',
+		'fMenge' => 'decimal',
+	];
 
 	/** @var int kWMSPackItemData */
 	public $kWMSPackItemData;

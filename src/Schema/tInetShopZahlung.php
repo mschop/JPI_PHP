@@ -17,6 +17,34 @@ class tInetShopZahlung
 	const cZahler = 'cZahler';
 	const dZeit = 'dZeit';
 	const cHinweis = 'cHinweis';
+	const COLUMN_NAMES = [
+		'kZahlungseingang',
+		'kInetBestellung',
+		'kShop',
+		'kZahlung',
+		'cZahlungsanbieter',
+		'fBetrag',
+		'fZahlungsgebuehr',
+		'cISO',
+		'cEmpfaenger',
+		'cZahler',
+		'dZeit',
+		'cHinweis',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungseingang' => 'int',
+		'kInetBestellung' => 'int',
+		'kShop' => 'int',
+		'kZahlung' => 'int',
+		'cZahlungsanbieter' => 'varchar',
+		'fBetrag' => 'decimal',
+		'fZahlungsgebuehr' => 'decimal',
+		'cISO' => 'varchar',
+		'cEmpfaenger' => 'varchar',
+		'cZahler' => 'varchar',
+		'dZeit' => 'varchar',
+		'cHinweis' => 'varchar',
+	];
 
 	/** @var int kZahlungseingang */
 	public $kZahlungseingang;

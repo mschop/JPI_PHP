@@ -18,6 +18,36 @@ class ebay_data_membermessage_out
 	const Subject = 'Subject';
 	const cStatus = 'cStatus';
 	const Sent = 'Sent';
+	const COLUMN_NAMES = [
+		'kMemberMessageOut',
+		'ItemID',
+		'EmailCopyToSender',
+		'Body',
+		'DisplayToPublic',
+		'MessageID',
+		'MessageType',
+		'QuestionType',
+		'ParentMessageID',
+		'RecipientID',
+		'Subject',
+		'cStatus',
+		'Sent',
+	];
+	const COLUMN_TYPES = [
+		'kMemberMessageOut' => 'int',
+		'ItemID' => 'varchar',
+		'EmailCopyToSender' => 'tinyint',
+		'Body' => 'varchar',
+		'DisplayToPublic' => 'tinyint',
+		'MessageID' => 'varchar',
+		'MessageType' => 'varchar',
+		'QuestionType' => 'varchar',
+		'ParentMessageID' => 'varchar',
+		'RecipientID' => 'varchar',
+		'Subject' => 'varchar',
+		'cStatus' => 'varchar',
+		'Sent' => 'char',
+	];
 
 	/** @var int kMemberMessageOut */
 	public $kMemberMessageOut;

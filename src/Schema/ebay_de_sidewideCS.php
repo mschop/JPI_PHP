@@ -8,6 +8,8 @@ class ebay_de_sidewideCS
 	const AttributeSetId = 'AttributeSetId';
 	const AttributeSetVersion = 'AttributeSetVersion';
 	const Name = 'Name';
+	const COLUMN_NAMES = ['AttributeSetId', 'AttributeSetVersion', 'Name'];
+	const COLUMN_TYPES = ['AttributeSetId' => 'int', 'AttributeSetVersion' => 'int', 'Name' => 'varchar'];
 
 	/** @var int AttributeSetId */
 	public $AttributeSetId;

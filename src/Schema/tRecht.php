@@ -11,6 +11,15 @@ class tRecht
 	const kRechtVater = 'kRechtVater';
 	const nIstLabel = 'nIstLabel';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kRecht', 'cAnzeigeName', 'cBeschreibung', 'kRechtVater', 'nIstLabel', 'nSort'];
+	const COLUMN_TYPES = [
+		'kRecht' => 'int',
+		'cAnzeigeName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'kRechtVater' => 'int',
+		'nIstLabel' => 'tinyint',
+		'nSort' => 'int',
+	];
 
 	/** @var int kRecht */
 	public $kRecht;

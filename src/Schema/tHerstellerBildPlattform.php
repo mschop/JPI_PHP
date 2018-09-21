@@ -11,6 +11,15 @@ class tHerstellerBildPlattform
 	const kShop = 'kShop';
 	const kBild = 'kBild';
 	const nInet = 'nInet';
+	const COLUMN_NAMES = ['kHerstellerBildPlattform', 'kHersteller', 'kPlattform', 'kShop', 'kBild', 'nInet'];
+	const COLUMN_TYPES = [
+		'kHerstellerBildPlattform' => 'int',
+		'kHersteller' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'kBild' => 'int',
+		'nInet' => 'tinyint',
+	];
 
 	/** @var int kHerstellerBildPlattform */
 	public $kHerstellerBildPlattform;

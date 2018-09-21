@@ -13,6 +13,26 @@ class tFormularDruckEinstellung
 	const nKopien1 = 'nKopien1';
 	const cDruckername2 = 'cDruckername2';
 	const nKopien2 = 'nKopien2';
+	const COLUMN_NAMES = [
+		'kFormularDruckEinstellung',
+		'kFormular',
+		'cRechnername',
+		'kBenutzer',
+		'cDruckername1',
+		'nKopien1',
+		'cDruckername2',
+		'nKopien2',
+	];
+	const COLUMN_TYPES = [
+		'kFormularDruckEinstellung' => 'int',
+		'kFormular' => 'int',
+		'cRechnername' => 'varchar',
+		'kBenutzer' => 'int',
+		'cDruckername1' => 'varchar',
+		'nKopien1' => 'int',
+		'cDruckername2' => 'varchar',
+		'nKopien2' => 'int',
+	];
 
 	/** @var int kFormularDruckEinstellung */
 	public $kFormularDruckEinstellung;

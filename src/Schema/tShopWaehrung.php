@@ -8,6 +8,8 @@ class tShopWaehrung
 	const kWebShop = 'kWebShop';
 	const kWaehrung = 'kWaehrung';
 	const nStandard = 'nStandard';
+	const COLUMN_NAMES = ['kWebShop', 'kWaehrung', 'nStandard'];
+	const COLUMN_TYPES = ['kWebShop' => 'int', 'kWaehrung' => 'int', 'nStandard' => 'tinyint'];
 
 	/** @var int kWebShop */
 	public $kWebShop;

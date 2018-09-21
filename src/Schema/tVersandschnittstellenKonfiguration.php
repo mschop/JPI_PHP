@@ -8,6 +8,8 @@ class tVersandschnittstellenKonfiguration
 	const kVersandArt = 'kVersandArt';
 	const cKey = 'cKey';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kVersandArt', 'cKey', 'cValue'];
+	const COLUMN_TYPES = ['kVersandArt' => 'int', 'cKey' => 'varchar', 'cValue' => 'varchar'];
 
 	/** @var int kVersandArt */
 	public $kVersandArt;

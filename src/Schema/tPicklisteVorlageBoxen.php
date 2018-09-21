@@ -8,6 +8,8 @@ class tPicklisteVorlageBoxen
 	const kPicklisteVorlageBoxen = 'kPicklisteVorlageBoxen';
 	const kPicklisteVorlage = 'kPicklisteVorlage';
 	const kLHM = 'kLHM';
+	const COLUMN_NAMES = ['kPicklisteVorlageBoxen', 'kPicklisteVorlage', 'kLHM'];
+	const COLUMN_TYPES = ['kPicklisteVorlageBoxen' => 'int', 'kPicklisteVorlage' => 'int', 'kLHM' => 'int'];
 
 	/** @var int kPicklisteVorlageBoxen */
 	public $kPicklisteVorlageBoxen;

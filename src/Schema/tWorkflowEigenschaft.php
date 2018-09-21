@@ -10,6 +10,14 @@ class tWorkflowEigenschaft
 	const cName = 'cName';
 	const nObjekt = 'nObjekt';
 	const nDatenTyp = 'nDatenTyp';
+	const COLUMN_NAMES = ['kWorkflowEigenschaft', 'cDotLiquid', 'cName', 'nObjekt', 'nDatenTyp'];
+	const COLUMN_TYPES = [
+		'kWorkflowEigenschaft' => 'int',
+		'cDotLiquid' => 'varchar',
+		'cName' => 'varchar',
+		'nObjekt' => 'int',
+		'nDatenTyp' => 'tinyint',
+	];
 
 	/** @var int kWorkflowEigenschaft */
 	public $kWorkflowEigenschaft;

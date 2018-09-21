@@ -23,6 +23,46 @@ class tZahlungsErinnerung
 	const cKommentar = 'cKommentar';
 	const fBruttoBetrag = 'fBruttoBetrag';
 	const kBenutzer = 'kBenutzer';
+	const COLUMN_NAMES = [
+		'kZahlungsErinnerung',
+		'kRechnung',
+		'kMahnstufe',
+		'kFirma',
+		'kKundengruppe',
+		'nMahnstufeAktuell',
+		'dZahlungsfrist',
+		'dErstellt',
+		'dMahndatum',
+		'dErledigt',
+		'fGebuehr',
+		'nKarenzzeit',
+		'nZahlungsfristInTagen',
+		'fGebuehrPauschal',
+		'fGebuehrZinssatz',
+		'cKommentar',
+		'fBruttoBetrag',
+		'kBenutzer',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsErinnerung' => 'int',
+		'kRechnung' => 'int',
+		'kMahnstufe' => 'int',
+		'kFirma' => 'int',
+		'kKundengruppe' => 'int',
+		'nMahnstufeAktuell' => 'tinyint',
+		'dZahlungsfrist' => 'datetime',
+		'dErstellt' => 'datetime',
+		'dMahndatum' => 'datetime',
+		'dErledigt' => 'datetime',
+		'fGebuehr' => 'decimal',
+		'nKarenzzeit' => 'int',
+		'nZahlungsfristInTagen' => 'int',
+		'fGebuehrPauschal' => 'decimal',
+		'fGebuehrZinssatz' => 'decimal',
+		'cKommentar' => 'varchar',
+		'fBruttoBetrag' => 'decimal',
+		'kBenutzer' => 'int',
+	];
 
 	/** @var int kZahlungsErinnerung */
 	public $kZahlungsErinnerung;

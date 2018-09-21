@@ -9,6 +9,13 @@ class tWarenlagerOptionenAuftragDetails
 	const nSort = 'nSort';
 	const cName = 'cName';
 	const cCustomName = 'cCustomName';
+	const COLUMN_NAMES = ['kWarenlagerOptionenAuftragDetails', 'nSort', 'cName', 'cCustomName'];
+	const COLUMN_TYPES = [
+		'kWarenlagerOptionenAuftragDetails' => 'int',
+		'nSort' => 'int',
+		'cName' => 'varchar',
+		'cCustomName' => 'varchar',
+	];
 
 	/** @var int kWarenlagerOptionenAuftragDetails */
 	public $kWarenlagerOptionenAuftragDetails;

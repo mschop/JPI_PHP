@@ -12,6 +12,16 @@ class ebay_item_reviseerror
 	const LongMessage = 'LongMessage';
 	const cAbhilfe = 'cAbhilfe';
 	const dZeitpunkt = 'dZeitpunkt';
+	const COLUMN_NAMES = ['kItemReviseError', 'kEbayuser', 'kItem', 'ShortMessage', 'LongMessage', 'cAbhilfe', 'dZeitpunkt'];
+	const COLUMN_TYPES = [
+		'kItemReviseError' => 'int',
+		'kEbayuser' => 'int',
+		'kItem' => 'int',
+		'ShortMessage' => 'varchar',
+		'LongMessage' => 'varchar',
+		'cAbhilfe' => 'varchar',
+		'dZeitpunkt' => 'datetime',
+	];
 
 	/** @var int kItemReviseError */
 	public $kItemReviseError;

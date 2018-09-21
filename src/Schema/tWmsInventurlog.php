@@ -16,6 +16,32 @@ class tWmsInventurlog
 	const kBenutzer = 'kBenutzer';
 	const fDifferenz = 'fDifferenz';
 	const nTyp = 'nTyp';
+	const COLUMN_NAMES = [
+		'kWmsInventurlog',
+		'kWmsInventur',
+		'kWarenlagerPlatz',
+		'kArtikel',
+		'dMHD',
+		'cCharge',
+		'fAnzahl',
+		'dZeitstempel',
+		'kBenutzer',
+		'fDifferenz',
+		'nTyp',
+	];
+	const COLUMN_TYPES = [
+		'kWmsInventurlog' => 'int',
+		'kWmsInventur' => 'int',
+		'kWarenlagerPlatz' => 'int',
+		'kArtikel' => 'int',
+		'dMHD' => 'datetime',
+		'cCharge' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'dZeitstempel' => 'datetime',
+		'kBenutzer' => 'int',
+		'fDifferenz' => 'decimal',
+		'nTyp' => 'int',
+	];
 
 	/** @var int kWmsInventurlog */
 	public $kWmsInventurlog;

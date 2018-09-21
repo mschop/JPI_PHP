@@ -14,6 +14,28 @@ class ebay_vw_htmltemplate
 	const nEbayHtmlTemplateParent = 'nEbayHtmlTemplateParent';
 	const kEbayHtmlTemplateData = 'kEbayHtmlTemplateData';
 	const nDeleted = 'nDeleted';
+	const COLUMN_NAMES = [
+		'kEbayHtmlTemplate',
+		'cHtmlTemplateName',
+		'cHtmlTemplateDescription',
+		'dCreated',
+		'nIsDefault',
+		'dUploaded',
+		'nEbayHtmlTemplateParent',
+		'kEbayHtmlTemplateData',
+		'nDeleted',
+	];
+	const COLUMN_TYPES = [
+		'kEbayHtmlTemplate' => 'int',
+		'cHtmlTemplateName' => 'varchar',
+		'cHtmlTemplateDescription' => 'varchar',
+		'dCreated' => 'datetime',
+		'nIsDefault' => 'tinyint',
+		'dUploaded' => 'datetime',
+		'nEbayHtmlTemplateParent' => 'int',
+		'kEbayHtmlTemplateData' => 'int',
+		'nDeleted' => 'tinyint',
+	];
 
 	/** @var int kEbayHtmlTemplate */
 	public $kEbayHtmlTemplate;

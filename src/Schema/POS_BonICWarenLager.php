@@ -8,6 +8,8 @@ class POS_BonICWarenLager
 	const kBonICWarenLager = 'kBonICWarenLager';
 	const kBonIC = 'kBonIC';
 	const kWarenLager = 'kWarenLager';
+	const COLUMN_NAMES = ['kBonICWarenLager', 'kBonIC', 'kWarenLager'];
+	const COLUMN_TYPES = ['kBonICWarenLager' => 'int', 'kBonIC' => 'int', 'kWarenLager' => 'int'];
 
 	/** @var int kBonICWarenLager */
 	public $kBonICWarenLager;

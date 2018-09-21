@@ -11,6 +11,15 @@ class tWidgetSettings
 	const cValue = 'cValue';
 	const cArbeitsplatz = 'cArbeitsplatz';
 	const nApplikation = 'nApplikation';
+	const COLUMN_NAMES = ['kWidgetSettings', 'kWidget', 'cKey', 'cValue', 'cArbeitsplatz', 'nApplikation'];
+	const COLUMN_TYPES = [
+		'kWidgetSettings' => 'int',
+		'kWidget' => 'int',
+		'cKey' => 'varchar',
+		'cValue' => 'varchar',
+		'cArbeitsplatz' => 'varchar',
+		'nApplikation' => 'int',
+	];
 
 	/** @var int kWidgetSettings */
 	public $kWidgetSettings;

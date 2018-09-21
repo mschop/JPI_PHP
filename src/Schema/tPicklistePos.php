@@ -20,6 +20,40 @@ class tPicklistePos
 	const nPickPrio = 'nPickPrio';
 	const nStatus = 'nStatus';
 	const kAnsprechpartner = 'kAnsprechpartner';
+	const COLUMN_NAMES = [
+		'kPicklistePos',
+		'kPickliste',
+		'kWarenLager',
+		'kWarenLagerEingang',
+		'fAnzahl',
+		'kBestellPos',
+		'kPicklistePosStatus',
+		'kArtikel',
+		'kWarenlagerPlatz',
+		'kPicklistePos_Ursprung',
+		'kLieferscheinPos',
+		'kBestellung',
+		'nPickPrio',
+		'nStatus',
+		'kAnsprechpartner',
+	];
+	const COLUMN_TYPES = [
+		'kPicklistePos' => 'int',
+		'kPickliste' => 'int',
+		'kWarenLager' => 'int',
+		'kWarenLagerEingang' => 'int',
+		'fAnzahl' => 'decimal',
+		'kBestellPos' => 'int',
+		'kPicklistePosStatus' => 'int',
+		'kArtikel' => 'int',
+		'kWarenlagerPlatz' => 'int',
+		'kPicklistePos_Ursprung' => 'int',
+		'kLieferscheinPos' => 'int',
+		'kBestellung' => 'int',
+		'nPickPrio' => 'int',
+		'nStatus' => 'int',
+		'kAnsprechpartner' => 'int',
+	];
 
 	/** @var int kPicklistePos */
 	public $kPicklistePos;

@@ -16,6 +16,32 @@ class tPreiskalkulationLogbuchDetails
 	const cWaehrung = 'cWaehrung';
 	const cEinstellungen = 'cEinstellungen';
 	const cName = 'cName';
+	const COLUMN_NAMES = [
+		'kLogbuchDetails',
+		'kLogbuch',
+		'cArtNr',
+		'cPreisAlt',
+		'fPreisAlt',
+		'cPreisNeu',
+		'fPreisNeu',
+		'cDifferenz',
+		'cWaehrung',
+		'cEinstellungen',
+		'cName',
+	];
+	const COLUMN_TYPES = [
+		'kLogbuchDetails' => 'int',
+		'kLogbuch' => 'int',
+		'cArtNr' => 'varchar',
+		'cPreisAlt' => 'varchar',
+		'fPreisAlt' => 'decimal',
+		'cPreisNeu' => 'varchar',
+		'fPreisNeu' => 'decimal',
+		'cDifferenz' => 'varchar',
+		'cWaehrung' => 'varchar',
+		'cEinstellungen' => 'varchar',
+		'cName' => 'varchar',
+	];
 
 	/** @var int kLogbuchDetails */
 	public $kLogbuchDetails;

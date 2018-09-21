@@ -10,6 +10,14 @@ class tWorkflowEvent
 	const nObjekt = 'nObjekt';
 	const cDisplayName = 'cDisplayName';
 	const cSortierung = 'cSortierung';
+	const COLUMN_NAMES = ['kWorkflowEvent', 'nEvent', 'nObjekt', 'cDisplayName', 'cSortierung'];
+	const COLUMN_TYPES = [
+		'kWorkflowEvent' => 'int',
+		'nEvent' => 'int',
+		'nObjekt' => 'int',
+		'cDisplayName' => 'nvarchar',
+		'cSortierung' => 'nvarchar',
+	];
 
 	/** @var int kWorkflowEvent */
 	public $kWorkflowEvent;

@@ -15,6 +15,30 @@ class tKategorieSprache
 	const cMetaDescription = 'cMetaDescription';
 	const cTitleTag = 'cTitleTag';
 	const cMetaKeywords = 'cMetaKeywords';
+	const COLUMN_NAMES = [
+		'kKategorie',
+		'kSprache',
+		'kPlattform',
+		'kShop',
+		'cName',
+		'cBeschreibung',
+		'cUrlPfad',
+		'cMetaDescription',
+		'cTitleTag',
+		'cMetaKeywords',
+	];
+	const COLUMN_TYPES = [
+		'kKategorie' => 'int',
+		'kSprache' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'cName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'cUrlPfad' => 'varchar',
+		'cMetaDescription' => 'varchar',
+		'cTitleTag' => 'varchar',
+		'cMetaKeywords' => 'varchar',
+	];
 
 	/** @var int kKategorie */
 	public $kKategorie;

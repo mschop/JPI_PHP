@@ -11,6 +11,15 @@ class tnews
 	const cText = 'cText';
 	const cPicture = 'cPicture';
 	const cInet = 'cInet';
+	const COLUMN_NAMES = ['kNews', 'dErstellt', 'cBetreff', 'cText', 'cPicture', 'cInet'];
+	const COLUMN_TYPES = [
+		'kNews' => 'int',
+		'dErstellt' => 'varchar',
+		'cBetreff' => 'varchar',
+		'cText' => 'varchar',
+		'cPicture' => 'varchar',
+		'cInet' => 'char',
+	];
 
 	/** @var int kNews */
 	public $kNews;

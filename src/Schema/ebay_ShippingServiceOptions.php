@@ -12,6 +12,24 @@ class ebay_ShippingServiceOptions
 	const ShippingServiceCost = 'ShippingServiceCost';
 	const ShippingServicePriority = 'ShippingServicePriority';
 	const ShippingService = 'ShippingService';
+	const COLUMN_NAMES = [
+		'kShippingServiceOptions',
+		'kItem',
+		'ShippingServiceID',
+		'ShippingServiceAdditionalCost',
+		'ShippingServiceCost',
+		'ShippingServicePriority',
+		'ShippingService',
+	];
+	const COLUMN_TYPES = [
+		'kShippingServiceOptions' => 'int',
+		'kItem' => 'int',
+		'ShippingServiceID' => 'int',
+		'ShippingServiceAdditionalCost' => 'decimal',
+		'ShippingServiceCost' => 'decimal',
+		'ShippingServicePriority' => 'tinyint',
+		'ShippingService' => 'varchar',
+	];
 
 	/** @var int kShippingServiceOptions */
 	public $kShippingServiceOptions;

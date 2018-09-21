@@ -8,6 +8,8 @@ class tVersandPos
 	const kVersand = 'kVersand';
 	const kLieferscheinPos = 'kLieferscheinPos';
 	const fAnzahl = 'fAnzahl';
+	const COLUMN_NAMES = ['kVersand', 'kLieferscheinPos', 'fAnzahl'];
+	const COLUMN_TYPES = ['kVersand' => 'int', 'kLieferscheinPos' => 'int', 'fAnzahl' => 'decimal'];
 
 	/** @var int kVersand */
 	public $kVersand;

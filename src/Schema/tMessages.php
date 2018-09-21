@@ -17,6 +17,34 @@ class tMessages
 	const sAttachment = 'sAttachment';
 	const kFirma = 'kFirma';
 	const kAnsprechpartner = 'kAnsprechpartner';
+	const COLUMN_NAMES = [
+		'kMessages',
+		'kKunde',
+		'kLieferant',
+		'sBereff',
+		'sText',
+		'sSentMailDate',
+		'sSentFaxDate',
+		'nType',
+		'sHTMLText',
+		'sAttachment',
+		'kFirma',
+		'kAnsprechpartner',
+	];
+	const COLUMN_TYPES = [
+		'kMessages' => 'int',
+		'kKunde' => 'int',
+		'kLieferant' => 'int',
+		'sBereff' => 'varchar',
+		'sText' => 'varchar',
+		'sSentMailDate' => 'varchar',
+		'sSentFaxDate' => 'varchar',
+		'nType' => 'tinyint',
+		'sHTMLText' => 'varchar',
+		'sAttachment' => 'varchar',
+		'kFirma' => 'int',
+		'kAnsprechpartner' => 'int',
+	];
 
 	/** @var int kMessages */
 	public $kMessages;

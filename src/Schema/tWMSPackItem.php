@@ -12,6 +12,24 @@ class tWMSPackItem
 	const kBestellung = 'kBestellung';
 	const kBestellpos = 'kBestellpos';
 	const kBestellStueckliste = 'kBestellStueckliste';
+	const COLUMN_NAMES = [
+		'kWMSPackItem',
+		'kArtikel',
+		'fMenge',
+		'kPickliste',
+		'kBestellung',
+		'kBestellpos',
+		'kBestellStueckliste',
+	];
+	const COLUMN_TYPES = [
+		'kWMSPackItem' => 'int',
+		'kArtikel' => 'int',
+		'fMenge' => 'decimal',
+		'kPickliste' => 'int',
+		'kBestellung' => 'int',
+		'kBestellpos' => 'int',
+		'kBestellStueckliste' => 'int',
+	];
 
 	/** @var int kWMSPackItem */
 	public $kWMSPackItem;

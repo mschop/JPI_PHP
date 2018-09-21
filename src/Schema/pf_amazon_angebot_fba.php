@@ -19,6 +19,38 @@ class pf_amazon_angebot_fba
 	const nQtyReceiving = 'nQtyReceiving';
 	const fVolume = 'fVolume';
 	const cFNSKU = 'cFNSKU';
+	const COLUMN_NAMES = [
+		'cSellerSKU',
+		'kUser',
+		'nQuantity',
+		'cConditionType',
+		'cWarehouseConditionType',
+		'nQtyWarehouse',
+		'nQtyUnsellable',
+		'nQtyReserved',
+		'nQtyTotal',
+		'nQtyInboundWorking',
+		'nQtyInboundShipped',
+		'nQtyReceiving',
+		'fVolume',
+		'cFNSKU',
+	];
+	const COLUMN_TYPES = [
+		'cSellerSKU' => 'varchar',
+		'kUser' => 'int',
+		'nQuantity' => 'int',
+		'cConditionType' => 'varchar',
+		'cWarehouseConditionType' => 'varchar',
+		'nQtyWarehouse' => 'int',
+		'nQtyUnsellable' => 'int',
+		'nQtyReserved' => 'int',
+		'nQtyTotal' => 'int',
+		'nQtyInboundWorking' => 'int',
+		'nQtyInboundShipped' => 'int',
+		'nQtyReceiving' => 'int',
+		'fVolume' => 'decimal',
+		'cFNSKU' => 'varchar',
+	];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

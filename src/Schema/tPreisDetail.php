@@ -9,6 +9,8 @@ class tPreisDetail
 	const nAnzahlAb = 'nAnzahlAb';
 	const fNettoPreis = 'fNettoPreis';
 	const fProzent = 'fProzent';
+	const COLUMN_NAMES = ['kPreis', 'nAnzahlAb', 'fNettoPreis', 'fProzent'];
+	const COLUMN_TYPES = ['kPreis' => 'int', 'nAnzahlAb' => 'int', 'fNettoPreis' => 'decimal', 'fProzent' => 'decimal'];
 
 	/** @var int kPreis */
 	public $kPreis;

@@ -19,6 +19,38 @@ class ebay_bestoffer
 	const CounterQuantity = 'CounterQuantity';
 	const CounterMessage = 'CounterMessage';
 	const ExpirationTime = 'ExpirationTime';
+	const COLUMN_NAMES = [
+		'BestOfferID',
+		'ItemID',
+		'Price',
+		'Currency',
+		'Quantity',
+		'UserID',
+		'Email',
+		'FeedbackScore',
+		'Message',
+		'Status',
+		'CounterPrice',
+		'CounterQuantity',
+		'CounterMessage',
+		'ExpirationTime',
+	];
+	const COLUMN_TYPES = [
+		'BestOfferID' => 'varchar',
+		'ItemID' => 'varchar',
+		'Price' => 'decimal',
+		'Currency' => 'varchar',
+		'Quantity' => 'int',
+		'UserID' => 'varchar',
+		'Email' => 'varchar',
+		'FeedbackScore' => 'int',
+		'Message' => 'varchar',
+		'Status' => 'tinyint',
+		'CounterPrice' => 'decimal',
+		'CounterQuantity' => 'int',
+		'CounterMessage' => 'varchar',
+		'ExpirationTime' => 'datetime',
+	];
 
 	/** @var string BestOfferID */
 	public $BestOfferID;

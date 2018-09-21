@@ -17,6 +17,34 @@ class tAttribut
 	const cRegEx = 'cRegEx';
 	const cGruppeName = 'cGruppeName';
 	const nReadOnly = 'nReadOnly';
+	const COLUMN_NAMES = [
+		'kAttribut',
+		'nIstMehrsprachig',
+		'nIstFreifeld',
+		'nSortierung',
+		'cBeschreibung',
+		'nBezugstyp',
+		'nAusgabeweg',
+		'nIstStandard',
+		'kFeldTyp',
+		'cRegEx',
+		'cGruppeName',
+		'nReadOnly',
+	];
+	const COLUMN_TYPES = [
+		'kAttribut' => 'int',
+		'nIstMehrsprachig' => 'tinyint',
+		'nIstFreifeld' => 'tinyint',
+		'nSortierung' => 'int',
+		'cBeschreibung' => 'varchar',
+		'nBezugstyp' => 'tinyint',
+		'nAusgabeweg' => 'tinyint',
+		'nIstStandard' => 'tinyint',
+		'kFeldTyp' => 'int',
+		'cRegEx' => 'nvarchar',
+		'cGruppeName' => 'nvarchar',
+		'nReadOnly' => 'tinyint',
+	];
 
 	/** @var int kAttribut */
 	public $kAttribut;

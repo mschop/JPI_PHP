@@ -22,6 +22,44 @@ class tLieferantenBestellungLieferant
 	const cAnsprechpartnerAnrede = 'cAnsprechpartnerAnrede';
 	const cAnsprechpartnerVorname = 'cAnsprechpartnerVorname';
 	const cAnsprechpartnerName = 'cAnsprechpartnerName';
+	const COLUMN_NAMES = [
+		'kLieferantenBestellungLieferant',
+		'kLieferant',
+		'cFirma',
+		'cFirmenZusatz',
+		'cStrasse',
+		'cAdresszusatz',
+		'cPLZ',
+		'cOrt',
+		'cBundesland',
+		'cLandISO',
+		'cTel',
+		'cFax',
+		'cMobil',
+		'cMail',
+		'cAnsprechpartnerAnrede',
+		'cAnsprechpartnerVorname',
+		'cAnsprechpartnerName',
+	];
+	const COLUMN_TYPES = [
+		'kLieferantenBestellungLieferant' => 'int',
+		'kLieferant' => 'int',
+		'cFirma' => 'varchar',
+		'cFirmenZusatz' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cAdresszusatz' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cOrt' => 'varchar',
+		'cBundesland' => 'varchar',
+		'cLandISO' => 'varchar',
+		'cTel' => 'varchar',
+		'cFax' => 'varchar',
+		'cMobil' => 'varchar',
+		'cMail' => 'varchar',
+		'cAnsprechpartnerAnrede' => 'varchar',
+		'cAnsprechpartnerVorname' => 'varchar',
+		'cAnsprechpartnerName' => 'varchar',
+	];
 
 	/** @var int kLieferantenBestellungLieferant */
 	public $kLieferantenBestellungLieferant;

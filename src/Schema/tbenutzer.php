@@ -17,6 +17,34 @@ class tbenutzer
 	const cMobil = 'cMobil';
 	const cHinweis = 'cHinweis';
 	const iSalt = 'iSalt';
+	const COLUMN_NAMES = [
+		'kBenutzer',
+		'cLogin',
+		'cPasswort',
+		'cName',
+		'kFirma',
+		'cTel',
+		'cEMail',
+		'cAbteilung',
+		'cFax',
+		'cMobil',
+		'cHinweis',
+		'iSalt',
+	];
+	const COLUMN_TYPES = [
+		'kBenutzer' => 'int',
+		'cLogin' => 'varchar',
+		'cPasswort' => 'varchar',
+		'cName' => 'varchar',
+		'kFirma' => 'int',
+		'cTel' => 'varchar',
+		'cEMail' => 'varchar',
+		'cAbteilung' => 'varchar',
+		'cFax' => 'varchar',
+		'cMobil' => 'varchar',
+		'cHinweis' => 'varchar',
+		'iSalt' => 'uniqueidentifier',
+	];
 
 	/** @var int kBenutzer */
 	public $kBenutzer;

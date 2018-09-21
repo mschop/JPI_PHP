@@ -10,6 +10,14 @@ class pf_amazon_retourmeldungadjustment
 	const cPromotionClaimCode = 'cPromotionClaimCode';
 	const fAmount = 'fAmount';
 	const cCurrency = 'cCurrency';
+	const COLUMN_NAMES = ['kAmazonRetourMeldung', 'cItemPriceAdjustmentType', 'cPromotionClaimCode', 'fAmount', 'cCurrency'];
+	const COLUMN_TYPES = [
+		'kAmazonRetourMeldung' => 'int',
+		'cItemPriceAdjustmentType' => 'varchar',
+		'cPromotionClaimCode' => 'varchar',
+		'fAmount' => 'decimal',
+		'cCurrency' => 'varchar',
+	];
 
 	/** @var int kAmazonRetourMeldung */
 	public $kAmazonRetourMeldung;

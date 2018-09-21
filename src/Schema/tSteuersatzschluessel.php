@@ -12,6 +12,24 @@ class tSteuersatzschluessel
 	const kSteuerschluessel = 'kSteuerschluessel';
 	const kStSchlIGL = 'kStSchlIGL';
 	const kStSchlUStIGL = 'kStSchlUStIGL';
+	const COLUMN_NAMES = [
+		'kSteuersatz',
+		'kWarengruppe',
+		'kVersandart',
+		'nPositionstyp',
+		'kSteuerschluessel',
+		'kStSchlIGL',
+		'kStSchlUStIGL',
+	];
+	const COLUMN_TYPES = [
+		'kSteuersatz' => 'int',
+		'kWarengruppe' => 'int',
+		'kVersandart' => 'int',
+		'nPositionstyp' => 'int',
+		'kSteuerschluessel' => 'int',
+		'kStSchlIGL' => 'int',
+		'kStSchlUStIGL' => 'int',
+	];
 
 	/** @var int kSteuersatz */
 	public $kSteuersatz;

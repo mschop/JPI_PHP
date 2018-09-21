@@ -11,6 +11,15 @@ class tRMStatusVerlauf
 	const cKommentar = 'cKommentar';
 	const kBenutzer = 'kBenutzer';
 	const dErstellt = 'dErstellt';
+	const COLUMN_NAMES = ['kRMStatusVerlauf', 'kRMRetourePos', 'kRMStatus', 'cKommentar', 'kBenutzer', 'dErstellt'];
+	const COLUMN_TYPES = [
+		'kRMStatusVerlauf' => 'int',
+		'kRMRetourePos' => 'int',
+		'kRMStatus' => 'int',
+		'cKommentar' => 'varchar',
+		'kBenutzer' => 'int',
+		'dErstellt' => 'datetime',
+	];
 
 	/** @var int kRMStatusVerlauf */
 	public $kRMStatusVerlauf;

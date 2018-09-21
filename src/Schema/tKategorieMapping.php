@@ -9,6 +9,13 @@ class tKategorieMapping
 	const kKategorie = 'kKategorie';
 	const kFremdKategorie = 'kFremdKategorie';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = ['kKategorieMapping', 'kKategorie', 'kFremdKategorie', 'nPlattform'];
+	const COLUMN_TYPES = [
+		'kKategorieMapping' => 'int',
+		'kKategorie' => 'int',
+		'kFremdKategorie' => 'int',
+		'nPlattform' => 'int',
+	];
 
 	/** @var int kKategorieMapping */
 	public $kKategorieMapping;

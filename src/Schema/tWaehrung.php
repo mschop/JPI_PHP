@@ -15,6 +15,30 @@ class tWaehrung
 	const cTrennzeichenCent = 'cTrennzeichenCent';
 	const cTrennzeichenTausend = 'cTrennzeichenTausend';
 	const dAktualisiert = 'dAktualisiert';
+	const COLUMN_NAMES = [
+		'kWaehrung',
+		'cName',
+		'cNameHTML',
+		'fFaktor',
+		'cEAMapping',
+		'nStandard',
+		'nVorBetrag',
+		'cTrennzeichenCent',
+		'cTrennzeichenTausend',
+		'dAktualisiert',
+	];
+	const COLUMN_TYPES = [
+		'kWaehrung' => 'int',
+		'cName' => 'varchar',
+		'cNameHTML' => 'varchar',
+		'fFaktor' => 'decimal',
+		'cEAMapping' => 'varchar',
+		'nStandard' => 'tinyint',
+		'nVorBetrag' => 'tinyint',
+		'cTrennzeichenCent' => 'char',
+		'cTrennzeichenTausend' => 'char',
+		'dAktualisiert' => 'datetime',
+	];
 
 	/** @var int kWaehrung */
 	public $kWaehrung;

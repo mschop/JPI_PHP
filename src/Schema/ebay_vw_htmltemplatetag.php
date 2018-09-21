@@ -10,6 +10,14 @@ class ebay_vw_htmltemplatetag
 	const cTagType = 'cTagType';
 	const cTagName = 'cTagName';
 	const cTagExtension = 'cTagExtension';
+	const COLUMN_NAMES = ['kEbayHtmlTemplateTag', 'kEbayHtmlTemplate', 'cTagType', 'cTagName', 'cTagExtension'];
+	const COLUMN_TYPES = [
+		'kEbayHtmlTemplateTag' => 'int',
+		'kEbayHtmlTemplate' => 'int',
+		'cTagType' => 'varchar',
+		'cTagName' => 'varchar',
+		'cTagExtension' => 'varchar',
+	];
 
 	/** @var int kEbayHtmlTemplateTag */
 	public $kEbayHtmlTemplateTag;

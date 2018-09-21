@@ -11,6 +11,15 @@ class tkategorie
 	const cAktiv = 'cAktiv';
 	const cDelInet = 'cDelInet';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kKategorie', 'kOberKategorie', 'cInet', 'cAktiv', 'cDelInet', 'nSort'];
+	const COLUMN_TYPES = [
+		'kKategorie' => 'int',
+		'kOberKategorie' => 'int',
+		'cInet' => 'char',
+		'cAktiv' => 'char',
+		'cDelInet' => 'char',
+		'nSort' => 'int',
+	];
 
 	/** @var int kKategorie */
 	public $kKategorie;

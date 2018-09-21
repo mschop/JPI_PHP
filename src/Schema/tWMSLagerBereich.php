@@ -10,6 +10,14 @@ class tWMSLagerBereich
 	const cBeschreibung = 'cBeschreibung';
 	const kWarenLager = 'kWarenLager';
 	const nTyp = 'nTyp';
+	const COLUMN_NAMES = ['kWMSLagerBereich', 'cKuerzel', 'cBeschreibung', 'kWarenLager', 'nTyp'];
+	const COLUMN_TYPES = [
+		'kWMSLagerBereich' => 'int',
+		'cKuerzel' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'kWarenLager' => 'int',
+		'nTyp' => 'int',
+	];
 
 	/** @var int kWMSLagerBereich */
 	public $kWMSLagerBereich;

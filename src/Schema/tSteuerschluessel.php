@@ -16,6 +16,32 @@ class tSteuerschluessel
 	const nAnzahlung = 'nAnzahlung';
 	const nAutomatik = 'nAutomatik';
 	const nSchluesselnummer = 'nSchluesselnummer';
+	const COLUMN_NAMES = [
+		'kSteuerschluessel',
+		'cName',
+		'cSteuerkonto',
+		'cSkontokonto',
+		'cBonuskonto',
+		'cErloeskonto',
+		'cAusbuchungskonto',
+		'cAnzahlungskonto',
+		'nAnzahlung',
+		'nAutomatik',
+		'nSchluesselnummer',
+	];
+	const COLUMN_TYPES = [
+		'kSteuerschluessel' => 'int',
+		'cName' => 'varchar',
+		'cSteuerkonto' => 'varchar',
+		'cSkontokonto' => 'varchar',
+		'cBonuskonto' => 'varchar',
+		'cErloeskonto' => 'varchar',
+		'cAusbuchungskonto' => 'varchar',
+		'cAnzahlungskonto' => 'varchar',
+		'nAnzahlung' => 'tinyint',
+		'nAutomatik' => 'tinyint',
+		'nSchluesselnummer' => 'int',
+	];
 
 	/** @var int kSteuerschluessel */
 	public $kSteuerschluessel;

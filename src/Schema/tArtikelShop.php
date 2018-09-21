@@ -11,6 +11,15 @@ class tArtikelShop
 	const cDelInet = 'cDelInet';
 	const nAktion = 'nAktion';
 	const nInBearbeitung = 'nInBearbeitung';
+	const COLUMN_NAMES = ['kArtikel', 'kShop', 'cInet', 'cDelInet', 'nAktion', 'nInBearbeitung'];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'kShop' => 'int',
+		'cInet' => 'char',
+		'cDelInet' => 'char',
+		'nAktion' => 'int',
+		'nInBearbeitung' => 'bit',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

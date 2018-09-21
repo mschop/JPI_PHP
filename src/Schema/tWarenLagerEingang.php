@@ -28,6 +28,56 @@ class tWarenLagerEingang
 	const kBuchungsart = 'kBuchungsart';
 	const kBestellPosUmlagerung = 'kBestellPosUmlagerung';
 	const kRMRetourePos = 'kRMRetourePos';
+	const COLUMN_NAMES = [
+		'kWarenLagerEingang',
+		'kArtikel',
+		'kWarenLagerPlatz',
+		'kLieferantenBestellungPos',
+		'kBenutzer',
+		'fAnzahl',
+		'fEKEinzel',
+		'cLieferscheinNr',
+		'cChargenNr',
+		'dMHD',
+		'dErstellt',
+		'dGeliefertAM',
+		'cKommentar',
+		'kGutschriftPos',
+		'kWarenLagerAusgang',
+		'kLHM',
+		'fAnzahlAktuell',
+		'fAnzahlReserviertPickpos',
+		'kSessionID',
+		'kWarenLagerEingang_Ursprung',
+		'kBuchungsart',
+		'kBestellPosUmlagerung',
+		'kRMRetourePos',
+	];
+	const COLUMN_TYPES = [
+		'kWarenLagerEingang' => 'int',
+		'kArtikel' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kLieferantenBestellungPos' => 'int',
+		'kBenutzer' => 'int',
+		'fAnzahl' => 'decimal',
+		'fEKEinzel' => 'decimal',
+		'cLieferscheinNr' => 'varchar',
+		'cChargenNr' => 'varchar',
+		'dMHD' => 'datetime',
+		'dErstellt' => 'datetime',
+		'dGeliefertAM' => 'datetime',
+		'cKommentar' => 'varchar',
+		'kGutschriftPos' => 'int',
+		'kWarenLagerAusgang' => 'int',
+		'kLHM' => 'int',
+		'fAnzahlAktuell' => 'decimal',
+		'fAnzahlReserviertPickpos' => 'decimal',
+		'kSessionID' => 'int',
+		'kWarenLagerEingang_Ursprung' => 'int',
+		'kBuchungsart' => 'int',
+		'kBestellPosUmlagerung' => 'int',
+		'kRMRetourePos' => 'int',
+	];
 
 	/** @var int kWarenLagerEingang */
 	public $kWarenLagerEingang;

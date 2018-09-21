@@ -10,6 +10,14 @@ class tKategorieShop
 	const cInet = 'cInet';
 	const cDelInet = 'cDelInet';
 	const nInBearbeitung = 'nInBearbeitung';
+	const COLUMN_NAMES = ['kKategorie', 'kShop', 'cInet', 'cDelInet', 'nInBearbeitung'];
+	const COLUMN_TYPES = [
+		'kKategorie' => 'int',
+		'kShop' => 'int',
+		'cInet' => 'char',
+		'cDelInet' => 'char',
+		'nInBearbeitung' => 'bit',
+	];
 
 	/** @var int kKategorie */
 	public $kKategorie;

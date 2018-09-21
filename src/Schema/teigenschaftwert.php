@@ -17,6 +17,34 @@ class teigenschaftwert
 	const cBarcode = 'cBarcode';
 	const cAktiv = 'cAktiv';
 	const cInet = 'cInet';
+	const COLUMN_NAMES = [
+		'kEigenschaftWert',
+		'kEigenschaft',
+		'fAufpreis',
+		'fAufpreisNetto',
+		'fGewichtDiff',
+		'cArtNr',
+		'nSort',
+		'fLagerbestand',
+		'fPackeinheit',
+		'cBarcode',
+		'cAktiv',
+		'cInet',
+	];
+	const COLUMN_TYPES = [
+		'kEigenschaftWert' => 'int',
+		'kEigenschaft' => 'int',
+		'fAufpreis' => 'decimal',
+		'fAufpreisNetto' => 'decimal',
+		'fGewichtDiff' => 'decimal',
+		'cArtNr' => 'varchar',
+		'nSort' => 'int',
+		'fLagerbestand' => 'decimal',
+		'fPackeinheit' => 'decimal',
+		'cBarcode' => 'varchar',
+		'cAktiv' => 'char',
+		'cInet' => 'char',
+	];
 
 	/** @var int kEigenschaftWert */
 	public $kEigenschaftWert;

@@ -11,6 +11,15 @@ class teigenschaft
 	const nSort = 'nSort';
 	const cTyp = 'cTyp';
 	const cAktiv = 'cAktiv';
+	const COLUMN_NAMES = ['kEigenschaft', 'kArtikel', 'cWaehlbar', 'nSort', 'cTyp', 'cAktiv'];
+	const COLUMN_TYPES = [
+		'kEigenschaft' => 'int',
+		'kArtikel' => 'int',
+		'cWaehlbar' => 'char',
+		'nSort' => 'int',
+		'cTyp' => 'varchar',
+		'cAktiv' => 'char',
+	];
 
 	/** @var int kEigenschaft */
 	public $kEigenschaft;

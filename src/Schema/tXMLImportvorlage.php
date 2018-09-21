@@ -9,6 +9,8 @@ class tXMLImportvorlage
 	const nTyp = 'nTyp';
 	const cName = 'cName';
 	const bVorlage = 'bVorlage';
+	const COLUMN_NAMES = ['kXmlImportvorlage', 'nTyp', 'cName', 'bVorlage'];
+	const COLUMN_TYPES = ['kXmlImportvorlage' => 'int', 'nTyp' => 'tinyint', 'cName' => 'varchar', 'bVorlage' => 'varchar'];
 
 	/** @var int kXmlImportvorlage */
 	public $kXmlImportvorlage;

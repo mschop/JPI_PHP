@@ -13,6 +13,26 @@ class tBestellungDokument
 	const cDateierweiterung = 'cDateierweiterung';
 	const dErstellt = 'dErstellt';
 	const dAenderung = 'dAenderung';
+	const COLUMN_NAMES = [
+		'kBestellungDokument',
+		'kBestellung',
+		'bDokument',
+		'nDokumentTyp',
+		'nDateigroesse',
+		'cDateierweiterung',
+		'dErstellt',
+		'dAenderung',
+	];
+	const COLUMN_TYPES = [
+		'kBestellungDokument' => 'int',
+		'kBestellung' => 'int',
+		'bDokument' => 'varbinary',
+		'nDokumentTyp' => 'int',
+		'nDateigroesse' => 'int',
+		'cDateierweiterung' => 'varchar',
+		'dErstellt' => 'datetime',
+		'dAenderung' => 'datetime',
+	];
 
 	/** @var int kBestellungDokument */
 	public $kBestellungDokument;

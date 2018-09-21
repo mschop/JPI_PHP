@@ -11,6 +11,15 @@ class tEingangsrechnungPosZusatzkosten
 	const fFremdFaktor = 'fFremdFaktor';
 	const cWaehrungISO = 'cWaehrungISO';
 	const fMwst = 'fMwst';
+	const COLUMN_NAMES = ['kZusatzkosten', 'kEingangsrechnungPos', 'dWert', 'fFremdFaktor', 'cWaehrungISO', 'fMwst'];
+	const COLUMN_TYPES = [
+		'kZusatzkosten' => 'int',
+		'kEingangsrechnungPos' => 'int',
+		'dWert' => 'decimal',
+		'fFremdFaktor' => 'decimal',
+		'cWaehrungISO' => 'varchar',
+		'fMwst' => 'decimal',
+	];
 
 	/** @var int kZusatzkosten */
 	public $kZusatzkosten;

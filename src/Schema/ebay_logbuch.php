@@ -12,6 +12,16 @@ class ebay_logbuch
 	const nTyp = 'nTyp';
 	const cLog = 'cLog';
 	const dZeit = 'dZeit';
+	const COLUMN_NAMES = ['kEbayLogbuch', 'kEbayuser', 'cBetreff', 'nKategorie', 'nTyp', 'cLog', 'dZeit'];
+	const COLUMN_TYPES = [
+		'kEbayLogbuch' => 'int',
+		'kEbayuser' => 'int',
+		'cBetreff' => 'varchar',
+		'nKategorie' => 'int',
+		'nTyp' => 'int',
+		'cLog' => 'varchar',
+		'dZeit' => 'datetime',
+	];
 
 	/** @var int kEbayLogbuch */
 	public $kEbayLogbuch;

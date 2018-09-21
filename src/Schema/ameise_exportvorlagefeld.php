@@ -11,6 +11,15 @@ class ameise_exportvorlagefeld
 	const cDBName = 'cDBName';
 	const cKopfzeilenbeschriftung = 'cKopfzeilenbeschriftung';
 	const nSpalte = 'nSpalte';
+	const COLUMN_NAMES = ['kExportVorlageFeld', 'kExportVorlage', 'cName', 'cDBName', 'cKopfzeilenbeschriftung', 'nSpalte'];
+	const COLUMN_TYPES = [
+		'kExportVorlageFeld' => 'int',
+		'kExportVorlage' => 'int',
+		'cName' => 'varchar',
+		'cDBName' => 'varchar',
+		'cKopfzeilenbeschriftung' => 'varchar',
+		'nSpalte' => 'int',
+	];
 
 	/** @var int kExportVorlageFeld */
 	public $kExportVorlageFeld;

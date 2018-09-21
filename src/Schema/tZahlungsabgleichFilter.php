@@ -13,6 +13,26 @@ class tZahlungsabgleichFilter
 	const nFilteroperator = 'nFilteroperator';
 	const cFilterwert = 'cFilterwert';
 	const nAktion = 'nAktion';
+	const COLUMN_NAMES = [
+		'kZahlungsabgleichFilter',
+		'cBeschreibung',
+		'kZahlungsabgleichModul',
+		'nUmsatzart',
+		'nFilterspalte',
+		'nFilteroperator',
+		'cFilterwert',
+		'nAktion',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsabgleichFilter' => 'int',
+		'cBeschreibung' => 'varchar',
+		'kZahlungsabgleichModul' => 'int',
+		'nUmsatzart' => 'tinyint',
+		'nFilterspalte' => 'tinyint',
+		'nFilteroperator' => 'tinyint',
+		'cFilterwert' => 'varchar',
+		'nAktion' => 'tinyint',
+	];
 
 	/** @var int kZahlungsabgleichFilter */
 	public $kZahlungsabgleichFilter;

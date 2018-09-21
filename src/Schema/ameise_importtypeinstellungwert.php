@@ -9,6 +9,13 @@ class ameise_importtypeinstellungwert
 	const kImportTypEinstellung = 'kImportTypEinstellung';
 	const cName = 'cName';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kImportTypEinstellungWert', 'kImportTypEinstellung', 'cName', 'nSort'];
+	const COLUMN_TYPES = [
+		'kImportTypEinstellungWert' => 'int',
+		'kImportTypEinstellung' => 'int',
+		'cName' => 'varchar',
+		'nSort' => 'int',
+	];
 
 	/** @var int kImportTypEinstellungWert */
 	public $kImportTypEinstellungWert;

@@ -9,6 +9,13 @@ class tKundenGruppeAttribute
 	const kKundenGruppe = 'kKundenGruppe';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kKundenGruppeAttribute', 'kKundenGruppe', 'cName', 'cValue'];
+	const COLUMN_TYPES = [
+		'kKundenGruppeAttribute' => 'int',
+		'kKundenGruppe' => 'int',
+		'cName' => 'varchar',
+		'cValue' => 'varchar',
+	];
 
 	/** @var int kKundenGruppeAttribute */
 	public $kKundenGruppeAttribute;

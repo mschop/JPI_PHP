@@ -18,6 +18,36 @@ class tlagerbestand
 	const nArtikelTyp = 'nArtikelTyp';
 	const nTeilbar = 'nTeilbar';
 	const nLagerKleinerNull = 'nLagerKleinerNull';
+	const COLUMN_NAMES = [
+		'kArtikel',
+		'fLagerbestand',
+		'fVerfuegbar',
+		'fVerfuegbarGesperrt',
+		'fZulauf',
+		'fAufEinkaufsliste',
+		'dLieferdatum',
+		'fLagerbestandEigen',
+		'fInAuftraegen',
+		'nLagerAktiv',
+		'nArtikelTyp',
+		'nTeilbar',
+		'nLagerKleinerNull',
+	];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'fLagerbestand' => 'decimal',
+		'fVerfuegbar' => 'decimal',
+		'fVerfuegbarGesperrt' => 'decimal',
+		'fZulauf' => 'decimal',
+		'fAufEinkaufsliste' => 'decimal',
+		'dLieferdatum' => 'datetime',
+		'fLagerbestandEigen' => 'decimal',
+		'fInAuftraegen' => 'decimal',
+		'nLagerAktiv' => 'tinyint',
+		'nArtikelTyp' => 'tinyint',
+		'nTeilbar' => 'tinyint',
+		'nLagerKleinerNull' => 'tinyint',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

@@ -21,6 +21,42 @@ class tZahlungsabgleichUmsatz
 	const kBenutzer = 'kBenutzer';
 	const nSichtbar = 'nSichtbar';
 	const nBuchungstyp = 'nBuchungstyp';
+	const COLUMN_NAMES = [
+		'kZahlungsabgleichUmsatz',
+		'kZahlungsabgleichModul',
+		'cKontoIdentifikation',
+		'cTransaktionID',
+		'dBuchungsdatum',
+		'fBetrag',
+		'cWaehrungISO',
+		'cName',
+		'cKonto',
+		'cKontozusatz',
+		'cVerwendungszweck',
+		'cInternerKommentar',
+		'dAbgleichszeitpunkt',
+		'kBenutzer',
+		'nSichtbar',
+		'nBuchungstyp',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsabgleichUmsatz' => 'int',
+		'kZahlungsabgleichModul' => 'int',
+		'cKontoIdentifikation' => 'varchar',
+		'cTransaktionID' => 'varchar',
+		'dBuchungsdatum' => 'datetime',
+		'fBetrag' => 'decimal',
+		'cWaehrungISO' => 'varchar',
+		'cName' => 'varchar',
+		'cKonto' => 'varchar',
+		'cKontozusatz' => 'varchar',
+		'cVerwendungszweck' => 'varchar',
+		'cInternerKommentar' => 'varchar',
+		'dAbgleichszeitpunkt' => 'datetime',
+		'kBenutzer' => 'int',
+		'nSichtbar' => 'bit',
+		'nBuchungstyp' => 'int',
+	];
 
 	/** @var int kZahlungsabgleichUmsatz */
 	public $kZahlungsabgleichUmsatz;

@@ -15,6 +15,30 @@ class tintervall
 	const nAlleXJahre = 'nAlleXJahre';
 	const kLieferAdresse = 'kLieferAdresse';
 	const kRechnungsAdresse = 'kRechnungsAdresse';
+	const COLUMN_NAMES = [
+		'kIntervall',
+		'kBestellung',
+		'dStartdatum',
+		'dEnddatum',
+		'nAlleXTage',
+		'nAlleXMonate',
+		'AmMonatsende',
+		'nAlleXJahre',
+		'kLieferAdresse',
+		'kRechnungsAdresse',
+	];
+	const COLUMN_TYPES = [
+		'kIntervall' => 'int',
+		'kBestellung' => 'int',
+		'dStartdatum' => 'datetime',
+		'dEnddatum' => 'datetime',
+		'nAlleXTage' => 'smallint',
+		'nAlleXMonate' => 'smallint',
+		'AmMonatsende' => 'smallint',
+		'nAlleXJahre' => 'smallint',
+		'kLieferAdresse' => 'int',
+		'kRechnungsAdresse' => 'int',
+	];
 
 	/** @var int kIntervall */
 	public $kIntervall;

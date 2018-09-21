@@ -9,6 +9,13 @@ class pf_amazon_Mapping_Variationswerte
 	const cValue = 'cValue';
 	const cAmazonValue = 'cAmazonValue';
 	const kGroup = 'kGroup';
+	const COLUMN_NAMES = ['kMapping_Variationswerte', 'cValue', 'cAmazonValue', 'kGroup'];
+	const COLUMN_TYPES = [
+		'kMapping_Variationswerte' => 'int',
+		'cValue' => 'varchar',
+		'cAmazonValue' => 'varchar',
+		'kGroup' => 'int',
+	];
 
 	/** @var int kMapping_Variationswerte */
 	public $kMapping_Variationswerte;

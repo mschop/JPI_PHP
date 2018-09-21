@@ -13,6 +13,17 @@ class tLaufendeNummern
 	const kFirma = 'kFirma';
 	const cTable = 'cTable';
 	const cColumn = 'cColumn';
+	const COLUMN_NAMES = ['kLaufendeNummer', 'cName', 'nNummer', 'cPrefix', 'cSuffix', 'kFirma', 'cTable', 'cColumn'];
+	const COLUMN_TYPES = [
+		'kLaufendeNummer' => 'int',
+		'cName' => 'varchar',
+		'nNummer' => 'int',
+		'cPrefix' => 'varchar',
+		'cSuffix' => 'varchar',
+		'kFirma' => 'int',
+		'cTable' => 'varchar',
+		'cColumn' => 'varchar',
+	];
 
 	/** @var int kLaufendeNummer */
 	public $kLaufendeNummer;

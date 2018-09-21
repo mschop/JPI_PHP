@@ -14,6 +14,28 @@ class tArtikelbildPlattform
 	const nInet = 'nInet';
 	const kEbayUser = 'kEbayUser';
 	const cBildname = 'cBildname';
+	const COLUMN_NAMES = [
+		'kArtikelbildPlattform',
+		'kBild',
+		'kArtikel',
+		'kPlattform',
+		'kShop',
+		'nNr',
+		'nInet',
+		'kEbayUser',
+		'cBildname',
+	];
+	const COLUMN_TYPES = [
+		'kArtikelbildPlattform' => 'int',
+		'kBild' => 'int',
+		'kArtikel' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'nNr' => 'int',
+		'nInet' => 'tinyint',
+		'kEbayUser' => 'int',
+		'cBildname' => 'varchar',
+	];
 
 	/** @var int kArtikelbildPlattform */
 	public $kArtikelbildPlattform;

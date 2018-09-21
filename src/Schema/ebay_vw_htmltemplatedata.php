@@ -8,6 +8,8 @@ class ebay_vw_htmltemplatedata
 	const kEbayHtmlTemplateData = 'kEbayHtmlTemplateData';
 	const bData = 'bData';
 	const cTemplate = 'cTemplate';
+	const COLUMN_NAMES = ['kEbayHtmlTemplateData', 'bData', 'cTemplate'];
+	const COLUMN_TYPES = ['kEbayHtmlTemplateData' => 'int', 'bData' => 'varbinary', 'cTemplate' => 'nvarchar'];
 
 	/** @var int kEbayHtmlTemplateData */
 	public $kEbayHtmlTemplateData;

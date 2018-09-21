@@ -8,6 +8,8 @@ class tListViewExDateTimeFilter
 	const nListViewID = 'nListViewID';
 	const dValue = 'dValue';
 	const nSelectedIndex = 'nSelectedIndex';
+	const COLUMN_NAMES = ['nListViewID', 'dValue', 'nSelectedIndex'];
+	const COLUMN_TYPES = ['nListViewID' => 'int', 'dValue' => 'datetime', 'nSelectedIndex' => 'int'];
 
 	/** @var int nListViewID */
 	public $nListViewID;

@@ -9,6 +9,13 @@ class tPreischeckUserPattern
 	const kPreischeckPlattform = 'kPreischeckPlattform';
 	const kArtikel = 'kArtikel';
 	const cUrl = 'cUrl';
+	const COLUMN_NAMES = ['kPreischeckUserPatterns', 'kPreischeckPlattform', 'kArtikel', 'cUrl'];
+	const COLUMN_TYPES = [
+		'kPreischeckUserPatterns' => 'int',
+		'kPreischeckPlattform' => 'int',
+		'kArtikel' => 'int',
+		'cUrl' => 'varchar',
+	];
 
 	/** @var int kPreischeckUserPatterns */
 	public $kPreischeckUserPatterns;

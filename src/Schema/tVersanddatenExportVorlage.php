@@ -13,6 +13,26 @@ class tVersanddatenExportVorlage
 	const kAdressExportVorlage = 'kAdressExportVorlage';
 	const nExpertenmodus = 'nExpertenmodus';
 	const cPathTemplate = 'cPathTemplate';
+	const COLUMN_NAMES = [
+		'kVersanddatenExportVorlage',
+		'cName',
+		'cContentXml',
+		'cFilenameTemplate',
+		'nExistingFileAction',
+		'kAdressExportVorlage',
+		'nExpertenmodus',
+		'cPathTemplate',
+	];
+	const COLUMN_TYPES = [
+		'kVersanddatenExportVorlage' => 'int',
+		'cName' => 'varchar',
+		'cContentXml' => 'varchar',
+		'cFilenameTemplate' => 'varchar',
+		'nExistingFileAction' => 'tinyint',
+		'kAdressExportVorlage' => 'int',
+		'nExpertenmodus' => 'tinyint',
+		'cPathTemplate' => 'varchar',
+	];
 
 	/** @var int kVersanddatenExportVorlage */
 	public $kVersanddatenExportVorlage;

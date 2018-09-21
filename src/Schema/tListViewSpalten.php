@@ -9,6 +9,8 @@ class tListViewSpalten
 	const nPos = 'nPos';
 	const cWert = 'cWert';
 	const kBenutzer = 'kBenutzer';
+	const COLUMN_NAMES = ['kListView', 'nPos', 'cWert', 'kBenutzer'];
+	const COLUMN_TYPES = ['kListView' => 'int', 'nPos' => 'int', 'cWert' => 'varchar', 'kBenutzer' => 'int'];
 
 	/** @var int kListView */
 	public $kListView;

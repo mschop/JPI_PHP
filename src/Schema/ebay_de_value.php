@@ -10,6 +10,14 @@ class ebay_de_value
 	const AttributeSetId = 'AttributeSetId';
 	const parentValueId = 'parentValueId';
 	const Name = 'Name';
+	const COLUMN_NAMES = ['ValueId', 'AttributeId', 'AttributeSetId', 'parentValueId', 'Name'];
+	const COLUMN_TYPES = [
+		'ValueId' => 'int',
+		'AttributeId' => 'int',
+		'AttributeSetId' => 'int',
+		'parentValueId' => 'int',
+		'Name' => 'varchar',
+	];
 
 	/** @var int ValueId */
 	public $ValueId;

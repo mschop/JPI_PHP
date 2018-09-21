@@ -8,6 +8,8 @@ class tUmsatzzuordnungLog
 	const kUmsatzzuordnungLog = 'kUmsatzzuordnungLog';
 	const dDatum = 'dDatum';
 	const cDaten = 'cDaten';
+	const COLUMN_NAMES = ['kUmsatzzuordnungLog', 'dDatum', 'cDaten'];
+	const COLUMN_TYPES = ['kUmsatzzuordnungLog' => 'int', 'dDatum' => 'datetime', 'cDaten' => 'varchar'];
 
 	/** @var int kUmsatzzuordnungLog */
 	public $kUmsatzzuordnungLog;

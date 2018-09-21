@@ -17,6 +17,34 @@ class tZahlungsart
 	const nMahnwesenAktiv = 'nMahnwesenAktiv';
 	const fSkontoWert = 'fSkontoWert';
 	const nSkontoZeitraum = 'nSkontoZeitraum';
+	const COLUMN_NAMES = [
+		'kZahlungsart',
+		'cName',
+		'cPrtString',
+		'nLastschrift',
+		'cPrtStringVor',
+		'cPaymentOption',
+		'cKonto',
+		'nAusliefernVorZahlung',
+		'nPrioritaet',
+		'nMahnwesenAktiv',
+		'fSkontoWert',
+		'nSkontoZeitraum',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsart' => 'int',
+		'cName' => 'varchar',
+		'cPrtString' => 'varchar',
+		'nLastschrift' => 'tinyint',
+		'cPrtStringVor' => 'varchar',
+		'cPaymentOption' => 'varchar',
+		'cKonto' => 'varchar',
+		'nAusliefernVorZahlung' => 'tinyint',
+		'nPrioritaet' => 'tinyint',
+		'nMahnwesenAktiv' => 'tinyint',
+		'fSkontoWert' => 'decimal',
+		'nSkontoZeitraum' => 'int',
+	];
 
 	/** @var int kZahlungsart */
 	public $kZahlungsart;

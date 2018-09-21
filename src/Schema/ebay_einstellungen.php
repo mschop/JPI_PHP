@@ -18,6 +18,36 @@ class ebay_einstellungen
 	const nVersandartPraefixVerwenden = 'nVersandartPraefixVerwenden';
 	const nNichtLaufendeLoeschen = 'nNichtLaufendeLoeschen';
 	const cAuftraegeAusgabeweg = 'cAuftraegeAusgabeweg';
+	const COLUMN_NAMES = [
+		'kEbayEinstellungen',
+		'nCheckout',
+		'nVEAN',
+		'nVISBN',
+		'nVUPC',
+		'nVEPID',
+		'nVHAN',
+		'nArtnamenutzen',
+		'nUsePremium',
+		'nUseGalleryPlus',
+		'nVersandartPraefixVerwenden',
+		'nNichtLaufendeLoeschen',
+		'cAuftraegeAusgabeweg',
+	];
+	const COLUMN_TYPES = [
+		'kEbayEinstellungen' => 'int',
+		'nCheckout' => 'tinyint',
+		'nVEAN' => 'tinyint',
+		'nVISBN' => 'tinyint',
+		'nVUPC' => 'tinyint',
+		'nVEPID' => 'tinyint',
+		'nVHAN' => 'tinyint',
+		'nArtnamenutzen' => 'tinyint',
+		'nUsePremium' => 'tinyint',
+		'nUseGalleryPlus' => 'tinyint',
+		'nVersandartPraefixVerwenden' => 'tinyint',
+		'nNichtLaufendeLoeschen' => 'tinyint',
+		'cAuftraegeAusgabeweg' => 'char',
+	];
 
 	/** @var int kEbayEinstellungen */
 	public $kEbayEinstellungen;

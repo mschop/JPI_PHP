@@ -9,6 +9,8 @@ class tUniqueSession
 	const cContext = 'cContext';
 	const dLastCallback = 'dLastCallback';
 	const cInfo = 'cInfo';
+	const COLUMN_NAMES = ['kSession', 'cContext', 'dLastCallback', 'cInfo'];
+	const COLUMN_TYPES = ['kSession' => 'int', 'cContext' => 'varchar', 'dLastCallback' => 'datetime', 'cInfo' => 'varchar'];
 
 	/** @var int kSession */
 	public $kSession;

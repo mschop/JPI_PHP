@@ -8,6 +8,8 @@ class ebay_geaenderte_laufende_angebote
 	const kItem = 'kItem';
 	const nChanges = 'nChanges';
 	const nTryUpload = 'nTryUpload';
+	const COLUMN_NAMES = ['kItem', 'nChanges', 'nTryUpload'];
+	const COLUMN_TYPES = ['kItem' => 'int', 'nChanges' => 'int', 'nTryUpload' => 'tinyint'];
 
 	/** @var int kItem */
 	public $kItem;

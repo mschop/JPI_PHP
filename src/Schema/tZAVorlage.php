@@ -22,6 +22,44 @@ class tZAVorlage
 	const nPosVerwendung4 = 'nPosVerwendung4';
 	const nPosVerwendung5 = 'nPosVerwendung5';
 	const nPosVerwendung6 = 'nPosVerwendung6';
+	const COLUMN_NAMES = [
+		'kZAVorlage',
+		'cName',
+		'nZeilen',
+		'nTrenner',
+		'nPosDatum',
+		'nPosVorgang',
+		'nPosVerwendung',
+		'nPosVorname',
+		'nPosName',
+		'nPosUmsatz',
+		'nSpalten',
+		'cZahlungsArt',
+		'nPosVerwendung2',
+		'nPosVerwendung3',
+		'nPosVerwendung4',
+		'nPosVerwendung5',
+		'nPosVerwendung6',
+	];
+	const COLUMN_TYPES = [
+		'kZAVorlage' => 'int',
+		'cName' => 'varchar',
+		'nZeilen' => 'int',
+		'nTrenner' => 'tinyint',
+		'nPosDatum' => 'tinyint',
+		'nPosVorgang' => 'tinyint',
+		'nPosVerwendung' => 'tinyint',
+		'nPosVorname' => 'tinyint',
+		'nPosName' => 'tinyint',
+		'nPosUmsatz' => 'tinyint',
+		'nSpalten' => 'int',
+		'cZahlungsArt' => 'varchar',
+		'nPosVerwendung2' => 'tinyint',
+		'nPosVerwendung3' => 'tinyint',
+		'nPosVerwendung4' => 'tinyint',
+		'nPosVerwendung5' => 'tinyint',
+		'nPosVerwendung6' => 'tinyint',
+	];
 
 	/** @var int kZAVorlage */
 	public $kZAVorlage;

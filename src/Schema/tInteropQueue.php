@@ -10,6 +10,14 @@ class tInteropQueue
 	const nKey2 = 'nKey2';
 	const cUnique = 'cUnique';
 	const cData = 'cData';
+	const COLUMN_NAMES = ['nKey1', 'nOperation', 'nKey2', 'cUnique', 'cData'];
+	const COLUMN_TYPES = [
+		'nKey1' => 'int',
+		'nOperation' => 'int',
+		'nKey2' => 'int',
+		'cUnique' => 'varchar',
+		'cData' => 'varchar',
+	];
 
 	/** @var int nKey1 */
 	public $nKey1;

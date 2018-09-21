@@ -15,6 +15,30 @@ class pf_amazon_Mapping_AmazonVariationen
 	const cDisplayName_55 = 'cDisplayName_55';
 	const cDisplayName_56 = 'cDisplayName_56';
 	const cDisplayName_57 = 'cDisplayName_57';
+	const COLUMN_NAMES = [
+		'kMapping_AmazonVariationen',
+		'cName',
+		'cDisplayName_50',
+		'cDisplayName_51',
+		'cDisplayName_52',
+		'cDisplayName_53',
+		'cDisplayName_54',
+		'cDisplayName_55',
+		'cDisplayName_56',
+		'cDisplayName_57',
+	];
+	const COLUMN_TYPES = [
+		'kMapping_AmazonVariationen' => 'int',
+		'cName' => 'varchar',
+		'cDisplayName_50' => 'varchar',
+		'cDisplayName_51' => 'varchar',
+		'cDisplayName_52' => 'varchar',
+		'cDisplayName_53' => 'varchar',
+		'cDisplayName_54' => 'varchar',
+		'cDisplayName_55' => 'varchar',
+		'cDisplayName_56' => 'varchar',
+		'cDisplayName_57' => 'varchar',
+	];
 
 	/** @var int kMapping_AmazonVariationen */
 	public $kMapping_AmazonVariationen;

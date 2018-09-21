@@ -10,6 +10,14 @@ class tArtikelLagerOrt
 	const kLagerOrt = 'kLagerOrt';
 	const kArtikel = 'kArtikel';
 	const cKommentar = 'cKommentar';
+	const COLUMN_NAMES = ['kArtikelLagerOrt', 'kLager', 'kLagerOrt', 'kArtikel', 'cKommentar'];
+	const COLUMN_TYPES = [
+		'kArtikelLagerOrt' => 'int',
+		'kLager' => 'int',
+		'kLagerOrt' => 'int',
+		'kArtikel' => 'int',
+		'cKommentar' => 'varchar',
+	];
 
 	/** @var int kArtikelLagerOrt */
 	public $kArtikelLagerOrt;

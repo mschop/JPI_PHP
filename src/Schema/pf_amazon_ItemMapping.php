@@ -9,6 +9,8 @@ class pf_amazon_ItemMapping
 	const kItem = 'kItem';
 	const cKey = 'cKey';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kItemMapping', 'kItem', 'cKey', 'cValue'];
+	const COLUMN_TYPES = ['kItemMapping' => 'int', 'kItem' => 'int', 'cKey' => 'varchar', 'cValue' => 'varchar'];
 
 	/** @var int kItemMapping */
 	public $kItemMapping;

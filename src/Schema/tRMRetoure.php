@@ -26,6 +26,52 @@ class tRMRetoure
 	const kBestellung = 'kBestellung';
 	const cFfnReturnId = 'cFfnReturnId';
 	const cExternalNumber = 'cExternalNumber';
+	const COLUMN_NAMES = [
+		'kRMRetoure',
+		'kRMStatus',
+		'kKunde',
+		'kBenutzer',
+		'cRetoureNr',
+		'cAnsprechpartner',
+		'dErstellt',
+		'cKommentarExtern',
+		'kRMRetoureAbholAdresse',
+		'kWarenlager',
+		'kFirma',
+		'nHerkunft',
+		'cKommentarIntern',
+		'fKorrekturBetrag',
+		'nVersandkostenErstatten',
+		'cKorrekturBetragKommentar',
+		'kBestellungUmtausch',
+		'kGutschrift',
+		'kBestellung',
+		'cFfnReturnId',
+		'cExternalNumber',
+	];
+	const COLUMN_TYPES = [
+		'kRMRetoure' => 'int',
+		'kRMStatus' => 'int',
+		'kKunde' => 'int',
+		'kBenutzer' => 'int',
+		'cRetoureNr' => 'varchar',
+		'cAnsprechpartner' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cKommentarExtern' => 'varchar',
+		'kRMRetoureAbholAdresse' => 'int',
+		'kWarenlager' => 'int',
+		'kFirma' => 'int',
+		'nHerkunft' => 'tinyint',
+		'cKommentarIntern' => 'varchar',
+		'fKorrekturBetrag' => 'decimal',
+		'nVersandkostenErstatten' => 'tinyint',
+		'cKorrekturBetragKommentar' => 'varchar',
+		'kBestellungUmtausch' => 'int',
+		'kGutschrift' => 'int',
+		'kBestellung' => 'int',
+		'cFfnReturnId' => 'varchar',
+		'cExternalNumber' => 'varchar',
+	];
 
 	/** @var int kRMRetoure */
 	public $kRMRetoure;

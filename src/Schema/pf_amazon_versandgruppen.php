@@ -9,6 +9,13 @@ class pf_amazon_versandgruppen
 	const kUser = 'kUser';
 	const cAmazonInterneId = 'cAmazonInterneId';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kAmazonVersandgruppe', 'kUser', 'cAmazonInterneId', 'cName'];
+	const COLUMN_TYPES = [
+		'kAmazonVersandgruppe' => 'int',
+		'kUser' => 'int',
+		'cAmazonInterneId' => 'varchar',
+		'cName' => 'varchar',
+	];
 
 	/** @var int kAmazonVersandgruppe */
 	public $kAmazonVersandgruppe;

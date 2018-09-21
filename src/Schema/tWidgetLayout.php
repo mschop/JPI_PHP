@@ -10,6 +10,14 @@ class tWidgetLayout
 	const cLayout = 'cLayout';
 	const cArbeitsplatz = 'cArbeitsplatz';
 	const nApplikation = 'nApplikation';
+	const COLUMN_NAMES = ['kWidgetLayout', 'kBenutzer', 'cLayout', 'cArbeitsplatz', 'nApplikation'];
+	const COLUMN_TYPES = [
+		'kWidgetLayout' => 'int',
+		'kBenutzer' => 'int',
+		'cLayout' => 'varchar',
+		'cArbeitsplatz' => 'varchar',
+		'nApplikation' => 'int',
+	];
 
 	/** @var int kWidgetLayout */
 	public $kWidgetLayout;

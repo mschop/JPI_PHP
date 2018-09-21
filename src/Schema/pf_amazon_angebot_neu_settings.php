@@ -20,6 +20,40 @@ class pf_amazon_angebot_neu_settings
 	const cCondition9 = 'cCondition9';
 	const cCondition10 = 'cCondition10';
 	const cCondition11 = 'cCondition11';
+	const COLUMN_NAMES = [
+		'kUser',
+		'nPlattform',
+		'nCondition',
+		'nStandard',
+		'cCondition1',
+		'cCondition2',
+		'cCondition3',
+		'cCondition4',
+		'cCondition5',
+		'cCondition6',
+		'cCondition7',
+		'cCondition8',
+		'cCondition9',
+		'cCondition10',
+		'cCondition11',
+	];
+	const COLUMN_TYPES = [
+		'kUser' => 'int',
+		'nPlattform' => 'int',
+		'nCondition' => 'int',
+		'nStandard' => 'int',
+		'cCondition1' => 'varchar',
+		'cCondition2' => 'varchar',
+		'cCondition3' => 'varchar',
+		'cCondition4' => 'varchar',
+		'cCondition5' => 'varchar',
+		'cCondition6' => 'varchar',
+		'cCondition7' => 'varchar',
+		'cCondition8' => 'varchar',
+		'cCondition9' => 'varchar',
+		'cCondition10' => 'varchar',
+		'cCondition11' => 'varchar',
+	];
 
 	/** @var int kUser */
 	public $kUser;

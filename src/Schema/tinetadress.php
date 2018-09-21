@@ -24,6 +24,48 @@ class tinetadress
 	const cTitel = 'cTitel';
 	const cZusatz = 'cZusatz';
 	const cBundesland = 'cBundesland';
+	const COLUMN_NAMES = [
+		'kInetAdress',
+		'kKunde',
+		'cVorname',
+		'cNachname',
+		'cFirma',
+		'cStrasse',
+		'cPLZ',
+		'cStadt',
+		'cLand',
+		'cTel',
+		'cFax',
+		'cMail',
+		'cAnrede',
+		'cAdressZusatz',
+		'kShop',
+		'cMobil',
+		'cTitel',
+		'cZusatz',
+		'cBundesland',
+	];
+	const COLUMN_TYPES = [
+		'kInetAdress' => 'int',
+		'kKunde' => 'int',
+		'cVorname' => 'varchar',
+		'cNachname' => 'varchar',
+		'cFirma' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cStadt' => 'varchar',
+		'cLand' => 'varchar',
+		'cTel' => 'varchar',
+		'cFax' => 'varchar',
+		'cMail' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cAdressZusatz' => 'varchar',
+		'kShop' => 'int',
+		'cMobil' => 'varchar',
+		'cTitel' => 'varchar',
+		'cZusatz' => 'varchar',
+		'cBundesland' => 'varchar',
+	];
 
 	/** @var int kInetAdress */
 	public $kInetAdress;

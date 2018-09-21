@@ -14,6 +14,28 @@ class tVersanddatenImportVorlage
 	const nSpalteVersandDatum = 'nSpalteVersandDatum';
 	const nSpalteTrackingNummer = 'nSpalteTrackingNummer';
 	const nSpalteVersandInfo = 'nSpalteVersandInfo';
+	const COLUMN_NAMES = [
+		'kVersanddatenImportVorlage',
+		'cName',
+		'cTrennzeichen',
+		'nKopfzeilen',
+		'cDatumsFormat',
+		'nSpalteId',
+		'nSpalteVersandDatum',
+		'nSpalteTrackingNummer',
+		'nSpalteVersandInfo',
+	];
+	const COLUMN_TYPES = [
+		'kVersanddatenImportVorlage' => 'int',
+		'cName' => 'varchar',
+		'cTrennzeichen' => 'char',
+		'nKopfzeilen' => 'int',
+		'cDatumsFormat' => 'varchar',
+		'nSpalteId' => 'int',
+		'nSpalteVersandDatum' => 'int',
+		'nSpalteTrackingNummer' => 'int',
+		'nSpalteVersandInfo' => 'int',
+	];
 
 	/** @var int kVersanddatenImportVorlage */
 	public $kVersanddatenImportVorlage;

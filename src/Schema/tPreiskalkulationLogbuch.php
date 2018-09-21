@@ -14,6 +14,18 @@ class tPreiskalkulationLogbuch
 	const cArtikel = 'cArtikel';
 	const cArtNr = 'cArtNr';
 	const kUSer = 'kUSer';
+	const COLUMN_NAMES = ['kLogbuch', 'cPlattform', 'cKategorie', 'cBetreff', 'cLog', 'dZeit', 'cArtikel', 'cArtNr', 'kUSer'];
+	const COLUMN_TYPES = [
+		'kLogbuch' => 'int',
+		'cPlattform' => 'varchar',
+		'cKategorie' => 'varchar',
+		'cBetreff' => 'varchar',
+		'cLog' => 'varchar',
+		'dZeit' => 'datetime',
+		'cArtikel' => 'varchar',
+		'cArtNr' => 'varchar',
+		'kUSer' => 'int',
+	];
 
 	/** @var int kLogbuch */
 	public $kLogbuch;

@@ -13,6 +13,26 @@ class tAbrechnungEinzelnachweis
 	const kObjektPk = 'kObjektPk';
 	const dErstellt = 'dErstellt';
 	const cHinweis = 'cHinweis';
+	const COLUMN_NAMES = [
+		'kAbrechnungEinzelnachweis',
+		'kAbrechnung',
+		'kAbrechnungPos',
+		'fAnzahl',
+		'nObjekt',
+		'kObjektPk',
+		'dErstellt',
+		'cHinweis',
+	];
+	const COLUMN_TYPES = [
+		'kAbrechnungEinzelnachweis' => 'int',
+		'kAbrechnung' => 'int',
+		'kAbrechnungPos' => 'int',
+		'fAnzahl' => 'decimal',
+		'nObjekt' => 'int',
+		'kObjektPk' => 'int',
+		'dErstellt' => 'datetime',
+		'cHinweis' => 'nvarchar',
+	];
 
 	/** @var int kAbrechnungEinzelnachweis */
 	public $kAbrechnungEinzelnachweis;

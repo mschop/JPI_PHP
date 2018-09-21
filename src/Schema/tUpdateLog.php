@@ -11,6 +11,15 @@ class tUpdateLog
 	const nSchweregrad = 'nSchweregrad';
 	const kBenutzer = 'kBenutzer';
 	const cMeldung = 'cMeldung';
+	const COLUMN_NAMES = ['kUpdateLog', 'cModul', 'dZeitstempel', 'nSchweregrad', 'kBenutzer', 'cMeldung'];
+	const COLUMN_TYPES = [
+		'kUpdateLog' => 'int',
+		'cModul' => 'varchar',
+		'dZeitstempel' => 'datetime',
+		'nSchweregrad' => 'int',
+		'kBenutzer' => 'int',
+		'cMeldung' => 'varchar',
+	];
 
 	/** @var int kUpdateLog */
 	public $kUpdateLog;

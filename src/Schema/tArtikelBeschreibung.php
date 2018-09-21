@@ -16,6 +16,32 @@ class tArtikelBeschreibung
 	const cMetaDescription = 'cMetaDescription';
 	const cTitleTag = 'cTitleTag';
 	const cMetaKeywords = 'cMetaKeywords';
+	const COLUMN_NAMES = [
+		'kArtikel',
+		'kSprache',
+		'kPlattform',
+		'kShop',
+		'cName',
+		'cBeschreibung',
+		'cKurzBeschreibung',
+		'cUrlPfad',
+		'cMetaDescription',
+		'cTitleTag',
+		'cMetaKeywords',
+	];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'kSprache' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'cName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'cKurzBeschreibung' => 'varchar',
+		'cUrlPfad' => 'varchar',
+		'cMetaDescription' => 'varchar',
+		'cTitleTag' => 'varchar',
+		'cMetaKeywords' => 'varchar',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

@@ -13,6 +13,17 @@ class pf_amazon_queue
 	const nStatus = 'nStatus';
 	const dErstellt = 'dErstellt';
 	const dGesendet = 'dGesendet';
+	const COLUMN_NAMES = ['kAmazonQueue', 'kUser', 'nKey', 'cFeed', 'cValue', 'nStatus', 'dErstellt', 'dGesendet'];
+	const COLUMN_TYPES = [
+		'kAmazonQueue' => 'int',
+		'kUser' => 'int',
+		'nKey' => 'int',
+		'cFeed' => 'varchar',
+		'cValue' => 'varchar',
+		'nStatus' => 'tinyint',
+		'dErstellt' => 'datetime',
+		'dGesendet' => 'datetime',
+	];
 
 	/** @var int kAmazonQueue */
 	public $kAmazonQueue;

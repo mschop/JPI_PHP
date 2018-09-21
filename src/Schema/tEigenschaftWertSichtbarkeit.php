@@ -8,6 +8,8 @@ class tEigenschaftWertSichtbarkeit
 	const kEigenschaftWert = 'kEigenschaftWert';
 	const kKundenGruppe = 'kKundenGruppe';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = ['kEigenschaftWert', 'kKundenGruppe', 'kShop'];
+	const COLUMN_TYPES = ['kEigenschaftWert' => 'int', 'kKundenGruppe' => 'int', 'kShop' => 'int'];
 
 	/** @var int kEigenschaftWert */
 	public $kEigenschaftWert;

@@ -13,6 +13,17 @@ class tDownload
 	const nTage = 'nTage';
 	const dErstellt = 'dErstellt';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kDownload', 'cID', 'cPfad', 'cPfadVorschau', 'nAnzahl', 'nTage', 'dErstellt', 'nSort'];
+	const COLUMN_TYPES = [
+		'kDownload' => 'int',
+		'cID' => 'varchar',
+		'cPfad' => 'varchar',
+		'cPfadVorschau' => 'varchar',
+		'nAnzahl' => 'int',
+		'nTage' => 'int',
+		'dErstellt' => 'datetime',
+		'nSort' => 'int',
+	];
 
 	/** @var int kDownload */
 	public $kDownload;

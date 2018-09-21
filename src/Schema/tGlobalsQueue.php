@@ -11,6 +11,15 @@ class tGlobalsQueue
 	const kKey = 'kKey';
 	const cText = 'cText';
 	const dTimeStamp = 'dTimeStamp';
+	const COLUMN_NAMES = ['kShop', 'nType', 'cName', 'kKey', 'cText', 'dTimeStamp'];
+	const COLUMN_TYPES = [
+		'kShop' => 'int',
+		'nType' => 'tinyint',
+		'cName' => 'varchar',
+		'kKey' => 'int',
+		'cText' => 'varchar',
+		'dTimeStamp' => 'datetime',
+	];
 
 	/** @var int kShop */
 	public $kShop;

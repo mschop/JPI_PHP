@@ -14,6 +14,28 @@ class tLieferantenRankingZeitraum
 	const nAnteilProzent = 'nAnteilProzent';
 	const nPauschal = 'nPauschal';
 	const dStand = 'dStand';
+	const COLUMN_NAMES = [
+		'kLieferant',
+		'nZeitraum',
+		'dVon',
+		'nType',
+		'nRang',
+		'nRangMax',
+		'nAnteilProzent',
+		'nPauschal',
+		'dStand',
+	];
+	const COLUMN_TYPES = [
+		'kLieferant' => 'int',
+		'nZeitraum' => 'tinyint',
+		'dVon' => 'datetime',
+		'nType' => 'tinyint',
+		'nRang' => 'int',
+		'nRangMax' => 'int',
+		'nAnteilProzent' => 'decimal',
+		'nPauschal' => 'decimal',
+		'dStand' => 'datetime',
+	];
 
 	/** @var int kLieferant */
 	public $kLieferant;

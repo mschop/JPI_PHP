@@ -9,6 +9,8 @@ class tInetKundenAttribute
 	const kShop = 'kShop';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kInetKunde', 'kShop', 'cName', 'cValue'];
+	const COLUMN_TYPES = ['kInetKunde' => 'int', 'kShop' => 'int', 'cName' => 'varchar', 'cValue' => 'varchar'];
 
 	/** @var int kInetKunde */
 	public $kInetKunde;

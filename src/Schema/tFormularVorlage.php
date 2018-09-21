@@ -17,6 +17,34 @@ class tFormularVorlage
 	const kWarenlager = 'kWarenlager';
 	const kPlattform = 'kPlattform';
 	const cMahnstufenName = 'cMahnstufenName';
+	const COLUMN_NAMES = [
+		'kFormularVorlage',
+		'nTyp',
+		'kFormular',
+		'kFormularLLVorlageDaten',
+		'cName',
+		'kFirma',
+		'kSprache',
+		'kKundenGruppe',
+		'kLieferant',
+		'kWarenlager',
+		'kPlattform',
+		'cMahnstufenName',
+	];
+	const COLUMN_TYPES = [
+		'kFormularVorlage' => 'int',
+		'nTyp' => 'tinyint',
+		'kFormular' => 'int',
+		'kFormularLLVorlageDaten' => 'int',
+		'cName' => 'varchar',
+		'kFirma' => 'int',
+		'kSprache' => 'int',
+		'kKundenGruppe' => 'int',
+		'kLieferant' => 'int',
+		'kWarenlager' => 'int',
+		'kPlattform' => 'int',
+		'cMahnstufenName' => 'varchar',
+	];
 
 	/** @var int kFormularVorlage */
 	public $kFormularVorlage;

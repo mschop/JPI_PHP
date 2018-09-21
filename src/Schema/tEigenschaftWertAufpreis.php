@@ -9,6 +9,13 @@ class tEigenschaftWertAufpreis
 	const kKundenGruppe = 'kKundenGruppe';
 	const kShop = 'kShop';
 	const fAufpreisNetto = 'fAufpreisNetto';
+	const COLUMN_NAMES = ['kEigenschaftWert', 'kKundenGruppe', 'kShop', 'fAufpreisNetto'];
+	const COLUMN_TYPES = [
+		'kEigenschaftWert' => 'int',
+		'kKundenGruppe' => 'int',
+		'kShop' => 'int',
+		'fAufpreisNetto' => 'decimal',
+	];
 
 	/** @var int kEigenschaftWert */
 	public $kEigenschaftWert;

@@ -10,6 +10,14 @@ class tZahlungsArtSprache
 	const cName = 'cName';
 	const cPrtString = 'cPrtString';
 	const cPrtStringVor = 'cPrtStringVor';
+	const COLUMN_NAMES = ['kZahlungsart', 'kSprache', 'cName', 'cPrtString', 'cPrtStringVor'];
+	const COLUMN_TYPES = [
+		'kZahlungsart' => 'int',
+		'kSprache' => 'int',
+		'cName' => 'varchar',
+		'cPrtString' => 'varchar',
+		'cPrtStringVor' => 'varchar',
+	];
 
 	/** @var int kZahlungsart */
 	public $kZahlungsart;

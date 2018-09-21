@@ -8,6 +8,12 @@ class pf_amazon_Mapping_ItemsToVariationTheme
 	const kMapping_ItemsToVariationTheme = 'kMapping_ItemsToVariationTheme';
 	const kMapping_VariationThemes = 'kMapping_VariationThemes';
 	const kMapping_AmazonVariationen = 'kMapping_AmazonVariationen';
+	const COLUMN_NAMES = ['kMapping_ItemsToVariationTheme', 'kMapping_VariationThemes', 'kMapping_AmazonVariationen'];
+	const COLUMN_TYPES = [
+		'kMapping_ItemsToVariationTheme' => 'int',
+		'kMapping_VariationThemes' => 'int',
+		'kMapping_AmazonVariationen' => 'int',
+	];
 
 	/** @var int kMapping_ItemsToVariationTheme */
 	public $kMapping_ItemsToVariationTheme;

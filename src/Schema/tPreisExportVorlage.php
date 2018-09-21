@@ -10,6 +10,14 @@ class tPreisExportVorlage
 	const kPlattform = 'kPlattform';
 	const kKundengruppe = 'kKundengruppe';
 	const sMapping = 'sMapping';
+	const COLUMN_NAMES = ['kPreisExportVorlage', 'cName', 'kPlattform', 'kKundengruppe', 'sMapping'];
+	const COLUMN_TYPES = [
+		'kPreisExportVorlage' => 'int',
+		'cName' => 'varchar',
+		'kPlattform' => 'int',
+		'kKundengruppe' => 'int',
+		'sMapping' => 'varchar',
+	];
 
 	/** @var int kPreisExportVorlage */
 	public $kPreisExportVorlage;

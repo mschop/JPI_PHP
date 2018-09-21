@@ -11,6 +11,15 @@ class tBenutzerLog
 	const dZeitstempel = 'dZeitstempel';
 	const cAktion = 'cAktion';
 	const nAktionsTyp = 'nAktionsTyp';
+	const COLUMN_NAMES = ['kBenutzerLog', 'kBenutzer', 'nApplikation', 'dZeitstempel', 'cAktion', 'nAktionsTyp'];
+	const COLUMN_TYPES = [
+		'kBenutzerLog' => 'int',
+		'kBenutzer' => 'int',
+		'nApplikation' => 'int',
+		'dZeitstempel' => 'datetime',
+		'cAktion' => 'varchar',
+		'nAktionsTyp' => 'int',
+	];
 
 	/** @var int kBenutzerLog */
 	public $kBenutzerLog;

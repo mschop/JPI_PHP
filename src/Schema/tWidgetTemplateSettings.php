@@ -13,6 +13,26 @@ class tWidgetTemplateSettings
 	const cKey = 'cKey';
 	const cValue = 'cValue';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = [
+		'kWidgetTemplateSettings',
+		'kWidgetTemplate',
+		'cTitel',
+		'cBeschreibung',
+		'nType',
+		'cKey',
+		'cValue',
+		'nSort',
+	];
+	const COLUMN_TYPES = [
+		'kWidgetTemplateSettings' => 'int',
+		'kWidgetTemplate' => 'int',
+		'cTitel' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'nType' => 'int',
+		'cKey' => 'varchar',
+		'cValue' => 'varchar',
+		'nSort' => 'int',
+	];
 
 	/** @var int kWidgetTemplateSettings */
 	public $kWidgetTemplateSettings;

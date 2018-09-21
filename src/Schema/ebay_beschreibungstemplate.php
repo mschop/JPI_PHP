@@ -14,6 +14,28 @@ class ebay_beschreibungstemplate
 	const cBody = 'cBody';
 	const cVersandhinweis = 'cVersandhinweis';
 	const PaymentInstructions = 'PaymentInstructions';
+	const COLUMN_NAMES = [
+		'kEbayBeschreibungsTemplate',
+		'kEbayuser',
+		'kItem',
+		'cTitel',
+		'cH1',
+		'cH2',
+		'cBody',
+		'cVersandhinweis',
+		'PaymentInstructions',
+	];
+	const COLUMN_TYPES = [
+		'kEbayBeschreibungsTemplate' => 'int',
+		'kEbayuser' => 'int',
+		'kItem' => 'int',
+		'cTitel' => 'varchar',
+		'cH1' => 'varchar',
+		'cH2' => 'varchar',
+		'cBody' => 'varchar',
+		'cVersandhinweis' => 'varchar',
+		'PaymentInstructions' => 'varchar',
+	];
 
 	/** @var int kEbayBeschreibungsTemplate */
 	public $kEbayBeschreibungsTemplate;

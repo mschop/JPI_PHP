@@ -18,6 +18,36 @@ class teklieferantpreise
 	const fPreis3 = 'fPreis3';
 	const fPreis4 = 'fPreis4';
 	const fPreis5 = 'fPreis5';
+	const COLUMN_NAMES = [
+		'kEKLieferantPreise',
+		'kArtikel',
+		'kLieferant',
+		'nAnzahl1',
+		'nAnzahl2',
+		'nAnzahl3',
+		'nAnzahl4',
+		'nAnzahl5',
+		'fPreis1',
+		'fPreis2',
+		'fPreis3',
+		'fPreis4',
+		'fPreis5',
+	];
+	const COLUMN_TYPES = [
+		'kEKLieferantPreise' => 'int',
+		'kArtikel' => 'int',
+		'kLieferant' => 'int',
+		'nAnzahl1' => 'int',
+		'nAnzahl2' => 'int',
+		'nAnzahl3' => 'int',
+		'nAnzahl4' => 'int',
+		'nAnzahl5' => 'int',
+		'fPreis1' => 'decimal',
+		'fPreis2' => 'decimal',
+		'fPreis3' => 'decimal',
+		'fPreis4' => 'decimal',
+		'fPreis5' => 'decimal',
+	];
 
 	/** @var int kEKLieferantPreise */
 	public $kEKLieferantPreise;

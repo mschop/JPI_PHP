@@ -12,6 +12,24 @@ class tKundenDrucktextSprache
 	const cAngebotstext = 'cAngebotstext';
 	const cGutschrifttext = 'cGutschrifttext';
 	const cLieferscheintext = 'cLieferscheintext';
+	const COLUMN_NAMES = [
+		'kKundenDrucktext',
+		'kSprache',
+		'cRechnungstext',
+		'cAuftragstext',
+		'cAngebotstext',
+		'cGutschrifttext',
+		'cLieferscheintext',
+	];
+	const COLUMN_TYPES = [
+		'kKundenDrucktext' => 'int',
+		'kSprache' => 'int',
+		'cRechnungstext' => 'varchar',
+		'cAuftragstext' => 'varchar',
+		'cAngebotstext' => 'varchar',
+		'cGutschrifttext' => 'varchar',
+		'cLieferscheintext' => 'varchar',
+	];
 
 	/** @var int kKundenDrucktext */
 	public $kKundenDrucktext;

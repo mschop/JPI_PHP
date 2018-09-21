@@ -18,6 +18,45 @@
                 }
             }
         },
+        "/product/{productId}": {
+            "get": {
+                "description": "Get a specific product",
+                "operationId": "App\\Controller\\ProductController::get",
+                "parameters": [
+                    {
+                        "name": "tenantId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ProductDto"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Product not found"
+                    }
+                }
+            }
+        },
         "/tenant": {
             "get": {
                 "description": "Fetch all created tenants in JTL-Wawi installation.",
@@ -42,6 +81,55 @@
     },
     "components": {
         "schemas": {
+            "ProductDescriptionDto": {
+                "properties": {
+                    "languageId": {
+                        "type": "integer"
+                    },
+                    "platformId": {
+                        "type": "integer"
+                    },
+                    "shopId": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "shortDescription": {
+                        "type": "string"
+                    },
+                    "urlPath": {
+                        "type": "string"
+                    },
+                    "metaDescription": {
+                        "type": "string"
+                    },
+                    "metaTitle": {
+                        "type": "string"
+                    },
+                    "metaKeywords": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "ProductDto": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "sku": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
             "TenantDto": {
                 "properties": {
                     "id": {

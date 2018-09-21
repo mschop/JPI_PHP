@@ -11,6 +11,15 @@ class pf_amazon_angebot_selbstErstellt
 	const kItem = 'kItem';
 	const dErstellt = 'dErstellt';
 	const nStatus = 'nStatus';
+	const COLUMN_NAMES = ['cSellerSKU', 'kUser', 'nPlattform', 'kItem', 'dErstellt', 'nStatus'];
+	const COLUMN_TYPES = [
+		'cSellerSKU' => 'varchar',
+		'kUser' => 'varchar',
+		'nPlattform' => 'int',
+		'kItem' => 'int',
+		'dErstellt' => 'datetime',
+		'nStatus' => 'int',
+	];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

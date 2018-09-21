@@ -9,6 +9,13 @@ class tLiefArtikelPreis
 	const kLiefArtikel = 'kLiefArtikel';
 	const fAb = 'fAb';
 	const fPreisNetto = 'fPreisNetto';
+	const COLUMN_NAMES = ['kLiefArtikelPreis', 'kLiefArtikel', 'fAb', 'fPreisNetto'];
+	const COLUMN_TYPES = [
+		'kLiefArtikelPreis' => 'int',
+		'kLiefArtikel' => 'int',
+		'fAb' => 'decimal',
+		'fPreisNetto' => 'decimal',
+	];
 
 	/** @var int kLiefArtikelPreis */
 	public $kLiefArtikelPreis;

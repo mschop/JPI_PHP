@@ -9,6 +9,8 @@ class ameise_exporttyp
 	const kExportTypParent = 'kExportTypParent';
 	const cName = 'cName';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kExportTyp', 'kExportTypParent', 'cName', 'nSort'];
+	const COLUMN_TYPES = ['kExportTyp' => 'int', 'kExportTypParent' => 'int', 'cName' => 'varchar', 'nSort' => 'tinyint'];
 
 	/** @var int kExportTyp */
 	public $kExportTyp;

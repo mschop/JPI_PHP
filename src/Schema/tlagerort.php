@@ -9,6 +9,8 @@ class tlagerort
 	const kLager = 'kLager';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kLagerOrt', 'kLager', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kLagerOrt' => 'int', 'kLager' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kLagerOrt */
 	public $kLagerOrt;

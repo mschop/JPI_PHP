@@ -17,6 +17,34 @@ class tAbrechnungLagerplatzPreview
 	const kBenutzer = 'kBenutzer';
 	const cSessionId = 'cSessionId';
 	const dZeitstempel = 'dZeitstempel';
+	const COLUMN_NAMES = [
+		'kAbrechnungLagerplatz',
+		'kLieferant',
+		'kWarenLagerPlatz',
+		'kWarenLagerPlatzTyp',
+		'kWMSLagerBereich',
+		'kWarenlager',
+		'nModus',
+		'nLagerkostenBerechnung',
+		'kArtikel',
+		'kBenutzer',
+		'cSessionId',
+		'dZeitstempel',
+	];
+	const COLUMN_TYPES = [
+		'kAbrechnungLagerplatz' => 'int',
+		'kLieferant' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kWarenLagerPlatzTyp' => 'int',
+		'kWMSLagerBereich' => 'int',
+		'kWarenlager' => 'int',
+		'nModus' => 'int',
+		'nLagerkostenBerechnung' => 'int',
+		'kArtikel' => 'int',
+		'kBenutzer' => 'int',
+		'cSessionId' => 'varchar',
+		'dZeitstempel' => 'datetime',
+	];
 
 	/** @var int kAbrechnungLagerplatz */
 	public $kAbrechnungLagerplatz;

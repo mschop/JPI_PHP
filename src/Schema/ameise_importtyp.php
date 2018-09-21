@@ -9,6 +9,8 @@ class ameise_importtyp
 	const kImportTypParent = 'kImportTypParent';
 	const cName = 'cName';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kImportTyp', 'kImportTypParent', 'cName', 'nSort'];
+	const COLUMN_TYPES = ['kImportTyp' => 'int', 'kImportTypParent' => 'int', 'cName' => 'varchar', 'nSort' => 'tinyint'];
 
 	/** @var int kImportTyp */
 	public $kImportTyp;

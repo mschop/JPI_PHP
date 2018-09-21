@@ -12,6 +12,24 @@ class tZahlungsabgleichLogeintrag
 	const cMeldung = 'cMeldung';
 	const kZahlungsabgleichModul = 'kZahlungsabgleichModul';
 	const cKontoIdentifikation = 'cKontoIdentifikation';
+	const COLUMN_NAMES = [
+		'kZahlungsabgleichLogeintrag',
+		'kZahlungsabgleichLogsitzung',
+		'dZeitpunkt',
+		'nSchweregrad',
+		'cMeldung',
+		'kZahlungsabgleichModul',
+		'cKontoIdentifikation',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsabgleichLogeintrag' => 'int',
+		'kZahlungsabgleichLogsitzung' => 'int',
+		'dZeitpunkt' => 'datetime',
+		'nSchweregrad' => 'tinyint',
+		'cMeldung' => 'varchar',
+		'kZahlungsabgleichModul' => 'int',
+		'cKontoIdentifikation' => 'varchar',
+	];
 
 	/** @var int kZahlungsabgleichLogeintrag */
 	public $kZahlungsabgleichLogeintrag;

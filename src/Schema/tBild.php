@@ -19,6 +19,38 @@ class tBild
 	const nVorschauHoehe = 'nVorschauHoehe';
 	const dErstellt = 'dErstellt';
 	const dAenderung = 'dAenderung';
+	const COLUMN_NAMES = [
+		'kBild',
+		'cQuelle',
+		'bBild',
+		'nDateigroesse',
+		'nBreite',
+		'nHoehe',
+		'cHash',
+		'cChecksum',
+		'bVorschauBild',
+		'nVorschauDateigroesse',
+		'nVorschauBreite',
+		'nVorschauHoehe',
+		'dErstellt',
+		'dAenderung',
+	];
+	const COLUMN_TYPES = [
+		'kBild' => 'int',
+		'cQuelle' => 'varchar',
+		'bBild' => 'image',
+		'nDateigroesse' => 'int',
+		'nBreite' => 'int',
+		'nHoehe' => 'int',
+		'cHash' => 'varchar',
+		'cChecksum' => 'varchar',
+		'bVorschauBild' => 'image',
+		'nVorschauDateigroesse' => 'int',
+		'nVorschauBreite' => 'int',
+		'nVorschauHoehe' => 'int',
+		'dErstellt' => 'datetime',
+		'dAenderung' => 'datetime',
+	];
 
 	/** @var int kBild */
 	public $kBild;

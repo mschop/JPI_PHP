@@ -9,6 +9,8 @@ class pf_amazon_apa_preis
 	const nPlattform = 'nPlattform';
 	const fPreis = 'fPreis';
 	const dErstellt = 'dErstellt';
+	const COLUMN_NAMES = ['cSellerSKU', 'nPlattform', 'fPreis', 'dErstellt'];
+	const COLUMN_TYPES = ['cSellerSKU' => 'varchar', 'nPlattform' => 'int', 'fPreis' => 'decimal', 'dErstellt' => 'datetime'];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

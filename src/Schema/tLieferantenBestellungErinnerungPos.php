@@ -9,6 +9,13 @@ class tLieferantenBestellungErinnerungPos
 	const kLieferantenBestellung = 'kLieferantenBestellung';
 	const kLieferantenBestellungPos = 'kLieferantenBestellungPos';
 	const fAnzahl = 'fAnzahl';
+	const COLUMN_NAMES = ['kLieferantenBestellungErinnerung', 'kLieferantenBestellung', 'kLieferantenBestellungPos', 'fAnzahl'];
+	const COLUMN_TYPES = [
+		'kLieferantenBestellungErinnerung' => 'int',
+		'kLieferantenBestellung' => 'int',
+		'kLieferantenBestellungPos' => 'int',
+		'fAnzahl' => 'decimal',
+	];
 
 	/** @var int kLieferantenBestellungErinnerung */
 	public $kLieferantenBestellungErinnerung;

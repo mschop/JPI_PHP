@@ -10,6 +10,14 @@ class tCsvSettings
 	const cQuote = 'cQuote';
 	const cEscape = 'cEscape';
 	const cComment = 'cComment';
+	const COLUMN_NAMES = ['cKey', 'cDelmiter', 'cQuote', 'cEscape', 'cComment'];
+	const COLUMN_TYPES = [
+		'cKey' => 'nvarchar',
+		'cDelmiter' => 'nvarchar',
+		'cQuote' => 'nvarchar',
+		'cEscape' => 'nvarchar',
+		'cComment' => 'nvarchar',
+	];
 
 	/** @var resource cKey */
 	public $cKey;

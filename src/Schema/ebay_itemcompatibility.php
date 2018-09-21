@@ -16,6 +16,32 @@ class ebay_itemcompatibility
 	const cMotor = 'cMotor';
 	const cHSNTSN = 'cHSNTSN';
 	const cCompatibilityNote = 'cCompatibilityNote';
+	const COLUMN_NAMES = [
+		'kItemCompatibility',
+		'kItem',
+		'kType',
+		'cMarke',
+		'cModell',
+		'cTyp',
+		'cPlattform',
+		'cBaujahr',
+		'cMotor',
+		'cHSNTSN',
+		'cCompatibilityNote',
+	];
+	const COLUMN_TYPES = [
+		'kItemCompatibility' => 'int',
+		'kItem' => 'int',
+		'kType' => 'int',
+		'cMarke' => 'varchar',
+		'cModell' => 'varchar',
+		'cTyp' => 'varchar',
+		'cPlattform' => 'varchar',
+		'cBaujahr' => 'varchar',
+		'cMotor' => 'varchar',
+		'cHSNTSN' => 'varchar',
+		'cCompatibilityNote' => 'varchar',
+	];
 
 	/** @var int kItemCompatibility */
 	public $kItemCompatibility;

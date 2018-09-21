@@ -17,6 +17,34 @@ class tintervallpos
 	const cArtNr = 'cArtNr';
 	const nType = 'nType';
 	const cHinweis = 'cHinweis';
+	const COLUMN_NAMES = [
+		'kIntervallPos',
+		'kArtikel',
+		'kIntervall',
+		'fVKPreis',
+		'fMwSt',
+		'nAnzahl',
+		'fRabatt',
+		'cString',
+		'fVKNetto',
+		'cArtNr',
+		'nType',
+		'cHinweis',
+	];
+	const COLUMN_TYPES = [
+		'kIntervallPos' => 'int',
+		'kArtikel' => 'int',
+		'kIntervall' => 'int',
+		'fVKPreis' => 'decimal',
+		'fMwSt' => 'decimal',
+		'nAnzahl' => 'decimal',
+		'fRabatt' => 'decimal',
+		'cString' => 'varchar',
+		'fVKNetto' => 'decimal',
+		'cArtNr' => 'varchar',
+		'nType' => 'tinyint',
+		'cHinweis' => 'varchar',
+	];
 
 	/** @var int kIntervallPos */
 	public $kIntervallPos;

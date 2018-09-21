@@ -9,6 +9,8 @@ class tLieferantRabattStaffel
 	const kLieferant = 'kLieferant';
 	const fAb = 'fAb';
 	const fRabatt = 'fRabatt';
+	const COLUMN_NAMES = ['kLieferantStaffelPreis', 'kLieferant', 'fAb', 'fRabatt'];
+	const COLUMN_TYPES = ['kLieferantStaffelPreis' => 'int', 'kLieferant' => 'int', 'fAb' => 'decimal', 'fRabatt' => 'decimal'];
 
 	/** @var int kLieferantStaffelPreis */
 	public $kLieferantStaffelPreis;

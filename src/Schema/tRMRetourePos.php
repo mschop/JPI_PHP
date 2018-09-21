@@ -18,6 +18,36 @@ class tRMRetourePos
 	const kArtikel = 'kArtikel';
 	const nGutschreiben = 'nGutschreiben';
 	const cFfnReturnPosId = 'cFfnReturnPosId';
+	const COLUMN_NAMES = [
+		'kRMRetourePos',
+		'kRMRetoure',
+		'kRMGrund',
+		'kRMStatusVerlauf',
+		'kZustand',
+		'kLieferscheinPos',
+		'kBenutzer',
+		'cZustandKommentar',
+		'cGrundKommentar',
+		'fAnzahl',
+		'kArtikel',
+		'nGutschreiben',
+		'cFfnReturnPosId',
+	];
+	const COLUMN_TYPES = [
+		'kRMRetourePos' => 'int',
+		'kRMRetoure' => 'int',
+		'kRMGrund' => 'int',
+		'kRMStatusVerlauf' => 'int',
+		'kZustand' => 'int',
+		'kLieferscheinPos' => 'int',
+		'kBenutzer' => 'int',
+		'cZustandKommentar' => 'varchar',
+		'cGrundKommentar' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'kArtikel' => 'int',
+		'nGutschreiben' => 'tinyint',
+		'cFfnReturnPosId' => 'varchar',
+	];
 
 	/** @var int kRMRetourePos */
 	public $kRMRetourePos;

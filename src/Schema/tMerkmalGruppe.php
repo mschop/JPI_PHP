@@ -8,6 +8,8 @@ class tMerkmalGruppe
 	const kMerkmalGruppe = 'kMerkmalGruppe';
 	const cName = 'cName';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kMerkmalGruppe', 'cName', 'nSort'];
+	const COLUMN_TYPES = ['kMerkmalGruppe' => 'int', 'cName' => 'varchar', 'nSort' => 'int'];
 
 	/** @var int kMerkmalGruppe */
 	public $kMerkmalGruppe;

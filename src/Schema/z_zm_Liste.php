@@ -9,6 +9,8 @@ class z_zm_Liste
 	const cKey = 'cKey';
 	const cDesc = 'cDesc';
 	const nStatus = 'nStatus';
+	const COLUMN_NAMES = ['kListe', 'cKey', 'cDesc', 'nStatus'];
+	const COLUMN_TYPES = ['kListe' => 'int', 'cKey' => 'varchar', 'cDesc' => 'varchar', 'nStatus' => 'tinyint'];
 
 	/** @var int kListe */
 	public $kListe;

@@ -16,6 +16,32 @@ class ebay_xx_sites
 	const www = 'www';
 	const kPlattform = 'kPlattform';
 	const cWaehrungISO = 'cWaehrungISO';
+	const COLUMN_NAMES = [
+		'SiteID',
+		'cAbbreviation',
+		'cName',
+		'cSiteCodeType',
+		'cSprachISO',
+		'cLandISO',
+		'dLastUpdate',
+		'nVersion',
+		'www',
+		'kPlattform',
+		'cWaehrungISO',
+	];
+	const COLUMN_TYPES = [
+		'SiteID' => 'int',
+		'cAbbreviation' => 'varchar',
+		'cName' => 'varchar',
+		'cSiteCodeType' => 'varchar',
+		'cSprachISO' => 'varchar',
+		'cLandISO' => 'varchar',
+		'dLastUpdate' => 'datetime',
+		'nVersion' => 'int',
+		'www' => 'varchar',
+		'kPlattform' => 'int',
+		'cWaehrungISO' => 'varchar',
+	];
 
 	/** @var int SiteID */
 	public $SiteID;

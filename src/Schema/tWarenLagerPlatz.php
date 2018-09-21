@@ -22,6 +22,44 @@ class tWarenLagerPlatz
 	const nInvGezaehlt = 'nInvGezaehlt';
 	const nGesperrt = 'nGesperrt';
 	const nPrio = 'nPrio';
+	const COLUMN_NAMES = [
+		'kWarenLagerPlatz',
+		'kWarenLager',
+		'fGewichtMax',
+		'cKommentar',
+		'fLaenge',
+		'fBreite',
+		'fHoehe',
+		'nSort',
+		'cName',
+		'kWarenLagerPlatzTyp',
+		'nStatus',
+		'dWmsInventurDatum',
+		'kWmsInventur',
+		'nPreInvStatus',
+		'nInvGezaehlt',
+		'nGesperrt',
+		'nPrio',
+	];
+	const COLUMN_TYPES = [
+		'kWarenLagerPlatz' => 'int',
+		'kWarenLager' => 'int',
+		'fGewichtMax' => 'decimal',
+		'cKommentar' => 'varchar',
+		'fLaenge' => 'decimal',
+		'fBreite' => 'decimal',
+		'fHoehe' => 'decimal',
+		'nSort' => 'int',
+		'cName' => 'varchar',
+		'kWarenLagerPlatzTyp' => 'int',
+		'nStatus' => 'int',
+		'dWmsInventurDatum' => 'datetime',
+		'kWmsInventur' => 'int',
+		'nPreInvStatus' => 'int',
+		'nInvGezaehlt' => 'tinyint',
+		'nGesperrt' => 'tinyint',
+		'nPrio' => 'int',
+	];
 
 	/** @var int kWarenLagerPlatz */
 	public $kWarenLagerPlatz;

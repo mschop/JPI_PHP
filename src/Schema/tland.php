@@ -15,6 +15,30 @@ class tland
 	const nISONumeric = 'nISONumeric';
 	const cWaehrung = 'cWaehrung';
 	const cDefaultCulture = 'cDefaultCulture';
+	const COLUMN_NAMES = [
+		'cISO',
+		'cName',
+		'cNameEng',
+		'nEU',
+		'cKontinent',
+		'cNameFra',
+		'cISO3',
+		'nISONumeric',
+		'cWaehrung',
+		'cDefaultCulture',
+	];
+	const COLUMN_TYPES = [
+		'cISO' => 'varchar',
+		'cName' => 'varchar',
+		'cNameEng' => 'varchar',
+		'nEU' => 'tinyint',
+		'cKontinent' => 'varchar',
+		'cNameFra' => 'varchar',
+		'cISO3' => 'varchar',
+		'nISONumeric' => 'int',
+		'cWaehrung' => 'char',
+		'cDefaultCulture' => 'varchar',
+	];
 
 	/** @var string cISO */
 	public $cISO;

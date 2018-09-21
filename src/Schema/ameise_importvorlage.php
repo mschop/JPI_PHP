@@ -18,6 +18,36 @@ class ameise_importvorlage
 	const cUebersicht = 'cUebersicht';
 	const dErstellt = 'dErstellt';
 	const nDeleted = 'nDeleted';
+	const COLUMN_NAMES = [
+		'kImportVorlage',
+		'kImportTyp',
+		'kStandardVorlage',
+		'cName',
+		'nDateiformat',
+		'nSpaltenbegrenzer',
+		'nAbZeile',
+		'nKopfzeile',
+		'nQuote',
+		'nEscape',
+		'cUebersicht',
+		'dErstellt',
+		'nDeleted',
+	];
+	const COLUMN_TYPES = [
+		'kImportVorlage' => 'int',
+		'kImportTyp' => 'int',
+		'kStandardVorlage' => 'int',
+		'cName' => 'varchar',
+		'nDateiformat' => 'tinyint',
+		'nSpaltenbegrenzer' => 'tinyint',
+		'nAbZeile' => 'int',
+		'nKopfzeile' => 'tinyint',
+		'nQuote' => 'tinyint',
+		'nEscape' => 'tinyint',
+		'cUebersicht' => 'varchar',
+		'dErstellt' => 'datetime',
+		'nDeleted' => 'tinyint',
+	];
 
 	/** @var int kImportVorlage */
 	public $kImportVorlage;

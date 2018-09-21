@@ -13,6 +13,26 @@ class tWarenLagerPlatzDefault
 	const fHoehe = 'fHoehe';
 	const fBreite = 'fBreite';
 	const cKommentar = 'cKommentar';
+	const COLUMN_NAMES = [
+		'kWarenLager',
+		'kWarenLagerGroesse',
+		'fGewichtMax',
+		'nAnzahlMax',
+		'fLaenge',
+		'fHoehe',
+		'fBreite',
+		'cKommentar',
+	];
+	const COLUMN_TYPES = [
+		'kWarenLager' => 'int',
+		'kWarenLagerGroesse' => 'int',
+		'fGewichtMax' => 'decimal',
+		'nAnzahlMax' => 'int',
+		'fLaenge' => 'decimal',
+		'fHoehe' => 'decimal',
+		'fBreite' => 'decimal',
+		'cKommentar' => 'varchar',
+	];
 
 	/** @var int kWarenLager */
 	public $kWarenLager;

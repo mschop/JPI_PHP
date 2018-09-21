@@ -13,6 +13,17 @@ class tQueue
 	const kOption1 = 'kOption1';
 	const kOption2 = 'kOption2';
 	const nInBearbeitung = 'nInBearbeitung';
+	const COLUMN_NAMES = ['kShop', 'kPlattform', 'cName', 'kWert', 'nAction', 'kOption1', 'kOption2', 'nInBearbeitung'];
+	const COLUMN_TYPES = [
+		'kShop' => 'int',
+		'kPlattform' => 'int',
+		'cName' => 'varchar',
+		'kWert' => 'int',
+		'nAction' => 'tinyint',
+		'kOption1' => 'int',
+		'kOption2' => 'int',
+		'nInBearbeitung' => 'tinyint',
+	];
 
 	/** @var int kShop */
 	public $kShop;

@@ -19,6 +19,38 @@ class ebay_de_attribute
 	const presentationType = 'presentationType';
 	const maxlength = 'maxlength';
 	const ordernumber = 'ordernumber';
+	const COLUMN_NAMES = [
+		'AttributeId',
+		'AttributeSetId',
+		'parentAttrId',
+		'defaultValueId',
+		'Label',
+		'labelVisible',
+		'isRequired',
+		'dateFormat',
+		'WhenToShow',
+		'EditType',
+		'Type',
+		'presentationType',
+		'maxlength',
+		'ordernumber',
+	];
+	const COLUMN_TYPES = [
+		'AttributeId' => 'int',
+		'AttributeSetId' => 'int',
+		'parentAttrId' => 'int',
+		'defaultValueId' => 'int',
+		'Label' => 'varchar',
+		'labelVisible' => 'char',
+		'isRequired' => 'char',
+		'dateFormat' => 'varchar',
+		'WhenToShow' => 'char',
+		'EditType' => 'tinyint',
+		'Type' => 'tinyint',
+		'presentationType' => 'tinyint',
+		'maxlength' => 'tinyint',
+		'ordernumber' => 'tinyint',
+	];
 
 	/** @var int AttributeId */
 	public $AttributeId;

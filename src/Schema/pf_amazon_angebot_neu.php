@@ -20,6 +20,40 @@ class pf_amazon_angebot_neu
 	const nPlattform = 'nPlattform';
 	const cConditionNote = 'cConditionNote';
 	const kAmazonVersandgruppe = 'kAmazonVersandgruppe';
+	const COLUMN_NAMES = [
+		'cSellerSKU',
+		'kUser',
+		'cName',
+		'nQuantity',
+		'fPrice',
+		'cProductId',
+		'nProductIdType',
+		'nCondition',
+		'dErstellt',
+		'dGesendet',
+		'nStatus',
+		'cLetzterFehler',
+		'nPlattform',
+		'cConditionNote',
+		'kAmazonVersandgruppe',
+	];
+	const COLUMN_TYPES = [
+		'cSellerSKU' => 'varchar',
+		'kUser' => 'int',
+		'cName' => 'varchar',
+		'nQuantity' => 'int',
+		'fPrice' => 'decimal',
+		'cProductId' => 'varchar',
+		'nProductIdType' => 'tinyint',
+		'nCondition' => 'tinyint',
+		'dErstellt' => 'datetime',
+		'dGesendet' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cLetzterFehler' => 'varchar',
+		'nPlattform' => 'int',
+		'cConditionNote' => 'varchar',
+		'kAmazonVersandgruppe' => 'int',
+	];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

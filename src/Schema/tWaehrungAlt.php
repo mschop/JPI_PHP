@@ -9,6 +9,13 @@ class tWaehrungAlt
 	const dAktualisiert = 'dAktualisiert';
 	const fFaktorAlt = 'fFaktorAlt';
 	const fFaktorNeu = 'fFaktorNeu';
+	const COLUMN_NAMES = ['kWaehrung', 'dAktualisiert', 'fFaktorAlt', 'fFaktorNeu'];
+	const COLUMN_TYPES = [
+		'kWaehrung' => 'int',
+		'dAktualisiert' => 'datetime',
+		'fFaktorAlt' => 'decimal',
+		'fFaktorNeu' => 'decimal',
+	];
 
 	/** @var int kWaehrung */
 	public $kWaehrung;

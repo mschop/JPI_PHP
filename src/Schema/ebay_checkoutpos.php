@@ -13,6 +13,26 @@ class ebay_checkoutpos
 	const fAnzahl = 'fAnzahl';
 	const fPreis = 'fPreis';
 	const kArtikel = 'kArtikel';
+	const COLUMN_NAMES = [
+		'kEbayCheckoutPos',
+		'kEbayCheckout',
+		'ItemID',
+		'TransactionID',
+		'kXCheckoutPos',
+		'fAnzahl',
+		'fPreis',
+		'kArtikel',
+	];
+	const COLUMN_TYPES = [
+		'kEbayCheckoutPos' => 'int',
+		'kEbayCheckout' => 'int',
+		'ItemID' => 'varchar',
+		'TransactionID' => 'varchar',
+		'kXCheckoutPos' => 'int',
+		'fAnzahl' => 'decimal',
+		'fPreis' => 'decimal',
+		'kArtikel' => 'int',
+	];
 
 	/** @var int kEbayCheckoutPos */
 	public $kEbayCheckoutPos;

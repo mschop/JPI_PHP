@@ -9,6 +9,13 @@ class ebay_mapitemSuchStrings
 	const cSuchStringAnfang = 'cSuchStringAnfang';
 	const cSuchStringEnde = 'cSuchStringEnde';
 	const nSource = 'nSource';
+	const COLUMN_NAMES = ['kEbay_mapitemSuchString', 'cSuchStringAnfang', 'cSuchStringEnde', 'nSource'];
+	const COLUMN_TYPES = [
+		'kEbay_mapitemSuchString' => 'int',
+		'cSuchStringAnfang' => 'varchar',
+		'cSuchStringEnde' => 'varchar',
+		'nSource' => 'tinyint',
+	];
 
 	/** @var int kEbay_mapitemSuchString */
 	public $kEbay_mapitemSuchString;

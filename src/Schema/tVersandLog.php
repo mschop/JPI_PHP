@@ -10,6 +10,14 @@ class tVersandLog
 	const dZeitstempel = 'dZeitstempel';
 	const nStatus = 'nStatus';
 	const cMessage = 'cMessage';
+	const COLUMN_NAMES = ['kVersandLog', 'kVersand', 'dZeitstempel', 'nStatus', 'cMessage'];
+	const COLUMN_TYPES = [
+		'kVersandLog' => 'int',
+		'kVersand' => 'int',
+		'dZeitstempel' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cMessage' => 'varchar',
+	];
 
 	/** @var int kVersandLog */
 	public $kVersandLog;

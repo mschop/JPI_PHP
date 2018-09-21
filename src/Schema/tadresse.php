@@ -27,6 +27,54 @@ class tadresse
 	const cBundesland = 'cBundesland';
 	const cISO = 'cISO';
 	const nStandard = 'nStandard';
+	const COLUMN_NAMES = [
+		'kAdresse',
+		'kInetAdresse',
+		'kKunde',
+		'cFirma',
+		'cAnrede',
+		'cTitel',
+		'cVorname',
+		'cName',
+		'cStrasse',
+		'cPLZ',
+		'cOrt',
+		'cLand',
+		'cTel',
+		'cZusatz',
+		'cAdressZusatz',
+		'cPostID',
+		'cMobil',
+		'cMail',
+		'cFax',
+		'cBundesland',
+		'cISO',
+		'nStandard',
+	];
+	const COLUMN_TYPES = [
+		'kAdresse' => 'int',
+		'kInetAdresse' => 'int',
+		'kKunde' => 'int',
+		'cFirma' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cTitel' => 'varchar',
+		'cVorname' => 'varchar',
+		'cName' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cOrt' => 'varchar',
+		'cLand' => 'varchar',
+		'cTel' => 'varchar',
+		'cZusatz' => 'varchar',
+		'cAdressZusatz' => 'varchar',
+		'cPostID' => 'varchar',
+		'cMobil' => 'varchar',
+		'cMail' => 'varchar',
+		'cFax' => 'varchar',
+		'cBundesland' => 'varchar',
+		'cISO' => 'varchar',
+		'nStandard' => 'tinyint',
+	];
 
 	/** @var int kAdresse */
 	public $kAdresse;

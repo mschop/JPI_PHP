@@ -11,6 +11,15 @@ class tConfiguration
 	const Typ = 'Typ';
 	const ElementID = 'ElementID';
 	const Configuration = 'Configuration';
+	const COLUMN_NAMES = ['kConfig', 'kBenutzer', 'Arbeitsplatz', 'Typ', 'ElementID', 'Configuration'];
+	const COLUMN_TYPES = [
+		'kConfig' => 'int',
+		'kBenutzer' => 'int',
+		'Arbeitsplatz' => 'nvarchar',
+		'Typ' => 'int',
+		'ElementID' => 'int',
+		'Configuration' => 'nvarchar',
+	];
 
 	/** @var int kConfig */
 	public $kConfig;

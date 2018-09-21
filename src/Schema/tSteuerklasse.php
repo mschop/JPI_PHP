@@ -9,6 +9,8 @@ class tSteuerklasse
 	const cName = 'cName';
 	const nStandard = 'nStandard';
 	const nTyp = 'nTyp';
+	const COLUMN_NAMES = ['kSteuerklasse', 'cName', 'nStandard', 'nTyp'];
+	const COLUMN_TYPES = ['kSteuerklasse' => 'int', 'cName' => 'varchar', 'nStandard' => 'tinyint', 'nTyp' => 'int'];
 
 	/** @var int kSteuerklasse */
 	public $kSteuerklasse;

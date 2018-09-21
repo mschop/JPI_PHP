@@ -9,6 +9,13 @@ class tRueckhalteGrund
 	const cName = 'cName';
 	const nZusammenfassbar = 'nZusammenfassbar';
 	const nEinkaufslisteGesperrt = 'nEinkaufslisteGesperrt';
+	const COLUMN_NAMES = ['kRueckhalteGrund', 'cName', 'nZusammenfassbar', 'nEinkaufslisteGesperrt'];
+	const COLUMN_TYPES = [
+		'kRueckhalteGrund' => 'int',
+		'cName' => 'varchar',
+		'nZusammenfassbar' => 'tinyint',
+		'nEinkaufslisteGesperrt' => 'tinyint',
+	];
 
 	/** @var int kRueckhalteGrund */
 	public $kRueckhalteGrund;

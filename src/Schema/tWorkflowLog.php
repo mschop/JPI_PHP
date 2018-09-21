@@ -16,6 +16,32 @@ class tWorkflowLog
 	const kWorkflow = 'kWorkflow';
 	const nUnique = 'nUnique';
 	const cObjectId = 'cObjectId';
+	const COLUMN_NAMES = [
+		'kWorkflowLog',
+		'kObjektPk',
+		'kWorkflowAktion',
+		'dDatum',
+		'cArbeitsplatz',
+		'kBenutzer',
+		'nTyp',
+		'cLog',
+		'kWorkflow',
+		'nUnique',
+		'cObjectId',
+	];
+	const COLUMN_TYPES = [
+		'kWorkflowLog' => 'int',
+		'kObjektPk' => 'int',
+		'kWorkflowAktion' => 'int',
+		'dDatum' => 'datetime',
+		'cArbeitsplatz' => 'varchar',
+		'kBenutzer' => 'int',
+		'nTyp' => 'int',
+		'cLog' => 'varchar',
+		'kWorkflow' => 'int',
+		'nUnique' => 'int',
+		'cObjectId' => 'varchar',
+	];
 
 	/** @var int kWorkflowLog */
 	public $kWorkflowLog;

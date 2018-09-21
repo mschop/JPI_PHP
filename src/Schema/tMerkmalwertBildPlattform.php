@@ -11,6 +11,15 @@ class tMerkmalwertBildPlattform
 	const kPlattform = 'kPlattform';
 	const kShop = 'kShop';
 	const nInet = 'nInet';
+	const COLUMN_NAMES = ['kMerkmalwertBildPlattform', 'kMerkmalwert', 'kBild', 'kPlattform', 'kShop', 'nInet'];
+	const COLUMN_TYPES = [
+		'kMerkmalwertBildPlattform' => 'int',
+		'kMerkmalwert' => 'int',
+		'kBild' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'nInet' => 'tinyint',
+	];
 
 	/** @var int kMerkmalwertBildPlattform */
 	public $kMerkmalwertBildPlattform;

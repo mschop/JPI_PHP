@@ -9,6 +9,8 @@ class tAttributSprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cWertListe = 'cWertListe';
+	const COLUMN_NAMES = ['kAttribut', 'kSprache', 'cName', 'cWertListe'];
+	const COLUMN_TYPES = ['kAttribut' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cWertListe' => 'varchar'];
 
 	/** @var int kAttribut */
 	public $kAttribut;

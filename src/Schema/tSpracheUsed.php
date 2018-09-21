@@ -12,6 +12,16 @@ class tSpracheUsed
 	const nStandard = 'nStandard';
 	const cKultur = 'cKultur';
 	const cISO2 = 'cISO2';
+	const COLUMN_NAMES = ['kSprache', 'cNameEng', 'cNameDeu', 'cISO', 'nStandard', 'cKultur', 'cISO2'];
+	const COLUMN_TYPES = [
+		'kSprache' => 'int',
+		'cNameEng' => 'varchar',
+		'cNameDeu' => 'varchar',
+		'cISO' => 'varchar',
+		'nStandard' => 'tinyint',
+		'cKultur' => 'nchar',
+		'cISO2' => 'char',
+	];
 
 	/** @var int kSprache */
 	public $kSprache;

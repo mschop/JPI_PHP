@@ -10,6 +10,14 @@ class tMedienDir
 	const kParentDir = 'kParentDir';
 	const nDel = 'nDel';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = ['kMedienDir', 'cName', 'kParentDir', 'nDel', 'kShop'];
+	const COLUMN_TYPES = [
+		'kMedienDir' => 'int',
+		'cName' => 'varchar',
+		'kParentDir' => 'int',
+		'nDel' => 'smallint',
+		'kShop' => 'int',
+	];
 
 	/** @var int kMedienDir */
 	public $kMedienDir;

@@ -10,6 +10,14 @@ class tUserClientSetting
 	const cRechnername = 'cRechnername';
 	const cName = 'cName';
 	const cWert = 'cWert';
+	const COLUMN_NAMES = ['kUserClientSetting', 'kBenutzer', 'cRechnername', 'cName', 'cWert'];
+	const COLUMN_TYPES = [
+		'kUserClientSetting' => 'int',
+		'kBenutzer' => 'int',
+		'cRechnername' => 'varchar',
+		'cName' => 'varchar',
+		'cWert' => 'varchar',
+	];
 
 	/** @var int kUserClientSetting */
 	public $kUserClientSetting;

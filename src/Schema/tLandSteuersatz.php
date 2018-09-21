@@ -13,6 +13,26 @@ class tLandSteuersatz
 	const fNormalerSatz = 'fNormalerSatz';
 	const fZwischensatz = 'fZwischensatz';
 	const fLieferschwelle = 'fLieferschwelle';
+	const COLUMN_NAMES = [
+		'cISOLand',
+		'cKuerzelBundesland',
+		'fStarkErmaessigterSatz',
+		'fErmaessigterSatzNiedrig',
+		'fErmaessigterSatz',
+		'fNormalerSatz',
+		'fZwischensatz',
+		'fLieferschwelle',
+	];
+	const COLUMN_TYPES = [
+		'cISOLand' => 'varchar',
+		'cKuerzelBundesland' => 'varchar',
+		'fStarkErmaessigterSatz' => 'decimal',
+		'fErmaessigterSatzNiedrig' => 'decimal',
+		'fErmaessigterSatz' => 'decimal',
+		'fNormalerSatz' => 'decimal',
+		'fZwischensatz' => 'decimal',
+		'fLieferschwelle' => 'decimal',
+	];
 
 	/** @var string cISOLand */
 	public $cISOLand;

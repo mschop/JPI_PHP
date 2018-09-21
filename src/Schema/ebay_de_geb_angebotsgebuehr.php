@@ -9,6 +9,13 @@ class ebay_de_geb_angebotsgebuehr
 	const PreisMin = 'PreisMin';
 	const PreisMax = 'PreisMax';
 	const Gebuehr = 'Gebuehr';
+	const COLUMN_NAMES = ['kEbay_DE_Geb_Angebotsgebuehr', 'PreisMin', 'PreisMax', 'Gebuehr'];
+	const COLUMN_TYPES = [
+		'kEbay_DE_Geb_Angebotsgebuehr' => 'int',
+		'PreisMin' => 'decimal',
+		'PreisMax' => 'decimal',
+		'Gebuehr' => 'decimal',
+	];
 
 	/** @var int kEbay_DE_Geb_Angebotsgebuehr */
 	public $kEbay_DE_Geb_Angebotsgebuehr;

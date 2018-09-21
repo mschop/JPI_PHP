@@ -12,6 +12,16 @@ class pf_logbuch
 	const cLog = 'cLog';
 	const dZeit = 'dZeit';
 	const kUser = 'kUser';
+	const COLUMN_NAMES = ['kLogbuch', 'kPlattform', 'cKategorie', 'cBetreff', 'cLog', 'dZeit', 'kUser'];
+	const COLUMN_TYPES = [
+		'kLogbuch' => 'int',
+		'kPlattform' => 'tinyint',
+		'cKategorie' => 'varchar',
+		'cBetreff' => 'varchar',
+		'cLog' => 'varchar',
+		'dZeit' => 'datetime',
+		'kUser' => 'tinyint',
+	];
 
 	/** @var int kLogbuch */
 	public $kLogbuch;

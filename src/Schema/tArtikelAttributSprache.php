@@ -11,6 +11,15 @@ class tArtikelAttributSprache
 	const nWertInt = 'nWertInt';
 	const fWertDecimal = 'fWertDecimal';
 	const dWertDateTime = 'dWertDateTime';
+	const COLUMN_NAMES = ['kArtikelAttribut', 'kSprache', 'cWertVarchar', 'nWertInt', 'fWertDecimal', 'dWertDateTime'];
+	const COLUMN_TYPES = [
+		'kArtikelAttribut' => 'int',
+		'kSprache' => 'int',
+		'cWertVarchar' => 'nvarchar',
+		'nWertInt' => 'int',
+		'fWertDecimal' => 'decimal',
+		'dWertDateTime' => 'datetime',
+	];
 
 	/** @var int kArtikelAttribut */
 	public $kArtikelAttribut;

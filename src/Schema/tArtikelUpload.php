@@ -9,6 +9,8 @@ class tArtikelUpload
 	const kArtikel = 'kArtikel';
 	const cDateiTyp = 'cDateiTyp';
 	const nPflicht = 'nPflicht';
+	const COLUMN_NAMES = ['kArtikelUpload', 'kArtikel', 'cDateiTyp', 'nPflicht'];
+	const COLUMN_TYPES = ['kArtikelUpload' => 'int', 'kArtikel' => 'int', 'cDateiTyp' => 'varchar', 'nPflicht' => 'int'];
 
 	/** @var int kArtikelUpload */
 	public $kArtikelUpload;

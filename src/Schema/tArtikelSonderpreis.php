@@ -13,6 +13,17 @@ class tArtikelSonderpreis
 	const dEnde = 'dEnde';
 	const nIstDatum = 'nIstDatum';
 	const nIstAnzahl = 'nIstAnzahl';
+	const COLUMN_NAMES = ['kArtikelSonderpreis', 'kArtikel', 'nAktiv', 'dStart', 'nAnzahl', 'dEnde', 'nIstDatum', 'nIstAnzahl'];
+	const COLUMN_TYPES = [
+		'kArtikelSonderpreis' => 'int',
+		'kArtikel' => 'int',
+		'nAktiv' => 'tinyint',
+		'dStart' => 'datetime',
+		'nAnzahl' => 'int',
+		'dEnde' => 'datetime',
+		'nIstDatum' => 'tinyint',
+		'nIstAnzahl' => 'tinyint',
+	];
 
 	/** @var int kArtikelSonderpreis */
 	public $kArtikelSonderpreis;

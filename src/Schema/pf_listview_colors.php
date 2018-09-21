@@ -9,6 +9,8 @@ class pf_listview_colors
 	const nSubColorId = 'nSubColorId';
 	const nListViewId = 'nListViewId';
 	const cRGB = 'cRGB';
+	const COLUMN_NAMES = ['nColorId', 'nSubColorId', 'nListViewId', 'cRGB'];
+	const COLUMN_TYPES = ['nColorId' => 'int', 'nSubColorId' => 'int', 'nListViewId' => 'int', 'cRGB' => 'varchar'];
 
 	/** @var int nColorId */
 	public $nColorId;

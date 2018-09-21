@@ -11,6 +11,15 @@ class tPicVersand
 	const kEA = 'kEA';
 	const kShop = 'kShop';
 	const dMod = 'dMod';
+	const COLUMN_NAMES = ['kArtikelBild', 'kKategoriePict', 'kEigenschaftWertPict', 'kEA', 'kShop', 'dMod'];
+	const COLUMN_TYPES = [
+		'kArtikelBild' => 'int',
+		'kKategoriePict' => 'int',
+		'kEigenschaftWertPict' => 'int',
+		'kEA' => 'int',
+		'kShop' => 'int',
+		'dMod' => 'varchar',
+	];
 
 	/** @var int kArtikelBild */
 	public $kArtikelBild;

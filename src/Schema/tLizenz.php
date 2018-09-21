@@ -10,6 +10,14 @@ class tLizenz
 	const bLizenzen = 'bLizenzen';
 	const bSignatur = 'bSignatur';
 	const dDatum = 'dDatum';
+	const COLUMN_NAMES = ['cAuthId', 'cAuthToken', 'bLizenzen', 'bSignatur', 'dDatum'];
+	const COLUMN_TYPES = [
+		'cAuthId' => 'varchar',
+		'cAuthToken' => 'varchar',
+		'bLizenzen' => 'varbinary',
+		'bSignatur' => 'varbinary',
+		'dDatum' => 'datetime',
+	];
 
 	/** @var string cAuthId */
 	public $cAuthId;

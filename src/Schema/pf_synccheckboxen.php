@@ -8,6 +8,8 @@ class pf_synccheckboxen
 	const kSyncCheckbox = 'kSyncCheckbox';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kSyncCheckbox', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kSyncCheckbox' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kSyncCheckbox */
 	public $kSyncCheckbox;

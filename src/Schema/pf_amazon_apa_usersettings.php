@@ -13,6 +13,26 @@ class pf_amazon_apa_usersettings
 	const nAPASellerPositiveFeedbackRating = 'nAPASellerPositiveFeedbackRating';
 	const fAPAPreisabstandFBA = 'fAPAPreisabstandFBA';
 	const nIstAPAPreisabstandFBAProzentual = 'nIstAPAPreisabstandFBAProzentual';
+	const COLUMN_NAMES = [
+		'kUser',
+		'fAPAPreisabstand',
+		'nIstAPAPreisabstandProzentual',
+		'nPlattform',
+		'nAPAShippingTime',
+		'nAPASellerPositiveFeedbackRating',
+		'fAPAPreisabstandFBA',
+		'nIstAPAPreisabstandFBAProzentual',
+	];
+	const COLUMN_TYPES = [
+		'kUser' => 'int',
+		'fAPAPreisabstand' => 'decimal',
+		'nIstAPAPreisabstandProzentual' => 'tinyint',
+		'nPlattform' => 'int',
+		'nAPAShippingTime' => 'int',
+		'nAPASellerPositiveFeedbackRating' => 'int',
+		'fAPAPreisabstandFBA' => 'decimal',
+		'nIstAPAPreisabstandFBAProzentual' => 'tinyint',
+	];
 
 	/** @var int kUser */
 	public $kUser;

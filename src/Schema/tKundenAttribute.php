@@ -9,6 +9,8 @@ class tKundenAttribute
 	const kKunde = 'kKunde';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kKundenAttribute', 'kKunde', 'cName', 'cValue'];
+	const COLUMN_TYPES = ['kKundenAttribute' => 'int', 'kKunde' => 'int', 'cName' => 'varchar', 'cValue' => 'varchar'];
 
 	/** @var int kKundenAttribute */
 	public $kKundenAttribute;

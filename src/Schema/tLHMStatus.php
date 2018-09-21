@@ -10,6 +10,14 @@ class tLHMStatus
 	const nStatus = 'nStatus';
 	const dZeitstempel = 'dZeitstempel';
 	const kBestellung = 'kBestellung';
+	const COLUMN_NAMES = ['kLHMStatus', 'kLHM', 'nStatus', 'dZeitstempel', 'kBestellung'];
+	const COLUMN_TYPES = [
+		'kLHMStatus' => 'int',
+		'kLHM' => 'int',
+		'nStatus' => 'int',
+		'dZeitstempel' => 'datetime',
+		'kBestellung' => 'int',
+	];
 
 	/** @var int kLHMStatus */
 	public $kLHMStatus;

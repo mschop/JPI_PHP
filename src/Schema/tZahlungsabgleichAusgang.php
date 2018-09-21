@@ -29,6 +29,58 @@ class tZahlungsabgleichAusgang
 	const cTransaktionID = 'cTransaktionID';
 	const kZahlungAusgang = 'kZahlungAusgang';
 	const kZahlungEingang = 'kZahlungEingang';
+	const COLUMN_NAMES = [
+		'kZahlungsabgleichAusgang',
+		'kZahlungsabgleichModul',
+		'cKontoIdentifikation',
+		'kZahlungsabgleichUmsatzEingang',
+		'kZahlungsabgleichUmsatzAusgang',
+		'kKunde',
+		'kLieferant',
+		'kGutschrift',
+		'kEingangsrechnung',
+		'fBetrag',
+		'cWaehrungISO',
+		'cName',
+		'cKonto',
+		'cKontozusatz',
+		'cVerwendungszweck',
+		'cInternerKommentar',
+		'nVollstaendigerReferenzbetrag',
+		'dAnlagedatum',
+		'kAnlagebenutzer',
+		'dBuchungsdatum',
+		'kBuchungsbenutzer',
+		'cTransaktionID',
+		'kZahlungAusgang',
+		'kZahlungEingang',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsabgleichAusgang' => 'int',
+		'kZahlungsabgleichModul' => 'int',
+		'cKontoIdentifikation' => 'varchar',
+		'kZahlungsabgleichUmsatzEingang' => 'int',
+		'kZahlungsabgleichUmsatzAusgang' => 'int',
+		'kKunde' => 'int',
+		'kLieferant' => 'int',
+		'kGutschrift' => 'int',
+		'kEingangsrechnung' => 'int',
+		'fBetrag' => 'decimal',
+		'cWaehrungISO' => 'varchar',
+		'cName' => 'varchar',
+		'cKonto' => 'varchar',
+		'cKontozusatz' => 'varchar',
+		'cVerwendungszweck' => 'varchar',
+		'cInternerKommentar' => 'varchar',
+		'nVollstaendigerReferenzbetrag' => 'tinyint',
+		'dAnlagedatum' => 'datetime',
+		'kAnlagebenutzer' => 'int',
+		'dBuchungsdatum' => 'datetime',
+		'kBuchungsbenutzer' => 'int',
+		'cTransaktionID' => 'varchar',
+		'kZahlungAusgang' => 'int',
+		'kZahlungEingang' => 'int',
+	];
 
 	/** @var int kZahlungsabgleichAusgang */
 	public $kZahlungsabgleichAusgang;

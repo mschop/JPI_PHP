@@ -15,6 +15,30 @@ class tWarenLagerAusgang
 	const dErstellt = 'dErstellt';
 	const kBenutzer = 'kBenutzer';
 	const kBuchungsart = 'kBuchungsart';
+	const COLUMN_NAMES = [
+		'kWarenLagerEingang',
+		'kLieferscheinPos',
+		'fAnzahl',
+		'kWarenLagerAusgang',
+		'kWarenLagerPlatz',
+		'kArtikel',
+		'cKommentar',
+		'dErstellt',
+		'kBenutzer',
+		'kBuchungsart',
+	];
+	const COLUMN_TYPES = [
+		'kWarenLagerEingang' => 'int',
+		'kLieferscheinPos' => 'int',
+		'fAnzahl' => 'decimal',
+		'kWarenLagerAusgang' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kArtikel' => 'int',
+		'cKommentar' => 'varchar',
+		'dErstellt' => 'datetime',
+		'kBenutzer' => 'int',
+		'kBuchungsart' => 'int',
+	];
 
 	/** @var int kWarenLagerEingang */
 	public $kWarenLagerEingang;

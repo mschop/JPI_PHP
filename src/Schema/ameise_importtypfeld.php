@@ -16,6 +16,32 @@ class ameise_importtypfeld
 	const cStandardWert = 'cStandardWert';
 	const cValidation = 'cValidation';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = [
+		'kImportTypFeld',
+		'kImportTyp',
+		'cName',
+		'cTable',
+		'cDBName',
+		'cDBTyp',
+		'nLaenge',
+		'nStandard',
+		'cStandardWert',
+		'cValidation',
+		'nSort',
+	];
+	const COLUMN_TYPES = [
+		'kImportTypFeld' => 'int',
+		'kImportTyp' => 'int',
+		'cName' => 'varchar',
+		'cTable' => 'varchar',
+		'cDBName' => 'varchar',
+		'cDBTyp' => 'varchar',
+		'nLaenge' => 'int',
+		'nStandard' => 'tinyint',
+		'cStandardWert' => 'varchar',
+		'cValidation' => 'varchar',
+		'nSort' => 'int',
+	];
 
 	/** @var int kImportTypFeld */
 	public $kImportTypFeld;

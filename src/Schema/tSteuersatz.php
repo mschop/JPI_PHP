@@ -13,6 +13,26 @@ class tSteuersatz
 	const kStSchl = 'kStSchl';
 	const kStSchlIGL = 'kStSchlIGL';
 	const kStSchlUStIGL = 'kStSchlUStIGL';
+	const COLUMN_NAMES = [
+		'kSteuersatz',
+		'kSteuerzone',
+		'kSteuerklasse',
+		'fSteuersatz',
+		'nPrio',
+		'kStSchl',
+		'kStSchlIGL',
+		'kStSchlUStIGL',
+	];
+	const COLUMN_TYPES = [
+		'kSteuersatz' => 'int',
+		'kSteuerzone' => 'int',
+		'kSteuerklasse' => 'int',
+		'fSteuersatz' => 'decimal',
+		'nPrio' => 'tinyint',
+		'kStSchl' => 'int',
+		'kStSchlIGL' => 'int',
+		'kStSchlUStIGL' => 'int',
+	];
 
 	/** @var int kSteuersatz */
 	public $kSteuersatz;

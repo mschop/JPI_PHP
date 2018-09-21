@@ -10,6 +10,14 @@ class tPlattform
 	const cName = 'cName';
 	const nInet = 'nInet';
 	const cWaehrung = 'cWaehrung';
+	const COLUMN_NAMES = ['nPlattform', 'cID', 'cName', 'nInet', 'cWaehrung'];
+	const COLUMN_TYPES = [
+		'nPlattform' => 'int',
+		'cID' => 'varchar',
+		'cName' => 'varchar',
+		'nInet' => 'int',
+		'cWaehrung' => 'varchar',
+	];
 
 	/** @var int nPlattform */
 	public $nPlattform;

@@ -12,6 +12,24 @@ class tinetbestellposeigenschaft
 	const fAufpreis = 'fAufpreis';
 	const cWert = 'cWert';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = [
+		'kInetBestellPosEigenschaft',
+		'kInetBestellPos',
+		'kEigenschaft',
+		'kEigenschaftWert',
+		'fAufpreis',
+		'cWert',
+		'kShop',
+	];
+	const COLUMN_TYPES = [
+		'kInetBestellPosEigenschaft' => 'int',
+		'kInetBestellPos' => 'int',
+		'kEigenschaft' => 'int',
+		'kEigenschaftWert' => 'int',
+		'fAufpreis' => 'decimal',
+		'cWert' => 'varchar',
+		'kShop' => 'int',
+	];
 
 	/** @var int kInetBestellPosEigenschaft */
 	public $kInetBestellPosEigenschaft;

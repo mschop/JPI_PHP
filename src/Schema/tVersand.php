@@ -22,6 +22,44 @@ class tVersand
 	const nStatus = 'nStatus';
 	const cShipmentId = 'cShipmentId';
 	const cReference = 'cReference';
+	const COLUMN_NAMES = [
+		'kVersand',
+		'kLieferschein',
+		'kBenutzer',
+		'kLogistik',
+		'cIdentCode',
+		'dErstellt',
+		'cHinweis',
+		'fGewicht',
+		'kVersandArt',
+		'cLogistiker',
+		'cFulfillmentCenter',
+		'dAnkunftszeit',
+		'nVerpackZeitSek',
+		'dVersendet',
+		'nStatus',
+		'cShipmentId',
+		'cReference',
+	];
+	const COLUMN_TYPES = [
+		'kVersand' => 'int',
+		'kLieferschein' => 'int',
+		'kBenutzer' => 'int',
+		'kLogistik' => 'int',
+		'cIdentCode' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cHinweis' => 'varchar',
+		'fGewicht' => 'decimal',
+		'kVersandArt' => 'int',
+		'cLogistiker' => 'varchar',
+		'cFulfillmentCenter' => 'varchar',
+		'dAnkunftszeit' => 'datetime',
+		'nVerpackZeitSek' => 'int',
+		'dVersendet' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cShipmentId' => 'varchar',
+		'cReference' => 'varchar',
+	];
 
 	/** @var int kVersand */
 	public $kVersand;

@@ -18,6 +18,36 @@ class tGutschriftPos
 	const nLager = 'nLager';
 	const kBestellPos = 'kBestellPos';
 	const kGutschriftStueckliste = 'kGutschriftStueckliste';
+	const COLUMN_NAMES = [
+		'kGutschriftPos',
+		'tArtikel_kArtikel',
+		'tGutschrift_kGutschrift',
+		'fVKPreis',
+		'fMwSt',
+		'nAnzahl',
+		'fRabatt',
+		'cString',
+		'fVKNetto',
+		'cArtNr',
+		'nLager',
+		'kBestellPos',
+		'kGutschriftStueckliste',
+	];
+	const COLUMN_TYPES = [
+		'kGutschriftPos' => 'int',
+		'tArtikel_kArtikel' => 'int',
+		'tGutschrift_kGutschrift' => 'int',
+		'fVKPreis' => 'decimal',
+		'fMwSt' => 'decimal',
+		'nAnzahl' => 'decimal',
+		'fRabatt' => 'decimal',
+		'cString' => 'varchar',
+		'fVKNetto' => 'decimal',
+		'cArtNr' => 'varchar',
+		'nLager' => 'tinyint',
+		'kBestellPos' => 'int',
+		'kGutschriftStueckliste' => 'int',
+	];
 
 	/** @var int kGutschriftPos */
 	public $kGutschriftPos;

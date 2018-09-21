@@ -8,6 +8,8 @@ class tLieferantWarenlager
 	const kLieferantWarenlager = 'kLieferantWarenlager';
 	const kLieferant = 'kLieferant';
 	const kWarenlager = 'kWarenlager';
+	const COLUMN_NAMES = ['kLieferantWarenlager', 'kLieferant', 'kWarenlager'];
+	const COLUMN_TYPES = ['kLieferantWarenlager' => 'int', 'kLieferant' => 'int', 'kWarenlager' => 'int'];
 
 	/** @var int kLieferantWarenlager */
 	public $kLieferantWarenlager;

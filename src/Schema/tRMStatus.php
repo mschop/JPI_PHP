@@ -11,6 +11,15 @@ class tRMStatus
 	const nAktiv = 'nAktiv';
 	const nStatusTyp = 'nStatusTyp';
 	const nVisibleMode = 'nVisibleMode';
+	const COLUMN_NAMES = ['kRMStatus', 'kRMStatusParent', 'nPos', 'nAktiv', 'nStatusTyp', 'nVisibleMode'];
+	const COLUMN_TYPES = [
+		'kRMStatus' => 'int',
+		'kRMStatusParent' => 'int',
+		'nPos' => 'int',
+		'nAktiv' => 'tinyint',
+		'nStatusTyp' => 'tinyint',
+		'nVisibleMode' => 'tinyint',
+	];
 
 	/** @var int kRMStatus */
 	public $kRMStatus;

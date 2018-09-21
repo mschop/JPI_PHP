@@ -8,6 +8,8 @@ class tLieferStatus
 	const kLieferStatus = 'kLieferStatus';
 	const kSprache = 'kSprache';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kLieferStatus', 'kSprache', 'cName'];
+	const COLUMN_TYPES = ['kLieferStatus' => 'int', 'kSprache' => 'int', 'cName' => 'varchar'];
 
 	/** @var int kLieferStatus */
 	public $kLieferStatus;

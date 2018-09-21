@@ -8,6 +8,8 @@ class tpk
 	const cName = 'cName';
 	const nummer = 'nummer';
 	const dChanged = 'dChanged';
+	const COLUMN_NAMES = ['cName', 'nummer', 'dChanged'];
+	const COLUMN_TYPES = ['cName' => 'varchar', 'nummer' => 'int', 'dChanged' => 'varchar'];
 
 	/** @var string cName */
 	public $cName;

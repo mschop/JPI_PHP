@@ -10,6 +10,14 @@ class tInetBestellungAttribute
 	const kShop = 'kShop';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kInetBestellungAttribute', 'kInetBestellung', 'kShop', 'cName', 'cValue'];
+	const COLUMN_TYPES = [
+		'kInetBestellungAttribute' => 'int',
+		'kInetBestellung' => 'int',
+		'kShop' => 'int',
+		'cName' => 'varchar',
+		'cValue' => 'varchar',
+	];
 
 	/** @var int kInetBestellungAttribute */
 	public $kInetBestellungAttribute;

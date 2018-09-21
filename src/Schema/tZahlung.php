@@ -22,6 +22,44 @@ class tZahlung
 	const nZahlungstyp = 'nZahlungstyp';
 	const cZuweisungsinfo = 'cZuweisungsinfo';
 	const nZuweisungswertung = 'nZuweisungswertung';
+	const COLUMN_NAMES = [
+		'kZahlung',
+		'cName',
+		'dDatum',
+		'fBetrag',
+		'kBestellung',
+		'kBenutzer',
+		'nAnzahlung',
+		'cHinweis',
+		'kZahlungsart',
+		'nKeinExport',
+		'cSKRManuell',
+		'cExternalTransactionId',
+		'kZahlungsabgleichUmsatz',
+		'nZuweisungstyp',
+		'nZahlungstyp',
+		'cZuweisungsinfo',
+		'nZuweisungswertung',
+	];
+	const COLUMN_TYPES = [
+		'kZahlung' => 'int',
+		'cName' => 'varchar',
+		'dDatum' => 'datetime',
+		'fBetrag' => 'decimal',
+		'kBestellung' => 'int',
+		'kBenutzer' => 'int',
+		'nAnzahlung' => 'tinyint',
+		'cHinweis' => 'varchar',
+		'kZahlungsart' => 'int',
+		'nKeinExport' => 'tinyint',
+		'cSKRManuell' => 'varchar',
+		'cExternalTransactionId' => 'varchar',
+		'kZahlungsabgleichUmsatz' => 'int',
+		'nZuweisungstyp' => 'tinyint',
+		'nZahlungstyp' => 'tinyint',
+		'cZuweisungsinfo' => 'varchar',
+		'nZuweisungswertung' => 'int',
+	];
 
 	/** @var int kZahlung */
 	public $kZahlung;

@@ -14,6 +14,28 @@ class ebay_item2kombi
 	const fMinAnzahl = 'fMinAnzahl';
 	const fStreichPreis = 'fStreichPreis';
 	const cStreichPreisTyp = 'cStreichPreisTyp';
+	const COLUMN_NAMES = [
+		'kItem',
+		'kEigenschaftKombi',
+		'fPreis',
+		'fAnzahl',
+		'fMaxAnzahl',
+		'cEAN',
+		'fMinAnzahl',
+		'fStreichPreis',
+		'cStreichPreisTyp',
+	];
+	const COLUMN_TYPES = [
+		'kItem' => 'int',
+		'kEigenschaftKombi' => 'int',
+		'fPreis' => 'decimal',
+		'fAnzahl' => 'decimal',
+		'fMaxAnzahl' => 'decimal',
+		'cEAN' => 'varchar',
+		'fMinAnzahl' => 'decimal',
+		'fStreichPreis' => 'decimal',
+		'cStreichPreisTyp' => 'varchar',
+	];
 
 	/** @var int kItem */
 	public $kItem;

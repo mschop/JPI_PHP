@@ -11,6 +11,22 @@ class ebay_data_htmltemplatetagcontent
 	const kEbayItem = 'kEbayItem';
 	const cTagValue = 'cTagValue';
 	const cTagOptions = 'cTagOptions';
+	const COLUMN_NAMES = [
+		'kEbayHtmlTemplateTagContent',
+		'kEbayHtmlTemplate',
+		'cTagName',
+		'kEbayItem',
+		'cTagValue',
+		'cTagOptions',
+	];
+	const COLUMN_TYPES = [
+		'kEbayHtmlTemplateTagContent' => 'int',
+		'kEbayHtmlTemplate' => 'int',
+		'cTagName' => 'varchar',
+		'kEbayItem' => 'int',
+		'cTagValue' => 'varchar',
+		'cTagOptions' => 'varchar',
+	];
 
 	/** @var int kEbayHtmlTemplateTagContent */
 	public $kEbayHtmlTemplateTagContent;

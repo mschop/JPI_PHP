@@ -27,6 +27,54 @@ class teinstellungen
 	const cBeschreibung = 'cBeschreibung';
 	const nAuftragAendern = 'nAuftragAendern';
 	const nSNAbfragen = 'nSNAbfragen';
+	const COLUMN_NAMES = [
+		'kEinstellungen',
+		'cKopfPic',
+		'cDrucker',
+		'fMwSt',
+		'nZahlungsziel',
+		'cFax',
+		'cLagerbestand',
+		'cLootSize',
+		'cLagerKleinerNull',
+		'cFaxParam',
+		'cRechnung2x',
+		'cRechnungsDrucker',
+		'cUSt',
+		'cEtikettDrucker',
+		'nRunden',
+		'nLog',
+		'cLogPfad',
+		'cLieferschein2x',
+		'nLagerAnzahl',
+		'cBeschreibung',
+		'nAuftragAendern',
+		'nSNAbfragen',
+	];
+	const COLUMN_TYPES = [
+		'kEinstellungen' => 'int',
+		'cKopfPic' => 'varchar',
+		'cDrucker' => 'varchar',
+		'fMwSt' => 'decimal',
+		'nZahlungsziel' => 'tinyint',
+		'cFax' => 'varchar',
+		'cLagerbestand' => 'char',
+		'cLootSize' => 'char',
+		'cLagerKleinerNull' => 'char',
+		'cFaxParam' => 'varchar',
+		'cRechnung2x' => 'char',
+		'cRechnungsDrucker' => 'varchar',
+		'cUSt' => 'varchar',
+		'cEtikettDrucker' => 'varchar',
+		'nRunden' => 'varchar',
+		'nLog' => 'tinyint',
+		'cLogPfad' => 'varchar',
+		'cLieferschein2x' => 'char',
+		'nLagerAnzahl' => 'tinyint',
+		'cBeschreibung' => 'char',
+		'nAuftragAendern' => 'tinyint',
+		'nSNAbfragen' => 'tinyint',
+	];
 
 	/** @var int kEinstellungen */
 	public $kEinstellungen;

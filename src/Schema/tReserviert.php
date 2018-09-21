@@ -12,6 +12,24 @@ class tReserviert
 	const kBestellung = 'kBestellung';
 	const fBestandReserviert = 'fBestandReserviert';
 	const fBestandReserviertEigen = 'fBestandReserviertEigen';
+	const COLUMN_NAMES = [
+		'kArtikel',
+		'fAnzahl',
+		'kKey',
+		'kPlattform',
+		'kBestellung',
+		'fBestandReserviert',
+		'fBestandReserviertEigen',
+	];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'fAnzahl' => 'decimal',
+		'kKey' => 'int',
+		'kPlattform' => 'int',
+		'kBestellung' => 'int',
+		'fBestandReserviert' => 'decimal',
+		'fBestandReserviertEigen' => 'decimal',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

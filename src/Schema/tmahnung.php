@@ -17,6 +17,34 @@ class tmahnung
 	const kSprache = 'kSprache';
 	const kBenutzer = 'kBenutzer';
 	const kFirma = 'kFirma';
+	const COLUMN_NAMES = [
+		'kMahnung',
+		'kRechnung',
+		'kKunde',
+		'cKurzText',
+		'cAnrede',
+		'cText',
+		'fBruttoBetrag',
+		'dErstellt',
+		'nStuffe',
+		'kSprache',
+		'kBenutzer',
+		'kFirma',
+	];
+	const COLUMN_TYPES = [
+		'kMahnung' => 'int',
+		'kRechnung' => 'int',
+		'kKunde' => 'int',
+		'cKurzText' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cText' => 'varchar',
+		'fBruttoBetrag' => 'decimal',
+		'dErstellt' => 'datetime',
+		'nStuffe' => 'tinyint',
+		'kSprache' => 'int',
+		'kBenutzer' => 'int',
+		'kFirma' => 'int',
+	];
 
 	/** @var int kMahnung */
 	public $kMahnung;

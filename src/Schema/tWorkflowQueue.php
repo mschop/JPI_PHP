@@ -12,6 +12,16 @@ class tWorkflowQueue
 	const kBenutzer = 'kBenutzer';
 	const dStartDate = 'dStartDate';
 	const nStatus = 'nStatus';
+	const COLUMN_NAMES = ['kWorkflowQueue', 'nEvent', 'kWorkflow', 'kObjektPk', 'kBenutzer', 'dStartDate', 'nStatus'];
+	const COLUMN_TYPES = [
+		'kWorkflowQueue' => 'int',
+		'nEvent' => 'int',
+		'kWorkflow' => 'int',
+		'kObjektPk' => 'int',
+		'kBenutzer' => 'int',
+		'dStartDate' => 'datetime',
+		'nStatus' => 'int',
+	];
 
 	/** @var int kWorkflowQueue */
 	public $kWorkflowQueue;

@@ -9,6 +9,8 @@ class ebay_specific
 	const cName = 'cName';
 	const cValue = 'cValue';
 	const nCustom = 'nCustom';
+	const COLUMN_NAMES = ['kItem', 'cName', 'cValue', 'nCustom'];
+	const COLUMN_TYPES = ['kItem' => 'int', 'cName' => 'varchar', 'cValue' => 'varchar', 'nCustom' => 'tinyint'];
 
 	/** @var int kItem */
 	public $kItem;

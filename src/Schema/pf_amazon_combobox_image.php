@@ -10,6 +10,14 @@ class pf_amazon_combobox_image
 	const cPK = 'cPK';
 	const oImage = 'oImage';
 	const cText = 'cText';
+	const COLUMN_NAMES = ['kImage', 'cEnumToString', 'cPK', 'oImage', 'cText'];
+	const COLUMN_TYPES = [
+		'kImage' => 'int',
+		'cEnumToString' => 'varchar',
+		'cPK' => 'varchar',
+		'oImage' => 'image',
+		'cText' => 'varchar',
+	];
 
 	/** @var int kImage */
 	public $kImage;

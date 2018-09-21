@@ -25,6 +25,50 @@ class pf_amazon_settlementpos
 	const QuantityPurchased = 'QuantityPurchased';
 	const PromotionID = 'PromotionID';
 	const dErstellt = 'dErstellt';
+	const COLUMN_NAMES = [
+		'kMessageId',
+		'kUser',
+		'SettlementID',
+		'TransactionType',
+		'OrderID',
+		'MerchantOrderID',
+		'AdjustmentID',
+		'ShipmentID',
+		'MarketplaceName',
+		'AmountType',
+		'AmountDescription',
+		'Amount',
+		'FulfillmentID',
+		'PostedDateTime',
+		'OrderItemCode',
+		'MerchantOrderItemID',
+		'SKU',
+		'QuantityPurchased',
+		'PromotionID',
+		'dErstellt',
+	];
+	const COLUMN_TYPES = [
+		'kMessageId' => 'bigint',
+		'kUser' => 'int',
+		'SettlementID' => 'bigint',
+		'TransactionType' => 'varchar',
+		'OrderID' => 'varchar',
+		'MerchantOrderID' => 'varchar',
+		'AdjustmentID' => 'varchar',
+		'ShipmentID' => 'varchar',
+		'MarketplaceName' => 'varchar',
+		'AmountType' => 'varchar',
+		'AmountDescription' => 'varchar',
+		'Amount' => 'decimal',
+		'FulfillmentID' => 'varchar',
+		'PostedDateTime' => 'datetime',
+		'OrderItemCode' => 'varchar',
+		'MerchantOrderItemID' => 'varchar',
+		'SKU' => 'varchar',
+		'QuantityPurchased' => 'int',
+		'PromotionID' => 'varchar',
+		'dErstellt' => 'datetime',
+	];
 
 	/** @var int kMessageId */
 	public $kMessageId;

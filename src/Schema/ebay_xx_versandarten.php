@@ -14,6 +14,28 @@ class ebay_xx_versandarten
 	const ShippingTimeMin = 'ShippingTimeMin';
 	const ShippingTimeMax = 'ShippingTimeMax';
 	const MappedToShippingServiceID = 'MappedToShippingServiceID';
+	const COLUMN_NAMES = [
+		'SiteID',
+		'cDescription',
+		'ExpeditedService',
+		'InternationalService',
+		'ShippingService',
+		'ShippingServiceID',
+		'ShippingTimeMin',
+		'ShippingTimeMax',
+		'MappedToShippingServiceID',
+	];
+	const COLUMN_TYPES = [
+		'SiteID' => 'int',
+		'cDescription' => 'varchar',
+		'ExpeditedService' => 'tinyint',
+		'InternationalService' => 'tinyint',
+		'ShippingService' => 'varchar',
+		'ShippingServiceID' => 'int',
+		'ShippingTimeMin' => 'tinyint',
+		'ShippingTimeMax' => 'tinyint',
+		'MappedToShippingServiceID' => 'int',
+	];
 
 	/** @var int SiteID */
 	public $SiteID;

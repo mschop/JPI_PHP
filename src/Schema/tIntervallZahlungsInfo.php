@@ -16,6 +16,32 @@ class tIntervallZahlungsInfo
 	const cInhaber = 'cInhaber';
 	const cIBAN = 'cIBAN';
 	const cBIC = 'cBIC';
+	const COLUMN_NAMES = [
+		'kIntervall',
+		'cBankName',
+		'cBLZ',
+		'cKontoNr',
+		'cKartenNr',
+		'cGueltigkeit',
+		'cCVV',
+		'cKartenTyp',
+		'cInhaber',
+		'cIBAN',
+		'cBIC',
+	];
+	const COLUMN_TYPES = [
+		'kIntervall' => 'int',
+		'cBankName' => 'varchar',
+		'cBLZ' => 'varchar',
+		'cKontoNr' => 'varchar',
+		'cKartenNr' => 'varchar',
+		'cGueltigkeit' => 'varchar',
+		'cCVV' => 'varchar',
+		'cKartenTyp' => 'varchar',
+		'cInhaber' => 'varchar',
+		'cIBAN' => 'varchar',
+		'cBIC' => 'varchar',
+	];
 
 	/** @var int kIntervall */
 	public $kIntervall;

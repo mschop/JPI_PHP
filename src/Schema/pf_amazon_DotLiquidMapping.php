@@ -9,6 +9,8 @@ class pf_amazon_DotLiquidMapping
 	const kGroup = 'kGroup';
 	const cKey = 'cKey';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kDotLiquidMapping', 'kGroup', 'cKey', 'cValue'];
+	const COLUMN_TYPES = ['kDotLiquidMapping' => 'int', 'kGroup' => 'int', 'cKey' => 'varchar', 'cValue' => 'nvarchar'];
 
 	/** @var int kDotLiquidMapping */
 	public $kDotLiquidMapping;

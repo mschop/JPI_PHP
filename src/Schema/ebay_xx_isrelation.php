@@ -11,6 +11,15 @@ class ebay_xx_isrelation
 	const kValue = 'kValue';
 	const kNameParent = 'kNameParent';
 	const kValueParent = 'kValueParent';
+	const COLUMN_NAMES = ['SiteID', 'CategoryId', 'kName', 'kValue', 'kNameParent', 'kValueParent'];
+	const COLUMN_TYPES = [
+		'SiteID' => 'int',
+		'CategoryId' => 'int',
+		'kName' => 'int',
+		'kValue' => 'int',
+		'kNameParent' => 'int',
+		'kValueParent' => 'int',
+	];
 
 	/** @var int SiteID */
 	public $SiteID;

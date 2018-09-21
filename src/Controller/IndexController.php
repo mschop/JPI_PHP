@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use OpenApi\Annotations as OA;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -30,6 +31,6 @@ class IndexController
      */
     public function index()
     {
-
+        return new Response('Not Implemented');
     }
 }

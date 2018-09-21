@@ -11,6 +11,15 @@ class tBenutzerSuchfilter
 	const nModus = 'nModus';
 	const cName = 'cName';
 	const cValue = 'cValue';
+	const COLUMN_NAMES = ['kBenutzerSuchfilter', 'kBenutzer', 'nFilterTyp', 'nModus', 'cName', 'cValue'];
+	const COLUMN_TYPES = [
+		'kBenutzerSuchfilter' => 'int',
+		'kBenutzer' => 'int',
+		'nFilterTyp' => 'int',
+		'nModus' => 'int',
+		'cName' => 'varchar',
+		'cValue' => 'varchar',
+	];
 
 	/** @var int kBenutzerSuchfilter */
 	public $kBenutzerSuchfilter;

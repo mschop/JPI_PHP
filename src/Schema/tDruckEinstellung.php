@@ -11,6 +11,15 @@ class tDruckEinstellung
 	const kDruckvorlage = 'kDruckvorlage';
 	const cDruckername1 = 'cDruckername1';
 	const cDruckername2 = 'cDruckername2';
+	const COLUMN_NAMES = ['kDruckEinstellung', 'kBenutzer', 'cArbeitsplatz', 'kDruckvorlage', 'cDruckername1', 'cDruckername2'];
+	const COLUMN_TYPES = [
+		'kDruckEinstellung' => 'int',
+		'kBenutzer' => 'int',
+		'cArbeitsplatz' => 'varchar',
+		'kDruckvorlage' => 'int',
+		'cDruckername1' => 'varchar',
+		'cDruckername2' => 'varchar',
+	];
 
 	/** @var int kDruckEinstellung */
 	public $kDruckEinstellung;

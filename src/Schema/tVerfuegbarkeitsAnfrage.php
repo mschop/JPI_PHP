@@ -16,6 +16,32 @@ class tVerfuegbarkeitsAnfrage
 	const kInetVerfuegbarkeit = 'kInetVerfuegbarkeit';
 	const nStatus = 'nStatus';
 	const dBenachrichtigtAm = 'dBenachrichtigtAm';
+	const COLUMN_NAMES = [
+		'kVerfuegbarkeitsanfrage',
+		'kArtikel',
+		'kShop',
+		'cEMail',
+		'dDatum',
+		'cName',
+		'cVorname',
+		'cAnrede',
+		'kInetVerfuegbarkeit',
+		'nStatus',
+		'dBenachrichtigtAm',
+	];
+	const COLUMN_TYPES = [
+		'kVerfuegbarkeitsanfrage' => 'int',
+		'kArtikel' => 'int',
+		'kShop' => 'int',
+		'cEMail' => 'varchar',
+		'dDatum' => 'datetime',
+		'cName' => 'varchar',
+		'cVorname' => 'varchar',
+		'cAnrede' => 'varchar',
+		'kInetVerfuegbarkeit' => 'int',
+		'nStatus' => 'smallint',
+		'dBenachrichtigtAm' => 'datetime',
+	];
 
 	/** @var int kVerfuegbarkeitsanfrage */
 	public $kVerfuegbarkeitsanfrage;

@@ -17,6 +17,34 @@ class tListViewExHeader
 	const cOriginalName = 'cOriginalName';
 	const cCustomName = 'cCustomName';
 	const nRoundStellen = 'nRoundStellen';
+	const COLUMN_NAMES = [
+		'kListViewExHeader',
+		'kBenutzer',
+		'kBenutzerAdmin',
+		'nListViewID',
+		'cRechnername',
+		'nHeaderID',
+		'nSize',
+		'nSort',
+		'nOrderBy',
+		'cOriginalName',
+		'cCustomName',
+		'nRoundStellen',
+	];
+	const COLUMN_TYPES = [
+		'kListViewExHeader' => 'int',
+		'kBenutzer' => 'int',
+		'kBenutzerAdmin' => 'int',
+		'nListViewID' => 'int',
+		'cRechnername' => 'varchar',
+		'nHeaderID' => 'int',
+		'nSize' => 'int',
+		'nSort' => 'int',
+		'nOrderBy' => 'int',
+		'cOriginalName' => 'varchar',
+		'cCustomName' => 'varchar',
+		'nRoundStellen' => 'tinyint',
+	];
 
 	/** @var int kListViewExHeader */
 	public $kListViewExHeader;

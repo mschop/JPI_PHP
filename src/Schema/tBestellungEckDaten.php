@@ -12,6 +12,16 @@ class tBestellungEckDaten
 	const fGutschein = 'fGutschein';
 	const fFaktor = 'fFaktor';
 	const cWaehrung = 'cWaehrung';
+	const COLUMN_NAMES = ['kBestellung', 'fWert', 'fZahlung', 'fGutschrift', 'fGutschein', 'fFaktor', 'cWaehrung'];
+	const COLUMN_TYPES = [
+		'kBestellung' => 'int',
+		'fWert' => 'decimal',
+		'fZahlung' => 'decimal',
+		'fGutschrift' => 'decimal',
+		'fGutschein' => 'decimal',
+		'fFaktor' => 'decimal',
+		'cWaehrung' => 'varchar',
+	];
 
 	/** @var int kBestellung */
 	public $kBestellung;

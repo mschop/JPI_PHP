@@ -17,6 +17,34 @@ class tAbrechnung
 	const kBestellung = 'kBestellung';
 	const dAuftragErstellt = 'dAuftragErstellt';
 	const nStorno = 'nStorno';
+	const COLUMN_NAMES = [
+		'kAbrechnung',
+		'kBenutzer',
+		'kKunde',
+		'kFirma',
+		'kFulfillmentLieferant',
+		'cAbrechnungsNummer',
+		'cAnmerkung',
+		'dAbrechnungVon',
+		'dAbrechnungBis',
+		'kBestellung',
+		'dAuftragErstellt',
+		'nStorno',
+	];
+	const COLUMN_TYPES = [
+		'kAbrechnung' => 'int',
+		'kBenutzer' => 'int',
+		'kKunde' => 'int',
+		'kFirma' => 'int',
+		'kFulfillmentLieferant' => 'int',
+		'cAbrechnungsNummer' => 'varchar',
+		'cAnmerkung' => 'nvarchar',
+		'dAbrechnungVon' => 'datetime',
+		'dAbrechnungBis' => 'datetime',
+		'kBestellung' => 'int',
+		'dAuftragErstellt' => 'datetime',
+		'nStorno' => 'tinyint',
+	];
 
 	/** @var int kAbrechnung */
 	public $kAbrechnung;

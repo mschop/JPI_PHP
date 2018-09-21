@@ -9,6 +9,13 @@ class tArtikelAbnahme
 	const kKundengruppe = 'kKundengruppe';
 	const fIntervall = 'fIntervall';
 	const fMindestabnahme = 'fMindestabnahme';
+	const COLUMN_NAMES = ['kArtikel', 'kKundengruppe', 'fIntervall', 'fMindestabnahme'];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'kKundengruppe' => 'int',
+		'fIntervall' => 'decimal',
+		'fMindestabnahme' => 'decimal',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

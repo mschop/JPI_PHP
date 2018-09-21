@@ -13,6 +13,26 @@ class tListViewExColor
 	const nColorID = 'nColorID';
 	const nSubColorID = 'nSubColorID';
 	const cRGB = 'cRGB';
+	const COLUMN_NAMES = [
+		'kListViewExColor',
+		'kBenutzer',
+		'kBenutzerAdmin',
+		'nListViewID',
+		'cRechnername',
+		'nColorID',
+		'nSubColorID',
+		'cRGB',
+	];
+	const COLUMN_TYPES = [
+		'kListViewExColor' => 'int',
+		'kBenutzer' => 'int',
+		'kBenutzerAdmin' => 'int',
+		'nListViewID' => 'int',
+		'cRechnername' => 'varchar',
+		'nColorID' => 'int',
+		'nSubColorID' => 'int',
+		'cRGB' => 'varchar',
+	];
 
 	/** @var int kListViewExColor */
 	public $kListViewExColor;

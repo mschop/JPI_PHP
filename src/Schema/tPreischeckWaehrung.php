@@ -9,6 +9,13 @@ class tPreischeckWaehrung
 	const cISO3 = 'cISO3';
 	const fFaktor = 'fFaktor';
 	const dErstellt = 'dErstellt';
+	const COLUMN_NAMES = ['kPreischeckWaehrung', 'cISO3', 'fFaktor', 'dErstellt'];
+	const COLUMN_TYPES = [
+		'kPreischeckWaehrung' => 'int',
+		'cISO3' => 'varchar',
+		'fFaktor' => 'decimal',
+		'dErstellt' => 'datetime',
+	];
 
 	/** @var int kPreischeckWaehrung */
 	public $kPreischeckWaehrung;

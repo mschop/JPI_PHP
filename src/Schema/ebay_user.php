@@ -19,6 +19,38 @@ class ebay_user
 	const cEbayUsername = 'cEbayUsername';
 	const dLetzerEbayAbgleich = 'dLetzerEbayAbgleich';
 	const nLagerbestaendeAendern = 'nLagerbestaendeAendern';
+	const COLUMN_NAMES = [
+		'kEbayuser',
+		'Login',
+		'Passwort',
+		'SiteId',
+		'Name',
+		'Umgebung',
+		'kFirma',
+		'nSonderRegel',
+		'nEbayPayment',
+		'nOutOfStockControl',
+		'dLetzterBestellabgleich',
+		'cEbayUsername',
+		'dLetzerEbayAbgleich',
+		'nLagerbestaendeAendern',
+	];
+	const COLUMN_TYPES = [
+		'kEbayuser' => 'int',
+		'Login' => 'varchar',
+		'Passwort' => 'varchar',
+		'SiteId' => 'int',
+		'Name' => 'varchar',
+		'Umgebung' => 'varchar',
+		'kFirma' => 'int',
+		'nSonderRegel' => 'tinyint',
+		'nEbayPayment' => 'tinyint',
+		'nOutOfStockControl' => 'tinyint',
+		'dLetzterBestellabgleich' => 'datetime',
+		'cEbayUsername' => 'varchar',
+		'dLetzerEbayAbgleich' => 'datetime',
+		'nLagerbestaendeAendern' => 'tinyint',
+	];
 
 	/** @var int kEbayuser */
 	public $kEbayuser;

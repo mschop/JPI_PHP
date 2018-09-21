@@ -14,6 +14,28 @@ class tDruckvorlage
 	const nStandard = 'nStandard';
 	const kFormType = 'kFormType';
 	const nAusgabe = 'nAusgabe';
+	const COLUMN_NAMES = [
+		'kDruckvorlage',
+		'kFirma',
+		'kSprache',
+		'kKundenGruppe',
+		'kLLVorlage',
+		'cName',
+		'nStandard',
+		'kFormType',
+		'nAusgabe',
+	];
+	const COLUMN_TYPES = [
+		'kDruckvorlage' => 'int',
+		'kFirma' => 'int',
+		'kSprache' => 'int',
+		'kKundenGruppe' => 'int',
+		'kLLVorlage' => 'int',
+		'cName' => 'varchar',
+		'nStandard' => 'tinyint',
+		'kFormType' => 'int',
+		'nAusgabe' => 'tinyint',
+	];
 
 	/** @var int kDruckvorlage */
 	public $kDruckvorlage;

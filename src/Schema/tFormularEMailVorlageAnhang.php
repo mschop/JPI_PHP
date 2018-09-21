@@ -13,6 +13,26 @@ class tFormularEMailVorlageAnhang
 	const nKindElement = 'nKindElement';
 	const nFormular = 'nFormular';
 	const nAusgabetyp = 'nAusgabetyp';
+	const COLUMN_NAMES = [
+		'kFormularEMailVorlageAnhang',
+		'kFormularVorlage',
+		'cName',
+		'nTyp',
+		'kFormularAnhangDaten',
+		'nKindElement',
+		'nFormular',
+		'nAusgabetyp',
+	];
+	const COLUMN_TYPES = [
+		'kFormularEMailVorlageAnhang' => 'int',
+		'kFormularVorlage' => 'int',
+		'cName' => 'varchar',
+		'nTyp' => 'tinyint',
+		'kFormularAnhangDaten' => 'int',
+		'nKindElement' => 'int',
+		'nFormular' => 'int',
+		'nAusgabetyp' => 'tinyint',
+	];
 
 	/** @var int kFormularEMailVorlageAnhang */
 	public $kFormularEMailVorlageAnhang;

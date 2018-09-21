@@ -12,6 +12,24 @@ class tVersandTrackingInfo
 	const cStatusExtern = 'cStatusExtern';
 	const cMessage = 'cMessage';
 	const cLocation = 'cLocation';
+	const COLUMN_NAMES = [
+		'kVersandTrackingInfo',
+		'kVersand',
+		'dZeitstempel',
+		'nStatus',
+		'cStatusExtern',
+		'cMessage',
+		'cLocation',
+	];
+	const COLUMN_TYPES = [
+		'kVersandTrackingInfo' => 'int',
+		'kVersand' => 'int',
+		'dZeitstempel' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cStatusExtern' => 'varchar',
+		'cMessage' => 'varchar',
+		'cLocation' => 'varchar',
+	];
 
 	/** @var int kVersandTrackingInfo */
 	public $kVersandTrackingInfo;

@@ -18,6 +18,36 @@ class tinetbestellpos
 	const nHatUpload = 'nHatUpload';
 	const cUnique = 'cUnique';
 	const kKonfigitem = 'kKonfigitem';
+	const COLUMN_NAMES = [
+		'kInetBestellPos',
+		'kInetBestellung',
+		'kArikel',
+		'fPreis',
+		'fMwSt',
+		'nAnzahl',
+		'cName',
+		'kShop',
+		'nType',
+		'cHinweis',
+		'nHatUpload',
+		'cUnique',
+		'kKonfigitem',
+	];
+	const COLUMN_TYPES = [
+		'kInetBestellPos' => 'int',
+		'kInetBestellung' => 'int',
+		'kArikel' => 'int',
+		'fPreis' => 'decimal',
+		'fMwSt' => 'decimal',
+		'nAnzahl' => 'decimal',
+		'cName' => 'varchar',
+		'kShop' => 'int',
+		'nType' => 'tinyint',
+		'cHinweis' => 'varchar',
+		'nHatUpload' => 'int',
+		'cUnique' => 'varchar',
+		'kKonfigitem' => 'int',
+	];
 
 	/** @var int kInetBestellPos */
 	public $kInetBestellPos;

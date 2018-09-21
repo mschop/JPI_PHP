@@ -4,7 +4,7 @@
   "type": "project",
   "license": "GPLv3",
   "require": {
-    "php": "^7.1.3",
+    "php": "~7.2",
     "ext-ctype": "*",
     "ext-iconv": "*",
     "codeception/codeception": "^2.4",
@@ -19,6 +19,7 @@
     "symfony/flex": "^1.1",
     "symfony/framework-bundle": "*",
     "symfony/security-bundle": "*",
+    "symfony/validator": "*",
     "symfony/yaml": "*",
     "zircote/swagger-php": "^3.0"
   },

@@ -9,6 +9,8 @@ class tCryptoVault
 	const nSlotId = 'nSlotId';
 	const bDaten = 'bDaten';
 	const bIv = 'bIv';
+	const COLUMN_NAMES = ['kCryptoVault', 'nSlotId', 'bDaten', 'bIv'];
+	const COLUMN_TYPES = ['kCryptoVault' => 'int', 'nSlotId' => 'int', 'bDaten' => 'varbinary', 'bIv' => 'binary'];
 
 	/** @var int kCryptoVault */
 	public $kCryptoVault;

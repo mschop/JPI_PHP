@@ -19,6 +19,38 @@ class tWorkflow
 	const nSchedulerMinute = 'nSchedulerMinute';
 	const nSchedulerDayValue = 'nSchedulerDayValue';
 	const nSchedulerMonthValue = 'nSchedulerMonthValue';
+	const COLUMN_NAMES = [
+		'kWorkflow',
+		'cName',
+		'nEvent',
+		'nObjekt',
+		'nVerknuepfung',
+		'nPos',
+		'nTyp',
+		'nApplikation',
+		'nSchedulerOptions',
+		'dtSchedulerTime',
+		'nSchedulerHour',
+		'nSchedulerMinute',
+		'nSchedulerDayValue',
+		'nSchedulerMonthValue',
+	];
+	const COLUMN_TYPES = [
+		'kWorkflow' => 'int',
+		'cName' => 'varchar',
+		'nEvent' => 'int',
+		'nObjekt' => 'int',
+		'nVerknuepfung' => 'int',
+		'nPos' => 'int',
+		'nTyp' => 'int',
+		'nApplikation' => 'int',
+		'nSchedulerOptions' => 'bigint',
+		'dtSchedulerTime' => 'datetime',
+		'nSchedulerHour' => 'int',
+		'nSchedulerMinute' => 'int',
+		'nSchedulerDayValue' => 'int',
+		'nSchedulerMonthValue' => 'int',
+	];
 
 	/** @var int kWorkflow */
 	public $kWorkflow;

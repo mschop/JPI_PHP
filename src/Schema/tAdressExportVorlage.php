@@ -15,6 +15,30 @@ class tAdressExportVorlage
 	const nKopfzeile = 'nKopfzeile';
 	const cPfad = 'cPfad';
 	const nZusatzzeile = 'nZusatzzeile';
+	const COLUMN_NAMES = [
+		'kAdressExportVorlage',
+		'cName',
+		'cBeschreibung',
+		'nStandard',
+		'dErstellt',
+		'cTrennzeichen',
+		'cKomma',
+		'nKopfzeile',
+		'cPfad',
+		'nZusatzzeile',
+	];
+	const COLUMN_TYPES = [
+		'kAdressExportVorlage' => 'int',
+		'cName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'nStandard' => 'tinyint',
+		'dErstellt' => 'varchar',
+		'cTrennzeichen' => 'varchar',
+		'cKomma' => 'varchar',
+		'nKopfzeile' => 'tinyint',
+		'cPfad' => 'varchar',
+		'nZusatzzeile' => 'tinyint',
+	];
 
 	/** @var int kAdressExportVorlage */
 	public $kAdressExportVorlage;

@@ -10,6 +10,14 @@ class tUserClientLayout
 	const cRechnername = 'cRechnername';
 	const cName = 'cName';
 	const cWert = 'cWert';
+	const COLUMN_NAMES = ['kUserClientLayout', 'kBenutzer', 'cRechnername', 'cName', 'cWert'];
+	const COLUMN_TYPES = [
+		'kUserClientLayout' => 'int',
+		'kBenutzer' => 'int',
+		'cRechnername' => 'varchar',
+		'cName' => 'varchar',
+		'cWert' => 'varchar',
+	];
 
 	/** @var int kUserClientLayout */
 	public $kUserClientLayout;

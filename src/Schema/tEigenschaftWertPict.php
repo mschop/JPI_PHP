@@ -11,6 +11,15 @@ class tEigenschaftWertPict
 	const nInet = 'nInet';
 	const kPlattform = 'kPlattform';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = ['kEigenschaftWertPict', 'kEigenschaftWert', 'kBild', 'nInet', 'kPlattform', 'kShop'];
+	const COLUMN_TYPES = [
+		'kEigenschaftWertPict' => 'int',
+		'kEigenschaftWert' => 'int',
+		'kBild' => 'int',
+		'nInet' => 'tinyint',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+	];
 
 	/** @var int kEigenschaftWertPict */
 	public $kEigenschaftWertPict;

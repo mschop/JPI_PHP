@@ -10,6 +10,14 @@ class tnummern
 	const kRechnung = 'kRechnung';
 	const kKunde = 'kKunde';
 	const cInet = 'cInet';
+	const COLUMN_NAMES = ['kBestellung', 'kAngebot', 'kRechnung', 'kKunde', 'cInet'];
+	const COLUMN_TYPES = [
+		'kBestellung' => 'int',
+		'kAngebot' => 'int',
+		'kRechnung' => 'int',
+		'kKunde' => 'int',
+		'cInet' => 'char',
+	];
 
 	/** @var int kBestellung */
 	public $kBestellung;

@@ -20,6 +20,40 @@ class tFulfillmentAuftragPos
 	const cErrorType = 'cErrorType';
 	const cErrorMessage = 'cErrorMessage';
 	const cAbhilfe = 'cAbhilfe';
+	const COLUMN_NAMES = [
+		'kFulfillmentAuftragPos',
+		'kFulfillmentAuftrag',
+		'kLieferscheinPos',
+		'kArtikel',
+		'cArtNr',
+		'cCarrier',
+		'cName',
+		'fAnzahl',
+		'nStatus',
+		'cArtikelGeschenkText',
+		'cArtikelHinweis',
+		'nErrorCode',
+		'cErrorType',
+		'cErrorMessage',
+		'cAbhilfe',
+	];
+	const COLUMN_TYPES = [
+		'kFulfillmentAuftragPos' => 'int',
+		'kFulfillmentAuftrag' => 'int',
+		'kLieferscheinPos' => 'int',
+		'kArtikel' => 'int',
+		'cArtNr' => 'varchar',
+		'cCarrier' => 'varchar',
+		'cName' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'nStatus' => 'int',
+		'cArtikelGeschenkText' => 'varchar',
+		'cArtikelHinweis' => 'varchar',
+		'nErrorCode' => 'int',
+		'cErrorType' => 'varchar',
+		'cErrorMessage' => 'varchar',
+		'cAbhilfe' => 'varchar',
+	];
 
 	/** @var int kFulfillmentAuftragPos */
 	public $kFulfillmentAuftragPos;

@@ -9,6 +9,8 @@ class ebay_log
 	const cString = 'cString';
 	const cText = 'cText';
 	const kItem = 'kItem';
+	const COLUMN_NAMES = ['dDatum', 'cString', 'cText', 'kItem'];
+	const COLUMN_TYPES = ['dDatum' => 'varchar', 'cString' => 'varchar', 'cText' => 'varchar', 'kItem' => 'int'];
 
 	/** @var string dDatum */
 	public $dDatum;

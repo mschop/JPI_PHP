@@ -18,6 +18,36 @@ class ameise_importvorgang
 	const cImportdatei = 'cImportdatei';
 	const dErstellt = 'dErstellt';
 	const cMandant = 'cMandant';
+	const COLUMN_NAMES = [
+		'kImportVorgang',
+		'kImportVorlage',
+		'kImportTyp',
+		'nAbZeile',
+		'nAnzahlImportiert',
+		'nAnzahlAktualisiert',
+		'nAnzahlWarnungen',
+		'nAnzahlFehler',
+		'nDauer',
+		'nStatus',
+		'cImportdatei',
+		'dErstellt',
+		'cMandant',
+	];
+	const COLUMN_TYPES = [
+		'kImportVorgang' => 'int',
+		'kImportVorlage' => 'int',
+		'kImportTyp' => 'int',
+		'nAbZeile' => 'int',
+		'nAnzahlImportiert' => 'int',
+		'nAnzahlAktualisiert' => 'int',
+		'nAnzahlWarnungen' => 'int',
+		'nAnzahlFehler' => 'int',
+		'nDauer' => 'int',
+		'nStatus' => 'tinyint',
+		'cImportdatei' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cMandant' => 'varchar',
+	];
 
 	/** @var int kImportVorgang */
 	public $kImportVorgang;

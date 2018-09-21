@@ -10,6 +10,14 @@ class ebay_de_dependency
 	const AttributeId = 'AttributeId';
 	const AttributeSetId = 'AttributeSetId';
 	const Type = 'Type';
+	const COLUMN_NAMES = ['childAttrId', 'parentValueId', 'AttributeId', 'AttributeSetId', 'Type'];
+	const COLUMN_TYPES = [
+		'childAttrId' => 'int',
+		'parentValueId' => 'int',
+		'AttributeId' => 'int',
+		'AttributeSetId' => 'int',
+		'Type' => 'tinyint',
+	];
 
 	/** @var int childAttrId */
 	public $childAttrId;

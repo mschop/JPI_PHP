@@ -20,6 +20,40 @@ class tLagerArtikel
 	const kLieferantenbestellung = 'kLieferantenbestellung';
 	const kPicklistePos = 'kPicklistePos';
 	const kRMRetourePos = 'kRMRetourePos';
+	const COLUMN_NAMES = [
+		'kLagerArtikel',
+		'kLager',
+		'kLagerOrt',
+		'kArtikel',
+		'cSeriennr',
+		'fEK',
+		'cBeschreibung1',
+		'cBeschreibung2',
+		'kBestellPos',
+		'kLieferscheinPos',
+		'kLieferant',
+		'kWarenlager',
+		'kLieferantenbestellung',
+		'kPicklistePos',
+		'kRMRetourePos',
+	];
+	const COLUMN_TYPES = [
+		'kLagerArtikel' => 'int',
+		'kLager' => 'int',
+		'kLagerOrt' => 'int',
+		'kArtikel' => 'int',
+		'cSeriennr' => 'varchar',
+		'fEK' => 'decimal',
+		'cBeschreibung1' => 'varchar',
+		'cBeschreibung2' => 'varchar',
+		'kBestellPos' => 'int',
+		'kLieferscheinPos' => 'int',
+		'kLieferant' => 'int',
+		'kWarenlager' => 'int',
+		'kLieferantenbestellung' => 'int',
+		'kPicklistePos' => 'int',
+		'kRMRetourePos' => 'int',
+	];
 
 	/** @var int kLagerArtikel */
 	public $kLagerArtikel;

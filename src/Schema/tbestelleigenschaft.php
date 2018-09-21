@@ -13,6 +13,26 @@ class tbestelleigenschaft
 	const cWert = 'cWert';
 	const cName = 'cName';
 	const kEigenschaft = 'kEigenschaft';
+	const COLUMN_NAMES = [
+		'kBestellEigenschaft',
+		'kEigenschaftWert',
+		'kBestellPos',
+		'kArtikel',
+		'fNettoPreis',
+		'cWert',
+		'cName',
+		'kEigenschaft',
+	];
+	const COLUMN_TYPES = [
+		'kBestellEigenschaft' => 'int',
+		'kEigenschaftWert' => 'int',
+		'kBestellPos' => 'int',
+		'kArtikel' => 'int',
+		'fNettoPreis' => 'decimal',
+		'cWert' => 'varchar',
+		'cName' => 'varchar',
+		'kEigenschaft' => 'int',
+	];
 
 	/** @var int kBestellEigenschaft */
 	public $kBestellEigenschaft;

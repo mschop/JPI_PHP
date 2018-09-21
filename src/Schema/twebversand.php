@@ -17,6 +17,34 @@ class twebversand
 	const cFTPPath = 'cFTPPath';
 	const nHttpPut = 'nHttpPut';
 	const nShopAuftragsNr = 'nShopAuftragsNr';
+	const COLUMN_NAMES = [
+		'kWebVersand',
+		'cServerURL',
+		'cBenutzerWeb',
+		'cPasswortWeb',
+		'cServerFtp',
+		'cBenutzerFtp',
+		'cPasswortFtp',
+		'cPASV',
+		'cAPIKEY',
+		'cFTPPath',
+		'nHttpPut',
+		'nShopAuftragsNr',
+	];
+	const COLUMN_TYPES = [
+		'kWebVersand' => 'int',
+		'cServerURL' => 'varchar',
+		'cBenutzerWeb' => 'varchar',
+		'cPasswortWeb' => 'varchar',
+		'cServerFtp' => 'varchar',
+		'cBenutzerFtp' => 'varchar',
+		'cPasswortFtp' => 'varchar',
+		'cPASV' => 'char',
+		'cAPIKEY' => 'varchar',
+		'cFTPPath' => 'varchar',
+		'nHttpPut' => 'tinyint',
+		'nShopAuftragsNr' => 'tinyint',
+	];
 
 	/** @var int kWebVersand */
 	public $kWebVersand;

@@ -8,6 +8,8 @@ class tlager
 	const kLager = 'kLager';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kLager', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kLager' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kLager */
 	public $kLager;

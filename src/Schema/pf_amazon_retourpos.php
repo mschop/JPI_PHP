@@ -25,6 +25,50 @@ class pf_amazon_retourpos
 	const cFehler = 'cFehler';
 	const cLicencePlateNumber = 'cLicencePlateNumber';
 	const cKundenkommentar = 'cKundenkommentar';
+	const COLUMN_NAMES = [
+		'kAmazonRetourPos',
+		'kUser',
+		'kAmazonBestellung',
+		'cOrderId',
+		'cSellerSKU',
+		'cFremdSKU',
+		'cASIN',
+		'cArtikelname',
+		'nMenge',
+		'cFulfillmentCenter',
+		'cArtikelzustand',
+		'cRueckgabegrund',
+		'dRetourzeit',
+		'nStatus',
+		'dEingelesen',
+		'kMessageId',
+		'kGutschrift',
+		'cFehler',
+		'cLicencePlateNumber',
+		'cKundenkommentar',
+	];
+	const COLUMN_TYPES = [
+		'kAmazonRetourPos' => 'int',
+		'kUser' => 'int',
+		'kAmazonBestellung' => 'int',
+		'cOrderId' => 'varchar',
+		'cSellerSKU' => 'varchar',
+		'cFremdSKU' => 'varchar',
+		'cASIN' => 'varchar',
+		'cArtikelname' => 'varchar',
+		'nMenge' => 'int',
+		'cFulfillmentCenter' => 'varchar',
+		'cArtikelzustand' => 'varchar',
+		'cRueckgabegrund' => 'varchar',
+		'dRetourzeit' => 'datetime',
+		'nStatus' => 'tinyint',
+		'dEingelesen' => 'datetime',
+		'kMessageId' => 'int',
+		'kGutschrift' => 'int',
+		'cFehler' => 'varchar',
+		'cLicencePlateNumber' => 'varchar',
+		'cKundenkommentar' => 'varchar',
+	];
 
 	/** @var int kAmazonRetourPos */
 	public $kAmazonRetourPos;

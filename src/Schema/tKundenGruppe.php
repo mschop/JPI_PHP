@@ -12,6 +12,16 @@ class tKundenGruppe
 	const nNettoPreise = 'nNettoPreise';
 	const fRabatt = 'fRabatt';
 	const kKundenDrucktext = 'kKundenDrucktext';
+	const COLUMN_NAMES = ['kKundenGruppe', 'cName', 'nStandard', 'nShopLogin', 'nNettoPreise', 'fRabatt', 'kKundenDrucktext'];
+	const COLUMN_TYPES = [
+		'kKundenGruppe' => 'int',
+		'cName' => 'varchar',
+		'nStandard' => 'tinyint',
+		'nShopLogin' => 'tinyint',
+		'nNettoPreise' => 'tinyint',
+		'fRabatt' => 'decimal',
+		'kKundenDrucktext' => 'int',
+	];
 
 	/** @var int kKundenGruppe */
 	public $kKundenGruppe;

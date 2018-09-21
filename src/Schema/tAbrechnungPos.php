@@ -20,6 +20,40 @@ class tAbrechnungPos
 	const nSort = 'nSort';
 	const cHinweis = 'cHinweis';
 	const nType = 'nType';
+	const COLUMN_NAMES = [
+		'kAbrechnungPos',
+		'kAbrechnung',
+		'kArtikel',
+		'kAbrechnungStueckliste',
+		'cBezeichnung',
+		'cArtNr',
+		'cEinheit',
+		'fAnzahl',
+		'fVKNetto',
+		'fMwSt',
+		'fVKPreis',
+		'fRabatt',
+		'nSort',
+		'cHinweis',
+		'nType',
+	];
+	const COLUMN_TYPES = [
+		'kAbrechnungPos' => 'int',
+		'kAbrechnung' => 'int',
+		'kArtikel' => 'int',
+		'kAbrechnungStueckliste' => 'int',
+		'cBezeichnung' => 'varchar',
+		'cArtNr' => 'varchar',
+		'cEinheit' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'fVKNetto' => 'decimal',
+		'fMwSt' => 'decimal',
+		'fVKPreis' => 'decimal',
+		'fRabatt' => 'decimal',
+		'nSort' => 'int',
+		'cHinweis' => 'nvarchar',
+		'nType' => 'tinyint',
+	];
 
 	/** @var int kAbrechnungPos */
 	public $kAbrechnungPos;

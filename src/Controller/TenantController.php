@@ -37,19 +37,12 @@ class TenantController
      */
     public function getAll()
     {
-        $dbal = $this->connProvider->getDbal('eazybusiness');
-        $qb = $dbal->createQueryBuilder();
-
-        $qb
-            ->from(tMandant::TABLE_NAME)
-            ->select([
-                tMandant::kMandant,
-                tMandant::cName,
-                tMandant::cDB,
-            ]);
-
-        $allTenants = $qb->execute()->fetchAll(\PDO::FETCH_CLASS, tMandant::class);
-        $allTenants = $this->mapper->mapMultiple($allTenants, TenantDto::class);
-        return new JsonResponse($allTenants);
+        return new JsonResponse(map($this->connProvider->getAllTenants(), function($tenant) {
+            $dto = new TenantDto();
+            $dto->id = $tenant[tMandant::kMandant];
+            $dto->name = $tenant[tMandant::cName];
+            $dto->dbName = $tenant[tMandant::cDB];
+            return $dto;
+        }));
     }
 }

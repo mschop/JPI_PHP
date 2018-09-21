@@ -9,6 +9,13 @@ class ebay_de_zahlungsmethoden
 	const PaymentOption = 'PaymentOption';
 	const Description = 'Description';
 	const DisplayText = 'DisplayText';
+	const COLUMN_NAMES = ['kEbay_DE_Zahlungsmethoden', 'PaymentOption', 'Description', 'DisplayText'];
+	const COLUMN_TYPES = [
+		'kEbay_DE_Zahlungsmethoden' => 'int',
+		'PaymentOption' => 'varchar',
+		'Description' => 'varchar',
+		'DisplayText' => 'varchar',
+	];
 
 	/** @var int kEbay_DE_Zahlungsmethoden */
 	public $kEbay_DE_Zahlungsmethoden;

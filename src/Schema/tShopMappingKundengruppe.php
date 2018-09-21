@@ -9,6 +9,8 @@ class tShopMappingKundengruppe
 	const kShop = 'kShop';
 	const cPKShop = 'cPKShop';
 	const cNameShop = 'cNameShop';
+	const COLUMN_NAMES = ['kKundengruppe', 'kShop', 'cPKShop', 'cNameShop'];
+	const COLUMN_TYPES = ['kKundengruppe' => 'int', 'kShop' => 'int', 'cPKShop' => 'varchar', 'cNameShop' => 'varchar'];
 
 	/** @var int kKundengruppe */
 	public $kKundengruppe;

@@ -17,7 +17,7 @@ class SchemaGenerator implements SchemaGeneratorInterface
     public function __construct(PathHelperInteface $pathHelper, DbConnectionProviderInterface $connectionProvider)
     {
         $this->pathHelper = $pathHelper;
-        $this->conn = $connectionProvider->getDbal('eazybusiness');
+        $this->conn = $connectionProvider->byTenantDbName('eazybusiness');
     }
 
 
@@ -39,6 +39,7 @@ class SchemaGenerator implements SchemaGeneratorInterface
             $stmt->execute([$table]);
             $columns = $stmt->fetchAll(\PDO::FETCH_ASSOC);
             $class->addConstant('TABLE_NAME', $table);
+            $allColumnNames = [];
             foreach ($columns as $column) {
                 $name = $column['COLUMN_NAME'];
                 $type = $column['DATA_TYPE'];
@@ -47,7 +48,9 @@ class SchemaGenerator implements SchemaGeneratorInterface
                     (new Property($name))
                         ->addComment($this->generateMemberComment($name, $this->mapType($type)))
                 );
+                $allColumnNames[] = $name;
             }
+            $class->addConstant('COLUMN_NAMES', $allColumnNames);
             file_put_contents($this->getTargetDirectory()->joinAtoms($table . '.php')->string(), (string)$file);
         }
     }

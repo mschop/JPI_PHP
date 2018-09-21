@@ -11,6 +11,15 @@ class tWawiAttributSprache
 	const nWertInt = 'nWertInt';
 	const fWertDecimal = 'fWertDecimal';
 	const dWertDateTime = 'dWertDateTime';
+	const COLUMN_NAMES = ['kWawiAttribut', 'kSprache', 'cWertVarchar', 'nWertInt', 'fWertDecimal', 'dWertDateTime'];
+	const COLUMN_TYPES = [
+		'kWawiAttribut' => 'int',
+		'kSprache' => 'int',
+		'cWertVarchar' => 'nvarchar',
+		'nWertInt' => 'int',
+		'fWertDecimal' => 'decimal',
+		'dWertDateTime' => 'datetime',
+	];
 
 	/** @var int kWawiAttribut */
 	public $kWawiAttribut;

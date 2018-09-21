@@ -11,6 +11,22 @@ class tStatistikvorlagenserialisierung
 	const cBeschreibung = 'cBeschreibung';
 	const cAuswertungsvorlage = 'cAuswertungsvorlage';
 	const cDarstellungsvorlage = 'cDarstellungsvorlage';
+	const COLUMN_NAMES = [
+		'kStatistikvorlagenserialisierung',
+		'kBenutzer',
+		'cName',
+		'cBeschreibung',
+		'cAuswertungsvorlage',
+		'cDarstellungsvorlage',
+	];
+	const COLUMN_TYPES = [
+		'kStatistikvorlagenserialisierung' => 'int',
+		'kBenutzer' => 'int',
+		'cName' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'cAuswertungsvorlage' => 'varchar',
+		'cDarstellungsvorlage' => 'varchar',
+	];
 
 	/** @var int kStatistikvorlagenserialisierung */
 	public $kStatistikvorlagenserialisierung;

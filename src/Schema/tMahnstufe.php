@@ -14,6 +14,28 @@ class tMahnstufe
 	const fGebuehrPauschal = 'fGebuehrPauschal';
 	const fGebuehrZinssatz = 'fGebuehrZinssatz';
 	const cName = 'cName';
+	const COLUMN_NAMES = [
+		'kMahnstufe',
+		'kFirma',
+		'kKundengruppe',
+		'nStufe',
+		'nKarenzzeit',
+		'nZahlungsfristInTagen',
+		'fGebuehrPauschal',
+		'fGebuehrZinssatz',
+		'cName',
+	];
+	const COLUMN_TYPES = [
+		'kMahnstufe' => 'int',
+		'kFirma' => 'int',
+		'kKundengruppe' => 'int',
+		'nStufe' => 'tinyint',
+		'nKarenzzeit' => 'int',
+		'nZahlungsfristInTagen' => 'int',
+		'fGebuehrPauschal' => 'decimal',
+		'fGebuehrZinssatz' => 'decimal',
+		'cName' => 'varchar',
+	];
 
 	/** @var int kMahnstufe */
 	public $kMahnstufe;

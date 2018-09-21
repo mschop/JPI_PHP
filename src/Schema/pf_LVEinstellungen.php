@@ -15,6 +15,30 @@ class pf_LVEinstellungen
 	const cOriginalName = 'cOriginalName';
 	const cCustomName = 'cCustomName';
 	const kBenutzerAdmin = 'kBenutzerAdmin';
+	const COLUMN_NAMES = [
+		'kBenutzer',
+		'nListViewID',
+		'cRechnername',
+		'nHeaderID',
+		'nSize',
+		'nSort',
+		'nOrderBy',
+		'cOriginalName',
+		'cCustomName',
+		'kBenutzerAdmin',
+	];
+	const COLUMN_TYPES = [
+		'kBenutzer' => 'int',
+		'nListViewID' => 'int',
+		'cRechnername' => 'varchar',
+		'nHeaderID' => 'tinyint',
+		'nSize' => 'int',
+		'nSort' => 'tinyint',
+		'nOrderBy' => 'tinyint',
+		'cOriginalName' => 'varchar',
+		'cCustomName' => 'varchar',
+		'kBenutzerAdmin' => 'int',
+	];
 
 	/** @var int kBenutzer */
 	public $kBenutzer;

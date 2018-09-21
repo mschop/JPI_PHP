@@ -11,6 +11,15 @@ class ebay_data_feedbackmgr
 	const nErinnerung = 'nErinnerung';
 	const cMailText = 'cMailText';
 	const nHTML = 'nHTML';
+	const COLUMN_NAMES = ['kFeedbackmgr', 'kEbayUser', 'nOption', 'nErinnerung', 'cMailText', 'nHTML'];
+	const COLUMN_TYPES = [
+		'kFeedbackmgr' => 'int',
+		'kEbayUser' => 'int',
+		'nOption' => 'tinyint',
+		'nErinnerung' => 'tinyint',
+		'cMailText' => 'varchar',
+		'nHTML' => 'tinyint',
+	];
 
 	/** @var int kFeedbackmgr */
 	public $kFeedbackmgr;

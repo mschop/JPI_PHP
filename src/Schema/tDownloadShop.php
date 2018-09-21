@@ -9,6 +9,8 @@ class tDownloadShop
 	const kShop = 'kShop';
 	const cInet = 'cInet';
 	const cDelInet = 'cDelInet';
+	const COLUMN_NAMES = ['kDownload', 'kShop', 'cInet', 'cDelInet'];
+	const COLUMN_TYPES = ['kDownload' => 'int', 'kShop' => 'int', 'cInet' => 'char', 'cDelInet' => 'char'];
 
 	/** @var int kDownload */
 	public $kDownload;

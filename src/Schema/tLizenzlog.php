@@ -10,6 +10,14 @@ class tLizenzlog
 	const cAufruf = 'cAufruf';
 	const cLog = 'cLog';
 	const dDatum = 'dDatum';
+	const COLUMN_NAMES = ['kLizenzlog', 'nTyp', 'cAufruf', 'cLog', 'dDatum'];
+	const COLUMN_TYPES = [
+		'kLizenzlog' => 'int',
+		'nTyp' => 'tinyint',
+		'cAufruf' => 'varchar',
+		'cLog' => 'varchar',
+		'dDatum' => 'datetime',
+	];
 
 	/** @var int kLizenzlog */
 	public $kLizenzlog;

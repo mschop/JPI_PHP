@@ -21,6 +21,42 @@ class tBestellungAlt
 	const fGutschein = 'fGutschein';
 	const cInetBestellung = 'cInetBestellung';
 	const cStatus = 'cStatus';
+	const COLUMN_NAMES = [
+		'kBestellungAlt',
+		'kBestellungNeu',
+		'cBestellNr',
+		'dErstellt',
+		'kInetBestellung',
+		'cVersandInfo',
+		'dVersandt',
+		'cIdentCode',
+		'dLieferDatum',
+		'kBestellHinweis',
+		'kShop',
+		'kLogistik',
+		'nPlatform',
+		'fGutschein',
+		'cInetBestellung',
+		'cStatus',
+	];
+	const COLUMN_TYPES = [
+		'kBestellungAlt' => 'int',
+		'kBestellungNeu' => 'int',
+		'cBestellNr' => 'varchar',
+		'dErstellt' => 'varchar',
+		'kInetBestellung' => 'int',
+		'cVersandInfo' => 'varchar',
+		'dVersandt' => 'varchar',
+		'cIdentCode' => 'varchar',
+		'dLieferDatum' => 'varchar',
+		'kBestellHinweis' => 'int',
+		'kShop' => 'int',
+		'kLogistik' => 'int',
+		'nPlatform' => 'tinyint',
+		'fGutschein' => 'decimal',
+		'cInetBestellung' => 'varchar',
+		'cStatus' => 'varchar',
+	];
 
 	/** @var int kBestellungAlt */
 	public $kBestellungAlt;

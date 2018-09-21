@@ -16,6 +16,32 @@ class tAmazonVersandschnittstellenkonfiguration
 	const nCarrierWillPickUp = 'nCarrierWillPickUp';
 	const fMinWeight = 'fMinWeight';
 	const nAdditionalInsurance = 'nAdditionalInsurance';
+	const COLUMN_NAMES = [
+		'kAmazonVersandschnittstellenkonfiguration',
+		'kVersandart',
+		'cVersandartName',
+		'dWeight',
+		'dHeight',
+		'dLength',
+		'dWidth',
+		'nAutoCalcWeight',
+		'nCarrierWillPickUp',
+		'fMinWeight',
+		'nAdditionalInsurance',
+	];
+	const COLUMN_TYPES = [
+		'kAmazonVersandschnittstellenkonfiguration' => 'int',
+		'kVersandart' => 'int',
+		'cVersandartName' => 'varchar',
+		'dWeight' => 'decimal',
+		'dHeight' => 'decimal',
+		'dLength' => 'decimal',
+		'dWidth' => 'decimal',
+		'nAutoCalcWeight' => 'tinyint',
+		'nCarrierWillPickUp' => 'tinyint',
+		'fMinWeight' => 'decimal',
+		'nAdditionalInsurance' => 'tinyint',
+	];
 
 	/** @var int kAmazonVersandschnittstellenkonfiguration */
 	public $kAmazonVersandschnittstellenkonfiguration;

@@ -14,6 +14,28 @@ class ebay_xx_is
 	const nMaxValues = 'nMaxValues';
 	const nMinValues = 'nMinValues';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = [
+		'SiteID',
+		'CategoryId',
+		'kName',
+		'cHelpText',
+		'cHelpURL',
+		'nSelectionMode',
+		'nMaxValues',
+		'nMinValues',
+		'nSort',
+	];
+	const COLUMN_TYPES = [
+		'SiteID' => 'int',
+		'CategoryId' => 'int',
+		'kName' => 'int',
+		'cHelpText' => 'varchar',
+		'cHelpURL' => 'varchar',
+		'nSelectionMode' => 'tinyint',
+		'nMaxValues' => 'tinyint',
+		'nMinValues' => 'tinyint',
+		'nSort' => 'tinyint',
+	];
 
 	/** @var int SiteID */
 	public $SiteID;

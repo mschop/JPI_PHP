@@ -24,6 +24,48 @@ class tShopKonfiguration
 	const nImportBilder = 'nImportBilder';
 	const nMaxPull = 'nMaxPull';
 	const nSteuerDurchWawiBerechnen = 'nSteuerDurchWawiBerechnen';
+	const COLUMN_NAMES = [
+		'kShop',
+		'nImport',
+		'nImportArtikelKategorien',
+		'nImportBestellungenKunden',
+		'nUpload',
+		'nUploadArtikelKomplett',
+		'nUploadArtikelPreise',
+		'nUploadArtikelBestand',
+		'nUploadKundendaten',
+		'nUploadBilder',
+		'nArtikelMergen',
+		'nBilderLoeschen',
+		'nMaxMB',
+		'nMaxBilder',
+		'nMaxArtikel',
+		'nHerstellerGefiltertSenden',
+		'nImportBilder',
+		'nMaxPull',
+		'nSteuerDurchWawiBerechnen',
+	];
+	const COLUMN_TYPES = [
+		'kShop' => 'int',
+		'nImport' => 'tinyint',
+		'nImportArtikelKategorien' => 'tinyint',
+		'nImportBestellungenKunden' => 'tinyint',
+		'nUpload' => 'tinyint',
+		'nUploadArtikelKomplett' => 'tinyint',
+		'nUploadArtikelPreise' => 'tinyint',
+		'nUploadArtikelBestand' => 'tinyint',
+		'nUploadKundendaten' => 'tinyint',
+		'nUploadBilder' => 'tinyint',
+		'nArtikelMergen' => 'tinyint',
+		'nBilderLoeschen' => 'tinyint',
+		'nMaxMB' => 'decimal',
+		'nMaxBilder' => 'int',
+		'nMaxArtikel' => 'int',
+		'nHerstellerGefiltertSenden' => 'tinyint',
+		'nImportBilder' => 'tinyint',
+		'nMaxPull' => 'int',
+		'nSteuerDurchWawiBerechnen' => 'bit',
+	];
 
 	/** @var int kShop */
 	public $kShop;

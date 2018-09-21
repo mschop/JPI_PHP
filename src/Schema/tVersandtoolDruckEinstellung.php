@@ -12,6 +12,24 @@ class tVersandtoolDruckEinstellung
 	const cDruckername = 'cDruckername';
 	const nPageScaling = 'nPageScaling';
 	const nOrientation = 'nOrientation';
+	const COLUMN_NAMES = [
+		'kVersandtoolDruckEinstellung',
+		'nVersandSchnittstelle',
+		'cRechnername',
+		'kBenutzer',
+		'cDruckername',
+		'nPageScaling',
+		'nOrientation',
+	];
+	const COLUMN_TYPES = [
+		'kVersandtoolDruckEinstellung' => 'int',
+		'nVersandSchnittstelle' => 'tinyint',
+		'cRechnername' => 'nvarchar',
+		'kBenutzer' => 'int',
+		'cDruckername' => 'nvarchar',
+		'nPageScaling' => 'tinyint',
+		'nOrientation' => 'tinyint',
+	];
 
 	/** @var int kVersandtoolDruckEinstellung */
 	public $kVersandtoolDruckEinstellung;

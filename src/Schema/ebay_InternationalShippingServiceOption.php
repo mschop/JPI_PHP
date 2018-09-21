@@ -13,6 +13,26 @@ class ebay_InternationalShippingServiceOption
 	const ShippingServicePriority = 'ShippingServicePriority';
 	const ShipToLocation = 'ShipToLocation';
 	const ShippingService = 'ShippingService';
+	const COLUMN_NAMES = [
+		'kInternationalShippingServiceOption',
+		'kItem',
+		'ShippingServiceID',
+		'ShippingServiceAdditionalCost',
+		'ShippingServiceCost',
+		'ShippingServicePriority',
+		'ShipToLocation',
+		'ShippingService',
+	];
+	const COLUMN_TYPES = [
+		'kInternationalShippingServiceOption' => 'int',
+		'kItem' => 'int',
+		'ShippingServiceID' => 'int',
+		'ShippingServiceAdditionalCost' => 'decimal',
+		'ShippingServiceCost' => 'decimal',
+		'ShippingServicePriority' => 'tinyint',
+		'ShipToLocation' => 'varchar',
+		'ShippingService' => 'varchar',
+	];
 
 	/** @var int kInternationalShippingServiceOption */
 	public $kInternationalShippingServiceOption;

@@ -12,6 +12,16 @@ class pf_amazon_repricehistory
 	const fPreisNeu = 'fPreisNeu';
 	const dErstellt = 'dErstellt';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = ['kMessage', 'kUser', 'cSellerSKU', 'fPreisAlt', 'fPreisNeu', 'dErstellt', 'nPlattform'];
+	const COLUMN_TYPES = [
+		'kMessage' => 'int',
+		'kUser' => 'int',
+		'cSellerSKU' => 'varchar',
+		'fPreisAlt' => 'decimal',
+		'fPreisNeu' => 'decimal',
+		'dErstellt' => 'datetime',
+		'nPlattform' => 'int',
+	];
 
 	/** @var int kMessage */
 	public $kMessage;

@@ -14,6 +14,28 @@ class pf_amazon_feederror
 	const dErstellt = 'dErstellt';
 	const nPlattform = 'nPlattform';
 	const cFeedType = 'cFeedType';
+	const COLUMN_NAMES = [
+		'kUser',
+		'cSKU',
+		'nErrorCode',
+		'cErrorType',
+		'cErrorMessage',
+		'cAbhilfe',
+		'dErstellt',
+		'nPlattform',
+		'cFeedType',
+	];
+	const COLUMN_TYPES = [
+		'kUser' => 'int',
+		'cSKU' => 'varchar',
+		'nErrorCode' => 'int',
+		'cErrorType' => 'varchar',
+		'cErrorMessage' => 'varchar',
+		'cAbhilfe' => 'varchar',
+		'dErstellt' => 'datetime',
+		'nPlattform' => 'int',
+		'cFeedType' => 'varchar',
+	];
 
 	/** @var int kUser */
 	public $kUser;

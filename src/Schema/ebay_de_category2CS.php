@@ -9,6 +9,13 @@ class ebay_de_category2CS
 	const AttributeSetId = 'AttributeSetId';
 	const AttributeSetVersion = 'AttributeSetVersion';
 	const Name = 'Name';
+	const COLUMN_NAMES = ['CategoryId', 'AttributeSetId', 'AttributeSetVersion', 'Name'];
+	const COLUMN_TYPES = [
+		'CategoryId' => 'int',
+		'AttributeSetId' => 'int',
+		'AttributeSetVersion' => 'int',
+		'Name' => 'varchar',
+	];
 
 	/** @var int CategoryId */
 	public $CategoryId;

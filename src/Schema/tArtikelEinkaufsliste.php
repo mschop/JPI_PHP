@@ -14,6 +14,28 @@ class tArtikelEinkaufsliste
 	const fEKNettoLieferant = 'fEKNettoLieferant';
 	const cHinweis = 'cHinweis';
 	const cBestellmodus = 'cBestellmodus';
+	const COLUMN_NAMES = [
+		'kArtikel',
+		'kBenutzer',
+		'dErstellt',
+		'cStatus',
+		'fAnzahl',
+		'kLieferant',
+		'fEKNettoLieferant',
+		'cHinweis',
+		'cBestellmodus',
+	];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'kBenutzer' => 'int',
+		'dErstellt' => 'datetime',
+		'cStatus' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'kLieferant' => 'int',
+		'fEKNettoLieferant' => 'decimal',
+		'cHinweis' => 'varchar',
+		'cBestellmodus' => 'varchar',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

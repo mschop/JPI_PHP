@@ -12,6 +12,16 @@ class ebay_shop_category
 	const ParentCategory = 'ParentCategory';
 	const Name = 'Name';
 	const nOrder = 'nOrder';
+	const COLUMN_NAMES = ['kStoreCategory', 'kStore', 'kEbayUser', 'CategoryID', 'ParentCategory', 'Name', 'nOrder'];
+	const COLUMN_TYPES = [
+		'kStoreCategory' => 'int',
+		'kStore' => 'int',
+		'kEbayUser' => 'int',
+		'CategoryID' => 'bigint',
+		'ParentCategory' => 'bigint',
+		'Name' => 'varchar',
+		'nOrder' => 'int',
+	];
 
 	/** @var int kStoreCategory */
 	public $kStoreCategory;

@@ -16,6 +16,32 @@ class tansprechpartner
 	const cVorName = 'cVorName';
 	const cAnrede = 'cAnrede';
 	const cMobil = 'cMobil';
+	const COLUMN_NAMES = [
+		'kAnsprechpartner',
+		'kLieferant',
+		'kKunde',
+		'cName',
+		'cTel',
+		'cFax',
+		'cMail',
+		'cAbteilung',
+		'cVorName',
+		'cAnrede',
+		'cMobil',
+	];
+	const COLUMN_TYPES = [
+		'kAnsprechpartner' => 'int',
+		'kLieferant' => 'int',
+		'kKunde' => 'int',
+		'cName' => 'varchar',
+		'cTel' => 'varchar',
+		'cFax' => 'varchar',
+		'cMail' => 'varchar',
+		'cAbteilung' => 'varchar',
+		'cVorName' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cMobil' => 'varchar',
+	];
 
 	/** @var int kAnsprechpartner */
 	public $kAnsprechpartner;

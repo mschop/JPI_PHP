@@ -14,6 +14,28 @@ class tLHM
 	const kLHMStatus = 'kLHMStatus';
 	const kBenutzer = 'kBenutzer';
 	const dBearbeitet = 'dBearbeitet';
+	const COLUMN_NAMES = [
+		'kLHM',
+		'kLHMTyp',
+		'cLHMId',
+		'kWarenLagerPlatz',
+		'kWarenlager',
+		'nSperre',
+		'kLHMStatus',
+		'kBenutzer',
+		'dBearbeitet',
+	];
+	const COLUMN_TYPES = [
+		'kLHM' => 'int',
+		'kLHMTyp' => 'int',
+		'cLHMId' => 'varchar',
+		'kWarenLagerPlatz' => 'int',
+		'kWarenlager' => 'int',
+		'nSperre' => 'tinyint',
+		'kLHMStatus' => 'int',
+		'kBenutzer' => 'int',
+		'dBearbeitet' => 'datetime',
+	];
 
 	/** @var int kLHM */
 	public $kLHM;

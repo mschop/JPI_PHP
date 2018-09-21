@@ -8,6 +8,8 @@ class tEigenschaftKombiWert
 	const kEigenschaftKombi = 'kEigenschaftKombi';
 	const kEigenschaft = 'kEigenschaft';
 	const kEigenschaftWert = 'kEigenschaftWert';
+	const COLUMN_NAMES = ['kEigenschaftKombi', 'kEigenschaft', 'kEigenschaftWert'];
+	const COLUMN_TYPES = ['kEigenschaftKombi' => 'int', 'kEigenschaft' => 'int', 'kEigenschaftWert' => 'int'];
 
 	/** @var int kEigenschaftKombi */
 	public $kEigenschaftKombi;

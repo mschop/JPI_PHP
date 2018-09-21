@@ -10,6 +10,14 @@ class ebay_coposeigenschaft
 	const kEigenschaft = 'kEigenschaft';
 	const kEigenschaftWert = 'kEigenschaftWert';
 	const fAufpreis = 'fAufpreis';
+	const COLUMN_NAMES = ['kebay_coposeigenschaft', 'kEbayCheckoutPos', 'kEigenschaft', 'kEigenschaftWert', 'fAufpreis'];
+	const COLUMN_TYPES = [
+		'kebay_coposeigenschaft' => 'int',
+		'kEbayCheckoutPos' => 'int',
+		'kEigenschaft' => 'int',
+		'kEigenschaftWert' => 'int',
+		'fAufpreis' => 'decimal',
+	];
 
 	/** @var int kebay_coposeigenschaft */
 	public $kebay_coposeigenschaft;

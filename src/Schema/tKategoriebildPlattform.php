@@ -12,6 +12,16 @@ class tKategoriebildPlattform
 	const kShop = 'kShop';
 	const nNr = 'nNr';
 	const nInet = 'nInet';
+	const COLUMN_NAMES = ['kKategoriebildPlattform', 'kBild', 'kKategorie', 'kPlattform', 'kShop', 'nNr', 'nInet'];
+	const COLUMN_TYPES = [
+		'kKategoriebildPlattform' => 'int',
+		'kBild' => 'int',
+		'kKategorie' => 'int',
+		'kPlattform' => 'int',
+		'kShop' => 'int',
+		'nNr' => 'int',
+		'nInet' => 'tinyint',
+	];
 
 	/** @var int kKategoriebildPlattform */
 	public $kKategoriebildPlattform;

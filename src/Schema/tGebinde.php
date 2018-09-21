@@ -11,6 +11,15 @@ class tGebinde
 	const fAnzahl = 'fAnzahl';
 	const cEAN = 'cEAN';
 	const cUPC = 'cUPC';
+	const COLUMN_NAMES = ['kGebinde', 'kArtikel', 'cName', 'fAnzahl', 'cEAN', 'cUPC'];
+	const COLUMN_TYPES = [
+		'kGebinde' => 'int',
+		'kArtikel' => 'int',
+		'cName' => 'varchar',
+		'fAnzahl' => 'decimal',
+		'cEAN' => 'varchar',
+		'cUPC' => 'varchar',
+	];
 
 	/** @var int kGebinde */
 	public $kGebinde;

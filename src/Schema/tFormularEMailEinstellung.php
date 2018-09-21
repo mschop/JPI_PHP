@@ -9,6 +9,13 @@ class tFormularEMailEinstellung
 	const kFormular = 'kFormular';
 	const cBcc = 'cBcc';
 	const nSignieren = 'nSignieren';
+	const COLUMN_NAMES = ['kFormularEMailEinstellung', 'kFormular', 'cBcc', 'nSignieren'];
+	const COLUMN_TYPES = [
+		'kFormularEMailEinstellung' => 'int',
+		'kFormular' => 'int',
+		'cBcc' => 'varchar',
+		'nSignieren' => 'tinyint',
+	];
 
 	/** @var int kFormularEMailEinstellung */
 	public $kFormularEMailEinstellung;

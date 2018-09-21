@@ -9,6 +9,8 @@ class tkonfiggruppesprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kKonfiggruppe', 'kSprache', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kKonfiggruppe' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kKonfiggruppe */
 	public $kKonfiggruppe;

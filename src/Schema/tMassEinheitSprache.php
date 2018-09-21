@@ -8,6 +8,8 @@ class tMassEinheitSprache
 	const kMassEinheit = 'kMassEinheit';
 	const kSprache = 'kSprache';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kMassEinheit', 'kSprache', 'cName'];
+	const COLUMN_TYPES = ['kMassEinheit' => 'int', 'kSprache' => 'int', 'cName' => 'varchar'];
 
 	/** @var int kMassEinheit */
 	public $kMassEinheit;

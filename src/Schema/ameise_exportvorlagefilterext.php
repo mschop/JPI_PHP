@@ -10,6 +10,14 @@ class ameise_exportvorlagefilterext
 	const cName = 'cName';
 	const cAdd = 'cAdd';
 	const cWert = 'cWert';
+	const COLUMN_NAMES = ['kExportVorlageFilterExt', 'kExportVorlageFilter', 'cName', 'cAdd', 'cWert'];
+	const COLUMN_TYPES = [
+		'kExportVorlageFilterExt' => 'int',
+		'kExportVorlageFilter' => 'int',
+		'cName' => 'varchar',
+		'cAdd' => 'varchar',
+		'cWert' => 'varchar',
+	];
 
 	/** @var int kExportVorlageFilterExt */
 	public $kExportVorlageFilterExt;

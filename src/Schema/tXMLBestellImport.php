@@ -9,6 +9,13 @@ class tXMLBestellImport
 	const cText = 'cText';
 	const nPlattform = 'nPlattform';
 	const nRechnung = 'nRechnung';
+	const COLUMN_NAMES = ['kXMLBestellImport', 'cText', 'nPlattform', 'nRechnung'];
+	const COLUMN_TYPES = [
+		'kXMLBestellImport' => 'int',
+		'cText' => 'varchar',
+		'nPlattform' => 'tinyint',
+		'nRechnung' => 'tinyint',
+	];
 
 	/** @var int kXMLBestellImport */
 	public $kXMLBestellImport;

@@ -8,6 +8,8 @@ class tRMStatusSprache
 	const kRMStatus = 'kRMStatus';
 	const kSprache = 'kSprache';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kRMStatus', 'kSprache', 'cName'];
+	const COLUMN_TYPES = ['kRMStatus' => 'int', 'kSprache' => 'int', 'cName' => 'varchar'];
 
 	/** @var int kRMStatus */
 	public $kRMStatus;

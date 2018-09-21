@@ -19,6 +19,38 @@ class tinetzahlungsinfo
 	const kShop = 'kShop';
 	const cIBAN = 'cIBAN';
 	const cBIC = 'cBIC';
+	const COLUMN_NAMES = [
+		'kInetZahlungsInfo',
+		'kInetBestellung',
+		'cBankName',
+		'cBLZ',
+		'cKontoNr',
+		'cKartenNr',
+		'cGueltigkeit',
+		'cCVV',
+		'cKartenTyp',
+		'cInhaber',
+		'kBestellung',
+		'kShop',
+		'cIBAN',
+		'cBIC',
+	];
+	const COLUMN_TYPES = [
+		'kInetZahlungsInfo' => 'int',
+		'kInetBestellung' => 'int',
+		'cBankName' => 'varchar',
+		'cBLZ' => 'varchar',
+		'cKontoNr' => 'varchar',
+		'cKartenNr' => 'varchar',
+		'cGueltigkeit' => 'varchar',
+		'cCVV' => 'varchar',
+		'cKartenTyp' => 'varchar',
+		'cInhaber' => 'varchar',
+		'kBestellung' => 'int',
+		'kShop' => 'int',
+		'cIBAN' => 'varchar',
+		'cBIC' => 'varchar',
+	];
 
 	/** @var int kInetZahlungsInfo */
 	public $kInetZahlungsInfo;

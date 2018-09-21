@@ -9,6 +9,8 @@ class ebay_xx_rueckgabe
 	const cType = 'cType';
 	const cOption = 'cOption';
 	const cDescription = 'cDescription';
+	const COLUMN_NAMES = ['SiteID', 'cType', 'cOption', 'cDescription'];
+	const COLUMN_TYPES = ['SiteID' => 'int', 'cType' => 'varchar', 'cOption' => 'varchar', 'cDescription' => 'varchar'];
 
 	/** @var int SiteID */
 	public $SiteID;

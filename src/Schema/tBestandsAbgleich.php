@@ -9,6 +9,13 @@ class tBestandsAbgleich
 	const kWarenlager = 'kWarenlager';
 	const fBestand = 'fBestand';
 	const fBestandReserviert = 'fBestandReserviert';
+	const COLUMN_NAMES = ['cJfpid', 'kWarenlager', 'fBestand', 'fBestandReserviert'];
+	const COLUMN_TYPES = [
+		'cJfpid' => 'varchar',
+		'kWarenlager' => 'int',
+		'fBestand' => 'decimal',
+		'fBestandReserviert' => 'decimal',
+	];
 
 	/** @var string cJfpid */
 	public $cJfpid;

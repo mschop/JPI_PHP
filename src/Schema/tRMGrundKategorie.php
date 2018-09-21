@@ -9,6 +9,13 @@ class tRMGrundKategorie
 	const kRMGrund = 'kRMGrund';
 	const kKategorie = 'kKategorie';
 	const nIstMarkiert = 'nIstMarkiert';
+	const COLUMN_NAMES = ['kRMGrundKategorie', 'kRMGrund', 'kKategorie', 'nIstMarkiert'];
+	const COLUMN_TYPES = [
+		'kRMGrundKategorie' => 'int',
+		'kRMGrund' => 'int',
+		'kKategorie' => 'int',
+		'nIstMarkiert' => 'tinyint',
+	];
 
 	/** @var int kRMGrundKategorie */
 	public $kRMGrundKategorie;

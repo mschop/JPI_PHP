@@ -12,6 +12,16 @@ class tDTAUS
 	const cKontoInhaber = 'cKontoInhaber';
 	const cBLZ = 'cBLZ';
 	const cKontoNr = 'cKontoNr';
+	const COLUMN_NAMES = ['cName', 'cZeile1', 'cZeile2', 'nZahlung', 'cKontoInhaber', 'cBLZ', 'cKontoNr'];
+	const COLUMN_TYPES = [
+		'cName' => 'varchar',
+		'cZeile1' => 'varchar',
+		'cZeile2' => 'varchar',
+		'nZahlung' => 'tinyint',
+		'cKontoInhaber' => 'varchar',
+		'cBLZ' => 'varchar',
+		'cKontoNr' => 'varchar',
+	];
 
 	/** @var string cName */
 	public $cName;

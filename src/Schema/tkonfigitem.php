@@ -21,6 +21,42 @@ class tkonfigitem
 	const fInitial = 'fInitial';
 	const fStandardpreis = 'fStandardpreis';
 	const bIgnoreMultiplier = 'bIgnoreMultiplier';
+	const COLUMN_NAMES = [
+		'kKonfigitem',
+		'kKonfiggruppe',
+		'kArtikel',
+		'nPosTyp',
+		'bSelektiert',
+		'bEmpfohlen',
+		'bName',
+		'bPreis',
+		'nSort',
+		'bRabatt',
+		'bZuschlag',
+		'fMin',
+		'fMax',
+		'fInitial',
+		'fStandardpreis',
+		'bIgnoreMultiplier',
+	];
+	const COLUMN_TYPES = [
+		'kKonfigitem' => 'int',
+		'kKonfiggruppe' => 'int',
+		'kArtikel' => 'int',
+		'nPosTyp' => 'int',
+		'bSelektiert' => 'tinyint',
+		'bEmpfohlen' => 'tinyint',
+		'bName' => 'tinyint',
+		'bPreis' => 'tinyint',
+		'nSort' => 'int',
+		'bRabatt' => 'tinyint',
+		'bZuschlag' => 'tinyint',
+		'fMin' => 'decimal',
+		'fMax' => 'decimal',
+		'fInitial' => 'decimal',
+		'fStandardpreis' => 'decimal',
+		'bIgnoreMultiplier' => 'tinyint',
+	];
 
 	/** @var int kKonfigitem */
 	public $kKonfigitem;

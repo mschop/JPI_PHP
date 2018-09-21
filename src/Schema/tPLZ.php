@@ -8,6 +8,8 @@ class tPLZ
 	const cPLZ = 'cPLZ';
 	const cOrt = 'cOrt';
 	const cLand = 'cLand';
+	const COLUMN_NAMES = ['cPLZ', 'cOrt', 'cLand'];
+	const COLUMN_TYPES = ['cPLZ' => 'varchar', 'cOrt' => 'varchar', 'cLand' => 'varchar'];
 
 	/** @var string cPLZ */
 	public $cPLZ;

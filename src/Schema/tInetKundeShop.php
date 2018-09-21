@@ -13,6 +13,26 @@ class tInetKundeShop
 	const kKunde = 'kKunde';
 	const nRegistriert = 'nRegistriert';
 	const cShopKundenNr = 'cShopKundenNr';
+	const COLUMN_NAMES = [
+		'kInetKunde',
+		'kShop',
+		'kKundenGruppe',
+		'dKundeSeit',
+		'cInet',
+		'kKunde',
+		'nRegistriert',
+		'cShopKundenNr',
+	];
+	const COLUMN_TYPES = [
+		'kInetKunde' => 'int',
+		'kShop' => 'int',
+		'kKundenGruppe' => 'int',
+		'dKundeSeit' => 'varchar',
+		'cInet' => 'char',
+		'kKunde' => 'int',
+		'nRegistriert' => 'smallint',
+		'cShopKundenNr' => 'varchar',
+	];
 
 	/** @var int kInetKunde */
 	public $kInetKunde;

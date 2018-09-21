@@ -24,6 +24,48 @@ class tFulfillmentLog
 	const cNotiz = 'cNotiz';
 	const cRequest = 'cRequest';
 	const cResponse = 'cResponse';
+	const COLUMN_NAMES = [
+		'kFulfillmentLog',
+		'kBenutzer',
+		'dTimestamp',
+		'cSessionId',
+		'nLogLevel',
+		'nTaskType',
+		'nNachrichtVon',
+		'kLieferant',
+		'kLieferschein',
+		'kArtikelHistory',
+		'kWarenlager',
+		'kBestellung',
+		'kLieferantenBestellung',
+		'kFulfillmentAuftrag',
+		'kArtikel',
+		'cTaskId',
+		'cNotiz',
+		'cRequest',
+		'cResponse',
+	];
+	const COLUMN_TYPES = [
+		'kFulfillmentLog' => 'int',
+		'kBenutzer' => 'int',
+		'dTimestamp' => 'datetime',
+		'cSessionId' => 'varchar',
+		'nLogLevel' => 'tinyint',
+		'nTaskType' => 'tinyint',
+		'nNachrichtVon' => 'tinyint',
+		'kLieferant' => 'int',
+		'kLieferschein' => 'int',
+		'kArtikelHistory' => 'int',
+		'kWarenlager' => 'int',
+		'kBestellung' => 'int',
+		'kLieferantenBestellung' => 'int',
+		'kFulfillmentAuftrag' => 'int',
+		'kArtikel' => 'int',
+		'cTaskId' => 'varchar',
+		'cNotiz' => 'text',
+		'cRequest' => 'text',
+		'cResponse' => 'text',
+	];
 
 	/** @var int kFulfillmentLog */
 	public $kFulfillmentLog;

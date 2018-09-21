@@ -10,6 +10,14 @@ class tWMSBoxenPackVerpackteSerNos
 	const kBestellPos = 'kBestellPos';
 	const kArtikel = 'kArtikel';
 	const cSerNo = 'cSerNo';
+	const COLUMN_NAMES = ['kWMSBoxenPackVerpackteSerNos', 'kBestellung', 'kBestellPos', 'kArtikel', 'cSerNo'];
+	const COLUMN_TYPES = [
+		'kWMSBoxenPackVerpackteSerNos' => 'int',
+		'kBestellung' => 'int',
+		'kBestellPos' => 'int',
+		'kArtikel' => 'int',
+		'cSerNo' => 'varchar',
+	];
 
 	/** @var int kWMSBoxenPackVerpackteSerNos */
 	public $kWMSBoxenPackVerpackteSerNos;

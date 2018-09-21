@@ -13,6 +13,17 @@ class tGutschein
 	const dErstellt = 'dErstellt';
 	const cInet = 'cInet';
 	const kInetKunde = 'kInetKunde';
+	const COLUMN_NAMES = ['kGutschein', 'kKunde', 'kShop', 'fWert', 'cGrund', 'dErstellt', 'cInet', 'kInetKunde'];
+	const COLUMN_TYPES = [
+		'kGutschein' => 'int',
+		'kKunde' => 'int',
+		'kShop' => 'int',
+		'fWert' => 'decimal',
+		'cGrund' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cInet' => 'char',
+		'kInetKunde' => 'int',
+	];
 
 	/** @var int kGutschein */
 	public $kGutschein;

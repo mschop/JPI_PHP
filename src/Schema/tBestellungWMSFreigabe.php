@@ -13,6 +13,26 @@ class tBestellungWMSFreigabe
 	const nVorkommissionieren = 'nVorkommissionieren';
 	const nAktiv = 'nAktiv';
 	const nSperre = 'nSperre';
+	const COLUMN_NAMES = [
+		'kBestellungWMSFreigabe',
+		'kBestellung',
+		'dZeitstempel',
+		'kBenutzer',
+		'nTeillieferungErlaubt',
+		'nVorkommissionieren',
+		'nAktiv',
+		'nSperre',
+	];
+	const COLUMN_TYPES = [
+		'kBestellungWMSFreigabe' => 'int',
+		'kBestellung' => 'int',
+		'dZeitstempel' => 'datetime',
+		'kBenutzer' => 'int',
+		'nTeillieferungErlaubt' => 'int',
+		'nVorkommissionieren' => 'int',
+		'nAktiv' => 'int',
+		'nSperre' => 'tinyint',
+	];
 
 	/** @var int kBestellungWMSFreigabe */
 	public $kBestellungWMSFreigabe;

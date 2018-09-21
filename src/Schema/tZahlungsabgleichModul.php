@@ -8,6 +8,8 @@ class tZahlungsabgleichModul
 	const kZahlungsabgleichModul = 'kZahlungsabgleichModul';
 	const cModulID = 'cModulID';
 	const cEinstellungen = 'cEinstellungen';
+	const COLUMN_NAMES = ['kZahlungsabgleichModul', 'cModulID', 'cEinstellungen'];
+	const COLUMN_TYPES = ['kZahlungsabgleichModul' => 'int', 'cModulID' => 'varchar', 'cEinstellungen' => 'varchar'];
 
 	/** @var int kZahlungsabgleichModul */
 	public $kZahlungsabgleichModul;

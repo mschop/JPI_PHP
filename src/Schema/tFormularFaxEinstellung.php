@@ -10,6 +10,14 @@ class tFormularFaxEinstellung
 	const cRechnername = 'cRechnername';
 	const kBenutzer = 'kBenutzer';
 	const cFaxname = 'cFaxname';
+	const COLUMN_NAMES = ['kFormularFaxEinstellung', 'kFormular', 'cRechnername', 'kBenutzer', 'cFaxname'];
+	const COLUMN_TYPES = [
+		'kFormularFaxEinstellung' => 'int',
+		'kFormular' => 'int',
+		'cRechnername' => 'varchar',
+		'kBenutzer' => 'int',
+		'cFaxname' => 'varchar',
+	];
 
 	/** @var int kFormularFaxEinstellung */
 	public $kFormularFaxEinstellung;

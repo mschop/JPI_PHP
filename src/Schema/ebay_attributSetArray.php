@@ -11,6 +11,15 @@ class ebay_attributSetArray
 	const ValueId = 'ValueId';
 	const ValueLiteral = 'ValueLiteral';
 	const kCategoryID = 'kCategoryID';
+	const COLUMN_NAMES = ['kItem', 'AttributeSetId', 'AttributeId', 'ValueId', 'ValueLiteral', 'kCategoryID'];
+	const COLUMN_TYPES = [
+		'kItem' => 'int',
+		'AttributeSetId' => 'int',
+		'AttributeId' => 'int',
+		'ValueId' => 'int',
+		'ValueLiteral' => 'varchar',
+		'kCategoryID' => 'int',
+	];
 
 	/** @var int kItem */
 	public $kItem;

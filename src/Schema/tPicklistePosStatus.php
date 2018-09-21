@@ -10,6 +10,14 @@ class tPicklistePosStatus
 	const kbenutzer = 'kbenutzer';
 	const dZeitstempel = 'dZeitstempel';
 	const nStatus = 'nStatus';
+	const COLUMN_NAMES = ['kPicklistePosStatus', 'kPicklistePos', 'kbenutzer', 'dZeitstempel', 'nStatus'];
+	const COLUMN_TYPES = [
+		'kPicklistePosStatus' => 'int',
+		'kPicklistePos' => 'int',
+		'kbenutzer' => 'int',
+		'dZeitstempel' => 'datetime',
+		'nStatus' => 'int',
+	];
 
 	/** @var int kPicklistePosStatus */
 	public $kPicklistePosStatus;

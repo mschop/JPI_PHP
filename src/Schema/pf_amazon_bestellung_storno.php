@@ -11,6 +11,15 @@ class pf_amazon_bestellung_storno
 	const dErstellt = 'dErstellt';
 	const dBearbeitet = 'dBearbeitet';
 	const kBenutzer = 'kBenutzer';
+	const COLUMN_NAMES = ['kAmazonBestellungStorno', 'cOrderId', 'nCancelReason', 'dErstellt', 'dBearbeitet', 'kBenutzer'];
+	const COLUMN_TYPES = [
+		'kAmazonBestellungStorno' => 'int',
+		'cOrderId' => 'varchar',
+		'nCancelReason' => 'tinyint',
+		'dErstellt' => 'datetime',
+		'dBearbeitet' => 'datetime',
+		'kBenutzer' => 'int',
+	];
 
 	/** @var int kAmazonBestellungStorno */
 	public $kAmazonBestellungStorno;

@@ -9,6 +9,8 @@ class tFormular
 	const nTyp = 'nTyp';
 	const cName = 'cName';
 	const nStandard = 'nStandard';
+	const COLUMN_NAMES = ['kFormular', 'nTyp', 'cName', 'nStandard'];
+	const COLUMN_TYPES = ['kFormular' => 'int', 'nTyp' => 'int', 'cName' => 'varchar', 'nStandard' => 'tinyint'];
 
 	/** @var int kFormular */
 	public $kFormular;

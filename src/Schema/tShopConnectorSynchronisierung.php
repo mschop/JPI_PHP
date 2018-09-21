@@ -10,6 +10,14 @@ class tShopConnectorSynchronisierung
 	const nPush = 'nPush';
 	const nPull = 'nPull';
 	const nDelete = 'nDelete';
+	const COLUMN_NAMES = ['kShop', 'nEntity', 'nPush', 'nPull', 'nDelete'];
+	const COLUMN_TYPES = [
+		'kShop' => 'int',
+		'nEntity' => 'int',
+		'nPush' => 'tinyint',
+		'nPull' => 'tinyint',
+		'nDelete' => 'tinyint',
+	];
 
 	/** @var int kShop */
 	public $kShop;

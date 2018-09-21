@@ -9,6 +9,8 @@ class tRechte
 	const kRecht = 'kRecht';
 	const kRechtBenutzerGruppe = 'kRechtBenutzerGruppe';
 	const nAktiv = 'nAktiv';
+	const COLUMN_NAMES = ['kRechte', 'kRecht', 'kRechtBenutzerGruppe', 'nAktiv'];
+	const COLUMN_TYPES = ['kRechte' => 'int', 'kRecht' => 'int', 'kRechtBenutzerGruppe' => 'int', 'nAktiv' => 'int'];
 
 	/** @var int kRechte */
 	public $kRechte;

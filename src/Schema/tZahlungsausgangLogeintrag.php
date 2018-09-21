@@ -20,6 +20,40 @@ class tZahlungsausgangLogeintrag
 	const kAnlagebenutzer = 'kAnlagebenutzer';
 	const dBuchungsdatum = 'dBuchungsdatum';
 	const kBuchungsbenutzer = 'kBuchungsbenutzer';
+	const COLUMN_NAMES = [
+		'kZahlungsausgangLogeintrag',
+		'kZahlungsabgleichLogsitzung',
+		'dZeitpunkt',
+		'nSchweregrad',
+		'cMeldung',
+		'kZahlungsabgleichModul',
+		'cKontoIdentifikation',
+		'kKunde',
+		'kGutschrift',
+		'fBetrag',
+		'cVerwendungszweck',
+		'dAnlagedatum',
+		'kAnlagebenutzer',
+		'dBuchungsdatum',
+		'kBuchungsbenutzer',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsausgangLogeintrag' => 'int',
+		'kZahlungsabgleichLogsitzung' => 'int',
+		'dZeitpunkt' => 'datetime',
+		'nSchweregrad' => 'tinyint',
+		'cMeldung' => 'varchar',
+		'kZahlungsabgleichModul' => 'int',
+		'cKontoIdentifikation' => 'varchar',
+		'kKunde' => 'int',
+		'kGutschrift' => 'int',
+		'fBetrag' => 'decimal',
+		'cVerwendungszweck' => 'varchar',
+		'dAnlagedatum' => 'datetime',
+		'kAnlagebenutzer' => 'int',
+		'dBuchungsdatum' => 'datetime',
+		'kBuchungsbenutzer' => 'int',
+	];
 
 	/** @var int kZahlungsausgangLogeintrag */
 	public $kZahlungsausgangLogeintrag;

@@ -9,6 +9,8 @@ class tdownloadsprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kDownload', 'kSprache', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kDownload' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kDownload */
 	public $kDownload;

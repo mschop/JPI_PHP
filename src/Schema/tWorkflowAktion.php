@@ -10,6 +10,14 @@ class tWorkflowAktion
 	const xXmlObjekt = 'xXmlObjekt';
 	const nPos = 'nPos';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kWorkflowAktion', 'kWorkflow', 'xXmlObjekt', 'nPos', 'cName'];
+	const COLUMN_TYPES = [
+		'kWorkflowAktion' => 'int',
+		'kWorkflow' => 'int',
+		'xXmlObjekt' => 'xml',
+		'nPos' => 'int',
+		'cName' => 'varchar',
+	];
 
 	/** @var int kWorkflowAktion */
 	public $kWorkflowAktion;

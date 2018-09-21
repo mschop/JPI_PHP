@@ -11,6 +11,15 @@ class tRMGrund
 	const nEinschraenkung = 'nEinschraenkung';
 	const nWmsVisible = 'nWmsVisible';
 	const nSort = 'nSort';
+	const COLUMN_NAMES = ['kRMGrund', 'nAktiv', 'cColor', 'nEinschraenkung', 'nWmsVisible', 'nSort'];
+	const COLUMN_TYPES = [
+		'kRMGrund' => 'int',
+		'nAktiv' => 'tinyint',
+		'cColor' => 'varchar',
+		'nEinschraenkung' => 'tinyint',
+		'nWmsVisible' => 'tinyint',
+		'nSort' => 'int',
+	];
 
 	/** @var int kRMGrund */
 	public $kRMGrund;

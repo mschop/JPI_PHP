@@ -17,6 +17,34 @@ class ebay_globaletexte
 	const cWiderrufsrecht = 'cWiderrufsrecht';
 	const cZahlungshinweis = 'cZahlungshinweis';
 	const cAnzeigen = 'cAnzeigen';
+	const COLUMN_NAMES = [
+		'kEbayGlobaleTexte',
+		'kEbayuser',
+		'cAGB',
+		'cBewertung',
+		'cImpressum',
+		'cLieferzeit',
+		'cNachDerAuktion',
+		'cUeberUns',
+		'cVersandVerpackung',
+		'cWiderrufsrecht',
+		'cZahlungshinweis',
+		'cAnzeigen',
+	];
+	const COLUMN_TYPES = [
+		'kEbayGlobaleTexte' => 'int',
+		'kEbayuser' => 'int',
+		'cAGB' => 'varchar',
+		'cBewertung' => 'varchar',
+		'cImpressum' => 'varchar',
+		'cLieferzeit' => 'varchar',
+		'cNachDerAuktion' => 'varchar',
+		'cUeberUns' => 'varchar',
+		'cVersandVerpackung' => 'varchar',
+		'cWiderrufsrecht' => 'varchar',
+		'cZahlungshinweis' => 'varchar',
+		'cAnzeigen' => 'varchar',
+	];
 
 	/** @var int kEbayGlobaleTexte */
 	public $kEbayGlobaleTexte;

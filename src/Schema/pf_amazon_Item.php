@@ -19,6 +19,38 @@ class pf_amazon_Item
 	const nRemoveBeschreibungsHtml = 'nRemoveBeschreibungsHtml';
 	const dLastTransmission = 'dLastTransmission';
 	const nReplaceLineBreaks = 'nReplaceLineBreaks';
+	const COLUMN_NAMES = [
+		'kItem',
+		'kGroup',
+		'kArtikel',
+		'kPlattform',
+		'kUser',
+		'nStatus',
+		'nErrorCode',
+		'cErrorMessage',
+		'dErrorErstellt',
+		'cSKU',
+		'cErrorHilfeText',
+		'nRemoveBeschreibungsHtml',
+		'dLastTransmission',
+		'nReplaceLineBreaks',
+	];
+	const COLUMN_TYPES = [
+		'kItem' => 'int',
+		'kGroup' => 'int',
+		'kArtikel' => 'int',
+		'kPlattform' => 'int',
+		'kUser' => 'int',
+		'nStatus' => 'tinyint',
+		'nErrorCode' => 'int',
+		'cErrorMessage' => 'varchar',
+		'dErrorErstellt' => 'datetime',
+		'cSKU' => 'varchar',
+		'cErrorHilfeText' => 'varchar',
+		'nRemoveBeschreibungsHtml' => 'tinyint',
+		'dLastTransmission' => 'datetime',
+		'nReplaceLineBreaks' => 'tinyint',
+	];
 
 	/** @var int kItem */
 	public $kItem;

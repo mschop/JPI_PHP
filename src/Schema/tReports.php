@@ -10,6 +10,14 @@ class tReports
 	const cData = 'cData';
 	const cTyp = 'cTyp';
 	const cDataSet = 'cDataSet';
+	const COLUMN_NAMES = ['kReports', 'cName', 'cData', 'cTyp', 'cDataSet'];
+	const COLUMN_TYPES = [
+		'kReports' => 'int',
+		'cName' => 'varchar',
+		'cData' => 'varchar',
+		'cTyp' => 'varchar',
+		'cDataSet' => 'varchar',
+	];
 
 	/** @var int kReports */
 	public $kReports;

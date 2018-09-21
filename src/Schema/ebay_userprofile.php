@@ -14,6 +14,28 @@ class ebay_userprofile
 	const ProfileDesc = 'ProfileDesc';
 	const CategoryName = 'CategoryName';
 	const nStandard = 'nStandard';
+	const COLUMN_NAMES = [
+		'kUserProfile',
+		'kEbayuser',
+		'SiteID',
+		'ProfileType',
+		'ProfileID',
+		'ProfileName',
+		'ProfileDesc',
+		'CategoryName',
+		'nStandard',
+	];
+	const COLUMN_TYPES = [
+		'kUserProfile' => 'int',
+		'kEbayuser' => 'int',
+		'SiteID' => 'int',
+		'ProfileType' => 'varchar',
+		'ProfileID' => 'varchar',
+		'ProfileName' => 'varchar',
+		'ProfileDesc' => 'varchar',
+		'CategoryName' => 'varchar',
+		'nStandard' => 'tinyint',
+	];
 
 	/** @var int kUserProfile */
 	public $kUserProfile;

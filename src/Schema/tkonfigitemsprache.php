@@ -9,6 +9,8 @@ class tkonfigitemsprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kKonfigitem', 'kSprache', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kKonfigitem' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kKonfigitem */
 	public $kKonfigitem;

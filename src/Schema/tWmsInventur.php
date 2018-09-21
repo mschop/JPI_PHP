@@ -11,6 +11,15 @@ class tWmsInventur
 	const kBenutzer = 'kBenutzer';
 	const nStatus = 'nStatus';
 	const kWarenlager = 'kWarenlager';
+	const COLUMN_NAMES = ['kWmsInventur', 'cKommentar', 'dAngelegt', 'kBenutzer', 'nStatus', 'kWarenlager'];
+	const COLUMN_TYPES = [
+		'kWmsInventur' => 'int',
+		'cKommentar' => 'varchar',
+		'dAngelegt' => 'datetime',
+		'kBenutzer' => 'int',
+		'nStatus' => 'int',
+		'kWarenlager' => 'int',
+	];
 
 	/** @var int kWmsInventur */
 	public $kWmsInventur;

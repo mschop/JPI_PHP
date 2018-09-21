@@ -16,6 +16,32 @@ class tZustand
 	const nAmazonCode = 'nAmazonCode';
 	const nSort = 'nSort';
 	const nLieferantenEntfernen = 'nLieferantenEntfernen';
+	const COLUMN_NAMES = [
+		'kZustand',
+		'cSuffix',
+		'nAktiv',
+		'cColor',
+		'nTyp',
+		'nEinschraenkung',
+		'nCode',
+		'nEbayCode',
+		'nAmazonCode',
+		'nSort',
+		'nLieferantenEntfernen',
+	];
+	const COLUMN_TYPES = [
+		'kZustand' => 'int',
+		'cSuffix' => 'varchar',
+		'nAktiv' => 'tinyint',
+		'cColor' => 'varchar',
+		'nTyp' => 'tinyint',
+		'nEinschraenkung' => 'tinyint',
+		'nCode' => 'int',
+		'nEbayCode' => 'int',
+		'nAmazonCode' => 'int',
+		'nSort' => 'int',
+		'nLieferantenEntfernen' => 'tinyint',
+	];
 
 	/** @var int kZustand */
 	public $kZustand;

@@ -13,6 +13,26 @@ class ebay_data_feedback_out
 	const TransactionID = 'TransactionID';
 	const FeedbackID = 'FeedbackID';
 	const Sent = 'Sent';
+	const COLUMN_NAMES = [
+		'kFeedbackOut',
+		'ItemID',
+		'TargetUser',
+		'CommentText',
+		'CommentType',
+		'TransactionID',
+		'FeedbackID',
+		'Sent',
+	];
+	const COLUMN_TYPES = [
+		'kFeedbackOut' => 'int',
+		'ItemID' => 'varchar',
+		'TargetUser' => 'varchar',
+		'CommentText' => 'varchar',
+		'CommentType' => 'varchar',
+		'TransactionID' => 'varchar',
+		'FeedbackID' => 'varchar',
+		'Sent' => 'char',
+	];
 
 	/** @var int kFeedbackOut */
 	public $kFeedbackOut;

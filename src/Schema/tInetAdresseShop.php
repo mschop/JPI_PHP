@@ -8,6 +8,8 @@ class tInetAdresseShop
 	const kInetAdresse = 'kInetAdresse';
 	const kShop = 'kShop';
 	const kAdresse = 'kAdresse';
+	const COLUMN_NAMES = ['kInetAdresse', 'kShop', 'kAdresse'];
+	const COLUMN_TYPES = ['kInetAdresse' => 'int', 'kShop' => 'int', 'kAdresse' => 'int'];
 
 	/** @var int kInetAdresse */
 	public $kInetAdresse;

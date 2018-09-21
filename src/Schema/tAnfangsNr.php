@@ -21,6 +21,42 @@ class tAnfangsNr
 	const sBPost = 'sBPost';
 	const sPPre = 'sPPre';
 	const sPPost = 'sPPost';
+	const COLUMN_NAMES = [
+		'sRPre',
+		'sRPost',
+		'sGPre',
+		'sGPost',
+		'sAPre',
+		'sAPost',
+		'sAnPre',
+		'sAnPost',
+		'sArtPre',
+		'sArtPost',
+		'sKPre',
+		'sKPost',
+		'sBPre',
+		'sBPost',
+		'sPPre',
+		'sPPost',
+	];
+	const COLUMN_TYPES = [
+		'sRPre' => 'varchar',
+		'sRPost' => 'varchar',
+		'sGPre' => 'varchar',
+		'sGPost' => 'varchar',
+		'sAPre' => 'varchar',
+		'sAPost' => 'varchar',
+		'sAnPre' => 'varchar',
+		'sAnPost' => 'varchar',
+		'sArtPre' => 'varchar',
+		'sArtPost' => 'varchar',
+		'sKPre' => 'varchar',
+		'sKPost' => 'varchar',
+		'sBPre' => 'varchar',
+		'sBPost' => 'varchar',
+		'sPPre' => 'varchar',
+		'sPPost' => 'varchar',
+	];
 
 	/** @var string sRPre */
 	public $sRPre;

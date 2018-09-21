@@ -13,6 +13,17 @@ class z_m1_Rabattgruppen
 	const nR2 = 'nR2';
 	const nS3 = 'nS3';
 	const nR3 = 'nR3';
+	const COLUMN_NAMES = ['kRabattGruppe', 'cName', 'nS1', 'nR1', 'nS2', 'nR2', 'nS3', 'nR3'];
+	const COLUMN_TYPES = [
+		'kRabattGruppe' => 'int',
+		'cName' => 'varchar',
+		'nS1' => 'int',
+		'nR1' => 'int',
+		'nS2' => 'int',
+		'nR2' => 'int',
+		'nS3' => 'int',
+		'nR3' => 'int',
+	];
 
 	/** @var int kRabattGruppe */
 	public $kRabattGruppe;

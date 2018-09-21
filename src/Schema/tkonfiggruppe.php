@@ -12,6 +12,16 @@ class tkonfiggruppe
 	const nTyp = 'nTyp';
 	const nSort = 'nSort';
 	const cKommentar = 'cKommentar';
+	const COLUMN_NAMES = ['kKonfiggruppe', 'bild', 'nMin', 'nMax', 'nTyp', 'nSort', 'cKommentar'];
+	const COLUMN_TYPES = [
+		'kKonfiggruppe' => 'int',
+		'bild' => 'image',
+		'nMin' => 'int',
+		'nMax' => 'int',
+		'nTyp' => 'int',
+		'nSort' => 'int',
+		'cKommentar' => 'varchar',
+	];
 
 	/** @var int kKonfiggruppe */
 	public $kKonfiggruppe;

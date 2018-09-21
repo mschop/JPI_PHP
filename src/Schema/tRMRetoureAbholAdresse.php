@@ -25,6 +25,50 @@ class tRMRetoureAbholAdresse
 	const cFax = 'cFax';
 	const cBundesland = 'cBundesland';
 	const cISO = 'cISO';
+	const COLUMN_NAMES = [
+		'kRMRetoureAbholAdresse',
+		'kKunde',
+		'cFirma',
+		'cAnrede',
+		'cTitel',
+		'cVorname',
+		'cName',
+		'cStrasse',
+		'cPLZ',
+		'cOrt',
+		'cLand',
+		'cTel',
+		'cZusatz',
+		'cAdressZusatz',
+		'cPostID',
+		'cMobil',
+		'cMail',
+		'cFax',
+		'cBundesland',
+		'cISO',
+	];
+	const COLUMN_TYPES = [
+		'kRMRetoureAbholAdresse' => 'int',
+		'kKunde' => 'int',
+		'cFirma' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cTitel' => 'varchar',
+		'cVorname' => 'varchar',
+		'cName' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cOrt' => 'varchar',
+		'cLand' => 'varchar',
+		'cTel' => 'varchar',
+		'cZusatz' => 'varchar',
+		'cAdressZusatz' => 'varchar',
+		'cPostID' => 'varchar',
+		'cMobil' => 'varchar',
+		'cMail' => 'varchar',
+		'cFax' => 'varchar',
+		'cBundesland' => 'varchar',
+		'cISO' => 'varchar',
+	];
 
 	/** @var int kRMRetoureAbholAdresse */
 	public $kRMRetoureAbholAdresse;

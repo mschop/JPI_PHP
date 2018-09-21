@@ -14,6 +14,28 @@ class tRMRetourenEtikett
 	const kVersandArt = 'kVersandArt';
 	const kBenutzer = 'kBenutzer';
 	const cVersandArtManuell = 'cVersandArtManuell';
+	const COLUMN_NAMES = [
+		'kRMRetourenEtikett',
+		'kRMRetoure',
+		'cIdentCode',
+		'bLabel',
+		'cHash',
+		'dErstellt',
+		'kVersandArt',
+		'kBenutzer',
+		'cVersandArtManuell',
+	];
+	const COLUMN_TYPES = [
+		'kRMRetourenEtikett' => 'int',
+		'kRMRetoure' => 'int',
+		'cIdentCode' => 'varchar',
+		'bLabel' => 'image',
+		'cHash' => 'varchar',
+		'dErstellt' => 'datetime',
+		'kVersandArt' => 'int',
+		'kBenutzer' => 'int',
+		'cVersandArtManuell' => 'varchar',
+	];
 
 	/** @var int kRMRetourenEtikett */
 	public $kRMRetourenEtikett;

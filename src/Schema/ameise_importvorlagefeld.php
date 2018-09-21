@@ -19,6 +19,38 @@ class ameise_importvorlagefeld
 	const cDBTyp = 'cDBTyp';
 	const nLaenge = 'nLaenge';
 	const cValidation = 'cValidation';
+	const COLUMN_NAMES = [
+		'kImportVorlageFeld',
+		'kImportVorlage',
+		'cTable',
+		'cDBName',
+		'nSpalte',
+		'nKey',
+		'nKey2',
+		'cStandardWert',
+		'nTyp',
+		'cExt',
+		'cName',
+		'cDBTyp',
+		'nLaenge',
+		'cValidation',
+	];
+	const COLUMN_TYPES = [
+		'kImportVorlageFeld' => 'int',
+		'kImportVorlage' => 'int',
+		'cTable' => 'varchar',
+		'cDBName' => 'varchar',
+		'nSpalte' => 'int',
+		'nKey' => 'int',
+		'nKey2' => 'int',
+		'cStandardWert' => 'varchar',
+		'nTyp' => 'tinyint',
+		'cExt' => 'varchar',
+		'cName' => 'varchar',
+		'cDBTyp' => 'varchar',
+		'nLaenge' => 'int',
+		'cValidation' => 'varchar',
+	];
 
 	/** @var int kImportVorlageFeld */
 	public $kImportVorlageFeld;

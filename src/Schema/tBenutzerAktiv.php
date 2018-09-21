@@ -15,6 +15,30 @@ class tBenutzerAktiv
 	const cRechnername = 'cRechnername';
 	const kWarenlager = 'kWarenlager';
 	const kMandant = 'kMandant';
+	const COLUMN_NAMES = [
+		'kBenutzerAktiv',
+		'kBenutzer',
+		'nApplikation',
+		'dLetzteAktion',
+		'cUniqueId',
+		'cCustom',
+		'bAbmelden',
+		'cRechnername',
+		'kWarenlager',
+		'kMandant',
+	];
+	const COLUMN_TYPES = [
+		'kBenutzerAktiv' => 'int',
+		'kBenutzer' => 'int',
+		'nApplikation' => 'int',
+		'dLetzteAktion' => 'datetime',
+		'cUniqueId' => 'varchar',
+		'cCustom' => 'varchar',
+		'bAbmelden' => 'tinyint',
+		'cRechnername' => 'varchar',
+		'kWarenlager' => 'int',
+		'kMandant' => 'int',
+	];
 
 	/** @var int kBenutzerAktiv */
 	public $kBenutzerAktiv;

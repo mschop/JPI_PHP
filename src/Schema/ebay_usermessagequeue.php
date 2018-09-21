@@ -11,6 +11,15 @@ class ebay_usermessagequeue
 	const dErstellt = 'dErstellt';
 	const nDel = 'nDel';
 	const kEbayUser = 'kEbayUser';
+	const COLUMN_NAMES = ['kEbayDataUserOutputQueue', 'cMessageType', 'cMessage', 'dErstellt', 'nDel', 'kEbayUser'];
+	const COLUMN_TYPES = [
+		'kEbayDataUserOutputQueue' => 'int',
+		'cMessageType' => 'varchar',
+		'cMessage' => 'varchar',
+		'dErstellt' => 'varchar',
+		'nDel' => 'int',
+		'kEbayUser' => 'int',
+	];
 
 	/** @var int kEbayDataUserOutputQueue */
 	public $kEbayDataUserOutputQueue;

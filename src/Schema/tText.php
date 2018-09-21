@@ -12,6 +12,16 @@ class tText
 	const cFontName = 'cFontName';
 	const cType = 'cType';
 	const cAktiv = 'cAktiv';
+	const COLUMN_NAMES = ['kText', 'cName', 'cText', 'nFontSize', 'cFontName', 'cType', 'cAktiv'];
+	const COLUMN_TYPES = [
+		'kText' => 'int',
+		'cName' => 'varchar',
+		'cText' => 'varchar',
+		'nFontSize' => 'tinyint',
+		'cFontName' => 'varchar',
+		'cType' => 'char',
+		'cAktiv' => 'char',
+	];
 
 	/** @var int kText */
 	public $kText;

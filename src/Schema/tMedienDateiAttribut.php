@@ -10,6 +10,14 @@ class tMedienDateiAttribut
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cWert = 'cWert';
+	const COLUMN_NAMES = ['kMediendateiAttribut', 'kMedienDatei', 'kSprache', 'cName', 'cWert'];
+	const COLUMN_TYPES = [
+		'kMediendateiAttribut' => 'int',
+		'kMedienDatei' => 'int',
+		'kSprache' => 'int',
+		'cName' => 'varchar',
+		'cWert' => 'varchar',
+	];
 
 	/** @var int kMediendateiAttribut */
 	public $kMediendateiAttribut;

@@ -15,6 +15,30 @@ class tMailVorlage
 	const cText = 'cText';
 	const nHTML = 'nHTML';
 	const cHTML = 'cHTML';
+	const COLUMN_NAMES = [
+		'kMailVorlage',
+		'kSprache',
+		'nType',
+		'kPlattform',
+		'nStandard',
+		'cVorlagenname',
+		'cSubject',
+		'cText',
+		'nHTML',
+		'cHTML',
+	];
+	const COLUMN_TYPES = [
+		'kMailVorlage' => 'int',
+		'kSprache' => 'int',
+		'nType' => 'tinyint',
+		'kPlattform' => 'int',
+		'nStandard' => 'tinyint',
+		'cVorlagenname' => 'varchar',
+		'cSubject' => 'varchar',
+		'cText' => 'varchar',
+		'nHTML' => 'tinyint',
+		'cHTML' => 'varchar',
+	];
 
 	/** @var int kMailVorlage */
 	public $kMailVorlage;

@@ -9,6 +9,13 @@ class tRMStatusBerechtigung
 	const kRechtBenutzerGruppe = 'kRechtBenutzerGruppe';
 	const nStatusSetzen = 'nStatusSetzen';
 	const nStatusVerlassen = 'nStatusVerlassen';
+	const COLUMN_NAMES = ['kRMStatus', 'kRechtBenutzerGruppe', 'nStatusSetzen', 'nStatusVerlassen'];
+	const COLUMN_TYPES = [
+		'kRMStatus' => 'int',
+		'kRechtBenutzerGruppe' => 'int',
+		'nStatusSetzen' => 'tinyint',
+		'nStatusVerlassen' => 'tinyint',
+	];
 
 	/** @var int kRMStatus */
 	public $kRMStatus;

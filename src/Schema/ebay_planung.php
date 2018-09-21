@@ -27,6 +27,54 @@ class ebay_planung
 	const cStatus = 'cStatus';
 	const nAlleXtage = 'nAlleXtage';
 	const cAlleXuhrzeit = 'cAlleXuhrzeit';
+	const COLUMN_NAMES = [
+		'kPlanung',
+		'kItem',
+		'kEbayUser',
+		'cPlanungsname',
+		'cMo',
+		'cDi',
+		'cMi',
+		'cDo',
+		'cFr',
+		'cSa',
+		'cSo',
+		'cZeit1',
+		'cZeit2',
+		'cZeit3',
+		'cZeit4',
+		'cZeit5',
+		'cZeit6',
+		'dPlanungsbeginn',
+		'dPlanungsende',
+		'cStatus',
+		'nAlleXtage',
+		'cAlleXuhrzeit',
+	];
+	const COLUMN_TYPES = [
+		'kPlanung' => 'int',
+		'kItem' => 'int',
+		'kEbayUser' => 'int',
+		'cPlanungsname' => 'varchar',
+		'cMo' => 'tinyint',
+		'cDi' => 'tinyint',
+		'cMi' => 'tinyint',
+		'cDo' => 'tinyint',
+		'cFr' => 'tinyint',
+		'cSa' => 'tinyint',
+		'cSo' => 'tinyint',
+		'cZeit1' => 'varchar',
+		'cZeit2' => 'varchar',
+		'cZeit3' => 'varchar',
+		'cZeit4' => 'varchar',
+		'cZeit5' => 'varchar',
+		'cZeit6' => 'varchar',
+		'dPlanungsbeginn' => 'datetime',
+		'dPlanungsende' => 'datetime',
+		'cStatus' => 'char',
+		'nAlleXtage' => 'int',
+		'cAlleXuhrzeit' => 'varchar',
+	];
 
 	/** @var int kPlanung */
 	public $kPlanung;

@@ -8,6 +8,8 @@ class tArtikelMerkmal
 	const kMerkmal = 'kMerkmal';
 	const kMerkmalWert = 'kMerkmalWert';
 	const kArtikel = 'kArtikel';
+	const COLUMN_NAMES = ['kMerkmal', 'kMerkmalWert', 'kArtikel'];
+	const COLUMN_TYPES = ['kMerkmal' => 'int', 'kMerkmalWert' => 'int', 'kArtikel' => 'int'];
 
 	/** @var int kMerkmal */
 	public $kMerkmal;

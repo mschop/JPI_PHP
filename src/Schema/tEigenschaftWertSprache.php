@@ -8,6 +8,8 @@ class tEigenschaftWertSprache
 	const kEigenschaftWert = 'kEigenschaftWert';
 	const kSprache = 'kSprache';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kEigenschaftWert', 'kSprache', 'cName'];
+	const COLUMN_TYPES = ['kEigenschaftWert' => 'int', 'kSprache' => 'int', 'cName' => 'varchar'];
 
 	/** @var int kEigenschaftWert */
 	public $kEigenschaftWert;

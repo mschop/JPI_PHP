@@ -9,6 +9,13 @@ class ameise_importvorlageeinstellung
 	const kImportVorlage = 'kImportVorlage';
 	const kImportTypEinstellung = 'kImportTypEinstellung';
 	const kImportTypEinstellungWert = 'kImportTypEinstellungWert';
+	const COLUMN_NAMES = ['kImportVorlageEinstellung', 'kImportVorlage', 'kImportTypEinstellung', 'kImportTypEinstellungWert'];
+	const COLUMN_TYPES = [
+		'kImportVorlageEinstellung' => 'int',
+		'kImportVorlage' => 'int',
+		'kImportTypEinstellung' => 'int',
+		'kImportTypEinstellungWert' => 'int',
+	];
 
 	/** @var int kImportVorlageEinstellung */
 	public $kImportVorlageEinstellung;

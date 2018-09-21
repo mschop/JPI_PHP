@@ -27,6 +27,54 @@ class trechnungsadresse
 	const cISO = 'cISO';
 	const cKundenNr = 'cKundenNr';
 	const cZHaenden = 'cZHaenden';
+	const COLUMN_NAMES = [
+		'kRechnungsAdresse',
+		'kKunde',
+		'cFirma',
+		'cAnrede',
+		'cTitel',
+		'cVorname',
+		'cName',
+		'cStrasse',
+		'cPLZ',
+		'cOrt',
+		'cLand',
+		'cTel',
+		'cZusatz',
+		'cAdressZusatz',
+		'cPostID',
+		'cMobil',
+		'cMail',
+		'cFax',
+		'cBundesland',
+		'cISO',
+		'cKundenNr',
+		'cZHaenden',
+	];
+	const COLUMN_TYPES = [
+		'kRechnungsAdresse' => 'int',
+		'kKunde' => 'int',
+		'cFirma' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cTitel' => 'varchar',
+		'cVorname' => 'varchar',
+		'cName' => 'varchar',
+		'cStrasse' => 'varchar',
+		'cPLZ' => 'varchar',
+		'cOrt' => 'varchar',
+		'cLand' => 'varchar',
+		'cTel' => 'varchar',
+		'cZusatz' => 'varchar',
+		'cAdressZusatz' => 'varchar',
+		'cPostID' => 'varchar',
+		'cMobil' => 'varchar',
+		'cMail' => 'varchar',
+		'cFax' => 'varchar',
+		'cBundesland' => 'varchar',
+		'cISO' => 'varchar',
+		'cKundenNr' => 'varchar',
+		'cZHaenden' => 'varchar',
+	];
 
 	/** @var int kRechnungsAdresse */
 	public $kRechnungsAdresse;

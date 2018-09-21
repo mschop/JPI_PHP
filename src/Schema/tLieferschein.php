@@ -16,6 +16,32 @@ class tLieferschein
 	const nFulfillment = 'nFulfillment';
 	const kLieferantenBestellung = 'kLieferantenBestellung';
 	const kSessionId = 'kSessionId';
+	const COLUMN_NAMES = [
+		'kLieferschein',
+		'kBestellung',
+		'kBenutzer',
+		'cLieferscheinNr',
+		'cHinweis',
+		'dMailVersand',
+		'dErstellt',
+		'dGedruckt',
+		'nFulfillment',
+		'kLieferantenBestellung',
+		'kSessionId',
+	];
+	const COLUMN_TYPES = [
+		'kLieferschein' => 'int',
+		'kBestellung' => 'int',
+		'kBenutzer' => 'int',
+		'cLieferscheinNr' => 'varchar',
+		'cHinweis' => 'varchar',
+		'dMailVersand' => 'datetime',
+		'dErstellt' => 'datetime',
+		'dGedruckt' => 'datetime',
+		'nFulfillment' => 'int',
+		'kLieferantenBestellung' => 'int',
+		'kSessionId' => 'int',
+	];
 
 	/** @var int kLieferschein */
 	public $kLieferschein;

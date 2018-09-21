@@ -16,6 +16,32 @@ class tStatistikVorlage
 	const cZeitraum = 'cZeitraum';
 	const nSort = 'nSort';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = [
+		'kStatistikVorlage',
+		'kStatistikAuswertungstyp',
+		'kStatistikVorlageOrdner',
+		'kBenutzer',
+		'cName',
+		'cSpaltennameX',
+		'cSpaltennameSeries',
+		'cSQL',
+		'cZeitraum',
+		'nSort',
+		'cBeschreibung',
+	];
+	const COLUMN_TYPES = [
+		'kStatistikVorlage' => 'int',
+		'kStatistikAuswertungstyp' => 'int',
+		'kStatistikVorlageOrdner' => 'int',
+		'kBenutzer' => 'int',
+		'cName' => 'varchar',
+		'cSpaltennameX' => 'varchar',
+		'cSpaltennameSeries' => 'varchar',
+		'cSQL' => 'varchar',
+		'cZeitraum' => 'varchar',
+		'nSort' => 'int',
+		'cBeschreibung' => 'varchar',
+	];
 
 	/** @var int kStatistikVorlage */
 	public $kStatistikVorlage;

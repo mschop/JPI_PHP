@@ -19,6 +19,38 @@ class tEingangsrechnungPos
 	const fEKNetto = 'fEKNetto';
 	const fMwSt = 'fMwSt';
 	const nPosTyp = 'nPosTyp';
+	const COLUMN_NAMES = [
+		'kEingangsrechnungPos',
+		'kEingangsrechnung',
+		'kLieferantenbestellung',
+		'kArtikel',
+		'cArtNr',
+		'cLieferantenArtNr',
+		'cName',
+		'cLieferantenBezeichnung',
+		'cEinheit',
+		'cHinweis',
+		'fMenge',
+		'fEKNetto',
+		'fMwSt',
+		'nPosTyp',
+	];
+	const COLUMN_TYPES = [
+		'kEingangsrechnungPos' => 'int',
+		'kEingangsrechnung' => 'int',
+		'kLieferantenbestellung' => 'int',
+		'kArtikel' => 'int',
+		'cArtNr' => 'varchar',
+		'cLieferantenArtNr' => 'varchar',
+		'cName' => 'varchar',
+		'cLieferantenBezeichnung' => 'varchar',
+		'cEinheit' => 'varchar',
+		'cHinweis' => 'varchar',
+		'fMenge' => 'decimal',
+		'fEKNetto' => 'decimal',
+		'fMwSt' => 'decimal',
+		'nPosTyp' => 'tinyint',
+	];
 
 	/** @var int kEingangsrechnungPos */
 	public $kEingangsrechnungPos;

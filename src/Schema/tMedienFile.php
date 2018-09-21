@@ -12,6 +12,16 @@ class tMedienFile
 	const dTime = 'dTime';
 	const nDel = 'nDel';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = ['kMedienFile', 'kMedienDir', 'cName', 'nSize', 'dTime', 'nDel', 'kShop'];
+	const COLUMN_TYPES = [
+		'kMedienFile' => 'int',
+		'kMedienDir' => 'int',
+		'cName' => 'varchar',
+		'nSize' => 'int',
+		'dTime' => 'datetime',
+		'nDel' => 'smallint',
+		'kShop' => 'int',
+	];
 
 	/** @var int kMedienFile */
 	public $kMedienFile;

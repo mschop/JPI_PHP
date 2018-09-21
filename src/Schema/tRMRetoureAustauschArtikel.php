@@ -14,6 +14,28 @@ class tRMRetoureAustauschArtikel
 	const cHinweis = 'cHinweis';
 	const fRabatt = 'fRabatt';
 	const fMwSt = 'fMwSt';
+	const COLUMN_NAMES = [
+		'kRMRetoureAustauschArtikel',
+		'kRMRetoure',
+		'kArtikel',
+		'fAnzahl',
+		'fVkPreis',
+		'fVkNetto',
+		'cHinweis',
+		'fRabatt',
+		'fMwSt',
+	];
+	const COLUMN_TYPES = [
+		'kRMRetoureAustauschArtikel' => 'int',
+		'kRMRetoure' => 'int',
+		'kArtikel' => 'int',
+		'fAnzahl' => 'decimal',
+		'fVkPreis' => 'decimal',
+		'fVkNetto' => 'decimal',
+		'cHinweis' => 'varchar',
+		'fRabatt' => 'decimal',
+		'fMwSt' => 'decimal',
+	];
 
 	/** @var int kRMRetoureAustauschArtikel */
 	public $kRMRetoureAustauschArtikel;

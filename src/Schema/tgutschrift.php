@@ -28,6 +28,56 @@ class tgutschrift
 	const fVersandlandWaehrungFaktor = 'fVersandlandWaehrungFaktor';
 	const dDruckdatum = 'dDruckdatum';
 	const dMaildatum = 'dMaildatum';
+	const COLUMN_NAMES = [
+		'kGutschrift',
+		'kRechnung',
+		'kKunde',
+		'cGutschriftNr',
+		'cKurzText',
+		'cText',
+		'fPreis',
+		'fMwSt',
+		'dErstellt',
+		'cErloeskonto',
+		'nErweitert',
+		'cWaehrung',
+		'fFaktor',
+		'kFirma',
+		'kSprache',
+		'kBenutzer',
+		'cStatus',
+		'kRechnungsAdresse',
+		'kPlattform',
+		'cVersandlandWaehrung',
+		'fVersandlandWaehrungFaktor',
+		'dDruckdatum',
+		'dMaildatum',
+	];
+	const COLUMN_TYPES = [
+		'kGutschrift' => 'int',
+		'kRechnung' => 'int',
+		'kKunde' => 'int',
+		'cGutschriftNr' => 'varchar',
+		'cKurzText' => 'varchar',
+		'cText' => 'varchar',
+		'fPreis' => 'decimal',
+		'fMwSt' => 'decimal',
+		'dErstellt' => 'datetime',
+		'cErloeskonto' => 'varchar',
+		'nErweitert' => 'tinyint',
+		'cWaehrung' => 'varchar',
+		'fFaktor' => 'decimal',
+		'kFirma' => 'int',
+		'kSprache' => 'int',
+		'kBenutzer' => 'int',
+		'cStatus' => 'varchar',
+		'kRechnungsAdresse' => 'int',
+		'kPlattform' => 'int',
+		'cVersandlandWaehrung' => 'varchar',
+		'fVersandlandWaehrungFaktor' => 'decimal',
+		'dDruckdatum' => 'datetime',
+		'dMaildatum' => 'datetime',
+	];
 
 	/** @var int kGutschrift */
 	public $kGutschrift;

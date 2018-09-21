@@ -14,6 +14,28 @@ class pf_amazon_lagerbewegung
 	const nStatus = 'nStatus';
 	const cTransactionType = 'cTransactionType';
 	const kMessageId = 'kMessageId';
+	const COLUMN_NAMES = [
+		'kAmazonLagerbewegung',
+		'kUser',
+		'kArtikel',
+		'nMenge',
+		'cFulfillmentCenter',
+		'dSnapshot',
+		'nStatus',
+		'cTransactionType',
+		'kMessageId',
+	];
+	const COLUMN_TYPES = [
+		'kAmazonLagerbewegung' => 'int',
+		'kUser' => 'int',
+		'kArtikel' => 'int',
+		'nMenge' => 'int',
+		'cFulfillmentCenter' => 'varchar',
+		'dSnapshot' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cTransactionType' => 'varchar',
+		'kMessageId' => 'int',
+	];
 
 	/** @var int kAmazonLagerbewegung */
 	public $kAmazonLagerbewegung;

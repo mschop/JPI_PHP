@@ -9,6 +9,13 @@ class tArtikelbildPlattformSeo
 	const kArtikelbildPlattform = 'kArtikelbildPlattform';
 	const kSprache = 'kSprache';
 	const cAlternativtext = 'cAlternativtext';
+	const COLUMN_NAMES = ['kArtikelbildPlattformSeo', 'kArtikelbildPlattform', 'kSprache', 'cAlternativtext'];
+	const COLUMN_TYPES = [
+		'kArtikelbildPlattformSeo' => 'int',
+		'kArtikelbildPlattform' => 'int',
+		'kSprache' => 'int',
+		'cAlternativtext' => 'varchar',
+	];
 
 	/** @var int kArtikelbildPlattformSeo */
 	public $kArtikelbildPlattformSeo;

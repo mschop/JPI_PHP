@@ -15,6 +15,30 @@ class pf_amazon_settlement
 	const TotalAmount = 'TotalAmount';
 	const Currency = 'Currency';
 	const dErstellt = 'dErstellt';
+	const COLUMN_NAMES = [
+		'kMessageId',
+		'kUser',
+		'ReportID',
+		'SettlementID',
+		'SettlementStartDate',
+		'SettlementEndDate',
+		'DepositDate',
+		'TotalAmount',
+		'Currency',
+		'dErstellt',
+	];
+	const COLUMN_TYPES = [
+		'kMessageId' => 'bigint',
+		'kUser' => 'int',
+		'ReportID' => 'bigint',
+		'SettlementID' => 'bigint',
+		'SettlementStartDate' => 'datetime',
+		'SettlementEndDate' => 'datetime',
+		'DepositDate' => 'datetime',
+		'TotalAmount' => 'decimal',
+		'Currency' => 'varchar',
+		'dErstellt' => 'datetime',
+	];
 
 	/** @var int kMessageId */
 	public $kMessageId;

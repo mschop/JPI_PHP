@@ -17,6 +17,34 @@ class tWorkerInfo
 	const dShopStart = 'dShopStart';
 	const dShopEnde = 'dShopEnde';
 	const nShopOption = 'nShopOption';
+	const COLUMN_NAMES = [
+		'nEbayPID',
+		'dEbayStart',
+		'dEbayEnde',
+		'nEbayOption',
+		'nAmazonPID',
+		'dAmazonStart',
+		'dAmazonEnde',
+		'nAmazonOption',
+		'nShopPID',
+		'dShopStart',
+		'dShopEnde',
+		'nShopOption',
+	];
+	const COLUMN_TYPES = [
+		'nEbayPID' => 'int',
+		'dEbayStart' => 'datetime',
+		'dEbayEnde' => 'datetime',
+		'nEbayOption' => 'int',
+		'nAmazonPID' => 'int',
+		'dAmazonStart' => 'datetime',
+		'dAmazonEnde' => 'datetime',
+		'nAmazonOption' => 'int',
+		'nShopPID' => 'int',
+		'dShopStart' => 'datetime',
+		'dShopEnde' => 'datetime',
+		'nShopOption' => 'int',
+	];
 
 	/** @var int nEbayPID */
 	public $nEbayPID;

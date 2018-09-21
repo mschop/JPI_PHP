@@ -11,6 +11,15 @@ class tPreischeckVersand
 	const kPreisId = 'kPreisId';
 	const fVersand = 'fVersand';
 	const cVergleichspreisformel = 'cVergleichspreisformel';
+	const COLUMN_NAMES = ['kArtikel', 'nPlattformTyp', 'nPlattform', 'kPreisId', 'fVersand', 'cVergleichspreisformel'];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'nPlattformTyp' => 'int',
+		'nPlattform' => 'int',
+		'kPreisId' => 'int',
+		'fVersand' => 'decimal',
+		'cVergleichspreisformel' => 'nvarchar',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;

@@ -17,6 +17,34 @@ class ameise_exportvorlagefilter
 	const cExtMerkmale = 'cExtMerkmale';
 	const cExtAttribute = 'cExtAttribute';
 	const cExtEigeneFelder = 'cExtEigeneFelder';
+	const COLUMN_NAMES = [
+		'kExportVorlageFilter',
+		'kStandardfilter',
+		'cName',
+		'nFilterArt',
+		'cUebersicht',
+		'cExt',
+		'cSortierSpalte',
+		'cSortierReihenfolge',
+		'dErstellt',
+		'cExtMerkmale',
+		'cExtAttribute',
+		'cExtEigeneFelder',
+	];
+	const COLUMN_TYPES = [
+		'kExportVorlageFilter' => 'int',
+		'kStandardfilter' => 'int',
+		'cName' => 'varchar',
+		'nFilterArt' => 'tinyint',
+		'cUebersicht' => 'varchar',
+		'cExt' => 'varchar',
+		'cSortierSpalte' => 'varchar',
+		'cSortierReihenfolge' => 'varchar',
+		'dErstellt' => 'datetime',
+		'cExtMerkmale' => 'varchar',
+		'cExtAttribute' => 'varchar',
+		'cExtEigeneFelder' => 'varchar',
+	];
 
 	/** @var int kExportVorlageFilter */
 	public $kExportVorlageFilter;

@@ -15,6 +15,30 @@ class tMDELog
 	const nLogLevel = 'nLogLevel';
 	const cSessionId = 'cSessionId';
 	const cServer = 'cServer';
+	const COLUMN_NAMES = [
+		'kMDELog',
+		'nLogID',
+		'dDatum',
+		'kBenutzer',
+		'cLog',
+		'cView',
+		'nTime',
+		'nLogLevel',
+		'cSessionId',
+		'cServer',
+	];
+	const COLUMN_TYPES = [
+		'kMDELog' => 'int',
+		'nLogID' => 'int',
+		'dDatum' => 'datetime',
+		'kBenutzer' => 'int',
+		'cLog' => 'varchar',
+		'cView' => 'varchar',
+		'nTime' => 'int',
+		'nLogLevel' => 'int',
+		'cSessionId' => 'varchar',
+		'cServer' => 'varchar',
+	];
 
 	/** @var int kMDELog */
 	public $kMDELog;

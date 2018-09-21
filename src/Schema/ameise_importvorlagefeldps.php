@@ -11,6 +11,15 @@ class ameise_importvorlagefeldps
 	const cDBName = 'cDBName';
 	const cPraefix = 'cPraefix';
 	const cSuffix = 'cSuffix';
+	const COLUMN_NAMES = ['kImportVorlageFeldPS', 'kImportVorlage', 'cTable', 'cDBName', 'cPraefix', 'cSuffix'];
+	const COLUMN_TYPES = [
+		'kImportVorlageFeldPS' => 'int',
+		'kImportVorlage' => 'int',
+		'cTable' => 'varchar',
+		'cDBName' => 'varchar',
+		'cPraefix' => 'varchar',
+		'cSuffix' => 'varchar',
+	];
 
 	/** @var int kImportVorlageFeldPS */
 	public $kImportVorlageFeldPS;

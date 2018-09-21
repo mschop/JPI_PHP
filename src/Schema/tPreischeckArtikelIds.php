@@ -9,6 +9,13 @@ class tPreischeckArtikelIds
 	const kArtikel = 'kArtikel';
 	const cProductId = 'cProductId';
 	const nProductIdType = 'nProductIdType';
+	const COLUMN_NAMES = ['kPreischeckArtikelIds', 'kArtikel', 'cProductId', 'nProductIdType'];
+	const COLUMN_TYPES = [
+		'kPreischeckArtikelIds' => 'int',
+		'kArtikel' => 'int',
+		'cProductId' => 'varchar',
+		'nProductIdType' => 'int',
+	];
 
 	/** @var int kPreischeckArtikelIds */
 	public $kPreischeckArtikelIds;

@@ -15,6 +15,30 @@ class tPickliste
 	const kSessionId = 'kSessionId';
 	const kLieferant = 'kLieferant';
 	const kAnsprechpartner = 'kAnsprechpartner';
+	const COLUMN_NAMES = [
+		'kPickliste',
+		'kWarenLager',
+		'kPicklistenVorlage',
+		'nStatus',
+		'kPicklisteStatus',
+		'kPicklisteStatusAngelegt',
+		'dGedruckt',
+		'kSessionId',
+		'kLieferant',
+		'kAnsprechpartner',
+	];
+	const COLUMN_TYPES = [
+		'kPickliste' => 'int',
+		'kWarenLager' => 'int',
+		'kPicklistenVorlage' => 'int',
+		'nStatus' => 'int',
+		'kPicklisteStatus' => 'int',
+		'kPicklisteStatusAngelegt' => 'int',
+		'dGedruckt' => 'datetime',
+		'kSessionId' => 'int',
+		'kLieferant' => 'int',
+		'kAnsprechpartner' => 'int',
+	];
 
 	/** @var int kPickliste */
 	public $kPickliste;

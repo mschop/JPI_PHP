@@ -9,6 +9,8 @@ class pf_amazon_group
 	const cName = 'cName';
 	const kPlattform = 'kPlattform';
 	const nAktiv = 'nAktiv';
+	const COLUMN_NAMES = ['kGroup', 'cName', 'kPlattform', 'nAktiv'];
+	const COLUMN_TYPES = ['kGroup' => 'int', 'cName' => 'varchar', 'kPlattform' => 'int', 'nAktiv' => 'tinyint'];
 
 	/** @var int kGroup */
 	public $kGroup;

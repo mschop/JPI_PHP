@@ -13,6 +13,17 @@ class pf_amazon_validation
 	const arraySize = 'arraySize';
 	const minOccurs = 'minOccurs';
 	const maxOccurs = 'maxOccurs';
+	const COLUMN_NAMES = ['cName', 'minLength', 'maxLength', 'cPattern', 'cType', 'arraySize', 'minOccurs', 'maxOccurs'];
+	const COLUMN_TYPES = [
+		'cName' => 'varchar',
+		'minLength' => 'int',
+		'maxLength' => 'int',
+		'cPattern' => 'varchar',
+		'cType' => 'varchar',
+		'arraySize' => 'int',
+		'minOccurs' => 'int',
+		'maxOccurs' => 'int',
+	];
 
 	/** @var string cName */
 	public $cName;

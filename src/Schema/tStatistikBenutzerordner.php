@@ -9,6 +9,13 @@ class tStatistikBenutzerordner
 	const kStatistikBenutzerordnerVater = 'kStatistikBenutzerordnerVater';
 	const kBenutzer = 'kBenutzer';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kStatistikBenutzerordner', 'kStatistikBenutzerordnerVater', 'kBenutzer', 'cName'];
+	const COLUMN_TYPES = [
+		'kStatistikBenutzerordner' => 'int',
+		'kStatistikBenutzerordnerVater' => 'int',
+		'kBenutzer' => 'int',
+		'cName' => 'varchar',
+	];
 
 	/** @var int kStatistikBenutzerordner */
 	public $kStatistikBenutzerordner;

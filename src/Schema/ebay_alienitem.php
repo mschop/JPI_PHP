@@ -25,6 +25,50 @@ class ebay_alienitem
 	const kEbayuser = 'kEbayuser';
 	const SKU = 'SKU';
 	const VATPercent = 'VATPercent';
+	const COLUMN_NAMES = [
+		'kAlienItem',
+		'Title',
+		'ItemID',
+		'StartTime',
+		'EndTime',
+		'ListingType',
+		'Quantity',
+		'QuantityAvailable',
+		'SS_BidderCount',
+		'SS_BidCount',
+		'SS_CurrentPrice',
+		'SS_HighBidderUserId',
+		'StartPrice',
+		'BuyItNowPrice',
+		'CurrencyID',
+		'UserID',
+		'Status',
+		'kEbayuser',
+		'SKU',
+		'VATPercent',
+	];
+	const COLUMN_TYPES = [
+		'kAlienItem' => 'int',
+		'Title' => 'varchar',
+		'ItemID' => 'varchar',
+		'StartTime' => 'datetime',
+		'EndTime' => 'datetime',
+		'ListingType' => 'varchar',
+		'Quantity' => 'int',
+		'QuantityAvailable' => 'int',
+		'SS_BidderCount' => 'int',
+		'SS_BidCount' => 'int',
+		'SS_CurrentPrice' => 'decimal',
+		'SS_HighBidderUserId' => 'varchar',
+		'StartPrice' => 'decimal',
+		'BuyItNowPrice' => 'decimal',
+		'CurrencyID' => 'varchar',
+		'UserID' => 'varchar',
+		'Status' => 'tinyint',
+		'kEbayuser' => 'int',
+		'SKU' => 'varchar',
+		'VATPercent' => 'decimal',
+	];
 
 	/** @var int kAlienItem */
 	public $kAlienItem;

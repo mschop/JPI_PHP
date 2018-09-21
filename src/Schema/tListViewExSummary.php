@@ -11,6 +11,15 @@ class tListViewExSummary
 	const nListViewID = 'nListViewID';
 	const nSummaryID = 'nSummaryID';
 	const cRechnername = 'cRechnername';
+	const COLUMN_NAMES = ['kListViewExSummary', 'kBenutzer', 'kBenutzerAdmin', 'nListViewID', 'nSummaryID', 'cRechnername'];
+	const COLUMN_TYPES = [
+		'kListViewExSummary' => 'int',
+		'kBenutzer' => 'int',
+		'kBenutzerAdmin' => 'int',
+		'nListViewID' => 'int',
+		'nSummaryID' => 'int',
+		'cRechnername' => 'varchar',
+	];
 
 	/** @var int kListViewExSummary */
 	public $kListViewExSummary;

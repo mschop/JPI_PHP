@@ -17,6 +17,34 @@ class ebay_data_membermessage_in
 	const QuestionSenderID = 'QuestionSenderID';
 	const QuestionSubject = 'QuestionSubject';
 	const Status = 'Status';
+	const COLUMN_NAMES = [
+		'kMemberMessageIn',
+		'ItemID',
+		'CreationDate',
+		'QuestionBody',
+		'QuestionDisplayToPublic',
+		'QuestionMessageID',
+		'QuestionMessageType',
+		'QuestionQuestionType',
+		'QuestionRecipientID',
+		'QuestionSenderID',
+		'QuestionSubject',
+		'Status',
+	];
+	const COLUMN_TYPES = [
+		'kMemberMessageIn' => 'int',
+		'ItemID' => 'varchar',
+		'CreationDate' => 'varchar',
+		'QuestionBody' => 'varchar',
+		'QuestionDisplayToPublic' => 'tinyint',
+		'QuestionMessageID' => 'varchar',
+		'QuestionMessageType' => 'varchar',
+		'QuestionQuestionType' => 'varchar',
+		'QuestionRecipientID' => 'varchar',
+		'QuestionSenderID' => 'varchar',
+		'QuestionSubject' => 'varchar',
+		'Status' => 'tinyint',
+	];
 
 	/** @var int kMemberMessageIn */
 	public $kMemberMessageIn;

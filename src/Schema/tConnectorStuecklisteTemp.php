@@ -9,6 +9,8 @@ class tConnectorStuecklisteTemp
 	const cVaterID = 'cVaterID';
 	const kArtikelKind = 'kArtikelKind';
 	const fAnzahl = 'fAnzahl';
+	const COLUMN_NAMES = ['kStueckliste', 'cVaterID', 'kArtikelKind', 'fAnzahl'];
+	const COLUMN_TYPES = ['kStueckliste' => 'int', 'cVaterID' => 'varchar', 'kArtikelKind' => 'int', 'fAnzahl' => 'decimal'];
 
 	/** @var int kStueckliste */
 	public $kStueckliste;

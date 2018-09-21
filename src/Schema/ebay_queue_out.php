@@ -11,6 +11,15 @@ class ebay_queue_out
 	const nType = 'nType';
 	const cIdentcode = 'cIdentcode';
 	const cCarrierCode = 'cCarrierCode';
+	const COLUMN_NAMES = ['ItemID', 'TransactionID', 'kEbayUser', 'nType', 'cIdentcode', 'cCarrierCode'];
+	const COLUMN_TYPES = [
+		'ItemID' => 'varchar',
+		'TransactionID' => 'varchar',
+		'kEbayUser' => 'int',
+		'nType' => 'smallint',
+		'cIdentcode' => 'varchar',
+		'cCarrierCode' => 'varchar',
+	];
 
 	/** @var string ItemID */
 	public $ItemID;

@@ -8,6 +8,8 @@ class tStueckliste
 	const kStueckliste = 'kStueckliste';
 	const kArtikel = 'kArtikel';
 	const fAnzahl = 'fAnzahl';
+	const COLUMN_NAMES = ['kStueckliste', 'kArtikel', 'fAnzahl'];
+	const COLUMN_TYPES = ['kStueckliste' => 'int', 'kArtikel' => 'int', 'fAnzahl' => 'decimal'];
 
 	/** @var int kStueckliste */
 	public $kStueckliste;

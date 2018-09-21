@@ -11,6 +11,15 @@ class ameise_exportvorlagefilterfeld
 	const nOperator = 'nOperator';
 	const cWert = 'cWert';
 	const cTable = 'cTable';
+	const COLUMN_NAMES = ['kExportVorlageFilterFeld', 'kExportVorlageFilter', 'cDBName', 'nOperator', 'cWert', 'cTable'];
+	const COLUMN_TYPES = [
+		'kExportVorlageFilterFeld' => 'int',
+		'kExportVorlageFilter' => 'int',
+		'cDBName' => 'varchar',
+		'nOperator' => 'tinyint',
+		'cWert' => 'varchar',
+		'cTable' => 'varchar',
+	];
 
 	/** @var int kExportVorlageFilterFeld */
 	public $kExportVorlageFilterFeld;

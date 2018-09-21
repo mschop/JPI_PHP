@@ -8,6 +8,8 @@ class tBundesland
 	const cISOLand = 'cISOLand';
 	const cBundesland = 'cBundesland';
 	const cKuerzelBundesland = 'cKuerzelBundesland';
+	const COLUMN_NAMES = ['cISOLand', 'cBundesland', 'cKuerzelBundesland'];
+	const COLUMN_TYPES = ['cISOLand' => 'varchar', 'cBundesland' => 'varchar', 'cKuerzelBundesland' => 'varchar'];
 
 	/** @var string cISOLand */
 	public $cISOLand;

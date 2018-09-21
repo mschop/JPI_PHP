@@ -9,6 +9,8 @@ class tGebuehrtyp
 	const cName = 'cName';
 	const cNameExtern = 'cNameExtern';
 	const nTyp = 'nTyp';
+	const COLUMN_NAMES = ['kGebuehrtyp', 'cName', 'cNameExtern', 'nTyp'];
+	const COLUMN_TYPES = ['kGebuehrtyp' => 'int', 'cName' => 'varchar', 'cNameExtern' => 'varchar', 'nTyp' => 'int'];
 
 	/** @var int kGebuehrtyp */
 	public $kGebuehrtyp;

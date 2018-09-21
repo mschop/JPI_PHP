@@ -18,6 +18,36 @@ class tWarenLagerFulFillmentDienstleister
 	const kFormularFfnLieferschein = 'kFormularFfnLieferschein';
 	const kFormularFfnRechnung = 'kFormularFfnRechnung';
 	const xFfnOptionen = 'xFfnOptionen';
+	const COLUMN_NAMES = [
+		'kWarenLager',
+		'kFulfillmentDienstleister',
+		'nDruckLieferschein',
+		'nFaxLieferschein',
+		'nMailLieferschein',
+		'nDruckFF',
+		'nFaxFF',
+		'nMailFF',
+		'kFormularLieferschein',
+		'kFormularFulfillmentAuftrag',
+		'kFormularFfnLieferschein',
+		'kFormularFfnRechnung',
+		'xFfnOptionen',
+	];
+	const COLUMN_TYPES = [
+		'kWarenLager' => 'int',
+		'kFulfillmentDienstleister' => 'int',
+		'nDruckLieferschein' => 'tinyint',
+		'nFaxLieferschein' => 'tinyint',
+		'nMailLieferschein' => 'tinyint',
+		'nDruckFF' => 'tinyint',
+		'nFaxFF' => 'tinyint',
+		'nMailFF' => 'tinyint',
+		'kFormularLieferschein' => 'int',
+		'kFormularFulfillmentAuftrag' => 'int',
+		'kFormularFfnLieferschein' => 'int',
+		'kFormularFfnRechnung' => 'int',
+		'xFfnOptionen' => 'xml',
+	];
 
 	/** @var int kWarenLager */
 	public $kWarenLager;

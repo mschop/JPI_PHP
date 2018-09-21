@@ -18,6 +18,36 @@ class ebay_mapitem
 	const binJSONData = 'binJSONData';
 	const kEbay_mapitemSuchString = 'kEbay_mapitemSuchString';
 	const SiteID = 'SiteID';
+	const COLUMN_NAMES = [
+		'kEbayuser',
+		'Title',
+		'ItemID',
+		'SKU',
+		'Quantity',
+		'CurrentPrice',
+		'Currency',
+		'EndTime',
+		'ListingType',
+		'cJSONData',
+		'binJSONData',
+		'kEbay_mapitemSuchString',
+		'SiteID',
+	];
+	const COLUMN_TYPES = [
+		'kEbayuser' => 'int',
+		'Title' => 'varchar',
+		'ItemID' => 'varchar',
+		'SKU' => 'varchar',
+		'Quantity' => 'int',
+		'CurrentPrice' => 'decimal',
+		'Currency' => 'varchar',
+		'EndTime' => 'datetime',
+		'ListingType' => 'varchar',
+		'cJSONData' => 'varchar',
+		'binJSONData' => 'varbinary',
+		'kEbay_mapitemSuchString' => 'int',
+		'SiteID' => 'int',
+	];
 
 	/** @var int kEbayuser */
 	public $kEbayuser;

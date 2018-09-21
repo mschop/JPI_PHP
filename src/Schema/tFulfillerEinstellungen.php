@@ -16,6 +16,32 @@ class tFulfillerEinstellungen
 	const dAbrechnungStart = 'dAbrechnungStart';
 	const dAbrechnungEnde = 'dAbrechnungEnde';
 	const nBestandserfassungModus = 'nBestandserfassungModus';
+	const COLUMN_NAMES = [
+		'kFulfillerEinstellungen',
+		'kLieferant',
+		'kKunde',
+		'cPrefixAbrechnung',
+		'cSuffixAbrechnung',
+		'nAbrechnungsZeitraum',
+		'kAbrechnung',
+		'dAbrechnungInitial',
+		'dAbrechnungStart',
+		'dAbrechnungEnde',
+		'nBestandserfassungModus',
+	];
+	const COLUMN_TYPES = [
+		'kFulfillerEinstellungen' => 'int',
+		'kLieferant' => 'int',
+		'kKunde' => 'int',
+		'cPrefixAbrechnung' => 'varchar',
+		'cSuffixAbrechnung' => 'varchar',
+		'nAbrechnungsZeitraum' => 'tinyint',
+		'kAbrechnung' => 'int',
+		'dAbrechnungInitial' => 'datetime',
+		'dAbrechnungStart' => 'datetime',
+		'dAbrechnungEnde' => 'datetime',
+		'nBestandserfassungModus' => 'int',
+	];
 
 	/** @var int kFulfillerEinstellungen */
 	public $kFulfillerEinstellungen;

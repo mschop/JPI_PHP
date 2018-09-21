@@ -25,6 +25,50 @@ class tLieferantenBestellungPos
 	const cVPEEinheit = 'cVPEEinheit';
 	const nVPEMenge = 'nVPEMenge';
 	const fMengeGeliefert = 'fMengeGeliefert';
+	const COLUMN_NAMES = [
+		'kLieferantenBestellungPos',
+		'kLieferantenBestellung',
+		'kArtikel',
+		'cArtNr',
+		'cLieferantenArtNr',
+		'cName',
+		'cLieferantenBezeichnung',
+		'fUST',
+		'fMenge',
+		'cHinweis',
+		'fEKNetto',
+		'nPosTyp',
+		'cNameLieferant',
+		'nLiefertage',
+		'dLieferdatum',
+		'nSort',
+		'kLieferscheinPos',
+		'cVPEEinheit',
+		'nVPEMenge',
+		'fMengeGeliefert',
+	];
+	const COLUMN_TYPES = [
+		'kLieferantenBestellungPos' => 'int',
+		'kLieferantenBestellung' => 'int',
+		'kArtikel' => 'int',
+		'cArtNr' => 'varchar',
+		'cLieferantenArtNr' => 'varchar',
+		'cName' => 'varchar',
+		'cLieferantenBezeichnung' => 'varchar',
+		'fUST' => 'decimal',
+		'fMenge' => 'decimal',
+		'cHinweis' => 'varchar',
+		'fEKNetto' => 'decimal',
+		'nPosTyp' => 'int',
+		'cNameLieferant' => 'varchar',
+		'nLiefertage' => 'int',
+		'dLieferdatum' => 'datetime',
+		'nSort' => 'int',
+		'kLieferscheinPos' => 'int',
+		'cVPEEinheit' => 'varchar',
+		'nVPEMenge' => 'int',
+		'fMengeGeliefert' => 'decimal',
+	];
 
 	/** @var int kLieferantenBestellungPos */
 	public $kLieferantenBestellungPos;

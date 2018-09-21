@@ -12,6 +12,24 @@ class tHerstellerSprache
 	const cMetaDescription = 'cMetaDescription';
 	const cBeschreibung = 'cBeschreibung';
 	const cSeo = 'cSeo';
+	const COLUMN_NAMES = [
+		'kHersteller',
+		'kSprache',
+		'cMetaTitle',
+		'cMetaKeywords',
+		'cMetaDescription',
+		'cBeschreibung',
+		'cSeo',
+	];
+	const COLUMN_TYPES = [
+		'kHersteller' => 'int',
+		'kSprache' => 'int',
+		'cMetaTitle' => 'varchar',
+		'cMetaKeywords' => 'varchar',
+		'cMetaDescription' => 'varchar',
+		'cBeschreibung' => 'varchar',
+		'cSeo' => 'varchar',
+	];
 
 	/** @var int kHersteller */
 	public $kHersteller;

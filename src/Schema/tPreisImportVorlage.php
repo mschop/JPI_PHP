@@ -17,6 +17,34 @@ class tPreisImportVorlage
 	const cIdent = 'cIdent';
 	const kLieferant = 'kLieferant';
 	const sMapping = 'sMapping';
+	const COLUMN_NAMES = [
+		'kPreisImportVorlage',
+		'cName',
+		'bZeile',
+		'cTrennzeichen',
+		'kPlattform',
+		'kKundengruppe',
+		'nVKNettoberechnen',
+		'fFaktor',
+		'nSTDVKNetto',
+		'cIdent',
+		'kLieferant',
+		'sMapping',
+	];
+	const COLUMN_TYPES = [
+		'kPreisImportVorlage' => 'int',
+		'cName' => 'varchar',
+		'bZeile' => 'tinyint',
+		'cTrennzeichen' => 'char',
+		'kPlattform' => 'int',
+		'kKundengruppe' => 'int',
+		'nVKNettoberechnen' => 'tinyint',
+		'fFaktor' => 'decimal',
+		'nSTDVKNetto' => 'tinyint',
+		'cIdent' => 'varchar',
+		'kLieferant' => 'int',
+		'sMapping' => 'varchar',
+	];
 
 	/** @var int kPreisImportVorlage */
 	public $kPreisImportVorlage;

@@ -9,6 +9,8 @@ class tdblog
 	const cException = 'cException';
 	const cInfo = 'cInfo';
 	const dZeit = 'dZeit';
+	const COLUMN_NAMES = ['cKategorie', 'cException', 'cInfo', 'dZeit'];
+	const COLUMN_TYPES = ['cKategorie' => 'varchar', 'cException' => 'varchar', 'cInfo' => 'varchar', 'dZeit' => 'datetime'];
 
 	/** @var string cKategorie */
 	public $cKategorie;

@@ -14,6 +14,28 @@ class tAdressExportFelder
 	const cName = 'cName';
 	const nMaxlen = 'nMaxlen';
 	const cZusatzzeile = 'cZusatzzeile';
+	const COLUMN_NAMES = [
+		'kAdressExportVorlage',
+		'nFeldNr',
+		'cPrefix',
+		'cWert',
+		'cSuffix',
+		'cStandardWert',
+		'cName',
+		'nMaxlen',
+		'cZusatzzeile',
+	];
+	const COLUMN_TYPES = [
+		'kAdressExportVorlage' => 'int',
+		'nFeldNr' => 'int',
+		'cPrefix' => 'varchar',
+		'cWert' => 'varchar',
+		'cSuffix' => 'varchar',
+		'cStandardWert' => 'varchar',
+		'cName' => 'varchar',
+		'nMaxlen' => 'int',
+		'cZusatzzeile' => 'varchar',
+	];
 
 	/** @var int kAdressExportVorlage */
 	public $kAdressExportVorlage;

@@ -13,6 +13,26 @@ class tZahlungsabgleichLogsitzung
 	const dEnde = 'dEnde';
 	const nStatus = 'nStatus';
 	const cStatusMeldung = 'cStatusMeldung';
+	const COLUMN_NAMES = [
+		'kZahlungsabgleichLogsitzung',
+		'nTyp',
+		'kBenutzer',
+		'cRechnername',
+		'dStart',
+		'dEnde',
+		'nStatus',
+		'cStatusMeldung',
+	];
+	const COLUMN_TYPES = [
+		'kZahlungsabgleichLogsitzung' => 'int',
+		'nTyp' => 'int',
+		'kBenutzer' => 'int',
+		'cRechnername' => 'varchar',
+		'dStart' => 'datetime',
+		'dEnde' => 'datetime',
+		'nStatus' => 'tinyint',
+		'cStatusMeldung' => 'varchar',
+	];
 
 	/** @var int kZahlungsabgleichLogsitzung */
 	public $kZahlungsabgleichLogsitzung;

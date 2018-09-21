@@ -10,6 +10,14 @@ class tMassEinheit
 	const cDisplayCode = 'cDisplayCode';
 	const kBezugsMassEinheit = 'kBezugsMassEinheit';
 	const fBezugsMassEinheitFaktor = 'fBezugsMassEinheitFaktor';
+	const COLUMN_NAMES = ['kMassEinheit', 'cCode', 'cDisplayCode', 'kBezugsMassEinheit', 'fBezugsMassEinheitFaktor'];
+	const COLUMN_TYPES = [
+		'kMassEinheit' => 'int',
+		'cCode' => 'varchar',
+		'cDisplayCode' => 'varchar',
+		'kBezugsMassEinheit' => 'int',
+		'fBezugsMassEinheitFaktor' => 'decimal',
+	];
 
 	/** @var int kMassEinheit */
 	public $kMassEinheit;

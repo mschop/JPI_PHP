@@ -12,6 +12,24 @@ class tUmlagerung
 	const kBestellung = 'kBestellung';
 	const kLieferantenBestellung = 'kLieferantenBestellung';
 	const nStatus = 'nStatus';
+	const COLUMN_NAMES = [
+		'kUmlagerung',
+		'kQuellLager',
+		'kZielLager',
+		'kStreckenLager',
+		'kBestellung',
+		'kLieferantenBestellung',
+		'nStatus',
+	];
+	const COLUMN_TYPES = [
+		'kUmlagerung' => 'int',
+		'kQuellLager' => 'int',
+		'kZielLager' => 'int',
+		'kStreckenLager' => 'int',
+		'kBestellung' => 'int',
+		'kLieferantenBestellung' => 'int',
+		'nStatus' => 'tinyint',
+	];
 
 	/** @var int kUmlagerung */
 	public $kUmlagerung;

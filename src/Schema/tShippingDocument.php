@@ -11,6 +11,15 @@ class tShippingDocument
 	const bData = 'bData';
 	const cHash = 'cHash';
 	const dDate = 'dDate';
+	const COLUMN_NAMES = ['kShippingDocument', 'kVersand', 'nTyp', 'bData', 'cHash', 'dDate'];
+	const COLUMN_TYPES = [
+		'kShippingDocument' => 'int',
+		'kVersand' => 'int',
+		'nTyp' => 'tinyint',
+		'bData' => 'image',
+		'cHash' => 'varchar',
+		'dDate' => 'datetime',
+	];
 
 	/** @var int kShippingDocument */
 	public $kShippingDocument;

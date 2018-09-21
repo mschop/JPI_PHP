@@ -20,6 +20,40 @@ class tRechnungBackup
 	const dEmailversandt = 'dEmailversandt';
 	const dDruckdatum = 'dDruckdatum';
 	const nMahnstopp = 'nMahnstopp';
+	const COLUMN_NAMES = [
+		'kRechnung',
+		'tBenutzer_kBenutzer',
+		'tBestellung_kBestellung',
+		'tKunde_kKunde',
+		'cRechnungsNr',
+		'cBezahlt',
+		'dErstellt',
+		'nZahlungsziel',
+		'cStatus',
+		'cErloeskonto',
+		'kFirma',
+		'nInkassoStatus',
+		'dEmailversandt',
+		'dDruckdatum',
+		'nMahnstopp',
+	];
+	const COLUMN_TYPES = [
+		'kRechnung' => 'int',
+		'tBenutzer_kBenutzer' => 'int',
+		'tBestellung_kBestellung' => 'int',
+		'tKunde_kKunde' => 'int',
+		'cRechnungsNr' => 'varchar',
+		'cBezahlt' => 'char',
+		'dErstellt' => 'datetime',
+		'nZahlungsziel' => 'tinyint',
+		'cStatus' => 'char',
+		'cErloeskonto' => 'varchar',
+		'kFirma' => 'int',
+		'nInkassoStatus' => 'tinyint',
+		'dEmailversandt' => 'datetime',
+		'dDruckdatum' => 'datetime',
+		'nMahnstopp' => 'tinyint',
+	];
 
 	/** @var int kRechnung */
 	public $kRechnung;

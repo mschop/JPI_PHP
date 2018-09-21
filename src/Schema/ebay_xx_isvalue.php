@@ -9,6 +9,8 @@ class ebay_xx_isvalue
 	const CategoryId = 'CategoryId';
 	const kName = 'kName';
 	const kValue = 'kValue';
+	const COLUMN_NAMES = ['SiteID', 'CategoryId', 'kName', 'kValue'];
+	const COLUMN_TYPES = ['SiteID' => 'int', 'CategoryId' => 'int', 'kName' => 'int', 'kValue' => 'int'];
 
 	/** @var int SiteID */
 	public $SiteID;

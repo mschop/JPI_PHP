@@ -9,6 +9,8 @@ class tRMGrundSprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kRMGrund', 'kSprache', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kRMGrund' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kRMGrund */
 	public $kRMGrund;

@@ -15,6 +15,30 @@ class ebay_data_feedback_in
 	const FeedbackID = 'FeedbackID';
 	const FeedbackRole = 'FeedbackRole';
 	const TransactionID = 'TransactionID';
+	const COLUMN_NAMES = [
+		'kFeedbackIn',
+		'ItemID',
+		'CommentingUser',
+		'CommentingUserScore',
+		'CommentText',
+		'CommentTime',
+		'CommentType',
+		'FeedbackID',
+		'FeedbackRole',
+		'TransactionID',
+	];
+	const COLUMN_TYPES = [
+		'kFeedbackIn' => 'int',
+		'ItemID' => 'varchar',
+		'CommentingUser' => 'varchar',
+		'CommentingUserScore' => 'int',
+		'CommentText' => 'varchar',
+		'CommentTime' => 'varchar',
+		'CommentType' => 'varchar',
+		'FeedbackID' => 'varchar',
+		'FeedbackRole' => 'varchar',
+		'TransactionID' => 'varchar',
+	];
 
 	/** @var int kFeedbackIn */
 	public $kFeedbackIn;

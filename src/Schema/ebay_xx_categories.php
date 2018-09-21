@@ -18,6 +18,36 @@ class ebay_xx_categories
 	const AttributeConversionEnabled = 'AttributeConversionEnabled';
 	const ItemCompatibilityEnabled = 'ItemCompatibilityEnabled';
 	const CompatibleVehicleType = 'CompatibleVehicleType';
+	const COLUMN_NAMES = [
+		'SiteID',
+		'CategoryId',
+		'CategoryParentId',
+		'CategoryLevel',
+		'CategoryName',
+		'LeafCategory',
+		'VariationsEnabled',
+		'ConditionEnabled',
+		'ConditionValues',
+		'ItemSpecificsEnabled',
+		'AttributeConversionEnabled',
+		'ItemCompatibilityEnabled',
+		'CompatibleVehicleType',
+	];
+	const COLUMN_TYPES = [
+		'SiteID' => 'int',
+		'CategoryId' => 'int',
+		'CategoryParentId' => 'int',
+		'CategoryLevel' => 'tinyint',
+		'CategoryName' => 'varchar',
+		'LeafCategory' => 'tinyint',
+		'VariationsEnabled' => 'tinyint',
+		'ConditionEnabled' => 'tinyint',
+		'ConditionValues' => 'varchar',
+		'ItemSpecificsEnabled' => 'tinyint',
+		'AttributeConversionEnabled' => 'tinyint',
+		'ItemCompatibilityEnabled' => 'tinyint',
+		'CompatibleVehicleType' => 'varchar',
+	];
 
 	/** @var int SiteID */
 	public $SiteID;

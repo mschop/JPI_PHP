@@ -9,6 +9,8 @@ class tMedienDateiShop
 	const kShop = 'kShop';
 	const cInet = 'cInet';
 	const cDelInet = 'cDelInet';
+	const COLUMN_NAMES = ['kMedienDatei', 'kShop', 'cInet', 'cDelInet'];
+	const COLUMN_TYPES = ['kMedienDatei' => 'int', 'kShop' => 'int', 'cInet' => 'char', 'cDelInet' => 'char'];
 
 	/** @var int kMedienDatei */
 	public $kMedienDatei;

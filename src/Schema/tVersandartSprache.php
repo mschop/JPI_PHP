@@ -10,6 +10,14 @@ class tVersandartSprache
 	const cName = 'cName';
 	const cDruckText = 'cDruckText';
 	const cAuftragsText = 'cAuftragsText';
+	const COLUMN_NAMES = ['kVersandart', 'kSprache', 'cName', 'cDruckText', 'cAuftragsText'];
+	const COLUMN_TYPES = [
+		'kVersandart' => 'int',
+		'kSprache' => 'int',
+		'cName' => 'varchar',
+		'cDruckText' => 'varchar',
+		'cAuftragsText' => 'varchar',
+	];
 
 	/** @var int kVersandart */
 	public $kVersandart;

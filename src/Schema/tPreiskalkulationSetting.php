@@ -26,6 +26,52 @@ class tPreiskalkulationSetting
 	const nPreisBis10000 = 'nPreisBis10000';
 	const kUser = 'kUser';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = [
+		'kPreiskalkulationSetting',
+		'cNameSetting',
+		'cName',
+		'cModus',
+		'cModifikator',
+		'cPlattform',
+		'cKundenGruppe',
+		'kShop',
+		'kKundenGruppe',
+		'fAnzahl',
+		'fWert',
+		'fAPAMax',
+		'fAPAMin',
+		'dErstellt',
+		'kBenutzer',
+		'nPreisBis10',
+		'nPreisBis100',
+		'nPreisBis1000',
+		'nPreisBis10000',
+		'kUser',
+		'nPlattform',
+	];
+	const COLUMN_TYPES = [
+		'kPreiskalkulationSetting' => 'int',
+		'cNameSetting' => 'varchar',
+		'cName' => 'varchar',
+		'cModus' => 'varchar',
+		'cModifikator' => 'varchar',
+		'cPlattform' => 'varchar',
+		'cKundenGruppe' => 'varchar',
+		'kShop' => 'int',
+		'kKundenGruppe' => 'int',
+		'fAnzahl' => 'decimal',
+		'fWert' => 'decimal',
+		'fAPAMax' => 'decimal',
+		'fAPAMin' => 'decimal',
+		'dErstellt' => 'datetime',
+		'kBenutzer' => 'int',
+		'nPreisBis10' => 'tinyint',
+		'nPreisBis100' => 'tinyint',
+		'nPreisBis1000' => 'tinyint',
+		'nPreisBis10000' => 'tinyint',
+		'kUser' => 'int',
+		'nPlattform' => 'int',
+	];
 
 	/** @var int kPreiskalkulationSetting */
 	public $kPreiskalkulationSetting;

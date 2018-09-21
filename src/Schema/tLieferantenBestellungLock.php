@@ -9,6 +9,13 @@ class tLieferantenBestellungLock
 	const kBenutzer = 'kBenutzer';
 	const nSperreDurch = 'nSperreDurch';
 	const dZeitstempel = 'dZeitstempel';
+	const COLUMN_NAMES = ['kLieferantenBestellung', 'kBenutzer', 'nSperreDurch', 'dZeitstempel'];
+	const COLUMN_TYPES = [
+		'kLieferantenBestellung' => 'int',
+		'kBenutzer' => 'int',
+		'nSperreDurch' => 'tinyint',
+		'dZeitstempel' => 'datetime',
+	];
 
 	/** @var int kLieferantenBestellung */
 	public $kLieferantenBestellung;

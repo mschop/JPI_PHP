@@ -11,6 +11,15 @@ class tmahnungstext
 	const cText = 'cText';
 	const nStuffe = 'nStuffe';
 	const fGebuehr = 'fGebuehr';
+	const COLUMN_NAMES = ['kMahnungsText', 'cBetreff', 'cAnrede', 'cText', 'nStuffe', 'fGebuehr'];
+	const COLUMN_TYPES = [
+		'kMahnungsText' => 'int',
+		'cBetreff' => 'varchar',
+		'cAnrede' => 'varchar',
+		'cText' => 'varchar',
+		'nStuffe' => 'tinyint',
+		'fGebuehr' => 'decimal',
+	];
 
 	/** @var int kMahnungsText */
 	public $kMahnungsText;

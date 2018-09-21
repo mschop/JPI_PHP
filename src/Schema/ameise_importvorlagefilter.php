@@ -16,6 +16,32 @@ class ameise_importvorlagefilter
 	const nLaenge = 'nLaenge';
 	const cValidation = 'cValidation';
 	const nSpalte = 'nSpalte';
+	const COLUMN_NAMES = [
+		'kImportVorlageFilter',
+		'kImportVorlage',
+		'cName',
+		'cTable',
+		'cDBName',
+		'cWert',
+		'nOperator',
+		'cDBTyp',
+		'nLaenge',
+		'cValidation',
+		'nSpalte',
+	];
+	const COLUMN_TYPES = [
+		'kImportVorlageFilter' => 'int',
+		'kImportVorlage' => 'int',
+		'cName' => 'varchar',
+		'cTable' => 'varchar',
+		'cDBName' => 'varchar',
+		'cWert' => 'varchar',
+		'nOperator' => 'tinyint',
+		'cDBTyp' => 'varchar',
+		'nLaenge' => 'int',
+		'cValidation' => 'varchar',
+		'nSpalte' => 'int',
+	];
 
 	/** @var int kImportVorlageFilter */
 	public $kImportVorlageFilter;

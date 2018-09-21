@@ -8,6 +8,8 @@ class tBemerkungen
 	const kBemerkungen = 'kBemerkungen';
 	const cName = 'cName';
 	const cString = 'cString';
+	const COLUMN_NAMES = ['kBemerkungen', 'cName', 'cString'];
+	const COLUMN_TYPES = ['kBemerkungen' => 'int', 'cName' => 'varchar', 'cString' => 'varchar'];
 
 	/** @var int kBemerkungen */
 	public $kBemerkungen;

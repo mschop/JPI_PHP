@@ -13,6 +13,26 @@ class tPreischeckPlattform
 	const cParseRegEx = 'cParseRegEx';
 	const nAktiv = 'nAktiv';
 	const nShowPlattform = 'nShowPlattform';
+	const COLUMN_NAMES = [
+		'kPreischeckPlattform',
+		'cName',
+		'cURL',
+		'cLandISO',
+		'cColor',
+		'cParseRegEx',
+		'nAktiv',
+		'nShowPlattform',
+	];
+	const COLUMN_TYPES = [
+		'kPreischeckPlattform' => 'int',
+		'cName' => 'nvarchar',
+		'cURL' => 'nvarchar',
+		'cLandISO' => 'nvarchar',
+		'cColor' => 'varchar',
+		'cParseRegEx' => 'nvarchar',
+		'nAktiv' => 'int',
+		'nShowPlattform' => 'int',
+	];
 
 	/** @var int kPreischeckPlattform */
 	public $kPreischeckPlattform;

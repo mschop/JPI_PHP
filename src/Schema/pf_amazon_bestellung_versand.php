@@ -16,6 +16,32 @@ class pf_amazon_bestellung_versand
 	const cShipMethod = 'cShipMethod';
 	const dShipDate = 'dShipDate';
 	const dBearbeitet = 'dBearbeitet';
+	const COLUMN_NAMES = [
+		'kAmazonBestellungVersand',
+		'kAmazonBestellungPos',
+		'kLieferschein',
+		'nQuantity',
+		'kBenutzer',
+		'cCarrierCode',
+		'cCarrierName',
+		'cTrackingNumber',
+		'cShipMethod',
+		'dShipDate',
+		'dBearbeitet',
+	];
+	const COLUMN_TYPES = [
+		'kAmazonBestellungVersand' => 'int',
+		'kAmazonBestellungPos' => 'int',
+		'kLieferschein' => 'int',
+		'nQuantity' => 'int',
+		'kBenutzer' => 'int',
+		'cCarrierCode' => 'varchar',
+		'cCarrierName' => 'varchar',
+		'cTrackingNumber' => 'varchar',
+		'cShipMethod' => 'varchar',
+		'dShipDate' => 'datetime',
+		'dBearbeitet' => 'datetime',
+	];
 
 	/** @var int kAmazonBestellungVersand */
 	public $kAmazonBestellungVersand;

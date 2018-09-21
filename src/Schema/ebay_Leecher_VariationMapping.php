@@ -10,6 +10,14 @@ class ebay_Leecher_VariationMapping
 	const cValue1 = 'cValue1';
 	const cIso2 = 'cIso2';
 	const cValue2 = 'cValue2';
+	const COLUMN_NAMES = ['kEbayLeecherVariationMapping', 'cIso1', 'cValue1', 'cIso2', 'cValue2'];
+	const COLUMN_TYPES = [
+		'kEbayLeecherVariationMapping' => 'int',
+		'cIso1' => 'varchar',
+		'cValue1' => 'varchar',
+		'cIso2' => 'varchar',
+		'cValue2' => 'varchar',
+	];
 
 	/** @var int kEbayLeecherVariationMapping */
 	public $kEbayLeecherVariationMapping;

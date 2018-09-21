@@ -9,6 +9,13 @@ class tUserControlSetting
 	const cName = 'cName';
 	const cNameTopLevelControl = 'cNameTopLevelControl';
 	const nSetting = 'nSetting';
+	const COLUMN_NAMES = ['kBenutzer', 'cName', 'cNameTopLevelControl', 'nSetting'];
+	const COLUMN_TYPES = [
+		'kBenutzer' => 'int',
+		'cName' => 'varchar',
+		'cNameTopLevelControl' => 'varchar',
+		'nSetting' => 'tinyint',
+	];
 
 	/** @var int kBenutzer */
 	public $kBenutzer;

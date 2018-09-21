@@ -8,6 +8,8 @@ class tReportsDataSet
 	const kReports = 'kReports';
 	const cDataSet = 'cDataSet';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kReports', 'cDataSet', 'cName'];
+	const COLUMN_TYPES = ['kReports' => 'int', 'cDataSet' => 'varchar', 'cName' => 'varchar'];
 
 	/** @var int kReports */
 	public $kReports;

@@ -9,6 +9,8 @@ class tWorklog
 	const cMessage = 'cMessage';
 	const nErrorID = 'nErrorID';
 	const dDate = 'dDate';
+	const COLUMN_NAMES = ['kWorkerlog', 'cMessage', 'nErrorID', 'dDate'];
+	const COLUMN_TYPES = ['kWorkerlog' => 'int', 'cMessage' => 'varchar', 'nErrorID' => 'bigint', 'dDate' => 'datetime'];
 
 	/** @var int kWorkerlog */
 	public $kWorkerlog;

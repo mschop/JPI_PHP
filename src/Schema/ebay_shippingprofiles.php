@@ -10,6 +10,14 @@ class ebay_shippingprofiles
 	const DiscountProfileID = 'DiscountProfileID';
 	const DiscountProfileName = 'DiscountProfileName';
 	const SiteID = 'SiteID';
+	const COLUMN_NAMES = ['kEbayBenutzer', 'cProfilType', 'DiscountProfileID', 'DiscountProfileName', 'SiteID'];
+	const COLUMN_TYPES = [
+		'kEbayBenutzer' => 'int',
+		'cProfilType' => 'char',
+		'DiscountProfileID' => 'varchar',
+		'DiscountProfileName' => 'varchar',
+		'SiteID' => 'int',
+	];
 
 	/** @var int kEbayBenutzer */
 	public $kEbayBenutzer;

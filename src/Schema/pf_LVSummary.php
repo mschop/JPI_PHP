@@ -9,6 +9,8 @@ class pf_LVSummary
 	const nListViewID = 'nListViewID';
 	const cRechnername = 'cRechnername';
 	const nSummaryID = 'nSummaryID';
+	const COLUMN_NAMES = ['kBenutzer', 'nListViewID', 'cRechnername', 'nSummaryID'];
+	const COLUMN_TYPES = ['kBenutzer' => 'int', 'nListViewID' => 'int', 'cRechnername' => 'varchar', 'nSummaryID' => 'int'];
 
 	/** @var int kBenutzer */
 	public $kBenutzer;

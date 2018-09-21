@@ -9,6 +9,8 @@ class tArtikelUploadSprache
 	const kSprache = 'kSprache';
 	const cName = 'cName';
 	const cBeschreibung = 'cBeschreibung';
+	const COLUMN_NAMES = ['kArtikelUpload', 'kSprache', 'cName', 'cBeschreibung'];
+	const COLUMN_TYPES = ['kArtikelUpload' => 'int', 'kSprache' => 'int', 'cName' => 'varchar', 'cBeschreibung' => 'varchar'];
 
 	/** @var int kArtikelUpload */
 	public $kArtikelUpload;

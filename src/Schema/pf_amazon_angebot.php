@@ -25,6 +25,50 @@ class pf_amazon_angebot
 	const nChangedPrice = 'nChangedPrice';
 	const nChangedQuantity = 'nChangedQuantity';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = [
+		'cSellerSKU',
+		'kUser',
+		'cItemName',
+		'cListingId',
+		'fPrice',
+		'nQuantity',
+		'dOpenDate',
+		'cItemIsMarketplace',
+		'nProductIdType',
+		'nItemCondition',
+		'cASIN1',
+		'cASIN2',
+		'cASIN3',
+		'nWillShipInternationally',
+		'cExpeditedShipping',
+		'cProductId',
+		'cFulfillmentChannel',
+		'nChangedPrice',
+		'nChangedQuantity',
+		'nPlattform',
+	];
+	const COLUMN_TYPES = [
+		'cSellerSKU' => 'varchar',
+		'kUser' => 'int',
+		'cItemName' => 'varchar',
+		'cListingId' => 'varchar',
+		'fPrice' => 'decimal',
+		'nQuantity' => 'int',
+		'dOpenDate' => 'datetime',
+		'cItemIsMarketplace' => 'varchar',
+		'nProductIdType' => 'tinyint',
+		'nItemCondition' => 'tinyint',
+		'cASIN1' => 'varchar',
+		'cASIN2' => 'varchar',
+		'cASIN3' => 'varchar',
+		'nWillShipInternationally' => 'tinyint',
+		'cExpeditedShipping' => 'varchar',
+		'cProductId' => 'varchar',
+		'cFulfillmentChannel' => 'varchar',
+		'nChangedPrice' => 'tinyint',
+		'nChangedQuantity' => 'tinyint',
+		'nPlattform' => 'int',
+	];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

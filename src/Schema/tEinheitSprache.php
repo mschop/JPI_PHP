@@ -8,6 +8,8 @@ class tEinheitSprache
 	const kEinheit = 'kEinheit';
 	const kSprache = 'kSprache';
 	const cName = 'cName';
+	const COLUMN_NAMES = ['kEinheit', 'kSprache', 'cName'];
+	const COLUMN_TYPES = ['kEinheit' => 'int', 'kSprache' => 'int', 'cName' => 'varchar'];
 
 	/** @var int kEinheit */
 	public $kEinheit;

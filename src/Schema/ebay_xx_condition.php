@@ -8,6 +8,8 @@ class ebay_xx_condition
 	const SiteID = 'SiteID';
 	const ID = 'ID';
 	const DisplayName = 'DisplayName';
+	const COLUMN_NAMES = ['SiteID', 'ID', 'DisplayName'];
+	const COLUMN_TYPES = ['SiteID' => 'int', 'ID' => 'int', 'DisplayName' => 'varchar'];
 
 	/** @var int SiteID */
 	public $SiteID;

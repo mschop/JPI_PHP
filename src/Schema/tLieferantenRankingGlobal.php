@@ -13,6 +13,17 @@ class tLieferantenRankingGlobal
 	const nPauschal = 'nPauschal';
 	const dStand = 'dStand';
 	const dVon = 'dVon';
+	const COLUMN_NAMES = ['kLieferant', 'nType', 'nRang', 'nRangMax', 'nAnteilProzent', 'nPauschal', 'dStand', 'dVon'];
+	const COLUMN_TYPES = [
+		'kLieferant' => 'int',
+		'nType' => 'tinyint',
+		'nRang' => 'int',
+		'nRangMax' => 'int',
+		'nAnteilProzent' => 'decimal',
+		'nPauschal' => 'decimal',
+		'dStand' => 'datetime',
+		'dVon' => 'datetime',
+	];
 
 	/** @var int kLieferant */
 	public $kLieferant;

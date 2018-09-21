@@ -8,6 +8,8 @@ class tXMLGutschriftImport
 	const kXMLGutschriftImport = 'kXMLGutschriftImport';
 	const cText = 'cText';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = ['kXMLGutschriftImport', 'cText', 'nPlattform'];
+	const COLUMN_TYPES = ['kXMLGutschriftImport' => 'int', 'cText' => 'varchar', 'nPlattform' => 'tinyint'];
 
 	/** @var int kXMLGutschriftImport */
 	public $kXMLGutschriftImport;

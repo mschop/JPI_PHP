@@ -10,6 +10,14 @@ class tXSell
 	const kXSellArtikel = 'kXSellArtikel';
 	const kXSellGruppe = 'kXSellGruppe';
 	const nEigenesFeld = 'nEigenesFeld';
+	const COLUMN_NAMES = ['kXSell', 'kArtikel', 'kXSellArtikel', 'kXSellGruppe', 'nEigenesFeld'];
+	const COLUMN_TYPES = [
+		'kXSell' => 'int',
+		'kArtikel' => 'int',
+		'kXSellArtikel' => 'int',
+		'kXSellGruppe' => 'int',
+		'nEigenesFeld' => 'tinyint',
+	];
 
 	/** @var int kXSell */
 	public $kXSell;

@@ -9,6 +9,8 @@ class pf_amazon_angebot_vater
 	const kUser = 'kUser';
 	const cSellerSKUVater = 'cSellerSKUVater';
 	const nPlattform = 'nPlattform';
+	const COLUMN_NAMES = ['cSellerSKU', 'kUser', 'cSellerSKUVater', 'nPlattform'];
+	const COLUMN_TYPES = ['cSellerSKU' => 'varchar', 'kUser' => 'int', 'cSellerSKUVater' => 'varchar', 'nPlattform' => 'int'];
 
 	/** @var string cSellerSKU */
 	public $cSellerSKU;

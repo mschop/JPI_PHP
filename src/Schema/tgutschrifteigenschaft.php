@@ -10,6 +10,14 @@ class tgutschrifteigenschaft
 	const kGutschriftPos = 'kGutschriftPos';
 	const kArtikel = 'kArtikel';
 	const fNettoPreis = 'fNettoPreis';
+	const COLUMN_NAMES = ['kGutschriftEigenschaft', 'kEigenschaftWert', 'kGutschriftPos', 'kArtikel', 'fNettoPreis'];
+	const COLUMN_TYPES = [
+		'kGutschriftEigenschaft' => 'int',
+		'kEigenschaftWert' => 'int',
+		'kGutschriftPos' => 'int',
+		'kArtikel' => 'int',
+		'fNettoPreis' => 'decimal',
+	];
 
 	/** @var int kGutschriftEigenschaft */
 	public $kGutschriftEigenschaft;

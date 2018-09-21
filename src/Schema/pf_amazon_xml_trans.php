@@ -10,6 +10,14 @@ class pf_amazon_xml_trans
 	const cGerman = 'cGerman';
 	const cFrench = 'cFrench';
 	const cItalian = 'cItalian';
+	const COLUMN_NAMES = ['cName', 'cEnglish', 'cGerman', 'cFrench', 'cItalian'];
+	const COLUMN_TYPES = [
+		'cName' => 'varchar',
+		'cEnglish' => 'varchar',
+		'cGerman' => 'varchar',
+		'cFrench' => 'varchar',
+		'cItalian' => 'varchar',
+	];
 
 	/** @var string cName */
 	public $cName;

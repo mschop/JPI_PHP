@@ -9,6 +9,13 @@ class tSonderpreise
 	const kKundenGruppe = 'kKundenGruppe';
 	const kShop = 'kShop';
 	const fNettoPreis = 'fNettoPreis';
+	const COLUMN_NAMES = ['kArtikelSonderpreis', 'kKundenGruppe', 'kShop', 'fNettoPreis'];
+	const COLUMN_TYPES = [
+		'kArtikelSonderpreis' => 'int',
+		'kKundenGruppe' => 'int',
+		'kShop' => 'int',
+		'fNettoPreis' => 'decimal',
+	];
 
 	/** @var int kArtikelSonderpreis */
 	public $kArtikelSonderpreis;

@@ -10,6 +10,14 @@ class tInkassoUser
 	const cPasswort = 'cPasswort';
 	const kFirma = 'kFirma';
 	const cAktiv = 'cAktiv';
+	const COLUMN_NAMES = ['kInkassoUser', 'cUsername', 'cPasswort', 'kFirma', 'cAktiv'];
+	const COLUMN_TYPES = [
+		'kInkassoUser' => 'int',
+		'cUsername' => 'varchar',
+		'cPasswort' => 'varchar',
+		'kFirma' => 'int',
+		'cAktiv' => 'char',
+	];
 
 	/** @var int kInkassoUser */
 	public $kInkassoUser;

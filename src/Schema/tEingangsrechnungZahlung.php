@@ -15,6 +15,30 @@ class tEingangsrechnungZahlung
 	const cHinweis = 'cHinweis';
 	const kZahlungsart = 'kZahlungsart';
 	const cSKRManuell = 'cSKRManuell';
+	const COLUMN_NAMES = [
+		'kEingangsrechnungZahlung',
+		'cName',
+		'dDatum',
+		'fBetrag',
+		'kEingangsrechnung',
+		'kBenutzer',
+		'nAnzahlung',
+		'cHinweis',
+		'kZahlungsart',
+		'cSKRManuell',
+	];
+	const COLUMN_TYPES = [
+		'kEingangsrechnungZahlung' => 'int',
+		'cName' => 'varchar',
+		'dDatum' => 'datetime',
+		'fBetrag' => 'decimal',
+		'kEingangsrechnung' => 'int',
+		'kBenutzer' => 'int',
+		'nAnzahlung' => 'tinyint',
+		'cHinweis' => 'varchar',
+		'kZahlungsart' => 'int',
+		'cSKRManuell' => 'varchar',
+	];
 
 	/** @var int kEingangsrechnungZahlung */
 	public $kEingangsrechnungZahlung;

@@ -20,6 +20,40 @@ class ebay_de_categories
 	const ConditionValues = 'ConditionValues';
 	const ItemSpecificsEnabled = 'ItemSpecificsEnabled';
 	const AttributeConversionEnabled = 'AttributeConversionEnabled';
+	const COLUMN_NAMES = [
+		'CategoryId',
+		'CategoryParentId',
+		'CategoryLevel',
+		'CategoryName',
+		'B2BVATEnabled',
+		'IntlAutosFixedCat',
+		'LeafCategory',
+		'ORPA',
+		'ORRA',
+		'LSD',
+		'VariationsEnabled',
+		'ConditionEnabled',
+		'ConditionValues',
+		'ItemSpecificsEnabled',
+		'AttributeConversionEnabled',
+	];
+	const COLUMN_TYPES = [
+		'CategoryId' => 'int',
+		'CategoryParentId' => 'int',
+		'CategoryLevel' => 'tinyint',
+		'CategoryName' => 'varchar',
+		'B2BVATEnabled' => 'tinyint',
+		'IntlAutosFixedCat' => 'tinyint',
+		'LeafCategory' => 'tinyint',
+		'ORPA' => 'tinyint',
+		'ORRA' => 'tinyint',
+		'LSD' => 'tinyint',
+		'VariationsEnabled' => 'tinyint',
+		'ConditionEnabled' => 'tinyint',
+		'ConditionValues' => 'varchar',
+		'ItemSpecificsEnabled' => 'tinyint',
+		'AttributeConversionEnabled' => 'tinyint',
+	];
 
 	/** @var int CategoryId */
 	public $CategoryId;

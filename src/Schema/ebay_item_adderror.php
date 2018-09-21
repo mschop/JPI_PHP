@@ -12,6 +12,16 @@ class ebay_item_adderror
 	const LongMessage = 'LongMessage';
 	const cAbhilfe = 'cAbhilfe';
 	const dZeitpunkt = 'dZeitpunkt';
+	const COLUMN_NAMES = ['kItemAddError', 'kEbayuser', 'kItem', 'ShortMessage', 'LongMessage', 'cAbhilfe', 'dZeitpunkt'];
+	const COLUMN_TYPES = [
+		'kItemAddError' => 'bigint',
+		'kEbayuser' => 'int',
+		'kItem' => 'int',
+		'ShortMessage' => 'varchar',
+		'LongMessage' => 'varchar',
+		'cAbhilfe' => 'varchar',
+		'dZeitpunkt' => 'datetime',
+	];
 
 	/** @var int kItemAddError */
 	public $kItemAddError;

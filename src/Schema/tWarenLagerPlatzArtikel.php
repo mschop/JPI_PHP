@@ -9,6 +9,13 @@ class tWarenLagerPlatzArtikel
 	const kArtikel = 'kArtikel';
 	const cKommentar_1 = 'cKommentar_1';
 	const cKommentar_2 = 'cKommentar_2';
+	const COLUMN_NAMES = ['kWarenLagerPlatz', 'kArtikel', 'cKommentar_1', 'cKommentar_2'];
+	const COLUMN_TYPES = [
+		'kWarenLagerPlatz' => 'int',
+		'kArtikel' => 'int',
+		'cKommentar_1' => 'varchar',
+		'cKommentar_2' => 'varchar',
+	];
 
 	/** @var int kWarenLagerPlatz */
 	public $kWarenLagerPlatz;

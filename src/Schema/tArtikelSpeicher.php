@@ -9,6 +9,8 @@ class tArtikelSpeicher
 	const cNummer = 'cNummer';
 	const nID = 'nID';
 	const nAktiv = 'nAktiv';
+	const COLUMN_NAMES = ['kArtikel', 'cNummer', 'nID', 'nAktiv'];
+	const COLUMN_TYPES = ['kArtikel' => 'int', 'cNummer' => 'varchar', 'nID' => 'tinyint', 'nAktiv' => 'tinyint'];
 
 	/** @var int kArtikel */
 	public $kArtikel;

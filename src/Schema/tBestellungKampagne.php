@@ -10,6 +10,14 @@ class tBestellungKampagne
 	const cKampagneWert = 'cKampagneWert';
 	const cUserAgent = 'cUserAgent';
 	const cGeraet = 'cGeraet';
+	const COLUMN_NAMES = ['kBestellung', 'cKampagne', 'cKampagneWert', 'cUserAgent', 'cGeraet'];
+	const COLUMN_TYPES = [
+		'kBestellung' => 'int',
+		'cKampagne' => 'varchar',
+		'cKampagneWert' => 'varchar',
+		'cUserAgent' => 'varchar',
+		'cGeraet' => 'varchar',
+	];
 
 	/** @var int kBestellung */
 	public $kBestellung;

@@ -15,6 +15,30 @@ class tLogistik
 	const kVersanddatenImportVorlage = 'kVersanddatenImportVorlage';
 	const nPaketeAutomatischErzeugen = 'nPaketeAutomatischErzeugen';
 	const fMaxGewicht = 'fMaxGewicht';
+	const COLUMN_NAMES = [
+		'kLogistik',
+		'cName',
+		'cURL',
+		'nStandard',
+		'cAmazonCC',
+		'cEbayCC',
+		'kVersanddatenExportVorlage',
+		'kVersanddatenImportVorlage',
+		'nPaketeAutomatischErzeugen',
+		'fMaxGewicht',
+	];
+	const COLUMN_TYPES = [
+		'kLogistik' => 'int',
+		'cName' => 'varchar',
+		'cURL' => 'varchar',
+		'nStandard' => 'tinyint',
+		'cAmazonCC' => 'varchar',
+		'cEbayCC' => 'varchar',
+		'kVersanddatenExportVorlage' => 'int',
+		'kVersanddatenImportVorlage' => 'int',
+		'nPaketeAutomatischErzeugen' => 'tinyint',
+		'fMaxGewicht' => 'decimal',
+	];
 
 	/** @var int kLogistik */
 	public $kLogistik;

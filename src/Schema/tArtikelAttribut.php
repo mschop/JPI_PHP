@@ -9,6 +9,8 @@ class tArtikelAttribut
 	const kArtikel = 'kArtikel';
 	const kAttribut = 'kAttribut';
 	const kShop = 'kShop';
+	const COLUMN_NAMES = ['kArtikelAttribut', 'kArtikel', 'kAttribut', 'kShop'];
+	const COLUMN_TYPES = ['kArtikelAttribut' => 'int', 'kArtikel' => 'int', 'kAttribut' => 'int', 'kShop' => 'int'];
 
 	/** @var int kArtikelAttribut */
 	public $kArtikelAttribut;

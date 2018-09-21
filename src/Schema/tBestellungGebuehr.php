@@ -9,6 +9,13 @@ class tBestellungGebuehr
 	const kBestellung = 'kBestellung';
 	const kGebuehrtyp = 'kGebuehrtyp';
 	const fBetrag = 'fBetrag';
+	const COLUMN_NAMES = ['kBestellungGebuehr', 'kBestellung', 'kGebuehrtyp', 'fBetrag'];
+	const COLUMN_TYPES = [
+		'kBestellungGebuehr' => 'int',
+		'kBestellung' => 'int',
+		'kGebuehrtyp' => 'int',
+		'fBetrag' => 'decimal',
+	];
 
 	/** @var int kBestellungGebuehr */
 	public $kBestellungGebuehr;

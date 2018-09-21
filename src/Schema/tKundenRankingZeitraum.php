@@ -16,6 +16,32 @@ class tKundenRankingZeitraum
 	const nAnteilProzent = 'nAnteilProzent';
 	const nPauschal = 'nPauschal';
 	const dStand = 'dStand';
+	const COLUMN_NAMES = [
+		'kKunde',
+		'nZeitraum',
+		'dVon',
+		'nType',
+		'kShop',
+		'nPlattform',
+		'nRang',
+		'nRangMax',
+		'nAnteilProzent',
+		'nPauschal',
+		'dStand',
+	];
+	const COLUMN_TYPES = [
+		'kKunde' => 'int',
+		'nZeitraum' => 'tinyint',
+		'dVon' => 'datetime',
+		'nType' => 'tinyint',
+		'kShop' => 'int',
+		'nPlattform' => 'int',
+		'nRang' => 'int',
+		'nRangMax' => 'int',
+		'nAnteilProzent' => 'decimal',
+		'nPauschal' => 'decimal',
+		'dStand' => 'datetime',
+	];
 
 	/** @var int kKunde */
 	public $kKunde;

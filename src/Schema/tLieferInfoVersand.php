@@ -12,6 +12,24 @@ class tLieferInfoVersand
 	const nStatusEigenBestellt = 'nStatusEigenBestellt';
 	const nStatusBestelltBlockiert = 'nStatusBestelltBlockiert';
 	const nStatusEigenBstelltBlockiert = 'nStatusEigenBstelltBlockiert';
+	const COLUMN_NAMES = [
+		'kBestellung',
+		'nStatus',
+		'nStatusEigen',
+		'nStatusBestellt',
+		'nStatusEigenBestellt',
+		'nStatusBestelltBlockiert',
+		'nStatusEigenBstelltBlockiert',
+	];
+	const COLUMN_TYPES = [
+		'kBestellung' => 'int',
+		'nStatus' => 'int',
+		'nStatusEigen' => 'int',
+		'nStatusBestellt' => 'int',
+		'nStatusEigenBestellt' => 'int',
+		'nStatusBestelltBlockiert' => 'int',
+		'nStatusEigenBstelltBlockiert' => 'int',
+	];
 
 	/** @var int kBestellung */
 	public $kBestellung;

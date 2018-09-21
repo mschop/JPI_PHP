@@ -8,6 +8,8 @@ class tRMGrundWarengruppe
 	const kRMGrundWarengruppe = 'kRMGrundWarengruppe';
 	const kRMGrund = 'kRMGrund';
 	const kWarengruppe = 'kWarengruppe';
+	const COLUMN_NAMES = ['kRMGrundWarengruppe', 'kRMGrund', 'kWarengruppe'];
+	const COLUMN_TYPES = ['kRMGrundWarengruppe' => 'int', 'kRMGrund' => 'int', 'kWarengruppe' => 'int'];
 
 	/** @var int kRMGrundWarengruppe */
 	public $kRMGrundWarengruppe;

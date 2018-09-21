@@ -12,6 +12,24 @@ class tWarenlagerArtikelOptionen
 	const fMindestMenge = 'fMindestMenge';
 	const fVorschlag = 'fVorschlag';
 	const fNachschiebenAb = 'fNachschiebenAb';
+	const COLUMN_NAMES = [
+		'kArtikel',
+		'kWarenlager',
+		'kWarenLagerPlatz',
+		'kWMSLagerBereich',
+		'fMindestMenge',
+		'fVorschlag',
+		'fNachschiebenAb',
+	];
+	const COLUMN_TYPES = [
+		'kArtikel' => 'int',
+		'kWarenlager' => 'int',
+		'kWarenLagerPlatz' => 'int',
+		'kWMSLagerBereich' => 'int',
+		'fMindestMenge' => 'decimal',
+		'fVorschlag' => 'decimal',
+		'fNachschiebenAb' => 'decimal',
+	];
 
 	/** @var int kArtikel */
 	public $kArtikel;
