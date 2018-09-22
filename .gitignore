@@ -11,5 +11,5 @@
 /phpunit.xml
 ###< phpunit/phpunit ###
 
-
+/config.php
 /users.php
