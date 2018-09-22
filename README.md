@@ -11,3 +11,5 @@ by JTL-Software-GmbH. Use JPI at your own risk!
 
 You find the docs <a href="https://mschop.github.io/JPI/docs/">here</a>.
 
+The API reference can be found <a href="https://mschop.github.io/JPI/docs/api">here</a>.
+
