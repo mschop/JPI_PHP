@@ -3,8 +3,16 @@
 namespace App\Auth;
 
 
+use function Functional\filter;
+use function Functional\map;
+
 class AuthConfig implements AuthConfigInterface
 {
+    /**
+     * All user need the role ROLE_API_CLIENT for being able to bypass the firewall
+     */
+    const ROLE_API_CLIENT = 'ROLE_API_CLIENT';
+
     protected $config;
 
     /**
@@ -24,7 +32,10 @@ class AuthConfig implements AuthConfigInterface
     public function addUser(string $userName, string $password): void
     {
         if ($this->hasUser($userName)) throw new UserAlreadyExistsException();
-        $this->config[$userName] = ['password' => $password];
+        $this->config[$userName] = [
+            'password' => $password,
+            'roles' => [static::ROLE_API_CLIENT]
+        ];
     }
 
     public function removeUser(string $userName): void
@@ -42,7 +53,9 @@ class AuthConfig implements AuthConfigInterface
     public function getRoles(string $userName): array
     {
         if (!$this->hasUser($userName)) throw new UserNotFoundException();
-        return $this->config[$userName]['roles'] ?? [];
+        return filter($this->config[$userName]['roles'] ?? [], function(string $role) {
+            return $role !== static::ROLE_API_CLIENT;
+        });
     }
 
     public function addRole(string $userName, string $role): void
@@ -58,10 +71,20 @@ class AuthConfig implements AuthConfigInterface
 
     public function removeRole(string $userName, string $role): void
     {
+        $this->removeRoles($userName, [$role]);
+    }
+
+    public function removeRoles(string $userName, array $roles): void
+    {
         if (!$this->hasUser($userName)) throw new UserNotFoundException();
-        if (!isset($this->config[$userName]['roles'])) return;
-        $this->config[$userName]['roles'] = array_filter($this->config[$userName]['roles'], function ($defined) use ($role) {
-            return $defined !== $role;
+        $roles = filter($roles, function(string $role) {
+            return $role !== static::ROLE_API_CLIENT;
+        });
+        $roles = map($roles, function(string $role) {
+            return "ROLE_$role";
+        });
+        $this->config[$userName]['roles'] = filter($this->config[$userName]['roles'], function(string $role) use ($roles) {
+            return !in_array($role, $roles);
         });
     }
 

@@ -34,6 +34,7 @@ $container->loadFromExtension('security', [
         ['path' => '^/', 'roles' => 'ROLE_API_CLIENT']
     ],
     'role_hierarchy' => [
-        'ROLE_SALE' => ['ROLE_OFFER', 'ROLE_ORDER', 'ROLE_INVOICE']
+        'ROLE_SALE' => ['ROLE_OFFER', 'ROLE_ORDER', 'ROLE_INVOICE'],
+        
     ]
 ]);

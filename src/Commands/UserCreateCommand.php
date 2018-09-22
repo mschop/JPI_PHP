@@ -61,8 +61,6 @@ class UserCreateCommand extends Command
             return 1;
         }
 
-        $authConfig->addRole($userName, 'ROLE_API_CLIENT');
-
         file_put_contents($configPath, $this->configBuilder->build($authConfig->getConfig()));
 
         $output->writeln('<info>User created successfully.</info>');
