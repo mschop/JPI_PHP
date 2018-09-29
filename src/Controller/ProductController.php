@@ -29,7 +29,7 @@ class ProductController extends Controller
      * @throws
      * @Route("/tenant/{tenantId}/product/{productId}")
      * @OA\Get(
-     *     path="/product/{productId}",
+     *     path="/tenant/{tenantId}/product/{productId}",
      *     description="Get a specific product",
      *     @OA\Parameter(
      *         in="path",
