@@ -5,7 +5,7 @@ namespace App\Commands;
 
 use App\Auth\AuthConfig;
 use App\Auth\UserNotFoundException;
-use App\CodeGeneration\PhpConfigBuilder;
+use App\CodeGeneration\ConfigFileGenerator;
 use App\PathHelperInteface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -19,7 +19,7 @@ class UserRemoveCommand extends Command
     protected $pathHelper;
     protected $configBuilder;
 
-    public function __construct(PathHelperInteface $pathHelper, PhpConfigBuilder $configBuilder)
+    public function __construct(PathHelperInteface $pathHelper, ConfigFileGenerator $configBuilder)
     {
         parent::__construct();
         $this->pathHelper = $pathHelper;

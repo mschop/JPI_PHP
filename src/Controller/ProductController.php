@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\DbConnectionProviderInterface;
-use App\Repository\ProductRepository;
+use App\Db\Repository\ProductRepository;
 use OpenApi\Annotations as OA;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ProductController
+class ProductController extends Controller
 {
     protected $productRepository;
 
@@ -24,6 +24,7 @@ class ProductController
     /**
      * @param int $tenantId
      * @param int $productId
+     * @param Request $request
      * @return Response
      * @throws
      * @Route("/tenant/{tenantId}/product/{productId}")
@@ -49,7 +50,7 @@ class ProductController
      *     @OA\Response(
      *         description="Successful",
      *         response="200",
-     *         @OA\JsonContent(ref="#/components/schemas/ProductDto")
+     *         @OA\JsonContent(ref="#/components/schemas/Product")
      *     ),
      *     @OA\Response(
      *         description="Product not found",
@@ -57,8 +58,9 @@ class ProductController
      *     )
      * )
      */
-    public function get(int $tenantId, int $productId, Request $request): Response
+    public function getOne(int $tenantId, int $productId, Request $request): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_PRODUCT_VIEW');
         if ($tenantId <= 0) throw new BadRequestHttpException('The tenant id must be greater than 0');
         if ($productId <= 0) throw new BadRequestHttpException('The product id must be greater than 0');
         $joins = explode(',', $request->query->get('join', ''));

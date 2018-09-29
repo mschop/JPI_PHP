@@ -3,24 +3,21 @@
 namespace App\Commands;
 
 
-use App\DbConnectionProviderInterface;
-use App\PathHelperInteface;
-use App\SchemaGeneratorInterface;
-use Nette\PhpGenerator\ClassType;
-use Nette\PhpGenerator\PhpFile;
+use App\CodeGeneration\SchemaGenerator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class DevGenerateSchemaCommand extends Command
 {
-    protected $schemaGenerator;
+    protected $generator;
 
-    public function __construct(SchemaGeneratorInterface $schemaGenerator)
+    public function __construct(SchemaGenerator $generator)
     {
         parent::__construct();
-        $this->schemaGenerator = $schemaGenerator;
+        $this->generator = $generator;
     }
+
 
     protected function configure()
     {
@@ -29,6 +26,6 @@ class DevGenerateSchemaCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->schemaGenerator->generate();
+        $this->generator->generate();
     }
 }

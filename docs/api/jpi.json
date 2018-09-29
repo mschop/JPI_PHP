@@ -21,7 +21,7 @@
         "/product/{productId}": {
             "get": {
                 "description": "Get a specific product",
-                "operationId": "App\\Controller\\ProductController::get",
+                "operationId": "App\\Controller\\ProductController::getOne",
                 "parameters": [
                     {
                         "name": "tenantId",
@@ -46,7 +46,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/ProductDto"
+                                    "$ref": "#/components/schemas/Product"
                                 }
                             }
                         }
@@ -69,7 +69,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/TenantDto"
+                                        "$ref": "#/components/schemas/Tenant"
                                     }
                                 }
                             }
@@ -81,7 +81,48 @@
     },
     "components": {
         "schemas": {
-            "ProductDescriptionDto": {
+            "Product": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "sku": {
+                        "type": "string"
+                    },
+                    "netPrice": {
+                        "type": "string"
+                    },
+                    "rrp": {
+                        "type": "string"
+                    },
+                    "note": {
+                        "type": "string"
+                    },
+                    "isPriceList": {
+                        "type": "boolean"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "stock": {
+                        "type": "string"
+                    },
+                    "minOrderAmount": {
+                        "type": "string"
+                    },
+                    "gtin": {
+                        "type": "string"
+                    },
+                    "descriptions": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ProductDescription"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "ProductDescription": {
                 "properties": {
                     "languageId": {
                         "type": "integer"
@@ -98,7 +139,7 @@
                     "description": {
                         "type": "string"
                     },
-                    "shortDescription": {
+                    "shopDescription": {
                         "type": "string"
                     },
                     "urlPath": {
@@ -116,21 +157,7 @@
                 },
                 "type": "object"
             },
-            "ProductDto": {
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "sku": {
-                        "type": "string"
-                    },
-                    "price": {
-                        "type": "number"
-                    }
-                },
-                "type": "object"
-            },
-            "TenantDto": {
+            "Tenant": {
                 "properties": {
                     "id": {
                         "type": "integer"

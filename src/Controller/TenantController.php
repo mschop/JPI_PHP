@@ -3,10 +3,10 @@
 namespace App\Controller;
 
 
-use App\DbConnectionProviderInterface;
-use App\Dto\TenantDto;
+use App\Db\ConnectionProviderInterface;
+use App\Db\Schema\tMandant;
+use App\Schema\Tenant;
 use App\Mapping\MapperInterface;
-use App\Schema\tMandant;
 use function Functional\map;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,7 +17,7 @@ class TenantController
     protected $connProvider;
     protected $mapper;
 
-    public function __construct(DbConnectionProviderInterface $connProvider, MapperInterface $mapper)
+    public function __construct(ConnectionProviderInterface $connProvider, MapperInterface $mapper)
     {
         $this->connProvider = $connProvider;
         $this->mapper = $mapper;
@@ -31,14 +31,14 @@ class TenantController
      *     @OA\Response(
      *          response="200",
      *          description="Successfull operation",
-     *          @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/TenantDto"))
+     *          @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/Tenant"))
      *     )
      * )
      */
     public function getAll()
     {
         return new JsonResponse(map($this->connProvider->getAllTenants(), function($tenant) {
-            $dto = new TenantDto();
+            $dto = new Tenant();
             $dto->id = $tenant[tMandant::kMandant];
             $dto->name = $tenant[tMandant::cName];
             $dto->dbName = $tenant[tMandant::cDB];

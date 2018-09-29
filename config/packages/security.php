@@ -28,6 +28,7 @@ $container->loadFromExtension('security', [
         'main' => [
             'anonymous' => false,
             'http_basic' => true,
+            'stateless' => true
         ]
     ],
     'access_control' => [
@@ -43,5 +44,10 @@ $container->loadFromExtension('security', [
             'ROLE_CUSTOMER_EDIT',
             'ROLE_CUSTOMER_DELETE',
         ],
+        'ROLE_PRODUCT' => [
+            'ROLE_PRODUCT_VIEW',
+            'ROLE_PRODUCT_EDIT',
+            'ROLE_PRODUCT_DELETE'
+        ]
     ]
 ]);

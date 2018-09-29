@@ -77,6 +77,9 @@
     "lstrojny/functional-php": {
         "version": "1.8.0"
     },
+    "marc-mabe/php-enum": {
+        "version": "v3.0.2"
+    },
     "mark-gerarts/auto-mapper-plus": {
         "version": "1.2.3"
     },

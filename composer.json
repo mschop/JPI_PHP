@@ -11,6 +11,7 @@
     "doctrine/dbal": "^2.8",
     "eloquent/pathogen": "^0.6.1",
     "lstrojny/functional-php": "^1.8",
+    "marc-mabe/php-enum": "^3.0",
     "mark-gerarts/auto-mapper-plus": "^1.2",
     "nette/php-generator": "^3.2",
     "sensio/framework-extra-bundle": "^5.2",

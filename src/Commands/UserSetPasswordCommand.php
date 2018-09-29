@@ -5,7 +5,7 @@ namespace App\Commands;
 
 use App\Auth\AuthConfig;
 use App\Auth\UserNotFoundException;
-use App\CodeGeneration\PhpConfigBuilder;
+use App\CodeGeneration\ConfigFileGenerator;
 use App\PathHelperInteface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -55,7 +55,7 @@ class UserSetPasswordCommand extends Command
             $output->writeln('<error>User does not exist</error>');
         }
 
-        file_put_contents($configFilePath, (new PhpConfigBuilder())->build($authConfig->getConfig()));
+        file_put_contents($configFilePath, (new ConfigFileGenerator())->build($authConfig->getConfig()));
         $output->writeln('<info>Updated password</info>');
     }
 }
