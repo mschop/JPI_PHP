@@ -124,6 +124,7 @@ class ebay_item
 	const cEAN = 'cEAN';
 	const nMinQuantity = 'nMinQuantity';
 	const nNurAnGewerbliche = 'nNurAnGewerbliche';
+	const IncludeeBayProductDetails = 'IncludeeBayProductDetails';
 	const COLUMN_NAMES = [
 		'kItem',
 		'ApplicationData',
@@ -244,6 +245,7 @@ class ebay_item
 		'cEAN',
 		'nMinQuantity',
 		'nNurAnGewerbliche',
+		'IncludeeBayProductDetails',
 	];
 	const COLUMN_DEFINITIONS = [
 		'kItem' => [
@@ -1198,6 +1200,14 @@ class ebay_item
 			'characterMaximumLength' => null,
 			'characterSetName' => null,
 		],
+		'IncludeeBayProductDetails' => [
+			'type' => 'tinyint',
+			'phpType' => 'int',
+			'isNullable' => false,
+			'hasDefault' => true,
+			'characterMaximumLength' => null,
+			'characterSetName' => null,
+		],
 	];
 
 	/** @var int kItem */
@@ -1556,4 +1566,7 @@ class ebay_item
 
 	/** @var int nNurAnGewerbliche */
 	public $nNurAnGewerbliche;
+
+	/** @var int IncludeeBayProductDetails */
+	public $IncludeeBayProductDetails;
 }

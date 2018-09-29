@@ -18,7 +18,7 @@
                 }
             }
         },
-        "/product/{productId}": {
+        "/tenant/{tenantId}/product/{productId}": {
             "get": {
                 "description": "Get a specific product",
                 "operationId": "App\\Controller\\ProductController::getOne",

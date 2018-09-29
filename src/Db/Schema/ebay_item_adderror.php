@@ -12,7 +12,17 @@ class ebay_item_adderror
 	const LongMessage = 'LongMessage';
 	const cAbhilfe = 'cAbhilfe';
 	const dZeitpunkt = 'dZeitpunkt';
-	const COLUMN_NAMES = ['kItemAddError', 'kEbayuser', 'kItem', 'ShortMessage', 'LongMessage', 'cAbhilfe', 'dZeitpunkt'];
+	const epidSuggestion = 'epidSuggestion';
+	const COLUMN_NAMES = [
+		'kItemAddError',
+		'kEbayuser',
+		'kItem',
+		'ShortMessage',
+		'LongMessage',
+		'cAbhilfe',
+		'dZeitpunkt',
+		'epidSuggestion',
+	];
 	const COLUMN_DEFINITIONS = [
 		'kItemAddError' => [
 			'type' => 'bigint',
@@ -70,6 +80,14 @@ class ebay_item_adderror
 			'characterMaximumLength' => null,
 			'characterSetName' => null,
 		],
+		'epidSuggestion' => [
+			'type' => 'varchar',
+			'phpType' => 'string',
+			'isNullable' => true,
+			'hasDefault' => false,
+			'characterMaximumLength' => -1,
+			'characterSetName' => 'iso_1',
+		],
 	];
 
 	/** @var int kItemAddError */
@@ -92,4 +110,7 @@ class ebay_item_adderror
 
 	/** @var string dZeitpunkt */
 	public $dZeitpunkt;
+
+	/** @var string epidSuggestion */
+	public $epidSuggestion;
 }

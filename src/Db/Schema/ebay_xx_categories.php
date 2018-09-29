@@ -18,6 +18,7 @@ class ebay_xx_categories
 	const AttributeConversionEnabled = 'AttributeConversionEnabled';
 	const ItemCompatibilityEnabled = 'ItemCompatibilityEnabled';
 	const CompatibleVehicleType = 'CompatibleVehicleType';
+	const ProductRequiredEnabled = 'ProductRequiredEnabled';
 	const COLUMN_NAMES = [
 		'SiteID',
 		'CategoryId',
@@ -32,6 +33,7 @@ class ebay_xx_categories
 		'AttributeConversionEnabled',
 		'ItemCompatibilityEnabled',
 		'CompatibleVehicleType',
+		'ProductRequiredEnabled',
 	];
 	const COLUMN_DEFINITIONS = [
 		'SiteID' => [
@@ -138,6 +140,14 @@ class ebay_xx_categories
 			'characterMaximumLength' => 100,
 			'characterSetName' => 'iso_1',
 		],
+		'ProductRequiredEnabled' => [
+			'type' => 'tinyint',
+			'phpType' => 'int',
+			'isNullable' => false,
+			'hasDefault' => true,
+			'characterMaximumLength' => null,
+			'characterSetName' => null,
+		],
 	];
 
 	/** @var int SiteID */
@@ -178,4 +188,7 @@ class ebay_xx_categories
 
 	/** @var string CompatibleVehicleType */
 	public $CompatibleVehicleType;
+
+	/** @var int ProductRequiredEnabled */
+	public $ProductRequiredEnabled;
 }

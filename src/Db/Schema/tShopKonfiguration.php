@@ -24,6 +24,8 @@ class tShopKonfiguration
 	const nImportBilder = 'nImportBilder';
 	const nMaxPull = 'nMaxPull';
 	const nSteuerDurchWawiBerechnen = 'nSteuerDurchWawiBerechnen';
+	const nKundendatenAktualisieren = 'nKundendatenAktualisieren';
+	const nBilderBeiImportLoeschen = 'nBilderBeiImportLoeschen';
 	const COLUMN_NAMES = [
 		'kShop',
 		'nImport',
@@ -44,6 +46,8 @@ class tShopKonfiguration
 		'nImportBilder',
 		'nMaxPull',
 		'nSteuerDurchWawiBerechnen',
+		'nKundendatenAktualisieren',
+		'nBilderBeiImportLoeschen',
 	];
 	const COLUMN_DEFINITIONS = [
 		'kShop' => [
@@ -198,6 +202,22 @@ class tShopKonfiguration
 			'characterMaximumLength' => null,
 			'characterSetName' => null,
 		],
+		'nKundendatenAktualisieren' => [
+			'type' => 'bit',
+			'phpType' => 'boolean',
+			'isNullable' => false,
+			'hasDefault' => true,
+			'characterMaximumLength' => null,
+			'characterSetName' => null,
+		],
+		'nBilderBeiImportLoeschen' => [
+			'type' => 'bit',
+			'phpType' => 'boolean',
+			'isNullable' => false,
+			'hasDefault' => true,
+			'characterMaximumLength' => null,
+			'characterSetName' => null,
+		],
 	];
 
 	/** @var int kShop */
@@ -256,4 +276,10 @@ class tShopKonfiguration
 
 	/** @var boolean nSteuerDurchWawiBerechnen */
 	public $nSteuerDurchWawiBerechnen;
+
+	/** @var boolean nKundendatenAktualisieren */
+	public $nKundendatenAktualisieren;
+
+	/** @var boolean nBilderBeiImportLoeschen */
+	public $nBilderBeiImportLoeschen;
 }
