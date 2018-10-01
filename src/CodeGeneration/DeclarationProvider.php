@@ -4,6 +4,7 @@ namespace App\CodeGeneration;
 
 
 use App\Db\Schema\tArtikel;
+use App\Db\Schema\tArtikelAbnahme;
 use App\Db\Schema\tArtikelBeschreibung;
 use App\Db\Schema\tMandant;
 
@@ -53,6 +54,14 @@ class DeclarationProvider
                     tArtikel::cBarcode => 'gtin',
                 ]
             ],
+            tArtikelAbnahme::class => [
+                static::DEF_TARGET_CLASS => 'ProductBuyInterval',
+                static::DEF_FIELDS => [
+                    tArtikelAbnahme::kKundengruppe => 'customerGroupId',
+                    tArtikelAbnahme::fIntervall => 'interval',
+                    tArtikelAbnahme::fMindestabnahme => 'minBuyAmount',
+                ]
+            ],
             tArtikelBeschreibung::class => [
                 static::DEF_TARGET_CLASS => 'ProductDescription',
                 static::DEF_FIELDS => [
@@ -79,6 +88,11 @@ class DeclarationProvider
                     static::REL_ENTITY => 'ProductDescription',
                     static::REL_COLUMN => 'descriptions',
                     static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY,
+                ],
+                [
+                    static::REL_ENTITY => 'ProductBuyInterval',
+                    static::REL_COLUMN => 'buyIntervals',
+                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
                 ]
             ]
         ];

@@ -18,7 +18,52 @@
                 }
             }
         },
-        "/tenant/{tenantId}/product/{productId}": {
+        "/Tenant/{tenantId}/Product/{productId}/BuyInterval": {
+            "get": {
+                "description": "Get the products buy interval settings",
+                "operationId": "App\\Controller\\ProductBuyIntervalController::getAll",
+                "parameters": [
+                    {
+                        "name": "tenantId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ProductBuyInterval"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Product not found"
+                    }
+                }
+            }
+        },
+        "/Tenant/{tenantId}/Product/{productId}": {
             "get": {
                 "description": "Get a specific product",
                 "operationId": "App\\Controller\\ProductController::getOne",
@@ -57,7 +102,52 @@
                 }
             }
         },
-        "/tenant": {
+        "/Tenant/{tenantId}/Product/{productId}/Description": {
+            "get": {
+                "description": "Fetch all descriptions from a specific product",
+                "operationId": "App\\Controller\\ProductDescriptionController::getAll",
+                "parameters": [
+                    {
+                        "name": "tenantId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ProductDescription"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/Tenant": {
             "get": {
                 "description": "Fetch all created tenants in JTL-Wawi installation.",
                 "operationId": "App\\Controller\\TenantController::getAll",
@@ -118,6 +208,26 @@
                         "items": {
                             "$ref": "#/components/schemas/ProductDescription"
                         }
+                    },
+                    "buyIntervals": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ProductBuyInterval"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "ProductBuyInterval": {
+                "properties": {
+                    "customerGroupId": {
+                        "type": "integer"
+                    },
+                    "interval": {
+                        "type": "string"
+                    },
+                    "minBuyAmount": {
+                        "type": "string"
                     }
                 },
                 "type": "object"

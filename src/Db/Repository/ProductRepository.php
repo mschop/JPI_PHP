@@ -12,23 +12,43 @@ use AutoMapperPlus\Exception\UnregisteredMappingException;
 
 class ProductRepository
 {
-    const JOIN_DESCRIPTION = 'description';
+    const JOIN_DESCRIPTION = 'Description';
+    const JOIN_BUY_INTERVAL = 'BuyInterval';
 
     protected $dbConnectionProvider;
     protected $hydrator;
     protected $mapper;
     protected $productDescriptionRepository;
+    protected $productBuyIntervalRepository;
 
     public function __construct(
         ConnectionProviderInterface $dbConnectionProvider,
         HydratorInterface $hydrator,
         MapperInterface $mapper,
-        ProductDescriptionRepository $productDescriptionRepository
+        ProductDescriptionRepository $productDescriptionRepository,
+        ProductBuyIntervalRepository $productBuyIntervalRepository
     ) {
         $this->dbConnectionProvider = $dbConnectionProvider;
         $this->hydrator = $hydrator;
         $this->mapper = $mapper;
         $this->productDescriptionRepository = $productDescriptionRepository;
+        $this->productBuyIntervalRepository = $productBuyIntervalRepository;
+    }
+
+    public function has(int $tenantId, int $productId): bool
+    {
+        $conn = $this->dbConnectionProvider->byTenantId($tenantId);
+        $qb = $conn->createQueryBuilder();
+        $result = $qb
+            ->from(tArtikel::TABLE_NAME)
+            ->where(
+                $qb->expr()->eq(tArtikel::kArtikel, ':productId')
+            )
+            ->setParameter('productId', $productId)
+            ->select(tArtikel::kArtikel)
+            ->execute()
+            ->fetchColumn();
+        return !!$result;
     }
 
     /**
@@ -59,7 +79,10 @@ class ProductRepository
         /** @var Product $product */
         $product = $this->mapper->map($tArtikel, Product::class);
         if (in_array(static::JOIN_DESCRIPTION, $join)) {
-            $product->description = $this->productDescriptionRepository->getAll($tenantId, $productId);
+            $product->descriptions = $this->productDescriptionRepository->getAll($tenantId, $productId);
+        }
+        if (in_array(static::JOIN_BUY_INTERVAL, $join)) {
+            $product->buyIntervals = $this->productBuyIntervalRepository->getAllOfProduct($tenantId, $productId);
         }
         return $product;
     }

@@ -76,4 +76,10 @@ class Product
 	 * @OAProperty(type="array", @OAItems(ref="#/components/schemas/ProductDescription"))
 	 */
 	public $descriptions;
+
+	/**
+	 * @var array|null
+	 * @OAProperty(type="array", @OAItems(ref="#/components/schemas/ProductBuyInterval"))
+	 */
+	public $buyIntervals;
 }

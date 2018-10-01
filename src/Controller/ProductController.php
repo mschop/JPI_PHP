@@ -27,9 +27,9 @@ class ProductController extends Controller
      * @param Request $request
      * @return Response
      * @throws
-     * @Route("/tenant/{tenantId}/product/{productId}")
+     * @Route("/Tenant/{tenantId}/Product/{productId}")
      * @OA\Get(
-     *     path="/tenant/{tenantId}/product/{productId}",
+     *     path="/Tenant/{tenantId}/Product/{productId}",
      *     description="Get a specific product",
      *     @OA\Parameter(
      *         in="path",

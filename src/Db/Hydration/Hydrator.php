@@ -3,9 +3,13 @@
 namespace App\Db\Hydration;
 
 
-class Hydrator
-    implements HydratorInterface
+use function Functional\map;
+
+class Hydrator implements HydratorInterface
 {
+    /**
+     * @inheritdoc
+     */
     public function toObject(array $assocArr, string $targetEntity, string $alias): object
     {
         $object = new $targetEntity();
@@ -15,6 +19,19 @@ class Hydrator
         return $object;
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function multipleToObject(array $arrOfAssocArr, string $targetEntity, string $alias): array
+    {
+        return map($arrOfAssocArr, function($item) use ($targetEntity, $alias) {
+            return $this->toObject($item, $targetEntity, $alias);
+        });
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function createSelect(string $targetEntity, string $alias): string
     {
         $selects = [];

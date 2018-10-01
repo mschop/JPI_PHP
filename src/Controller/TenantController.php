@@ -24,9 +24,9 @@ class TenantController
     }
 
     /**
-     * @Route("/tenant", methods={"GET"})
+     * @Route("/Tenant", methods={"GET"})
      * @OA\Get(
-     *     path="/tenant",
+     *     path="/Tenant",
      *     description="Fetch all created tenants in JTL-Wawi installation.",
      *     @OA\Response(
      *          response="200",
