@@ -10,7 +10,7 @@ interface HydratorInterface
      * @param string $targetEntity
      * @return object
      */
-    public function toObject(array $assocArr, string $targetEntity, string $alias): object;
+    public function toObject(array $assocArr, string $targetEntity, string $alias = null): object;
 
     /**
      * @param array $arrOfAssocArr
@@ -18,12 +18,12 @@ interface HydratorInterface
      * @param string $alias
      * @return object[]
      */
-    public function multipleToObject(array $arrOfAssocArr, string $targetEntity, string $alias): array;
+    public function multipleToObject(array $arrOfAssocArr, string $targetEntity, string $alias = null): array;
 
     /**
      * @param string $targetEntity
      * @param string $alias
      * @return array
      */
-    public function createSelect(string $targetEntity, string $alias): string;
+    public function createSelect(string $targetEntity, string $alias = null): string;
 }

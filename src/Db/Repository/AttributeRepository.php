@@ -41,16 +41,16 @@ class AttributeRepository
     {
         $conn = $this->connectionProvider->byTenantId($tenantId);
         $query = "
-            SELECT " . $this->hydrator->createSelect(tAttribut::class, 'attr') . ",
+            SELECT " . $this->hydrator->createSelect(tAttribut::class) . ",
               (
-                SELECT " . $this->hydrator->createSelect(tAttributSprache::class, 'attrLang') . "
+                SELECT " . $this->hydrator->createSelect(tAttributSprache::class) . "
                 FROM " . tAttributSprache::TABLE_NAME . " AS attrLang
                 WHERE attr." . tAttribut::kAttribut . " = attrLang." . tAttributSprache::kAttribut . "
                 FOR JSON PATH
               ) AS translations,
               (
-                SELECT " . $this->hydrator->createSelect(tAttributShop::class, 'attrShop') . "
-                FROM . " . tAttributShop::TABLE_NAME . " as attrShop
+                SELECT " . $this->hydrator->createSelect(tAttributShop::class) . "
+                FROM . " . tAttributShop::TABLE_NAME . " AS attrShop
                 WHERE attr." . tAttribut::kAttribut . " = attrShop." . tAttributShop::kAttribut . "
                 FOR JSON PATH
               ) AS shops
@@ -66,16 +66,16 @@ class AttributeRepository
         }
         $data = json_decode($json, true);
         return map($data, function($row) {
-            $tAttribut = $this->hydrator->toObject($row, tAttribut::class, 'attr');
+            $tAttribut = $this->hydrator->toObject($row, tAttribut::class);
             $attr = new Attribute();
             $this->mapper->mapToObject($tAttribut, $attr);
             $attr->translations = $this->mapper->mapMultiple(
-                $this->hydrator->multipleToObject($row['translations'], tAttributSprache::class, 'attrLang'),
+                $this->hydrator->multipleToObject($row['translations'], tAttributSprache::class),
                 AttributeTranslation::class
             );
             if (isset($row['shops'])) {
                 $attr->shops = $this->mapper->mapMultiple(
-                    $this->hydrator->multipleToObject($row['shops'], tAttributShop::class, 'attrShop'),
+                    $this->hydrator->multipleToObject($row['shops'], tAttributShop::class),
                     AttributeShop::class
                 );
             }

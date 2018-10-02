@@ -10,12 +10,13 @@ class Hydrator implements HydratorInterface
     /**
      * @inheritdoc
      */
-    public function toObject(array $assocArr, string $targetEntity, string $alias): object
+    public function toObject(array $assocArr, string $targetEntity, string $alias = null): object
     {
         $object = new $targetEntity();
         foreach($targetEntity::COLUMN_NAMES as $columnName) {
-            if (isset($assocArr[$alias . '_' . $columnName])) {
-                $object->$columnName = $assocArr[$alias . '_' . $columnName];
+            $name = $alias ? "{$alias}_{$columnName}" : $columnName;
+            if (isset($assocArr[$name])) {
+                $object->$columnName = $assocArr[$name];
             }
         }
         return $object;
@@ -24,7 +25,7 @@ class Hydrator implements HydratorInterface
     /**
      * @inheritdoc
      */
-    public function multipleToObject(array $arrOfAssocArr, string $targetEntity, string $alias): array
+    public function multipleToObject(array $arrOfAssocArr, string $targetEntity, string $alias = null): array
     {
         return map($arrOfAssocArr, function($item) use ($targetEntity, $alias) {
             return $this->toObject($item, $targetEntity, $alias);
@@ -34,11 +35,14 @@ class Hydrator implements HydratorInterface
     /**
      * @inheritdoc
      */
-    public function createSelect(string $targetEntity, string $alias): string
+    public function createSelect(string $targetEntity, string $alias = null): string
     {
         $selects = [];
         foreach($targetEntity::COLUMN_NAMES as $columnName) {
-            $selects[] = "[$alias].[$columnName] AS [{$alias}_{$columnName}]";
+            $selects[] = $alias
+                ? "[$alias].[$columnName] AS [{$alias}_{$columnName}]"
+                : "[$columnName] AS [$columnName]"
+            ;
         }
         return implode(', ', $selects);
     }
