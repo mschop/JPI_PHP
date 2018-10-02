@@ -6,6 +6,9 @@ namespace App\CodeGeneration;
 use App\Db\Schema\tArtikel;
 use App\Db\Schema\tArtikelAbnahme;
 use App\Db\Schema\tArtikelBeschreibung;
+use App\Db\Schema\tAttribut;
+use App\Db\Schema\tAttributShop;
+use App\Db\Schema\tAttributSprache;
 use App\Db\Schema\tMandant;
 
 class DeclarationProvider
@@ -76,6 +79,35 @@ class DeclarationProvider
                     tArtikelBeschreibung::cTitleTag => 'metaTitle',
                     tArtikelBeschreibung::cMetaKeywords => 'metaKeywords',
                 ]
+            ],
+            tAttribut::class => [
+                static::DEF_TARGET_CLASS => 'Attribute',
+                static::DEF_FIELDS => [
+                    tAttribut::kAttribut => 'id',
+                    tAttribut::nIstMehrsprachig => [static::DEF_COLUMN_NAME => 'isMultilingual', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tAttribut::nSortierung => 'sort',
+                    tAttribut::cBeschreibung => 'description',
+                    tAttribut::nAusgabeweg => 'outputType',
+                    tAttribut::nIstStandard => [static::DEF_COLUMN_NAME => 'isDefault', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tAttribut::kFeldTyp => 'fieldTypeId',
+                    tAttribut::cRegEx => 'regex',
+                    tAttribut::cGruppeName => 'groupName',
+                    tAttribut::nReadOnly => [static::DEF_COLUMN_NAME => 'isReadOnly', static::DEF_TRANSITIONS => Transition::BOOL_BIT]
+                ]
+            ],
+            tAttributSprache::class => [
+                static::DEF_TARGET_CLASS => 'AttributeTranslation',
+                static::DEF_FIELDS => [
+                    tAttributSprache::kSprache => 'languageId',
+                    tAttributSprache::cName => 'name',
+                    tAttributSprache::cWertListe => [static::DEF_COLUMN_NAME => 'valueList', static::DEF_TRANSITIONS => Transition::VALUE_LIST_PIPE],
+                ]
+            ],
+            tAttributShop::class => [
+                static::DEF_TARGET_CLASS => 'AttributeShop',
+                static::DEF_FIELDS => [
+                    tAttributShop::kShop => 'shopId'
+                ]
             ]
         ];
     }
@@ -92,6 +124,18 @@ class DeclarationProvider
                 [
                     static::REL_ENTITY => 'ProductBuyInterval',
                     static::REL_COLUMN => 'buyIntervals',
+                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
+                ]
+            ],
+            'Attribute' => [
+                [
+                    static::REL_ENTITY => 'AttributeTranslation',
+                    static::REL_COLUMN => 'translations',
+                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
+                ],
+                [
+                    static::REL_ENTITY => 'AttributeShop',
+                    static::REL_COLUMN => 'shops',
                     static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
                 ]
             ]

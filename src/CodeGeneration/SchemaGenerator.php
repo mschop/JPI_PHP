@@ -98,6 +98,7 @@ class SchemaGenerator
     {
         $string = '@OAProperty(';
         $string .= 'type="' . $type . '"';
+        if ($type === 'array') $string .= ', @OAItems(type="string")';
         $string .= ')';
         return $string;
     }
@@ -120,7 +121,10 @@ class SchemaGenerator
         if ($transition) {
             switch ($transition->getValue()) {
                 case Transition::BOOL_YN:
+                case Transition::BOOL_BIT:
                     return 'bool';
+                case Transition::VALUE_LIST_PIPE:
+                    return 'array';
                 default:
                     throw new \Exception('Not Implented');
             }
@@ -144,6 +148,8 @@ class SchemaGenerator
             case 'boolean':
             case 'bool':
                 return 'boolean';
+            case 'array':
+                return 'array';
             default:
                 throw new \Exception('Unmapped PHP data type');
         }

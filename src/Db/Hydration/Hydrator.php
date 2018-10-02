@@ -14,7 +14,9 @@ class Hydrator implements HydratorInterface
     {
         $object = new $targetEntity();
         foreach($targetEntity::COLUMN_NAMES as $columnName) {
-            $object->$columnName = $assocArr[$alias . '_' . $columnName];
+            if (isset($assocArr[$alias . '_' . $columnName])) {
+                $object->$columnName = $assocArr[$alias . '_' . $columnName];
+            }
         }
         return $object;
     }

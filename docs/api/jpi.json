@@ -8,6 +8,48 @@
         "version": "1.0"
     },
     "paths": {
+        "/Tenant/{tenantId}/Attribute/Product": {
+            "get": {
+                "description": "Fetch product attribute definitions",
+                "operationId": "App\\Controller\\AttributeController::getAllProductAttributes",
+                "responses": {
+                    "200": {
+                        "description": "All defined product attributes",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Attribute"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/Tenant/{tenantId}/Attribute/Category": {
+            "get": {
+                "description": "Fetch product attribute definitions",
+                "operationId": "App\\Controller\\AttributeController::getAllCategoryAttributes",
+                "responses": {
+                    "200": {
+                        "description": "All defined product attributes",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Attribute"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/": {
             "get": {
                 "operationId": "App\\Controller\\IndexController::index",
@@ -171,6 +213,78 @@
     },
     "components": {
         "schemas": {
+            "Attribute": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "isMultilingual": {
+                        "type": "boolean"
+                    },
+                    "sort": {
+                        "type": "integer"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "outputType": {
+                        "type": "integer"
+                    },
+                    "isDefault": {
+                        "type": "boolean"
+                    },
+                    "fieldTypeId": {
+                        "type": "integer"
+                    },
+                    "regex": {
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "type": "string"
+                    },
+                    "isReadOnly": {
+                        "type": "boolean"
+                    },
+                    "translations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/AttributeTranslation"
+                        }
+                    },
+                    "shops": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/AttributeShop"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "AttributeShop": {
+                "properties": {
+                    "shopId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            },
+            "AttributeTranslation": {
+                "properties": {
+                    "languageId": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "valueList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "type": "object"
+            },
             "Product": {
                 "properties": {
                     "id": {

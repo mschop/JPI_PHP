@@ -32,6 +32,10 @@ class DeclarationMapper implements MapperConfiguratorInterface
                     switch ($transition) {
                         case Transition::BOOL_YN:
                             return $this->ynToBool($source->$from);
+                        case Transition::BOOL_BIT:
+                            return $this->toBool($source->$from);
+                        case Transition::VALUE_LIST_PIPE:
+                            return $this->valueListPipeToArray($source->$from);
                         default:
                             return $source->$from;
                     }
@@ -40,6 +44,10 @@ class DeclarationMapper implements MapperConfiguratorInterface
                     switch ($transition) {
                         case Transition::BOOL_YN:
                             return $this->boolToYN($source->$to);
+                        case Transition::BOOL_BIT:
+                            return $this->boolToBit($source->$to);
+                        case Transition::VALUE_LIST_PIPE:
+                            return $this->arrayToValueListPipe($source->$to);
                         default:
                             return $source->$to;
                     }
@@ -48,7 +56,7 @@ class DeclarationMapper implements MapperConfiguratorInterface
         }
     }
 
-    protected function ynToBool($value)
+    protected function ynToBool(string $value): bool
     {
         $value = strtolower($value);
         switch ($value) {
@@ -62,8 +70,29 @@ class DeclarationMapper implements MapperConfiguratorInterface
         }
     }
 
-    protected function boolToYN($value)
+    protected function boolToYN(bool $value): string
     {
         return $value ? 'Y' : 'N';
+    }
+
+    protected function toBool(int $value): bool
+    {
+        return !!$value;
+    }
+
+    protected function boolToBit(bool $value): int
+    {
+        return $value ? 1 : 0;
+    }
+
+    protected function valueListPipeToArray(?string $valueList): ?array
+    {
+        if ($valueList === null || empty($valueList)) return null;
+        return explode('|', $valueList);
+    }
+
+    protected function arrayToValueListPipe(array $values): string
+    {
+        return implode('|', $values);
     }
 }
