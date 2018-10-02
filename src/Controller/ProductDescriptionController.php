@@ -63,6 +63,7 @@ class ProductDescriptionController extends Controller
      */
     public function getAll(int $tenantId, int $productId)
     {
+        $this->denyAccessUnlessGranted('ROLE_PRODUCT_VIEW');
         if ($tenantId <= 0) throw new BadRequestHttpException('tenantId must be gt 0');
         if ($productId <= 0) throw new BadRequestHttpException('productId must be gt 0');
         if (!$this->productRepository->has($tenantId, $productId)) throw $this->createNotFoundException('Product not found');

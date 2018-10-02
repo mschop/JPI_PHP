@@ -41,6 +41,7 @@ class AttributeController extends Controller
      */
     public function getAllProductAttributes(int $tenantId)
     {
+        $this->denyAccessUnlessGranted('ROLE_PRODUCT_VIEW');
         if ($tenantId <= 0) throw new BadRequestHttpException('Invalid tenantId');
         return new JsonResponse($this->attributeRepository->getAttributes($tenantId, AttributeRelationType::byValue(AttributeRelationType::PRODUCT)));
     }
@@ -61,6 +62,7 @@ class AttributeController extends Controller
      */
     public function getAllCategoryAttributes(int $tenantId)
     {
+        $this->denyAccessUnlessGranted('ROLE_PRODUCT_VIEW');
         if ($tenantId <= 0) throw new BadRequestHttpException('Invalid tenantId');
         return new JsonResponse($this->attributeRepository->getAttributes($tenantId, AttributeRelationType::byValue(AttributeRelationType::CATEGORY)));
     }
