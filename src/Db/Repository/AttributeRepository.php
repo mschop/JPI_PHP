@@ -5,6 +5,7 @@ namespace App\Db\Repository;
 
 use App\Db\ConnectionProviderInterface;
 use App\Db\Hydration\HydratorInterface;
+use App\Db\Hydration\JsonHelperInterface;
 use App\Db\Schema\tAttribut;
 use App\Db\Schema\tAttributShop;
 use App\Db\Schema\tAttributSprache;
@@ -20,15 +21,18 @@ class AttributeRepository
     protected $connectionProvider;
     protected $mapper;
     protected $hydrator;
+    protected $jsonHelper;
 
     public function __construct(
         ConnectionProviderInterface $connectionProvider,
         MapperInterface $mapper,
-        HydratorInterface $hydrator
+        HydratorInterface $hydrator,
+        JsonHelperInterface $jsonHelper
     ) {
         $this->connectionProvider = $connectionProvider;
         $this->mapper = $mapper;
         $this->hydrator = $hydrator;
+        $this->jsonHelper = $jsonHelper;
     }
 
     /**
@@ -60,11 +64,7 @@ class AttributeRepository
         ";
         $stmt = $conn->prepare($query);
         $stmt->execute([$attributeRelationType->getValue()]);
-        $json = '';
-        while (($part = $stmt->fetchColumn())) {
-            $json .= $part;
-        }
-        $data = json_decode($json, true);
+        $data = $this->jsonHelper->createResult($stmt);
         return map($data, function($row) {
             $tAttribut = $this->hydrator->toObject($row, tAttribut::class);
             $attr = new Attribute();
