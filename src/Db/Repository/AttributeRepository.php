@@ -59,11 +59,11 @@ class AttributeRepository
                 FOR JSON PATH
               ) AS shops
             FROM " . tAttribut::TABLE_NAME . " AS attr
-            WHERE attr." . tAttribut::nBezugstyp . " = ?
+            WHERE attr." . tAttribut::nBezugstyp . " = :relationType
             FOR JSON PATH 
         ";
         $stmt = $conn->prepare($query);
-        $stmt->execute([$attributeRelationType->getValue()]);
+        $stmt->execute(['relationType' => $attributeRelationType->getValue()]);
         $data = $this->jsonHelper->createResult($stmt);
         return map($data, function($row) {
             $tAttribut = $this->hydrator->toObject($row, tAttribut::class);
