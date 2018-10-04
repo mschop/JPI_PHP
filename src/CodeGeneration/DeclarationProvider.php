@@ -5,6 +5,8 @@ namespace App\CodeGeneration;
 
 use App\Db\Schema\tArtikel;
 use App\Db\Schema\tArtikelAbnahme;
+use App\Db\Schema\tArtikelAttribut;
+use App\Db\Schema\tArtikelAttributSprache;
 use App\Db\Schema\tArtikelBeschreibung;
 use App\Db\Schema\tAttribut;
 use App\Db\Schema\tAttributShop;
@@ -22,8 +24,8 @@ class DeclarationProvider
     const REL_COLUMN = 1;
     const REL_TYPE = 2;
 
-    const REL_TYPE_ONE_TO_ONE = 0;
-    const REL_TYPE_ONE_TO_MANY = 1;
+    const REL_TYPE_TO_ONE = 0;
+    const REL_TYPE_TO_MANY = 1;
 
     /**
      * Creates the declaration. This cannot be a const because this causes the symfony container to fail on checking
@@ -108,6 +110,26 @@ class DeclarationProvider
                 static::DEF_FIELDS => [
                     tAttributShop::kShop => 'shopId'
                 ]
+            ],
+            tArtikelAttribut::class => [
+                static::DEF_TARGET_CLASS => 'ProductAttribute',
+                static::DEF_FIELDS => [
+                    tArtikelAttribut::kArtikelAttribut => 'id',
+                    tArtikelAttribut::kAttribut => 'attributeId',
+                    tArtikelAttribut::kShop => 'shopId',
+                    tArtikelAttribut::kArtikel => 'productId',
+                ]
+            ],
+            tArtikelAttributSprache::class => [
+                static::DEF_TARGET_CLASS => 'ProductAttributeTranslation',
+                static::DEF_FIELDS => [
+                    tArtikelAttributSprache::kArtikelAttribut => 'productAttributeId',
+                    tArtikelAttributSprache::kSprache => 'languageId',
+                    tArtikelAttributSprache::cWertVarchar => 'stringValue',
+                    tArtikelAttributSprache::dWertDateTime => 'dateValue',
+                    tArtikelAttributSprache::fWertDecimal => 'decimalValue',
+                    tArtikelAttributSprache::nWertInt => 'intValue',
+                ]
             ]
         ];
     }
@@ -119,24 +141,41 @@ class DeclarationProvider
                 [
                     static::REL_ENTITY => 'ProductDescription',
                     static::REL_COLUMN => 'descriptions',
-                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY,
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY,
                 ],
                 [
                     static::REL_ENTITY => 'ProductBuyInterval',
                     static::REL_COLUMN => 'buyIntervals',
-                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY
+                ],
+                [
+                    static::REL_ENTITY => 'ProductAttribute',
+                    static::REL_COLUMN => 'attributes',
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY
                 ]
             ],
             'Attribute' => [
                 [
                     static::REL_ENTITY => 'AttributeTranslation',
                     static::REL_COLUMN => 'translations',
-                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY
                 ],
                 [
                     static::REL_ENTITY => 'AttributeShop',
                     static::REL_COLUMN => 'shops',
-                    static::REL_TYPE => static::REL_TYPE_ONE_TO_MANY
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY
+                ]
+            ],
+            'ProductAttribute' => [
+                [
+                    static::REL_ENTITY => 'ProductAttributeTranslation',
+                    static::REL_COLUMN => 'translations',
+                    static::REL_TYPE => static::REL_TYPE_TO_MANY
+                ],
+                [
+                    static::REL_ENTITY => 'Attribute',
+                    static::REL_COLUMN => 'attribute',
+                    static::REL_TYPE => static::REL_TYPE_TO_ONE
                 ]
             ]
         ];

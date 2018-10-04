@@ -103,8 +103,8 @@ class SchemaGenerator
     protected function generateOaRelationProperty(array $definition): string
     {
         $string = '@OAProperty(';
-        if ($definition[DeclarationProvider::REL_TYPE] === DeclarationProvider::REL_TYPE_ONE_TO_ONE) {
-            $string .= 'ref="#/components/schemas/' . $definition[DeclarationProvider::REL_COLUMN] . '"';
+        if ($definition[DeclarationProvider::REL_TYPE] === DeclarationProvider::REL_TYPE_TO_ONE) {
+            $string .= 'ref="#/components/schemas/' . $definition[DeclarationProvider::REL_ENTITY] . '"';
         } else {
             $string .= 'type="array", ';
             $string .= '@OAItems(ref="#/components/schemas/' . $definition[DeclarationProvider::REL_ENTITY] . '")';

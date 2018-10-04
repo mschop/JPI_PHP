@@ -60,6 +60,33 @@
                 }
             }
         },
+        "/Tenant/{tenantId}/Product/{productId}/Attribute": {
+            "get": {
+                "description": "Fetch all attribute values from product",
+                "operationId": "App\\Controller\\ProductAttributeController::getAll",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ProductAttribute"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
         "/Tenant/{tenantId}/Product/{productId}/BuyInterval": {
             "get": {
                 "description": "Get the products buy interval settings",
@@ -328,6 +355,61 @@
                         "items": {
                             "$ref": "#/components/schemas/ProductBuyInterval"
                         }
+                    },
+                    "attributes": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ProductAttribute"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "ProductAttribute": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "attributeId": {
+                        "type": "integer"
+                    },
+                    "shopId": {
+                        "type": "integer"
+                    },
+                    "productId": {
+                        "type": "integer"
+                    },
+                    "translations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ProductAttributeTranslation"
+                        }
+                    },
+                    "attribute": {
+                        "$ref": "#/components/schemas/Attribute"
+                    }
+                },
+                "type": "object"
+            },
+            "ProductAttributeTranslation": {
+                "properties": {
+                    "productAttributeId": {
+                        "type": "integer"
+                    },
+                    "languageId": {
+                        "type": "integer"
+                    },
+                    "stringValue": {
+                        "type": "string"
+                    },
+                    "dateValue": {
+                        "type": "string"
+                    },
+                    "decimalValue": {
+                        "type": "string"
+                    },
+                    "intValue": {
+                        "type": "integer"
                     }
                 },
                 "type": "object"

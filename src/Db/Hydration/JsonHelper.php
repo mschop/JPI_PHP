@@ -13,6 +13,9 @@ class JsonHelper implements JsonHelperInterface
         while (($part = $stmt->fetchColumn())) {
             $json .= $part;
         }
+        if (empty($json)) {
+            return [];
+        }
         return json_decode($json, true);
     }
 }

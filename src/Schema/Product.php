@@ -82,4 +82,10 @@ class Product
 	 * @OAProperty(type="array", @OAItems(ref="#/components/schemas/ProductBuyInterval"))
 	 */
 	public $buyIntervals;
+
+	/**
+	 * @var array|null
+	 * @OAProperty(type="array", @OAItems(ref="#/components/schemas/ProductAttribute"))
+	 */
+	public $attributes;
 }
