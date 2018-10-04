@@ -5,6 +5,7 @@ namespace App\Db;
 
 
 use App\DatabaseSchema\tMandant;
+use Doctrine\DBAL\Configuration;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\DriverManager;
@@ -138,12 +139,16 @@ class ConnectionProvider implements ConnectionProviderInterface
     protected function createConn(string $dbName): Connection
     {
         return DriverManager::getConnection([
-            'driver' => 'sqlsrv',
+            'driver' => 'pdo_sqlsrv',
             'dbname' => $dbName,
             'host' => $this->mainConfig['db']['host'],
             'port' => $this->mainConfig['db']['port'],
             'user' => $this->mainConfig['db']['user'],
             'password' => $this->mainConfig['db']['pass'],
+            'driverOptions' => [
+                \PDO::ATTR_ERRMODE =>\PDO::ERRMODE_EXCEPTION,
+                \PDO::SQLSRV_ATTR_FETCHES_NUMERIC_TYPE => true
+            ]
         ]);
     }
 
