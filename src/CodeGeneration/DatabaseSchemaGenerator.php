@@ -92,7 +92,7 @@ class DatabaseSchemaGenerator
 
     protected function getTargetDirectory(): PathInterface
     {
-        return $this->pathHelper->getRootDir()->joinAtoms('src', 'Db', 'Schema');
+        return $this->pathHelper->getRootDir()->joinAtoms('src')->joinAtoms('Db')->joinAtoms('Schema');
     }
 
     /**

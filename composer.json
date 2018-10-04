@@ -7,6 +7,7 @@
     "php": "~7.2",
     "ext-ctype": "*",
     "ext-iconv": "*",
+    "ext-sqlsrv": "*",
     "codeception/codeception": "^2.4",
     "doctrine/dbal": "^2.8",
     "eloquent/pathogen": "^0.6.1",
@@ -25,6 +26,9 @@
     "zircote/swagger-php": "^3.0"
   },
   "require-dev": {
+    "ext-ast": "*",
+    "drenso/phan-extensions": "^2.4",
+    "phan/phan": "^1.0",
     "symfony/dotenv": "*"
   },
   "config": {

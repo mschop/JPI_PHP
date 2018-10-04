@@ -3,9 +3,6 @@
 namespace App\CodeGeneration;
 
 
-use App\Db\Schema\tArtikel;
-use App\Db\Schema\tArtikelBeschreibung;
-use App\Db\Schema\tMandant;
 use App\PathHelperInteface;
 use Eloquent\Pathogen\PathInterface;
 use function Functional\filter;
@@ -80,7 +77,7 @@ class SchemaGenerator
 
     protected function getTargetDirectory(): PathInterface
     {
-        return $this->pathHelper->getRootDir()->joinAtoms('src', 'Schema');
+        return $this->pathHelper->getRootDir()->joinAtoms('src')->joinAtoms('Schema');
     }
 
     protected function emptyDirectory()
