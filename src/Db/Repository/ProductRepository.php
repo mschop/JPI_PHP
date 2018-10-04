@@ -60,7 +60,7 @@ class ProductRepository
      * @throws \App\Db\TenantNotFoundException
      * @throws UnregisteredMappingException
      */
-    public function get(int $tenantId, int $productId, array $join): Product
+    public function get(int $tenantId, int $productId, array $join): ?Product
     {
         $conn = $this->dbConnectionProvider->byTenantId($tenantId);
         $qb = $conn->createQueryBuilder();
@@ -75,6 +75,7 @@ class ProductRepository
 
 
         $result = $qb->execute()->fetch(\PDO::FETCH_ASSOC);
+        if (!$result) return null;
         $tArtikel = $this->hydrator->toObject($result, tArtikel::class, 'a');
         /** @var Product $product */
         $product = $this->mapper->map($tArtikel, Product::class);
