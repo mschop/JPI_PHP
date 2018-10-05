@@ -41,7 +41,7 @@ class Hydrator implements HydratorInterface
         foreach($targetEntity::COLUMN_NAMES as $columnName) {
             $selects[] = $alias
                 ? "[$alias].[$columnName] AS [{$alias}_{$columnName}]"
-                : "[$columnName] AS [$columnName]"
+                : "[$columnName]"
             ;
         }
         return implode(', ', $selects);

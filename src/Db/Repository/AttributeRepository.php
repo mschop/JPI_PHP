@@ -9,6 +9,7 @@ use App\Db\Hydration\JsonHelperInterface;
 use App\Db\Schema\tAttribut;
 use App\Db\Schema\tAttributShop;
 use App\Db\Schema\tAttributSprache;
+use App\Db\TreeQueryFactory;
 use App\Enums\AttributeRelationType;
 use App\Mapping\MapperInterface;
 use App\Schema\Attribute;
@@ -22,17 +23,20 @@ class AttributeRepository
     protected $mapper;
     protected $hydrator;
     protected $jsonHelper;
+    protected $treeQueryFactory;
 
     public function __construct(
         ConnectionProviderInterface $connectionProvider,
         MapperInterface $mapper,
         HydratorInterface $hydrator,
-        JsonHelperInterface $jsonHelper
+        JsonHelperInterface $jsonHelper,
+        TreeQueryFactory $treeQueryFactory
     ) {
         $this->connectionProvider = $connectionProvider;
         $this->mapper = $mapper;
         $this->hydrator = $hydrator;
         $this->jsonHelper = $jsonHelper;
+        $this->treeQueryFactory = $treeQueryFactory;
     }
 
     /**
@@ -45,55 +49,35 @@ class AttributeRepository
     {
         $conn = $this->connectionProvider->byTenantId($tenantId);
 
-        $translationsQB = $conn->createQueryBuilder();
-        $translationsSql = $translationsQB
-            ->from(tAttributSprache::TABLE_NAME, 'sub_translations')
-            ->select($this->hydrator->createSelect(tAttributSprache::class))
-            ->where(
-                $translationsQB->expr()->eq(
-                    'attr.' . tAttribut::kAttribut,
-                    'sub_translations.' . tAttributSprache::kAttribut
-                )
-            )
-            ->getSQL()
-        ;
+        $tAttribut_kAttribut = tAttribut::kAttribut;
+        $tAttributSprache_kAttribut = tAttributSprache::kAttribut;
+        $tAttributShop_kAttribut = tAttributShop::kAttribut;
 
         $qb = $conn->createQueryBuilder();
-        $qb->select();
-
-        $shopsQB = $conn->createQueryBuilder();
-        $shopsSql = $shopsQB
-            ->from(tAttributShop::TABLE_NAME, 'sub_shops')
-            ->select($this->hydrator->createSelect(tAttributShop::class))
-            ->where(
-                $shopsQB->expr()->eq(
-                    'attr.' . tAttribut::kAttribut,
-                    'sub_shops' . tAttributShop::kAttribut
-                )
-            )
-            ->getSQL()
-        ;
-
-        $qb = $conn->createQueryBuilder();
-        $stmt = $qb
+        $qb
             ->from(tAttribut::TABLE_NAME, 'attr')
             ->select($this->hydrator->createSelect(tAttribut::class))
-            ->addSelect("($translationsSql FOR JSON PATH) as translations")
-            ->addSelect("($shopsSql FOR JSON PATH) as shops")
             ->where(
-                $qb->expr()->eq('attr.' . tAttribut::kAttribut, ':relationType')
+                $qb->expr()->eq('attr.' . tAttribut::nBezugstyp, ':relationType')
             )
-            ->setParameters(
-                array_merge(
-                    ['relationType' => $attributeRelationType->getValue()],
-                    $shopsQB->getParameters(),
-                    $translationsQB->getParameters()
-                )
-            )
-            ->execute()
+            ->setParameter('relationType', $attributeRelationType->getValue())
         ;
 
-        $data = $this->jsonHelper->createResult($stmt);
+        $treeQuery = $this->treeQueryFactory->build($qb);
+        $treeQuery->add(
+            tAttributSprache::class,
+            'translations',
+            'sub_translations',
+            "sub_translations.$tAttributSprache_kAttribut = attr.$tAttribut_kAttribut"
+        );
+        $treeQuery->add(
+            tAttributShop::class,
+            'shops',
+            'sub_shops',
+            "sub_shops.$tAttributShop_kAttribut = attr.$tAttribut_kAttribut"
+        );
+
+        $data = $treeQuery->execute();
         return map($data, function($row) {
             $tAttribut = $this->hydrator->toObject($row, tAttribut::class);
             $attr = new Attribute();
