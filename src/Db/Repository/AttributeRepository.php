@@ -44,26 +44,55 @@ class AttributeRepository
     public function getAttributes(int $tenantId, AttributeRelationType $attributeRelationType): array
     {
         $conn = $this->connectionProvider->byTenantId($tenantId);
-        $query = "
-            SELECT " . $this->hydrator->createSelect(tAttribut::class) . ",
-              (
-                SELECT " . $this->hydrator->createSelect(tAttributSprache::class) . "
-                FROM " . tAttributSprache::TABLE_NAME . " AS attrLang
-                WHERE attr." . tAttribut::kAttribut . " = attrLang." . tAttributSprache::kAttribut . "
-                FOR JSON PATH
-              ) AS translations,
-              (
-                SELECT " . $this->hydrator->createSelect(tAttributShop::class) . "
-                FROM . " . tAttributShop::TABLE_NAME . " AS attrShop
-                WHERE attr." . tAttribut::kAttribut . " = attrShop." . tAttributShop::kAttribut . "
-                FOR JSON PATH
-              ) AS shops
-            FROM " . tAttribut::TABLE_NAME . " AS attr
-            WHERE attr." . tAttribut::nBezugstyp . " = :relationType
-            FOR JSON PATH 
-        ";
-        $stmt = $conn->prepare($query);
-        $stmt->execute(['relationType' => $attributeRelationType->getValue()]);
+
+        $translationsQB = $conn->createQueryBuilder();
+        $translationsSql = $translationsQB
+            ->from(tAttributSprache::TABLE_NAME, 'sub_translations')
+            ->select($this->hydrator->createSelect(tAttributSprache::class))
+            ->where(
+                $translationsQB->expr()->eq(
+                    'attr.' . tAttribut::kAttribut,
+                    'sub_translations.' . tAttributSprache::kAttribut
+                )
+            )
+            ->getSQL()
+        ;
+
+        $qb = $conn->createQueryBuilder();
+        $qb->select();
+
+        $shopsQB = $conn->createQueryBuilder();
+        $shopsSql = $shopsQB
+            ->from(tAttributShop::TABLE_NAME, 'sub_shops')
+            ->select($this->hydrator->createSelect(tAttributShop::class))
+            ->where(
+                $shopsQB->expr()->eq(
+                    'attr.' . tAttribut::kAttribut,
+                    'sub_shops' . tAttributShop::kAttribut
+                )
+            )
+            ->getSQL()
+        ;
+
+        $qb = $conn->createQueryBuilder();
+        $stmt = $qb
+            ->from(tAttribut::TABLE_NAME, 'attr')
+            ->select($this->hydrator->createSelect(tAttribut::class))
+            ->addSelect("($translationsSql FOR JSON PATH) as translations")
+            ->addSelect("($shopsSql FOR JSON PATH) as shops")
+            ->where(
+                $qb->expr()->eq('attr.' . tAttribut::kAttribut, ':relationType')
+            )
+            ->setParameters(
+                array_merge(
+                    ['relationType' => $attributeRelationType->getValue()],
+                    $shopsQB->getParameters(),
+                    $translationsQB->getParameters()
+                )
+            )
+            ->execute()
+        ;
+
         $data = $this->jsonHelper->createResult($stmt);
         return map($data, function($row) {
             $tAttribut = $this->hydrator->toObject($row, tAttribut::class);

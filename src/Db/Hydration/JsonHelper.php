@@ -7,6 +7,9 @@ use Doctrine\DBAL\Driver\Statement;
 
 class JsonHelper implements JsonHelperInterface
 {
+    /**
+     * @inheritdoc
+     */
     public function createResult(Statement $stmt)
     {
         $json = '';
