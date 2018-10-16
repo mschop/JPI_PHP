@@ -312,6 +312,336 @@
                 },
                 "type": "object"
             },
+            "DeliveryAddress": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "customerId": {
+                        "type": "integer"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "salutation": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "street": {
+                        "type": "string"
+                    },
+                    "postcode": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "addition": {
+                        "type": "string"
+                    },
+                    "addressAddition": {
+                        "type": "string"
+                    },
+                    "postId": {
+                        "type": "string"
+                    },
+                    "mobile": {
+                        "type": "string"
+                    },
+                    "mail": {
+                        "type": "string"
+                    },
+                    "fax": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "countryIsoCode": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "InvoiceAddress": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "customerId": {
+                        "type": "integer"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "salutation": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "street": {
+                        "type": "string"
+                    },
+                    "postcode": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "addition": {
+                        "type": "string"
+                    },
+                    "addressAddition": {
+                        "type": "string"
+                    },
+                    "postId": {
+                        "type": "string"
+                    },
+                    "mobile": {
+                        "type": "string"
+                    },
+                    "mail": {
+                        "type": "string"
+                    },
+                    "fax": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "countryIsoCode": {
+                        "type": "string"
+                    },
+                    "customerNumber": {
+                        "type": "string"
+                    },
+                    "attention": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "Order": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "invoiceId": {
+                        "type": "integer"
+                    },
+                    "userId": {
+                        "type": "integer"
+                    },
+                    "orderNumber": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "annotation": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "dayTerm": {
+                        "type": "integer"
+                    },
+                    "deliveryTypeId": {
+                        "type": "integer"
+                    },
+                    "grossDeliveryCosts": {
+                        "type": "string"
+                    },
+                    "discount": {
+                        "type": "string"
+                    },
+                    "deliveryInfo": {
+                        "type": "string"
+                    },
+                    "releasedForDeliveryAt": {
+                        "type": "string"
+                    },
+                    "identCode": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "inet": {
+                        "type": "string"
+                    },
+                    "deliveredAt": {
+                        "type": "string"
+                    },
+                    "orderHint": {
+                        "type": "integer"
+                    },
+                    "accountOfProceeds": {
+                        "type": "string"
+                    },
+                    "currency": {
+                        "type": "string"
+                    },
+                    "currencyFactor": {
+                        "type": "string"
+                    },
+                    "shopId": {
+                        "type": "integer"
+                    },
+                    "companyId": {
+                        "type": "integer"
+                    },
+                    "logisticianId": {
+                        "type": "integer"
+                    },
+                    "platform": {
+                        "type": "integer"
+                    },
+                    "languageId": {
+                        "type": "integer"
+                    },
+                    "voucherValue": {
+                        "type": "string"
+                    },
+                    "printedAt": {
+                        "type": "string"
+                    },
+                    "mailedAt": {
+                        "type": "string"
+                    },
+                    "inetOrderNumber": {
+                        "type": "string"
+                    },
+                    "paymentMethodId": {
+                        "type": "integer"
+                    },
+                    "isIgl": {
+                        "type": "boolean"
+                    },
+                    "isVatExempt": {
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "deliveryMailSentAt": {
+                        "type": "string"
+                    },
+                    "paymentMailSentAt": {
+                        "type": "string"
+                    },
+                    "userName": {
+                        "type": "string"
+                    },
+                    "paymentReferenceLine": {
+                        "type": "string"
+                    },
+                    "earlyPaymentDiscount": {
+                        "type": "string"
+                    },
+                    "isCancelled": {
+                        "type": "integer"
+                    },
+                    "moduleId": {
+                        "type": "string"
+                    },
+                    "paymentType": {
+                        "type": "integer"
+                    },
+                    "hasUpload": {
+                        "type": "integer"
+                    },
+                    "additionalWeight": {
+                        "type": "string"
+                    },
+                    "isDeliveredCompletely": {
+                        "type": "boolean"
+                    },
+                    "payedAt": {
+                        "type": "string"
+                    },
+                    "splitOrderId": {
+                        "type": "integer"
+                    },
+                    "priority": {
+                        "type": "integer"
+                    },
+                    "deliveryCountryIsoCode": {
+                        "type": "string"
+                    },
+                    "vatNumber": {
+                        "type": "string"
+                    },
+                    "isPremium": {
+                        "type": "boolean"
+                    },
+                    "deliveryCountryCurrency": {
+                        "type": "string"
+                    },
+                    "deliveryCountryCurrencyFactor": {
+                        "type": "string"
+                    },
+                    "customerOrderNumber": {
+                        "type": "string"
+                    },
+                    "isExtenalInvoice": {
+                        "type": "boolean"
+                    },
+                    "campaign": {
+                        "type": "string"
+                    },
+                    "campaignParam": {
+                        "type": "string"
+                    },
+                    "campaignName": {
+                        "type": "string"
+                    },
+                    "userAgent": {
+                        "type": "string"
+                    },
+                    "referrer": {
+                        "type": "string"
+                    },
+                    "maxDeliveryDays": {
+                        "type": "integer"
+                    },
+                    "invoiceAddress": {
+                        "$ref": "#/components/schemas/InvoiceAddress"
+                    },
+                    "deliveryAddress": {
+                        "$ref": "#/components/schemas/DeliveryAddress"
+                    }
+                },
+                "type": "object"
+            },
             "Product": {
                 "properties": {
                     "id": {

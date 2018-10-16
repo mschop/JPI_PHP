@@ -11,7 +11,10 @@ use App\Db\Schema\tArtikelBeschreibung;
 use App\Db\Schema\tAttribut;
 use App\Db\Schema\tAttributShop;
 use App\Db\Schema\tAttributSprache;
+use App\Db\Schema\tBestellung;
+use App\Db\Schema\tlieferadresse;
 use App\Db\Schema\tMandant;
+use App\Db\Schema\trechnungsadresse;
 
 class DeclarationProvider
 {
@@ -130,6 +133,125 @@ class DeclarationProvider
                     tArtikelAttributSprache::fWertDecimal => 'decimalValue',
                     tArtikelAttributSprache::nWertInt => 'intValue',
                 ]
+            ],
+            tBestellung::class => [
+                static::DEF_TARGET_CLASS => 'Order',
+                static::DEF_FIELDS => [
+                    tBestellung::kBestellung => 'id',
+                    tBestellung::tRechnung_kRechnung => 'invoiceId',
+                    tBestellung::tBenutzer_kBenutzer => 'userId',
+                    tBestellung::cBestellNr => 'orderNumber',
+                    tBestellung::cType => 'type',
+                    tBestellung::cAnmerkung => 'annotation',
+                    tBestellung::dErstellt => 'createdAt',
+                    tBestellung::nZahlungsziel => 'dayTerm',
+                    tBestellung::tVersandArt_kVersandArt => 'deliveryTypeId',
+                    tBestellung::fVersandBruttoPreis => 'grossDeliveryCosts',
+                    tBestellung::fRabatt => 'discount',
+                    tBestellung::cVersandInfo => 'deliveryInfo',
+                    tBestellung::dVersandt => 'releasedForDeliveryAt',
+                    tBestellung::cIdentCode => 'identCode',
+                    tBestellung::cBeschreibung => 'description',
+                    tBestellung::cInet => 'inet',
+                    tBestellung::dLieferdatum => 'deliveredAt',
+                    tBestellung::kBestellHinweis => 'orderHint',
+                    tBestellung::cErloeskonto => 'accountOfProceeds',
+                    tBestellung::cWaehrung => 'currency',
+                    tBestellung::fFaktor => 'currencyFactor',
+                    tBestellung::kShop => 'shopId',
+                    tBestellung::kFirma => 'companyId',
+                    tBestellung::kLogistik => 'logisticianId',
+                    tBestellung::nPlatform => 'platform',
+                    tBestellung::kSprache => 'languageId',
+                    tBestellung::fGutschein => 'voucherValue',
+                    tBestellung::dGedruckt => 'printedAt',
+                    tBestellung::dMailVersandt => 'mailedAt',
+                    tBestellung::cInetBestellNr => 'inetOrderNumber',
+                    tBestellung::kZahlungsArt => 'paymentMethodId',
+                    tBestellung::nIGL => [static::DEF_COLUMN_NAME => 'isIgl', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tBestellung::nUStFrei => [static::DEF_COLUMN_NAME => 'isVatExempt', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tBestellung::cStatus => 'status',
+                    tBestellung::dVersandMail => 'deliveryMailSentAt',
+                    tBestellung::dZahlungsMail => 'paymentMailSentAt',
+                    tBestellung::cUserName => 'userName',
+                    tBestellung::cVerwendungszweck => 'paymentReferenceLine',
+                    tBestellung::fSkonto => 'earlyPaymentDiscount',
+                    tBestellung::nStorno => 'isCancelled',
+                    tBestellung::cModulID => 'moduleId',
+                    tBestellung::nZahlungsTyp => 'paymentType',
+                    tBestellung::nHatUpload => 'hasUpload',
+                    tBestellung::fZusatzGewicht => 'additionalWeight',
+                    tBestellung::nKomplettAusgeliefert => [static::DEF_COLUMN_NAME => 'isDeliveredCompletely', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tBestellung::dBezahlt => 'payedAt',
+                    tBestellung::kSplitBestellung => 'splitOrderId',
+                    tBestellung::nPrio => 'priority',
+                    tBestellung::cVersandlandISO => 'deliveryCountryIsoCode',
+                    tBestellung::cUstId => 'vatNumber',
+                    tBestellung::nPremium => [static::DEF_COLUMN_NAME => 'isPremium', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tBestellung::cVersandlandWaehrung => 'deliveryCountryCurrency',
+                    tBestellung::fVersandlandWaehrungFaktor => 'deliveryCountryCurrencyFactor',
+                    tBestellung::cKundenauftragsnummer => 'customerOrderNumber',
+                    tBestellung::nIstExterneRechnung => [static::DEF_COLUMN_NAME => 'isExtenalInvoice', static::DEF_TRANSITIONS => Transition::BOOL_BIT],
+                    tBestellung::cKampagne => 'campaign',
+                    tBestellung::cKampagneParam => 'campaignParam',
+                    tBestellung::cKampagneName => 'campaignName',
+                    tBestellung::cUserAgent => 'userAgent',
+                    tBestellung::cReferrer => 'referrer',
+                    tBestellung::nMaxLiefertage => 'maxDeliveryDays',
+                ]
+            ],
+            tlieferadresse::class => [
+                static::DEF_TARGET_CLASS => 'DeliveryAddress',
+                static::DEF_FIELDS => [
+                    tlieferadresse::kLieferAdresse => 'id',
+                    tlieferadresse::kKunde => 'customerId',
+                    tlieferadresse::kKunde => 'customerId',
+                    tlieferadresse::cFirma => 'company',
+                    tlieferadresse::cAnrede => 'salutation',
+                    tlieferadresse::cTitel => 'title',
+                    tlieferadresse::cVorname => 'firstName',
+                    tlieferadresse::cName => 'name',
+                    tlieferadresse::cStrasse => 'street',
+                    tlieferadresse::cPLZ => 'postcode',
+                    tlieferadresse::cOrt => 'city',
+                    tlieferadresse::cLand => 'country',
+                    tlieferadresse::cTel => 'phone',
+                    tlieferadresse::cZusatz => 'addition',
+                    tlieferadresse::cAdressZusatz => 'addressAddition',
+                    tlieferadresse::cPostID => 'postId',
+                    tlieferadresse::cMobil => 'mobile',
+                    tlieferadresse::cMail => 'mail',
+                    tlieferadresse::cFax => 'fax',
+                    tlieferadresse::cBundesland => 'state',
+                    tlieferadresse::cISO => 'countryIsoCode',
+                ]
+            ],
+            trechnungsadresse::class => [
+                static::DEF_TARGET_CLASS => 'InvoiceAddress',
+                static::DEF_FIELDS => [
+                    trechnungsadresse::kRechnungsAdresse => 'id',
+                    trechnungsadresse::kKunde => 'customerId',
+                    trechnungsadresse::cFirma => 'company',
+                    trechnungsadresse::cAnrede => 'salutation',
+                    trechnungsadresse::cTitel => 'title',
+                    trechnungsadresse::cVorname => 'firstName',
+                    trechnungsadresse::cName => 'name',
+                    trechnungsadresse::cStrasse => 'street',
+                    trechnungsadresse::cPLZ => 'postcode',
+                    trechnungsadresse::cOrt => 'city',
+                    trechnungsadresse::cLand => 'country',
+                    trechnungsadresse::cTel => 'phone',
+                    trechnungsadresse::cZusatz => 'addition',
+                    trechnungsadresse::cAdressZusatz => 'addressAddition',
+                    trechnungsadresse::cPostID => 'postId',
+                    trechnungsadresse::cMobil => 'mobile',
+                    trechnungsadresse::cMail => 'mail',
+                    trechnungsadresse::cFax => 'fax',
+                    trechnungsadresse::cBundesland => 'state',
+                    trechnungsadresse::cISO => 'countryIsoCode',
+                    trechnungsadresse::cKundenNr => 'customerNumber',
+                    trechnungsadresse::cZHaenden => 'attention',
+                ]
             ]
         ];
     }
@@ -176,6 +298,18 @@ class DeclarationProvider
                     static::REL_ENTITY => 'Attribute',
                     static::REL_COLUMN => 'attribute',
                     static::REL_TYPE => static::REL_TYPE_TO_ONE
+                ]
+            ],
+            'Order' => [
+                [
+                    static::REL_ENTITY => 'InvoiceAddress',
+                    static::REL_COLUMN => 'invoiceAddress',
+                    static::REL_TYPE => static::REL_TYPE_TO_ONE,
+                ],
+                [
+                    static::REL_ENTITY => 'DeliveryAddress',
+                    static::REL_COLUMN => 'deliveryAddress',
+                    static::REL_TYPE => static::REL_TYPE_TO_ONE,
                 ]
             ]
         ];
